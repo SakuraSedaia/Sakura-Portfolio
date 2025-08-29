@@ -1,0 +1,11 @@
+/* External Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* Internal Fonts */
+@font-face {font-family: PT_Sans;src: url("PTSans-Regular.ttf");}
+@font-face {font-family: PT_Sans;src: url("PTSans-Bold.ttf");font-weight: bold;}
+@font-face {font-family: PT_Sans;src: url("PTSans-BoldItalic.ttf");font-weight: bold;font-style: italic;}
+@font-face {font-family: PT_Sans;src: url("PTSans-Italic.ttf");font-style: italic;}
+@font-face {font-family: "Minecraft";src: url("Minecraftia-Regular.ttf");}
