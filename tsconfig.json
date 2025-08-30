@@ -7,8 +7,13 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "types": ["vite/client"],
+    "allowJs": true,
     "noEmit": true,
-    "isolatedModules": true
+    "strict": true,
+    "types": ["vinxi/types/client"],
+    "isolatedModules": true,
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   }
 }

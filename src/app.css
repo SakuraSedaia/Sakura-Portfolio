@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+
+:root {
+  --nav-menu-voffset: -235px;
+}
+
+* {
+  @apply duration-200;
+}
+.btn {
+  @apply w-auto justify-center rounded-md border-2 border-gray-300 bg-white/80 p-1 px-5 text-black transition duration-200;
+}
+.btn:hover {
+  @apply scale-110 cursor-pointer bg-pink-100;
+}
+.header-sizing {
+  background-image: url('/images/renders/Environments/EnchantingRoom-Oct2023.png');
+}
+
+.nav-bar {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+
+  @apply my-1 rounded-sm overflow-clip shadow-xl;
+}
+
+.nav-item {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  position: relative;
+
+  @apply px-8 py-1 duration-200;
+}
+span.nav-item {
+  cursor: default;
+}
+a.nav-item:hover {
+  background: rgba(252, 206, 232, 50);
+  
+  @apply shadow-lg;
+}
+
+.navmenu-content {
+  outline: none;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  z-index: 300;
+  @apply px-2 rounded-b-lg w-96 shadow-md pb-2;
+}
+.navmenu-column {
+  flex-basis: 50%;
+  text-align: center;
+  @apply space-y-1;
+}
+.navmenu-title {
+  @apply border-b-pink-200;
+}
+.navmenu-item {
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 100%;
+
+  background: rgb(255 255 255 / 0.3);
+  border: none;
+  position: relative;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+
+  @apply py-1 rounded-sm duration-200 inline-block;
+}
+.navmenu-item:hover {
+  background: rgba(252, 206, 232, 50);
+  
+  @apply shadow-lg;
+}
+.nav-viewport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: var(--kb-navigation-menu__viewport-height);
+  z-index: 200;
+  opacity: 0;
+  overflow-x: clip;
+  overflow-y: visible;
+  transform-origin: var(--kb-menu-content-transform-origin);
+  transition:
+    width,
+    height,
+    250ms ease;
+  animation: viewportHide 250ms ease-in forwards;
+  pointer-events: none;
+}
+.nav-viewport[data-expanded] {
+  animation: viewportShow 250ms ease-out;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@keyframes viewportShow {
+  from {
+    opacity: 0;
+    transform: rotateX(20deg) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+}
+@keyframes viewportHide {
+  from {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(10deg) scale(0.96);
+  }
+}
