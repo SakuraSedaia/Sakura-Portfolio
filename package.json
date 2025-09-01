@@ -1,5 +1,5 @@
 {
-  "name": "sakuras-personal-portfolio",
+  "name": "sakura-portfolio",
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
@@ -10,12 +10,10 @@
     "@kobalte/core": "^0.13.11",
     "@solidjs/router": "^0.15.0",
     "@solidjs/start": "^1.1.0",
-    "nypm": "^0.6.1",
     "solid-js": "^1.9.5",
     "vinxi": "^0.5.7"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/vite": "^4.0.7",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
