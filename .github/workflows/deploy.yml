@@ -20,6 +20,7 @@ jobs:
       - run: npx nypm install
       - run: npm run build
         env:
+          NITRO_PRESET: github_pages
           BASE_PATH: /Sakura-Portfolio/
 
       - name: Upload artifact
