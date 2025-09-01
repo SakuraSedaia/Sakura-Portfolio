@@ -26,7 +26,7 @@ export default function App() {
           <Heading />
         </div>
       </header>
-      <Router>
+      <Router base={import.meta.env.SERVER_BASE_URL} root = {...}>
         <Route path="/" component={Home} />
 
         <Route path="/sakura-character-rig" component={SACR} />
