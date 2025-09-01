@@ -11,7 +11,7 @@ export default defineConfig({
     }
   },
   start: {
-    ssr: false,
+    ssr: true,
     server: {
       baseURL: process.env.BASE_PATH,
       preset: "static"
