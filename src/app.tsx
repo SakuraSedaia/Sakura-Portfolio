@@ -18,6 +18,7 @@ import Animations from "./routes/works/animations";
 import WebDev from "./routes/works/webdev";
 
 export default function App() {
+  const BaseRoute = '/Sakura-Portfolio'
   return (
     <div class="viewport mb-0">
       <header class="body-container">
@@ -26,7 +27,7 @@ export default function App() {
           <Heading />
         </div>
       </header>
-      <Router base={import.meta.env.SERVER_BASE_URL}>
+      <Router base={BaseRoute}>
         <Route path="/" component={Home} />
 
         <Route path="/sakura-character-rig" component={SACR} />
