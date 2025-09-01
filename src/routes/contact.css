@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.contact-link {
+    @apply text-pink-950;
+}
+
+.contact-link:hover {
+    cursor: pointer;
+    @apply text-pink-600;
+}

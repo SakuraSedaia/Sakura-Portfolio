@@ -30,6 +30,15 @@ jobs:
           
       - name: create .nojekyll
         run: touch .output/public/.nojekyll
+        
+      - name: create CNAME
+        uses: DamianReeves/write-file-action@master
+        with: 
+          path: ./.output/public
+          write-mode: overwrite
+          contents: |
+            dev.sakura-sedaia.com
+        
   # Deployment job
   deploy:
     # Add a dependency to the build job

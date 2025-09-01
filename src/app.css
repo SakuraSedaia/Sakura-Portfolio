@@ -1,12 +1,38 @@
 @import "tailwindcss";
-
-
 :root {
   --nav-menu-voffset: -235px;
-}
+  --heading-font:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
+  /* My Box Shadow */
+  --box-shadow-xsm:
+    0px 3px 5px -1px #00000033, 0px 2px 5px 0px #00000024,
+    0px 1px 10px 0px #00000010; /* var(--box-shadow-sm) */
+  --box-shadow-sm:
+    0px 3px 5px -1px #00000033, 0px 5px 8px 0px #00000024,
+    0px 1px 14px 0px #0000001f; /* var(--box-shadow-sm) */
+  --box-shadow-lg:
+    0px 3px 5px -1px #00000075, 0px 5px 8px 0px #00000079,
+    0px 1px 14px 0px #00000036; /* var(--box-shadow-lg) */
+  --box-shadow-inset-xsm:
+    0px 3px 5px -1px inset #00000033, 0px 2px 5px 0px inset #00000024,
+    0px 1px 10px 0px inset #00000010; /* var(--box-shadow-sm) */
+  --box-shadow-inset-sm:
+    0px 3px 5px -1px inset #00000033, 0px 5px 8px 0px inset #00000024,
+    0px 1px 14px 0px inset #0000001f; /* var(--box-shadow-sm) */
+  --box-shadow-inset-lg:
+    0px 3px 5px -1px inset #00000075, 0px 5px 8px 0px inset #00000079,
+    0px 1px 14px 0px inset #00000036; /* var(--box-shadow-lg) */
+}
+body {
+  @apply bg-gray-200 text-center align-middle;
+}
 * {
   @apply duration-200;
+}
+p {
+  @apply mt-2 mb-10 text-lg cursor-default;
 }
 .btn {
   @apply w-auto justify-center rounded-md border-2 border-gray-300 bg-white/80 p-1 px-5 text-black transition duration-200;
@@ -15,7 +41,7 @@
   @apply scale-110 cursor-pointer bg-pink-100;
 }
 .header-sizing {
-  background-image: url('/Sakura-Portfolio/images/renders/Environments/EnchantingRoom-Oct2023.png');
+  background-image: url("/images/renders/Env/EnchantingRoom-Oct2023.png");
 }
 
 .nav-bar {
@@ -31,8 +57,9 @@
   justify-content: center;
   background: rgba(255, 255, 255, 0.8);
   border: none;
+  box-shadow: var(--box-shadow-lg);
 
-  @apply my-1 rounded-sm overflow-clip shadow-xl;
+  @apply my-1 overflow-clip rounded-sm shadow-xl;
 }
 
 .nav-item {
@@ -49,7 +76,7 @@ span.nav-item {
 }
 a.nav-item:hover {
   background: rgba(252, 206, 232, 50);
-  
+
   @apply shadow-lg;
 }
 
@@ -60,7 +87,7 @@ a.nav-item:hover {
   border: none;
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
   z-index: 300;
-  @apply px-2 rounded-b-lg w-96 shadow-md pb-2;
+  @apply w-96 rounded-b-lg px-2 pb-2 shadow-md;
 }
 .navmenu-column {
   flex-basis: 50%;
@@ -81,11 +108,11 @@ a.nav-item:hover {
   position: relative;
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
 
-  @apply py-1 rounded-sm duration-200 inline-block;
+  @apply inline-block rounded-sm py-1 duration-200;
 }
 .navmenu-item:hover {
   background: rgba(252, 206, 232, 50);
-  
+
   @apply shadow-lg;
 }
 .nav-viewport {
@@ -131,4 +158,91 @@ a.nav-item:hover {
     opacity: 0;
     transform: rotateX(10deg) scale(0.96);
   }
+}
+
+/* Header */
+.header-content {
+  @apply py-40 text-center;
+}
+.title {
+  box-shadow: var(--box-shadow-lg);
+
+  @apply inline-block rounded-2xl bg-black/50 py-10 px-30 backdrop-blur-sm;
+}
+.title h1 {
+  @apply text-2xl font-bold text-white;
+}
+.title p {
+  @apply text-xl text-[#d9d9d9] mb-0;
+}
+.body-content {
+  --margin: 10%;
+  padding-left: var(--margin);
+  padding-right: var(--margin);
+  background: #f5f5f5;
+  @apply py-1;
+}
+
+.section-header {
+  font-size: 20px;
+  text-align: center;
+  font-family: var(--heading-font);
+}
+.section-header h1 {
+  box-shadow: var(--box-shadow-lg);
+  @apply my-4 inline-block w-fit rounded-md bg-gray-800 px-10 py-3 font-bold text-white;
+}
+.footer-container {
+  --color-1: oklch(88.818% 0.034 337.861);
+  --color-2: var(--color-pink-200);
+
+  @apply bg-gradient-to-b from-(--color-1) to-(--color-2);
+}
+.footer {
+  --margin: 1in;
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+
+  a:hover {
+    --color: var(--color-pink-600);
+    color: var(--color);
+    box-shadow: 0 2px var(--color);
+  }
+
+  @apply px-10 py-10;
+}
+.clusterfuck-1 {
+  display: flex;
+
+  @apply my-4;
+}
+
+.foot-col {
+  --columns: 2;
+  --section-width: 100%;
+
+  flex-basis: calc(var(--section-width) / var(--columns));
+}
+.footer-separator {
+  @apply my-3;
+}
+
+.clusterfuck-2 {
+  .foot-sec-contain {
+    display: flex;
+  }
+
+  @apply mb-4;
+}
+.foot-title {
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.site-link-col {
+  --columns: 3;
+  --section-width: 100%;
+  --column-width: calc(var(--section-width) / var(--columns));
+
+  flex-basis: var(--column-width);
 }

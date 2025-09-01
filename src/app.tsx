@@ -1,7 +1,10 @@
 import { Route, Router } from "@solidjs/router";
 import "./app.css";
+
+// Import Page Components
 import Navbar from "./components/navigation-bar";
 import Heading from "./components/heading";
+import Footer from "./components/footer";
 
 // Import Pages from ./pages
 import Home from "./routes/about";
@@ -16,12 +19,13 @@ import CADDesigns from "./routes/works/cad-designs";
 import Renders from "./routes/works/renders";
 import Animations from "./routes/works/animations";
 import WebDev from "./routes/works/webdev";
+import Commissions from "./routes/commissions";
 
 export default function App() {
-  const BaseRoute = '/Sakura-Portfolio'
+  const BaseRoute = ''
   return (
     <div class="viewport mb-0">
-      <header class="body-container">
+      <header class="body-container" style="border-bottom: 4px solid oklch(28.759% 0.11731 357.455);">
         <div class="header-sizing block bg-cover bg-center px-30">
           <Navbar />
           <Heading />
@@ -29,6 +33,8 @@ export default function App() {
       </header>
       <Router base={BaseRoute}>
         <Route path="/" component={Home} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/commissions" component={Commissions} />
 
         <Route path="/sakura-character-rig" component={SACR} />
         <Route path="/sakura-rig-gui" component={SRGUI} />
@@ -40,8 +46,11 @@ export default function App() {
         <Route path="/animations" component={Animations} />
         <Route path="/web-development" component={WebDev} />
 
-        <Route path="/contact" component={Contact} />
       </Router>
+
+      <div class="footer-container" style="border-top: 4px solid oklch(28.759% 0.11731 357.455);">
+        <Footer />
+      </div>
     </div>
   );
 }
