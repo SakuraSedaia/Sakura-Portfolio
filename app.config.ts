@@ -8,13 +8,8 @@ export default defineConfig({
   server: {
     prerender: {
       crawlLinks: true
-    }
+    },
+    baseURL: process.env.BASE_PATH,
+    preset: "static"
   },
-  start: {
-    ssr: true,
-    server: {
-      baseURL: process.env.BASE_PATH,
-      preset: "static"
-    }
-  }
 });
