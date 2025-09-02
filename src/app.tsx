@@ -24,6 +24,10 @@ import Commissions from "./routes/commissions";
 export default function App() {
   return (
     <div class="viewport mb-0">
+      <div class="devalert bg-amber-300 text-black pt-8 pb-1">
+        <h1 class="text-2xl font-bold">WARNING</h1>
+        <p class=" pb-0">This site is currently undergoing a remodel and as such a lot of content has not been added as of yet, please be patient while I work to build the new site.</p>
+      </div>
       <header class="body-container" style="border-bottom: 4px solid oklch(28.759% 0.11731 357.455);">
         <div class="header-sizing block bg-cover bg-center px-30">
           <Navbar />

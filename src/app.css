@@ -32,7 +32,7 @@ body {
   @apply duration-200;
 }
 p {
-  @apply mt-2 mb-10 text-lg cursor-default;
+  @apply mt-2 mb-10 cursor-default text-lg;
 }
 .btn {
   @apply w-auto justify-center rounded-md border-2 border-gray-300 bg-white/80 p-1 px-5 text-black transition duration-200;
@@ -40,6 +40,8 @@ p {
 .btn:hover {
   @apply scale-110 cursor-pointer bg-pink-100;
 }
+
+
 .header-sizing {
   background-image: url("/images/renders/Env/EnchantingRoom-Oct2023.png");
 }
@@ -167,13 +169,13 @@ a.nav-item:hover {
 .title {
   box-shadow: var(--box-shadow-lg);
 
-  @apply inline-block rounded-2xl bg-black/50 py-10 px-30 backdrop-blur-sm;
+  @apply inline-block rounded-2xl bg-black/50 px-30 py-10 backdrop-blur-sm;
 }
 .title h1 {
   @apply text-2xl font-bold text-white;
 }
 .title p {
-  @apply text-xl text-[#d9d9d9] mb-0;
+  @apply mb-0 text-xl text-[#d9d9d9];
 }
 .body-content {
   --margin: 10%;
@@ -196,10 +198,9 @@ a.nav-item:hover {
   font-size: 18px;
   text-align: center;
   font-family: var(--heading-font);
-  
 }
 .subsection-header h2 {
-    @apply my-4 inline-block w-fit rounded-md bg-gray-400/50 px-5 py-2 font-bold text-black;
+  @apply my-4 inline-block w-fit rounded-md bg-gray-400/50 px-5 py-2 font-bold text-black;
 }
 .footer-container {
   --color-1: oklch(88.818% 0.034 337.861);
