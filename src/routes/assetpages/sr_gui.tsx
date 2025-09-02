@@ -19,7 +19,7 @@ export default function SRGUI() {
             <div class="download-gui">
               <h2>Where do I it?</h2>
               <p>The GUI is available officially through <a href="https://extensions.blender.org/add-ons/sakura-rig-gui/" target="_blank" class="link">Blender Extensions</a> or you can download direct from here</p>
-              <a class="btn" href="https://github.com/SakuraSedaia/Sakura-Rig-GUI/releases/download/SR_GUI_V1.1.0/Sakura_Rig_GUI_V1_1_0.rar" target="_blank">Download Rig GUI Addon</a>
+              <a class="btn" href="https://github.com/SakuraSedaia/Sakura-Rig-GUI/releases/download/SR_GUI_V1.1.0/Sakura_Rig_GUI_V1_1_0.zip" target="_blank">Download Rig GUI Addon</a>
             </div>
         </div>
       </div>
