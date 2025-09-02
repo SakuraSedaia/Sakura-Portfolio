@@ -32,7 +32,10 @@ body {
   @apply duration-200;
 }
 p {
-  @apply mt-2 mb-10 cursor-default text-lg;
+  @apply mt-2 mb-3 cursor-default text-lg;
+}
+h2 {
+  @apply text-xl font-bold;
 }
 .btn {
   display: inline-block;
@@ -41,7 +44,16 @@ p {
 .btn:hover {
   @apply scale-110 cursor-pointer bg-pink-100;
 }
+.link {
+    @apply text-pink-950;
+    box-shadow: 0 0px var(--color-pink-600);
+}
 
+.link:hover {
+    cursor: pointer;
+    box-shadow: 0 3px var(--color-pink-600);
+    @apply text-pink-600;
+}
 .header-sizing {
   background-image: url("/images/renders/Env/EnchantingRoom-Oct2023.png");
 }

@@ -62,7 +62,7 @@ export default function Navbar() {
                 <NavigationMenu.Trigger
                   class="navmenu-item"
                   as="a"
-                  href="/sr-gui"
+                  href="/sakura-rig-gui"
                 >
                   Rig GUI
                 </NavigationMenu.Trigger>
