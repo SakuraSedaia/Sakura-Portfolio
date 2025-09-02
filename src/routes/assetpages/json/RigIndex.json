@@ -5,7 +5,7 @@
       "label": "Stable",
       "version": "R7.2.1",
       "github": "https://github.com/SakuraSedaia/SACR-MC-Rig/",
-      "logo": "./images/rig-headers/SACR/R7.2 Full.png",
+      "logo": "/images/rig-headers/SACR/R7.2 Full.png",
       "description": "",
       "styles": [
         {

@@ -26,7 +26,7 @@
     0px 1px 14px 0px inset #00000036; /* var(--box-shadow-lg) */
 }
 .sacr-content {
-  background-image: url("./images/renders/CharEnv/FrozenPhoenix_May2025.png");
+  background-image: url("/images/renders/CharEnv/FrozenPhoenix_May2025.png");
   text-align: center;
 }
 .sacr-about {

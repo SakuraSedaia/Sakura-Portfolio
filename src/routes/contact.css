@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+
+.contact-content {
+}
 .contact-link {
     @apply text-pink-950;
 }

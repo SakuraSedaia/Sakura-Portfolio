@@ -9,11 +9,11 @@ export default function Contact() {
   }
   return (
     <div class="body-container">
-      <div class="about-content body-content">
-        <div class="section-header">
+      <div class="contact-content body-content">
+        <div class="section-header mt-60">
         <div class="section-header"><h1>How to Contact Me</h1></div>
         </div>
-        <p>
+        <p class="pb-60">
           I have a few different ways of getting in touch, the two best ways are
           through my{" "}
           <a class="contact-link" href="https://discord.gg/Qk4pfbG7Pf" target="_blank">
