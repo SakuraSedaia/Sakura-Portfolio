@@ -35,12 +35,12 @@ p {
   @apply mt-2 mb-10 cursor-default text-lg;
 }
 .btn {
+  display: inline-block;
   @apply w-auto justify-center rounded-md border-2 border-gray-300 bg-white/80 p-1 px-5 text-black transition duration-200;
 }
 .btn:hover {
   @apply scale-110 cursor-pointer bg-pink-100;
 }
-
 
 .header-sizing {
   background-image: url("/images/renders/Env/EnchantingRoom-Oct2023.png");
@@ -52,6 +52,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: absolute;
 }
 
 .nav-content {

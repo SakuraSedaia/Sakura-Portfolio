@@ -1,0 +1,85 @@
+@import "tailwindcss";
+:root {
+  --nav-menu-voffset: -235px;
+  --heading-font:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* My Box Shadow */
+  --box-shadow-xsm:
+    0px 3px 5px -1px #00000033, 0px 2px 5px 0px #00000024,
+    0px 1px 10px 0px #00000010; /* var(--box-shadow-sm) */
+  --box-shadow-sm:
+    0px 3px 5px -1px #00000033, 0px 5px 8px 0px #00000024,
+    0px 1px 14px 0px #0000001f; /* var(--box-shadow-sm) */
+  --box-shadow-lg:
+    0px 3px 5px -1px #00000075, 0px 5px 8px 0px #00000079,
+    0px 1px 14px 0px #00000036; /* var(--box-shadow-lg) */
+  --box-shadow-inset-xsm:
+    0px 3px 5px -1px inset #00000033, 0px 2px 5px 0px inset #00000024,
+    0px 1px 10px 0px inset #00000010; /* var(--box-shadow-sm) */
+  --box-shadow-inset-sm:
+    0px 3px 5px -1px inset #00000033, 0px 5px 8px 0px inset #00000024,
+    0px 1px 14px 0px inset #0000001f; /* var(--box-shadow-sm) */
+  --box-shadow-inset-lg:
+    0px 3px 5px -1px inset #00000075, 0px 5px 8px 0px inset #00000079,
+    0px 1px 14px 0px inset #00000036; /* var(--box-shadow-lg) */
+}
+.sacr-content {
+  background-image: url("./images/renders/CharEnv/FrozenPhoenix_May2025.png");
+  text-align: center;
+}
+.sacr-about {
+    max-width: 1280px;
+    display: inline-block;
+}
+.rig-header {
+  @apply rounded-md bg-white/75 p-5;
+}
+.rig-header img {
+  width: 80%;
+  display: inline-block;
+  box-shadow: var(--box-shadow-inset-lg);
+  @apply rounded-xl;
+}
+.extras-section {
+  @apply rounded-md bg-white/75 p-5;
+}
+.join-server {
+  text-align: center;
+}
+.join-server .btn {
+  width: 200px;
+}
+.sacr-downloads {
+  justify-content: center;
+}
+.sacr-downloads .branch {
+  flex-basis: 400px;
+  background: rgba(255, 255, 255, 0.575);
+
+  @apply rounded-xl p-5 pt-3;
+}
+.sacr-downloads .branch img {
+  width: 100%;
+  max-width: 350px;
+  box-shadow: none;
+  filter: drop-shadow(var(--box-shadow-sm));
+}
+.sacr-downloads .branch select {
+    @apply mt-4;
+}
+.sacr-downloads .btn {
+  @apply my-2;
+}
+.rig-info {
+  display: flex;
+  justify-content: center;
+}
+
+.rig-info div {
+  @apply inline-block;
+}
+.rig-info div[data-center] {
+  @apply inline-block border-x-2 px-2;
+}

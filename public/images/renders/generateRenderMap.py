@@ -3,7 +3,8 @@ import os
 import json
 
 jsonFileName = "RenderDictionary.json"
-directory = "./public/images/renders"
+outputPath = "./src/routes/assetpages/json"
+imageDirectory = "./public/images/renders"
 imgPaths = [["/Env", 4], ["/Char", 15], ["/CharEnv", 36]]
 
 dict_env = {}
@@ -19,11 +20,10 @@ dict_final = {
     ],
 }
 
-
 def setIndex(dir, index):
     imgDir = imgPaths[dir]
-    imgName = os.listdir(directory + imgDir[0])
-    fileNameRaw = Path(f"{directory}{imgDir}/{imgName[index]}").name
+    imgName = os.listdir(imageDirectory + imgDir[0])
+    fileNameRaw = Path(f"{imageDirectory}{imgDir}/{imgName[index]}").name
     fileName = fileNameRaw
     
     # Character Filter cuz I'm a moron who can't keep tihngs consistent
@@ -88,7 +88,7 @@ def setIndex(dir, index):
 
 pathCount = 0
 for p in imgPaths:
-    dir = os.listdir(directory + imgPaths[pathCount][0])
+    dir = os.listdir(imageDirectory + imgPaths[pathCount][0])
     imgCount = 0
     for i in range(p[1]):
         setIndex(pathCount, imgCount)
@@ -96,6 +96,6 @@ for p in imgPaths:
     pathCount = pathCount + 1
     
     
-jsonFile = f"{directory}/{jsonFileName}"
+jsonFile = f"{outputPath}/{jsonFileName}"
 with open(jsonFile, "w") as f:
     json.dump(dict_final, f, indent=4)

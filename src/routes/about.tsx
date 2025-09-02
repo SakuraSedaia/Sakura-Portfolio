@@ -1,10 +1,19 @@
 import "./about.css";
-
+import Heading from "../components/heading"
 export default function Home() {
   return (
     <div class="body-container">
+      <header
+        style="border-bottom: 4px solid oklch(28.759% 0.11731 357.455);"
+      >
+        <div class="header-sizing block bg-cover bg-center px-30">
+          <Heading />
+        </div>
+      </header>
       <div class="about-content body-content">
-        <div class="section-header"><h1>Who am I?</h1></div>
+        <div class="section-header">
+          <h1>Who am I?</h1>
+        </div>
         <p>
           I am a 22 year old CAD Technology College Student who has a passion
           for 3D Artistry and Website Development. I started working with 3D
