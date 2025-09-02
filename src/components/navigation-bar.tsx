@@ -84,8 +84,8 @@ export default function Navbar() {
             </NavigationMenu.Content>
           </NavigationMenu.Portal>
         </NavigationMenu.Menu>
-        <NavigationMenu.Trigger class="nav-item" as="a" href="/comissions">
-          Comissions
+        <NavigationMenu.Trigger class="nav-item" as="a" href="/commissions">
+          Commissions
         </NavigationMenu.Trigger>
         <NavigationMenu.Trigger class="nav-item" as="a" href="/contact">
           Contact

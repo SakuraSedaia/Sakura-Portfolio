@@ -4,11 +4,6 @@ import { createSignal } from "solid-js/types/server/reactive.js"
 
 
 export default function Renders() {
-    const ImgPath = "./images/renders"
-    const EnvFolder = '/Environments/'
-    const CharFolder = '/Characters/'
-    const CharEnvFolder = '/CharEnvironment/'
-    console.log({})
   return (
     <div class="body-container">
       <div class="<name>-content body-content">

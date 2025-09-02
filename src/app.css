@@ -192,6 +192,15 @@ a.nav-item:hover {
   box-shadow: var(--box-shadow-lg);
   @apply my-4 inline-block w-fit rounded-md bg-gray-800 px-10 py-3 font-bold text-white;
 }
+.subsection-header {
+  font-size: 18px;
+  text-align: center;
+  font-family: var(--heading-font);
+  
+}
+.subsection-header h2 {
+    @apply my-4 inline-block w-fit rounded-md bg-gray-400/50 px-5 py-2 font-bold text-black;
+}
 .footer-container {
   --color-1: oklch(88.818% 0.034 337.861);
   --color-2: var(--color-pink-200);

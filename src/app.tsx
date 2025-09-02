@@ -22,7 +22,6 @@ import WebDev from "./routes/works/webdev";
 import Commissions from "./routes/commissions";
 
 export default function App() {
-  const BaseRoute = ''
   return (
     <div class="viewport mb-0">
       <header class="body-container" style="border-bottom: 4px solid oklch(28.759% 0.11731 357.455);">
@@ -31,7 +30,7 @@ export default function App() {
           <Heading />
         </div>
       </header>
-      <Router base={BaseRoute}>
+      <Router>
         <Route path="/" component={Home} />
         <Route path="/contact" component={Contact} />
         <Route path="/commissions" component={Commissions} />

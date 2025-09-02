@@ -2,7 +2,7 @@ from pathlib import Path
 import os
 import json
 
-jsonFileName = "RenderIndex.json"
+jsonFileName = "RenderDictionary.json"
 directory = "./public/images/renders"
 imgPaths = [["/Env", 4], ["/Char", 15], ["/CharEnv", 36]]
 
@@ -25,14 +25,17 @@ def setIndex(dir, index):
     imgName = os.listdir(directory + imgDir[0])
     fileNameRaw = Path(f"{directory}{imgDir}/{imgName[index]}").name
     fileName = fileNameRaw
+    
+    # Character Filter cuz I'm a moron who can't keep tihngs consistent
     bl_char = ["_", " "]  # Blacklisted Characters
-    bl_char_replace = "-"  # Replace Blacklisted Characters with
+    bl_char_replace = "-"  # Replace BL_Chars with this
     bl_count = 0
     for b in bl_char:
         filterChar = bl_char[bl_count]
         if fileNameRaw.count(filterChar) > 0:
             fileName = fileNameRaw.replace(filterChar, bl_char_replace)
         bl_count = bl_count + 1
+
     fileExtSplit = fileName.split(".")
     fileNameSplit = fileExtSplit[0].split("-")
     fileYear = int("".join(filter(str.isdigit, fileExtSplit[0])))
@@ -40,6 +43,7 @@ def setIndex(dir, index):
     renderName = fileNameSplit[0]
     fileMonthStr = fileNameSplit[1].strip(str(fileYear))
     fileMonth = 0
+    
     if fileMonthStr == "Jan" or fileMonthStr == "January":
         fileMonth = 0
     elif fileMonthStr == "Feb" or fileMonthStr == "Feburary":
@@ -95,5 +99,3 @@ for p in imgPaths:
 jsonFile = f"{directory}/{jsonFileName}"
 with open(jsonFile, "w") as f:
     json.dump(dict_final, f, indent=4)
-    
-    
