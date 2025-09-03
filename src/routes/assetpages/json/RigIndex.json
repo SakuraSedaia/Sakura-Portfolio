@@ -3,28 +3,22 @@
     {
       "branch": "stable",
       "label": "Stable",
-      "version": "R7.2.1",
+      "version": "R7.3.0",
       "github": "https://github.com/SakuraSedaia/SACR-MC-Rig/",
-      "logo": "/images/rig-headers/SACR/R7.2 Full.png",
+      "logo": "/images/rig-headers/SACR/R7.3 Full.png",
       "description": "",
       "styles": [
         {
           "label": "Base",
-          "fileName": "/SACR_R7.2.1.blend",
-          "size": "6.15mb",
-          "date": "21/07/2025"
+          "fileName": "/SACR_R7.3.0.blend",
+          "size": "6.42mb",
+          "date": "03/09/2025"
         },
         {
           "label": "Lite",
-          "fileName": "/SACR_R7.2.1_Lite.blend",
-          "size": "3.13mb",
-          "date": "21/07/2025"
-        },
-        {
-          "label": "Beveled",
-          "fileName": "/SACR_R7.2.1_Styled.blend",
-          "size": "6.18mb",
-          "date": "09/08/2024"
+          "fileName": "/SACR_R7.3.0_Lite.blend",
+          "size": "3.83mb",
+          "date": "03/09/2025"
         }
       ]
     }
