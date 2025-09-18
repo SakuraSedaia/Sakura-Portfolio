@@ -1,4 +1,4 @@
-import "./contact.css";
+import "./css/contact.css";
 
 export default function Contact() {
   function copyEmailToClip() {

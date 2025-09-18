@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.render-accordian {
+}
+
+.accord-content {
+    background: gray;
+}

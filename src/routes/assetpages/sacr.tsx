@@ -1,5 +1,5 @@
 import "./css/sacr.css";
-import rigIndex from "./json/RigIndex.json";
+import rigIndex from "./json/rigIndex.json";
 import { For, Show, createSignal } from "solid-js";
 
 export default function SACR() {
@@ -58,7 +58,7 @@ export default function SACR() {
             <div class="sacr-downloads flex gap-5">
               <div class="branch stable">
                 <img src={stable.logo} />
-                Select Style:
+                Select Style:{" "}
                 <select
                   class="border-b-2"
                   id="stableSelect"
