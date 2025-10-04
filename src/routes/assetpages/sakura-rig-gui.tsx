@@ -2,62 +2,72 @@ import "./css/addons.css";
 
 export default function Addons() {
   return (
-    <div class="body-container">
-      <div class="sr-gui-container body-content">
-        <div class="sr-gui-about py-10"></div>
-        <div class="section-header">
-          <div class="section-header">
-            <h1>Sakura's Rig GUI</h1>
-          </div>
+    <div class="sr-gui-content body-container">
+      <div class="sr-gui-about py-10">
+        <div class="section-header mt-6">
+          <h1 class="mb-0">Sakura's Rig GUI</h1>
         </div>
-        <div class="content-1">
-          <h2>What is the Rig GUI?</h2>
-          <p>
-            The Rig GUI developed by Sakura is a collection of UI Scripts used
-            almost exclusively on Sakura's rigs, although it is possible to add
-            configs to other rigs by mimicking SACR's Custom Property Structure.
-          </p>
-
-          <p>
-            The Rig GUI was first made exclusively for SACR R7.2 as a quality of
-            life upgrade so that the rig settings can be access from any bone.
-          </p>
-          <hr />
-          <div class="download-gui">
-            <h2>Where do I Download the Addon?</h2>
+        <div class="sacr-info mx-5 flex gap-5 py-10">
+          <div class="rig-header">
+            <h2 class="text-xl">Mutli-Rig Addon</h2>
             <p>
-              The GUI is available officially through{" "}
-              <a
-                href="https://extensions.blender.org/add-ons/sakura-rig-gui/"
-                target="_blank"
-                class="link"
-              >
-                Blender Extensions
-              </a>{" "}
-              or you can download direct from here
+              Sakura's Rig GUI is a new addon developed by Sakura to ease the
+              distribution and use of various rigs, ui's, and assets created and
+              distributed by Sakura. The UI's are custom built for each rig,
+              meaning ultimate compatability making the Addon Seamless to use
             </p>
-            <a
-              class="btn"
-              href="https://github.com/SakuraSedaia/Sakura-Rig-GUI/releases/download/SR_GUI_V1.1.0/Sakura_Rig_GUI_V1_2_0.zip"
-              target="_blank"
-            >
-              Download Rig GUI Addon
-            </a>
+            <div class="sacr-downloads flex gap-5">
+              <div class="branch stable">
+                <img src="images/rig-headers/Rig GUI/Rig_GUI_V2.png"/>
+                <div>
+                  <a
+                    class="btn"
+                    target="_blank"
+                    href="https://extensions.blender.org/add-ons/sakura-rig-gui/"
+                  >
+                    Download via Blender Extensions
+                  </a>
+                  <div class="rig-info flex gap-2">
+                    <div>
+                      <a
+                        class="link"
+                        href="https://extensions.blender.org/add-ons/sakura-rig-gui/"
+                        target="_blank"
+                      >
+                        Github
+                      </a>
+                    </div>
+                    <div class="vseparator"></div>
+                    <div>October 2025</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <hr />
-          <div class="github">
-            <h2>Source</h2>
-            <p>
-              The Sakura Rig GUI is a free Open Source addon for Blender, as
-              such, you may view the Source Code on Github.
-            </p>
-            <a
-              class="btn"
-              href="https://github.com/SakuraSedaia/Sakura-Rig-GUI/"
-              target="_blank"
-            >
-              Rig GUI Github
-            </a>
+          <div class="extras">
+            <div class="support-server extras-section">
+              <h2 class="text-xl">Discord Server</h2>
+              <p>
+                Any comments, questions, concerns, or just want to share your
+                creations? Feel free to join my server and post to your heart's
+                content!
+              </p>
+              <div class="join-server">
+                <div class="btn">Join the Discord!</div>
+              </div>
+            </div>
+            <div class="separator block h-5"></div>
+            <div class="rig-gui extras-section">
+              <h2 class="text-xl">SACR</h2>
+              <p>
+                This GUI is designed for use with rigs made by Sakura, currently the only supported rigs is SACR, which is available below
+              </p>
+              <div class="join-server">
+                <a class="btn" href="/sakura-character-rig">
+                  Download SACR
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

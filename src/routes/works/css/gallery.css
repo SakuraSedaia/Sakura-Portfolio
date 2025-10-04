@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.imgGallery {
+
+}
+
+.img-list {
+
+    @apply  flex flex-wrap gap-5 justify-center;
+}

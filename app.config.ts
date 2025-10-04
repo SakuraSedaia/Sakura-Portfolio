@@ -6,9 +6,6 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   server: {
-    prerender: {
-      crawlLinks: true
-    },
     baseURL: process.env.BASE_PATH,
     preset: "static"
   },

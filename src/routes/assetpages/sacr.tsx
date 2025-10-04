@@ -58,6 +58,7 @@ export default function SACR() {
             <div class="sacr-downloads flex gap-5">
               <div class="branch stable">
                 <img src={stable.logo} />
+                <p class="description"></p>
                 Select Style:{" "}
                 <select
                   class="border-b-2"
@@ -106,6 +107,7 @@ export default function SACR() {
               <Show when={dev.enabled}>
                 <div class="branch dev">
                   <img src={dev.logo} />
+                  <p class="description">Comes Bundled with Sakura Rig GUI Experimental, which includes the R8 Script</p>
                   Select Style:
                   <select
                     class="border-b-2"

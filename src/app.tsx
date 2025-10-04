@@ -1,4 +1,5 @@
 import { Route, Router } from "@solidjs/router";
+import { lazy } from "solid-js";
 import "./app.css";
 
 // Import Page Components
@@ -11,7 +12,7 @@ import Contact from "./routes/contact";
 import SRGUI from "./routes/assetpages/sakura-rig-gui";
 import SACR from "./routes/assetpages/sacr";
 
-import Renders from "./routes/works/renders";
+const Renders = lazy(() => import("./routes/works/renders"))
 import NotFound from "./routes/[...404]";
 import { Show } from "solid-js";
 
@@ -33,13 +34,14 @@ export default function App() {
       <Navbar />
 
       <Router>
-        <Route path="/" component={Home} />
+        <Route path={["/", "index.html"]} component={Home} />
         <Route path="/contact" component={Contact} />
 
-        <Route path="/sakura-character-rig" component={SACR} />
+        <Route path={["/sakura-character-rig", "/rigs.html"]} component={SACR} />
         <Route path="/sakura-rig-gui" component={SRGUI} />
 
         <Route path="/renders" component={Renders} />
+
         <Route path="*404" component={NotFound} />
       </Router>
     </div>

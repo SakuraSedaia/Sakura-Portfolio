@@ -20,24 +20,10 @@ export default function Renders() {
         <div class="render-content body-content">
           <div class="render-galleries">
             <div class="section-header">
-              <div class="section-header">
                 <h1 id="title">Render Showcase</h1>
-              </div>
             </div>
 
-            <div class="render-accordian">
-              <div class="accord-header">
-                <div class="accord-header-text">
-                  <h2>Characters in Environments</h2>
-                </div>
-              </div>
-              <div class="accord-content" id="accord-content">
-                <div class="section-details">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
-                  commodi voluptates enim corrupti delectus saepe.
-                </div>
-              </div>
-            </div>
+            <ImgList />
           </div>
         </div>
       </div>

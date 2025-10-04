@@ -25,6 +25,8 @@
   --box-shadow-inset-lg:
     0px 3px 5px -1px inset #00000075, 0px 5px 8px 0px inset #00000079,
     0px 1px 14px 0px inset #00000036; /* var(--box-shadow-lg) */
+
+    --max-image-width: 400px;
 }
 
 .render-container {
@@ -36,4 +38,38 @@
     display: inline-block;
     
     @apply bg-white/75 p-10 rounded-lg;
+}
+
+
+.image-list {
+    @apply flex flex-wrap gap-5 justify-center;
+}
+.image-item {
+  box-shadow: var(--box-shadow-sm);
+  height: 300px;
+  display: inline-block;
+
+  @apply rounded-lg overflow-clip;
+}
+.image-item img {
+  box-shadow: none;
+  height: 300px;
+}
+.image-item .image-tooltip {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  transform: translateY(-100%);
+  padding-top: 5px;
+  height: 70px;
+  opacity: 0;
+  
+
+  @apply rounded-b-lg backdrop-blur-sm;
+}
+.image-item:hover .image-tooltip {
+  opacity: 100%;
 }

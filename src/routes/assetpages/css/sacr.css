@@ -26,7 +26,8 @@
     0px 1px 14px 0px inset #00000036; /* var(--box-shadow-lg) */
 }
 .sacr-content {
-  background-image: url("/images/renders/CharEnv/FrozenPhoenix_May2025.png");
+  background-image: url("/images/about-summaries/sacr.png");
+  background-size: cover;
   text-align: center;
 }
 .sacr-about {
@@ -34,6 +35,7 @@
     display: inline-block;
 }
 .rig-header {
+  backdrop-filter: blur(5px);
   @apply rounded-md bg-white/75 p-5;
 }
 .rig-header img {
@@ -43,6 +45,7 @@
   @apply rounded-xl;
 }
 .extras-section {
+  backdrop-filter: blur(5px);
   @apply rounded-md bg-white/75 p-5;
 }
 .join-server {

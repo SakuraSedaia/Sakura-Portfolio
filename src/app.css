@@ -53,9 +53,14 @@ h2 {
     box-shadow: 0 3px var(--color-pink-600);
     @apply text-pink-600;
 }
+.top-nav {
+  position: fixed;
+  top: 0;
+}
 .navbar-box {
   box-shadow: var(--box-shadow-lg);
   max-width: 1280px;
+  z-index: 60;
 
   @apply overflow-clip rounded-b-xl px-5;
 }
@@ -73,20 +78,23 @@ h2 {
 }
 .nav-menu-container {
   max-width: 1280px;
-  height: 230px;
+  height: 0px;
+  opacity: 0%;
 }
-.nav-menu-flex[data-expanded] {
-  height: 200px;
-  @apply  p-5;
+.nav-menu-container[data-expanded] {
+  transform: scaleY(100%);
+  height: 230px;
+  opacity: 100%;
 }
 .nav-menu-flex {
   transition-duration: 200ms;
-  height: 0px;
   box-shadow: var(--box-shadow-lg);
   pointer-events: default;
   overflow: clip;
+  height: 200px;
+  z-index: 50;
 
-  @apply  p-0;
+  @apply p-5;
 }
 .nav-menu-column {
   flex-basis: 33%;
@@ -149,60 +157,7 @@ h2 {
 .subsection-header h2 {
   @apply my-4 inline-block w-fit rounded-md bg-gray-400/50 px-5 py-2 font-bold text-black;
 }
-.footer-container {
-  --color-1: oklch(88.818% 0.034 337.861);
-  --color-2: var(--color-pink-200);
 
-  @apply bg-gradient-to-b from-(--color-1) to-(--color-2);
-}
-.footer {
-  --margin: 1in;
-  margin-left: var(--margin);
-  margin-right: var(--margin);
-
-  a:hover {
-    --color: var(--color-pink-600);
-    color: var(--color);
-    box-shadow: 0 2px var(--color);
-  }
-
-  @apply px-10 py-10;
-}
-.clusterfuck-1 {
-  display: flex;
-
-  @apply my-4;
-}
-
-.foot-col {
-  --columns: 2;
-  --section-width: 100%;
-
-  flex-basis: calc(var(--section-width) / var(--columns));
-}
-.footer-separator {
-  @apply my-3;
-}
-
-.clusterfuck-2 {
-  .foot-sec-contain {
-    display: flex;
-  }
-
-  @apply mb-4;
-}
-.foot-title {
-  font-size: 16px;
-  margin-bottom: 4px;
-  font-weight: bold;
-}
-.site-link-col {
-  --columns: 3;
-  --section-width: 100%;
-  --column-width: calc(var(--section-width) / var(--columns));
-
-  flex-basis: var(--column-width);
-}
 
 hr {
   --margin: 20px;
@@ -214,4 +169,8 @@ img {
   box-shadow: var(--box-shadow-lg);
   max-height: 300px;
   @apply rounded-lg;
+}
+.vseparator {
+  width: 2px;
+  background-color: #00000090;
 }
