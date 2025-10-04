@@ -69,8 +69,17 @@
   box-shadow: none;
   filter: drop-shadow(var(--box-shadow-sm));
 }
+.sacr-downloads .stable .btn:hover {
+  background-color: hsla(177, 100%, 71%, 0.75);
+}
+.sacr-downloads .dev .btn:hover {
+  background-color: hsla(48, 100%, 54%, 0.9);
+}
 .sacr-downloads .branch select {
     @apply mt-4;
+}
+.sacr-downloads .branch .description {
+  font-size: 16px;
 }
 .sacr-downloads .btn {
   @apply my-2;

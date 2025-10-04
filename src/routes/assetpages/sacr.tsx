@@ -15,7 +15,7 @@ export default function SACR() {
   // Signals
   const [stableStyle, setStableStyle] = createSignal("Base");
   const [stableIndex, setStableIndex] = createSignal(0);
-  const [devStyle, setDevStyle] = createSignal("None");
+  const [devStyle, setDevStyle] = createSignal("Dev");
   const [devIndex, setDevIndex] = createSignal(0);
 
   function updateStyleStable() {
@@ -54,11 +54,10 @@ export default function SACR() {
               on a comprehensive feature package that is light on the system and
               easy to use.
             </p>
-
             <div class="sacr-downloads flex gap-5">
               <div class="branch stable">
                 <img src={stable.logo} />
-                <p class="description"></p>
+                <p class="description">{stable.description}</p>
                 Select Style:{" "}
                 <select
                   class="border-b-2"
@@ -107,23 +106,25 @@ export default function SACR() {
               <Show when={dev.enabled}>
                 <div class="branch dev">
                   <img src={dev.logo} />
-                  <p class="description">Comes Bundled with Sakura Rig GUI Experimental, which includes the R8 Script</p>
-                  Select Style:
-                  <select
-                    class="border-b-2"
-                    id="devSelect"
-                    onchange={updateStyleDev}
-                    value={devStyle()}
-                  >
-                    <For
-                      each={dev.styles}
-                      fallback={<option>Loading...</option>}
+                  <p class="description">{dev.description}</p>
+                  <Show when={dev.styles.length > 1}>
+                    Select Style:
+                    <select
+                      class="border-b-2"
+                      id="devSelect"
+                      onchange={updateStyleDev}
+                      value={devStyle()}
                     >
-                      {(style, i) => (
-                        <option value={style.label}>{style.label}</option>
-                      )}
-                    </For>
-                  </select>
+                      <For
+                        each={dev.styles}
+                        fallback={<option>Loading...</option>}
+                      >
+                        {(style, i) => (
+                          <option value={style.label}>{style.label}</option>
+                        )}
+                      </For>
+                    </select>
+                  </Show>
                   <div>
                     <a
                       class="btn"
