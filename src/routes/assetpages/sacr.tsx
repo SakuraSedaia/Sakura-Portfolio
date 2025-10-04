@@ -1,5 +1,5 @@
 import "./css/sacr.css";
-import rigIndex from "./json/rigIndex.json";
+import rigIndex from "./json/RigIndex.json";
 import { For, Show, createSignal } from "solid-js";
 
 export default function SACR() {
