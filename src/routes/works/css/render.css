@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 :root {
   --nav-menu-voffset: -235px;
   --heading-font:
@@ -24,65 +25,51 @@
   --box-shadow-inset-lg:
     0px 3px 5px -1px inset #00000075, 0px 5px 8px 0px inset #00000079,
     0px 1px 14px 0px inset #00000036; /* var(--box-shadow-lg) */
+
+    --max-image-width: 400px;
 }
-.sacr-content {
-  background-image: url("/images/about-summaries/sacr.png");
-  background-size: cover;
+
+.render-container {
+  background-image: url("/images/renders/CharEnv/SakuraBlacksmith-Mar2023.png");
   text-align: center;
 }
-.sacr-about {
+.content-1 {
     max-width: 1280px;
     display: inline-block;
+    
+    @apply bg-white/75 p-10 rounded-lg;
 }
-.rig-header {
-  backdrop-filter: blur(5px);
-  @apply rounded-md bg-white/75 p-5;
+
+
+.image-list {
+    @apply flex flex-wrap gap-5 justify-center;
 }
-.rig-header img {
-  width: 80%;
+.image-item {
+  box-shadow: var(--box-shadow-sm);
+  height: 300px;
   display: inline-block;
-  box-shadow: var(--box-shadow-inset-lg);
-  @apply rounded-xl;
-}
-.extras-section {
-  backdrop-filter: blur(5px);
-  @apply rounded-md bg-white/75 p-5;
-}
-.join-server {
-  text-align: center;
-}
-.join-server .btn {
-  width: 200px;
-}
-.sacr-downloads {
-  justify-content: center;
-}
-.sacr-downloads .branch {
-  flex-basis: 400px;
-  background: rgba(255, 255, 255, 0.575);
 
-  @apply rounded-xl p-5 pt-3;
+  @apply rounded-lg overflow-clip;
 }
-.sacr-downloads .branch img {
-  width: 100%;
-  max-width: 350px;
+.image-item img {
   box-shadow: none;
-  filter: drop-shadow(var(--box-shadow-sm));
+  height: 300px;
 }
-.sacr-downloads .branch select {
-    @apply mt-4;
-}
-.sacr-downloads .btn {
-  @apply my-2;
-}
-.rig-info {
-  display: flex;
-  justify-content: center;
-}
+.image-item .image-tooltip {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  transform: translateY(-100%);
+  padding-top: 5px;
+  height: 70px;
+  opacity: 0;
+  
 
-.rig-info div {
-  @apply inline-block;
+  @apply rounded-b-lg backdrop-blur-sm;
 }
-.rig-info div[data-center] {
-  @apply inline-block border-x-2 px-2;
+.image-item:hover .image-tooltip {
+  opacity: 100%;
 }

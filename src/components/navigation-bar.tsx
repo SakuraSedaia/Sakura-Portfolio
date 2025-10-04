@@ -1,98 +1,78 @@
-import { NavigationMenu } from "@kobalte/core/navigation-menu";
-import { Show } from "solid-js";
+import { createSignal, Show, For } from "solid-js";
+import { FiMenu } from "solid-icons/fi";
+import NavMenuData from "./json/NavMenuData.json";
+
 export default function Navbar() {
-  const areComsOpen = false;
+  const [navMenuExpand, toggleNavMenu] = createSignal(false);
+  function openMenu() {
+    var navMenu = document.getElementById("navMenu");
+    if (navMenuExpand() == true) {
+      navMenu?.removeAttribute("data-expanded");
+      const changeMenu = toggleNavMenu(() => false);
+    } else {
+      navMenu?.setAttribute("data-expanded", "");
+      const changeMenu = toggleNavMenu(() => true);
+    }
+  }
   return (
-    <div class="nav-bar">
-      <NavigationMenu class="nav-content">
-        <NavigationMenu.Trigger class="nav-item" as="a" href="/">
-          About
-        </NavigationMenu.Trigger>
-
-        <NavigationMenu.Menu>
-          <NavigationMenu.Trigger class="nav-item" as="span">
-            Works
-          </NavigationMenu.Trigger>
-          <NavigationMenu.Portal>
-            <NavigationMenu.Content class="navmenu-content flex space-x-2">
-              <NavigationMenu.Group class="navmenu-column">
-                <NavigationMenu.GroupLabel class="navmenu-title">
-                  Showcases
-                </NavigationMenu.GroupLabel>
-                <NavigationMenu.Trigger
-                  class="navmenu-item"
-                  as="a"
-                  href="/renders"
-                >
-                  Renders
-                </NavigationMenu.Trigger>
-                <NavigationMenu.Trigger
-                  class="navmenu-item"
-                  as="a"
-                  href="/animations"
-                >
-                  Animations
-                </NavigationMenu.Trigger>
-                <NavigationMenu.Trigger
-                  class="navmenu-item"
-                  as="a"
-                  href="/cad-designs"
-                >
-                  CAD Designs
-                </NavigationMenu.Trigger>
-                <NavigationMenu.Trigger
-                  class="navmenu-item"
-                  as="a"
-                  href="/web-dev"
-                >
-                  Web Design
-                </NavigationMenu.Trigger>
-              </NavigationMenu.Group>
-              <NavigationMenu.Group class="navmenu-column">
-                <NavigationMenu.GroupLabel class="navmenu-title">
-                  Assets
-                </NavigationMenu.GroupLabel>
-                <NavigationMenu.Trigger
-                  class="navmenu-item"
-                  as="a"
-                  href="/sakura-character-rig"
-                >
-                  SACR
-                </NavigationMenu.Trigger>
-                <NavigationMenu.Trigger
-                  class="navmenu-item"
-                  as="a"
-                  href="/sakura-rig-gui"
-                >
-                  Rig GUI
-                </NavigationMenu.Trigger>
-                <NavigationMenu.Trigger
-                  class="navmenu-item"
-                  as="a"
-                  href="/rig-assets"
-                >
-                  Rig Assets
-                </NavigationMenu.Trigger>
-                <NavigationMenu.Trigger
-                  class="navmenu-item"
-                  as="a"
-                  href="/scene-assets"
-                >
-                  Scene Assets
-                </NavigationMenu.Trigger>
-              </NavigationMenu.Group>
-            </NavigationMenu.Content>
-          </NavigationMenu.Portal>
-        </NavigationMenu.Menu>
-        <NavigationMenu.Trigger class="nav-item" as="a" href="/commissions">
-          Commissions
-        </NavigationMenu.Trigger>
-        <NavigationMenu.Trigger class="nav-item" as="a" href="/contact">
-          Contact
-        </NavigationMenu.Trigger>
-
-        <NavigationMenu.Viewport class="nav-viewport"></NavigationMenu.Viewport>
-      </NavigationMenu>
-    </div>
+    <nav class="top-nav absolute z-50 block w-full">
+      <div class="navbar-box z-60 mx-auto my-0 flex overflow-clip rounded-b-xl border-none bg-white/90 px-5 backdrop-blur-sm">
+        <div class="col text-left">
+          <span class="navbar-splash-text relative inline-block cursor-default p-1 text-2xl outline-0">
+            Sakura Sedaia
+          </span>
+        </div>
+        <div class="col text-center">
+          <a
+            class="navbar-menu-icon relative mt-1 inline-block cursor-pointer rounded-lg p-1 text-2xl outline-0"
+            onclick={openMenu}
+          >
+            <FiMenu />
+          </a>
+        </div>
+        <div class="col text-right">
+          <span class="navbar-splash-text relative inline-block cursor-default p-1 text-2xl outline-0">
+            Personal Portfolio
+          </span>
+        </div>
+      </div>
+      <div class="nav-menu-container mx-auto my-0 overflow-clip" id="navMenu">
+        <div class="nav-menu-flex mx-auto my-0 flex w-1/2 min-w-fit gap-10 rounded-b-xl bg-white/75 backdrop-blur-sm">
+          <For
+            each={NavMenuData}
+            fallback={<div class="nav-menu-column">Loading...</div>}
+          >
+            {(column, c) => (
+              <div class="nav-menu-column" style="flex-basis: 33%">
+                <h2>{column.heading}</h2>
+                <hr />
+                <ul>
+                  <For
+                    each={column.menuItems}
+                    fallback={
+                      <li>
+                        <span>Loading...</span>
+                      </li>
+                    }
+                  >
+                    {(menu, i) => (
+                      <li class="py-0">
+                        <a
+                          href={menu.pageURL}
+                          class="inline-block w-full rounded-md px-5 py-1"
+                          onclick={openMenu}
+                        >
+                          {menu.pageName}
+                        </a>
+                      </li>
+                    )}
+                  </For>
+                </ul>
+              </div>
+            )}
+          </For>
+        </div>
+      </div>
+    </nav>
   );
 }

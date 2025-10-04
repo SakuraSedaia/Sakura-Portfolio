@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 :root {
   --nav-menu-voffset: -235px;
   --heading-font:
@@ -26,14 +25,64 @@
     0px 3px 5px -1px inset #00000075, 0px 5px 8px 0px inset #00000079,
     0px 1px 14px 0px inset #00000036; /* var(--box-shadow-lg) */
 }
-
-.sr-gui-container {
-  background-image: url("/images/renders/CharEnv/SakuraBlacksmith-Mar2023.png");
+.sr-gui-content {
+  background-image: url("./images/about-summaries/sr-gui.png");
+  background-size: cover;
   text-align: center;
 }
-.content-1 {
+.sr-gui-about {
     max-width: 1280px;
     display: inline-block;
-    
-    @apply bg-white/75 p-10 rounded-lg;
+}
+.rig-header {
+  backdrop-filter: blur(5px);
+  @apply rounded-md bg-white/90 p-5;
+}
+.rig-header img {
+  width: 80%;
+  display: inline-block;
+  box-shadow: var(--box-shadow-inset-lg);
+  @apply rounded-xl;
+}
+.extras-section {
+  backdrop-filter: blur(5px);
+  @apply rounded-md bg-white/90 p-5;
+}
+.join-server {
+  text-align: center;
+}
+.join-server .btn {
+  width: 200px;
+}
+.sr-gui-downloads {
+  justify-content: center;
+}
+.sr-gui-downloads .branch {
+  flex-basis: 400px;
+  background: rgba(255, 255, 255, 0.575);
+
+  @apply rounded-xl p-5 pt-3;
+}
+.sr-gui-downloads .branch img {
+  width: 100%;
+  max-width: 350px;
+  box-shadow: none;
+  filter: drop-shadow(var(--box-shadow-sm));
+}
+.sr-gui-downloads .branch select {
+    @apply mt-4;
+}
+.sr-gui-downloads .btn {
+  @apply my-2;
+}
+.rig-info {
+  display: flex;
+  justify-content: center;
+}
+
+.rig-info div {
+  @apply inline-block;
+}
+.rig-info div[data-center] {
+  @apply inline-block border-x-2 px-2;
 }

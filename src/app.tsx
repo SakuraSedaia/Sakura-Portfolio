@@ -1,24 +1,19 @@
 import { Route, Router } from "@solidjs/router";
+import { lazy } from "solid-js";
 import "./app.css";
 
 // Import Page Components
 import Navbar from "./components/navigation-bar";
-import Footer from "./components/footer";
 
 // Import Pages from ./pages
 import Home from "./routes/about";
 import Contact from "./routes/contact";
 
-import SRGUI from "./routes/assetpages/sr_gui";
+import SRGUI from "./routes/assetpages/sakura-rig-gui";
 import SACR from "./routes/assetpages/sacr";
-import RigAssets from "./routes/assetpages/rig-assets";
-import SceneAssets from "./routes/assetpages/scene-assets";
 
-import CADDesigns from "./routes/works/cad-designs";
-import Renders from "./routes/works/renders";
-import Animations from "./routes/works/animations";
-import WebDev from "./routes/works/webdev";
-import Commissions from "./routes/commissions";
+const Renders = lazy(() => import("./routes/works/renders"))
+import NotFound from "./routes/[...404]";
 import { Show } from "solid-js";
 
 export default function App() {
@@ -39,27 +34,16 @@ export default function App() {
       <Navbar />
 
       <Router>
-        <Route path="/" component={Home} />
+        <Route path={["/", "index.html"]} component={Home} />
         <Route path="/contact" component={Contact} />
-        <Route path="/commissions" component={Commissions} />
 
-        <Route path="/sakura-character-rig" component={SACR} />
+        <Route path={["/sakura-character-rig", "/rigs.html"]} component={SACR} />
         <Route path="/sakura-rig-gui" component={SRGUI} />
-        <Route path="/rig-assets" component={RigAssets} />
-        <Route path="/scene-assets" component={SceneAssets} />
 
-        <Route path="/cad-designs" component={CADDesigns} />
         <Route path="/renders" component={Renders} />
-        <Route path="/animations" component={Animations} />
-        <Route path="/web-development" component={WebDev} />
-      </Router>
 
-      <div
-        class="footer-container"
-        style="border-top: 4px solid oklch(28.759% 0.11731 357.455);"
-      >
-        <Footer />
-      </div>
+        <Route path="*404" component={NotFound} />
+      </Router>
     </div>
   );
 }

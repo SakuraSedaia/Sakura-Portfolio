@@ -1,5 +1,5 @@
 import "./css/sacr.css";
-import rigIndex from "./json/RigIndex.json";
+import rigIndex from "./json/rigIndex.json";
 import { For, Show, createSignal } from "solid-js";
 
 export default function SACR() {
@@ -58,7 +58,8 @@ export default function SACR() {
             <div class="sacr-downloads flex gap-5">
               <div class="branch stable">
                 <img src={stable.logo} />
-                Select Style:
+                <p class="description"></p>
+                Select Style:{" "}
                 <select
                   class="border-b-2"
                   id="stableSelect"
@@ -106,6 +107,7 @@ export default function SACR() {
               <Show when={dev.enabled}>
                 <div class="branch dev">
                   <img src={dev.logo} />
+                  <p class="description">Comes Bundled with Sakura Rig GUI Experimental, which includes the R8 Script</p>
                   Select Style:
                   <select
                     class="border-b-2"

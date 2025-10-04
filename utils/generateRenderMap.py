@@ -3,33 +3,44 @@ import os
 import json
 
 jsonFileName = "RenderDictionary.json"
-outputPath = "./src/routes/assetpages/json"
+outputPath = "./src/routes/works/components/json"
 imageDirectory = "./public/images/renders"
-imgPaths = [["/Env", 4], ["/Char", 15], ["/CharEnv", 36]]
+imgPaths = ["Env", "Char", "CharEnv"]
 
-dict_env = {}
-dict_char = {}
-dict_charEnv = {}
-dict_final = {
-    "env": [{"path": imgPaths[0][0], "imgTotal": imgPaths[0][1], "images": [dict_env]}],
-    "char": [
-        {"path": imgPaths[1][0], "imgTotal": imgPaths[1][1], "images": [dict_char]}
-    ],
-    "charEnv": [
-        {"path": imgPaths[2][0], "imgTotal": imgPaths[2][1], "images": [dict_charEnv]}
-    ],
-}
+dict_env = []
+dict_char = []
+dict_charEnv = []
+dict_final = [
+    {
+        "label": "Characters in Environments",
+        "path": f"/{imgPaths[2]}/",
+        "images": dict_charEnv,
+    },
+    {
+        "label": "Environments",
+        "path": f"/{imgPaths[0]}/",
+        "images": dict_env,
+    },
+    {
+        "label": "Character Portraits",
+        "path": f"/{imgPaths[1]}/",
+        "images": dict_char,
+    },
+]
+
 
 def setIndex(dir, index):
     imgDir = imgPaths[dir]
-    imgName = os.listdir(imageDirectory + imgDir[0])
-    fileNameRaw = Path(f"{imageDirectory}{imgDir}/{imgName[index]}").name
+    imgName = os.listdir(f"{imageDirectory}/{imgDir}")
+    fileNameRaw = Path(f"/{imageDirectory}{imgDir}/{imgName[index]}").name
     fileName = fileNameRaw
-    
+
     # Character Filter cuz I'm a moron who can't keep tihngs consistent
-    bl_char = ["_", " "]  # Blacklisted Characters
-    bl_char_replace = "-"  # Replace BL_Chars with this
+
     bl_count = 0
+    bl_char = ["_"]  # Blacklisted Characters
+    bl_char_replace = "-"  # Replace BL_Chars with this
+    # Remove Blacklisted Characters
     for b in bl_char:
         filterChar = bl_char[bl_count]
         if fileNameRaw.count(filterChar) > 0:
@@ -43,31 +54,31 @@ def setIndex(dir, index):
     renderName = fileNameSplit[0]
     fileMonthStr = fileNameSplit[1].strip(str(fileYear))
     fileMonth = 0
-    
+
     if fileMonthStr == "Jan" or fileMonthStr == "January":
-        fileMonth = 0
+        fileMonth = "January"
     elif fileMonthStr == "Feb" or fileMonthStr == "Feburary":
-        fileMonth = 1
+        fileMonth = "February"
     elif fileMonthStr == "Mar" or fileMonthStr == "March":
-        fileMonth = 2
+        fileMonth = "March"
     elif fileMonthStr == "Apr" or fileMonthStr == "April":
-        fileMonth = 3
+        fileMonth = "April"
     elif fileMonthStr == "May":
-        fileMonth = 4
+        fileMonth = "May"
     elif fileMonthStr == "Jun" or fileMonthStr == "June":
-        fileMonth = 5
+        fileMonth = "June"
     elif fileMonthStr == "Jul" or fileMonthStr == "July":
-        fileMonth = 6
+        fileMonth = "July"
     elif fileMonthStr == "Aug" or fileMonthStr == "August":
-        fileMonth = 7
-    elif fileMonthStr == "Sep" or fileMonthStr == "September":
-        fileMonth = 8
+        fileMonth = "August"
+    elif fileMonthStr == "Sep" or fileMonthStr == "September" or fileMonthStr == "Sept":
+        fileMonth = "September"
     elif fileMonthStr == "Oct" or fileMonthStr == "October":
-        fileMonth = 9
+        fileMonth = "October"
     elif fileMonthStr == "Nov" or fileMonthStr == "November":
-        fileMonth = 10
+        fileMonth = "November"
     elif fileMonthStr == "Dec" or fileMonthStr == "December":
-        fileMonth = 11
+        fileMonth = "December"
     dict_img_temp = {
         "name": renderName,
         "filename": fileNameRaw,
@@ -76,26 +87,19 @@ def setIndex(dir, index):
         "publishYear": fileYear,
     }
     if dir == 0:
-        if index not in dict_env.keys():
-            dict_env[index] = dict_img_temp
+        dict_env.append(dict_img_temp)
     elif dir == 1:
-        if index not in dict_char.keys():
-            dict_char[index] = dict_img_temp
+        dict_char.append(dict_img_temp)
     elif dir == 2:
-        if index not in dict_charEnv.keys():
-            dict_charEnv[index] = dict_img_temp
+        dict_charEnv.append(dict_img_temp)
 
 
-pathCount = 0
-for p in imgPaths:
-    dir = os.listdir(imageDirectory + imgPaths[pathCount][0])
-    imgCount = 0
-    for i in range(p[1]):
-        setIndex(pathCount, imgCount)
-        imgCount = imgCount + 1
-    pathCount = pathCount + 1
-    
-    
+for p in range(len(imgPaths)):
+    dir = os.listdir(f"{imageDirectory}/{imgPaths[p]}")
+    for i in range(len(dir)):
+        setIndex(p, i)
+
+
 jsonFile = f"{outputPath}/{jsonFileName}"
 with open(jsonFile, "w") as f:
     json.dump(dict_final, f, indent=4)

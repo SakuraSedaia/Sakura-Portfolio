@@ -1,0 +1,41 @@
+[
+  {
+    "heading": "Base",
+    "subtitle": "",
+    "menuItems": [
+      {
+        "pageName": "Home",
+        "pageURL": "/"
+      },
+
+      {
+        "pageName": "Contact",
+        "pageURL": "/contact"
+      }
+    ]
+  },
+  {
+    "heading": "Works",
+    "subtitle": "",
+    "menuItems": [
+      {
+        "pageName": "Renders",
+        "pageURL": "/renders"
+      }
+    ]
+  },
+  {
+    "heading": "Assets",
+    "subtitle": "",
+    "menuItems": [
+      {
+        "pageName": "SACR",
+        "pageURL": "/sakura-character-rig"
+      },
+      {
+        "pageName": "Rig GUI",
+        "pageURL": "/sakura-rig-gui"
+      }
+    ]
+  }
+]
