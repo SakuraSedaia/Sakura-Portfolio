@@ -29,7 +29,7 @@
       "label": "Development",
       "version": "D8.0.0-alpha-02",
       "github": "https://github.com/SakuraSedaia/SACR-MC-Rig/",
-      "logo": "public/images/rig-headers/SACR/E8 Full.png",
+      "logo": "/images/rig-headers/SACR/E8 Full.png",
       "description": "Comes Bundled with it's own UI Script, not recommended for production",
       "styles": [
         {
