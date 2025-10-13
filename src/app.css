@@ -73,6 +73,10 @@ h2 {
   font-family: var(--heading-font);
   letter-spacing: .25px;
 }
+.navbar-menu-icon {
+  font-family: var(--heading-font);
+  letter-spacing: .25px;
+}
 .navbar-menu-icon:hover {
   background-color: pink;
 }

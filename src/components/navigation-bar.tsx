@@ -24,10 +24,10 @@ export default function Navbar() {
         </div>
         <div class="col text-center">
           <a
-            class="navbar-menu-icon relative mt-1 inline-block cursor-pointer rounded-lg p-1 text-2xl outline-0"
+            class="navbar-menu-icon relative inline-block p-1 text-2xl outline-0 rounded-md w-40 cursor-pointer"
             onclick={openMenu}
           >
-            <FiMenu />
+            Pages
           </a>
         </div>
         <div class="col text-right">
