@@ -1,180 +1,130 @@
 @import "tailwindcss";
+
 :root {
-  --nav-menu-voffset: -235px;
-  --heading-font:
-    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* Defaults */
+  --bg-primary: hsl(0, 0%, 97%);
+  --bg-secondary: hsl(0, 0%, 90%);
+  --bg-accent: var(--color-pink-300);
 
-  /* My Box Shadow */
-  --box-shadow-xsm:
-    0px 3px 5px -1px #00000033, 0px 2px 5px 0px #00000024,
-    0px 1px 10px 0px #00000010; /* var(--box-shadow-sm) */
-  --box-shadow-sm:
-    0px 3px 5px -1px #00000033, 0px 5px 8px 0px #00000024,
-    0px 1px 14px 0px #0000001f; /* var(--box-shadow-sm) */
-  --box-shadow-lg:
-    0px 3px 5px -1px #00000075, 0px 5px 8px 0px #00000079,
-    0px 1px 14px 0px #00000036; /* var(--box-shadow-lg) */
-  --box-shadow-inset-xsm:
-    0px 3px 5px -1px inset #00000033, 0px 2px 5px 0px inset #00000024,
-    0px 1px 10px 0px inset #00000010; /* var(--box-shadow-sm) */
-  --box-shadow-inset-sm:
-    0px 3px 5px -1px inset #00000033, 0px 5px 8px 0px inset #00000024,
-    0px 1px 14px 0px inset #0000001f; /* var(--box-shadow-sm) */
-  --box-shadow-inset-lg:
-    0px 3px 5px -1px inset #00000075, 0px 5px 8px 0px inset #00000079,
-    0px 1px 14px 0px inset #00000036; /* var(--box-shadow-lg) */
+  --tx-primary: hsl(0, 0%, 0%);
+  --tx-secondary: hsl(0, 0%, 14%);
+  --tx-accent: var(--color-pink-900);
+
+  /* Fonts */
+  --font: "PT Sans";
+  --font-weight: 400;
 }
-body {
-  @apply bg-gray-200 text-center align-middle;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: hsl(0, 0%, 0%);
+    --bg-secondary: hsl(0, 0%, 14%);
+    --bg-accent: var(--color-pink-900);
+
+    --tx-primary: hsl(190, 8%, 85%);
+    --tx-accent: var(--color-pink-300);
+  }
 }
+
 * {
-  @apply duration-200;
-}
-p {
-  @apply mt-2 mb-3 cursor-default text-lg;
-}
-h2 {
-  @apply text-xl font-bold;
-}
-.btn {
-  display: inline-block;
-  @apply w-auto justify-center rounded-md border-2 border-gray-300 bg-white/80 p-1 px-5 text-black transition duration-200;
-}
-.btn:hover {
-  @apply scale-110 cursor-pointer bg-pink-100;
-}
-.link {
-    @apply text-pink-950;
-    box-shadow: 0 0px var(--color-pink-600);
-}
-.link:hover {
-    cursor: pointer;
-    box-shadow: 0 3px var(--color-pink-600);
-    @apply text-pink-600;
-}
-.top-nav {
-  position: fixed;
-  top: 0;
-}
-.navbar-box {
-  box-shadow: var(--box-shadow-lg);
-  max-width: 1280px;
-  z-index: 60;
-
-  @apply overflow-clip rounded-b-xl px-5;
-}
-.navbar-box .col {
-  flex-basis: 50%;
-  height: fit-content;
-  @apply my-0;
-}
-.navbar-splash-text {
-  font-family: var(--heading-font);
-  letter-spacing: .25px;
-}
-.navbar-menu-icon {
-  font-family: var(--heading-font);
-  letter-spacing: .25px;
-}
-.navbar-menu-icon:hover {
-  background-color: pink;
-}
-.nav-menu-container {
-  max-width: 1280px;
-  height: 0px;
-  opacity: 0%;
-}
-.nav-menu-container[data-expanded] {
-  transform: scaleY(100%);
-  height: 230px;
-  opacity: 100%;
-}
-.nav-menu-flex {
-  transition-duration: 200ms;
-  box-shadow: var(--box-shadow-lg);
-  pointer-events: default;
-  overflow: clip;
-  height: 200px;
-  z-index: 50;
-
-  @apply p-5;
-}
-.nav-menu-column {
-  flex-basis: 33%;
-}
-.nav-menu-column h2 {
-  font-size: 18px;
-}
-.nav-menu-column hr {
-  margin: 5px 0;
-}
-.nav-menu-column ul li a:hover {
-  background-color: rgba(255, 217, 224, 0.879);
-  box-shadow: var(--box-shadow-sm);
-}
-/* Header */
-.header-content {
-  @apply text-center;
-}
-.title {
-  box-shadow: var(--box-shadow-lg);
-
-  @apply inline-block rounded-2xl bg-black/50 px-30 py-10 backdrop-blur-sm;
-}
-.title h1 {
-  @apply text-2xl font-bold text-white;
-}
-.title p {
-  @apply mb-0 text-xl text-[#d9d9d9];
-}
-.body-content {
-  --margin: 10%;
-  padding-left: var(--margin);
-  padding-right: var(--margin);
-  background: #f5f5f5;
-  @apply py-1;
-}
-
-.section-header {
-  text-align: center;
-  font-family: var(--heading-font);
+  transition-duration: 100ms;
   cursor: default;
 }
-.section-header h1 {
-  font-size: 20px;
-  box-shadow: var(--box-shadow-lg);
-  pointer-events: none;
-  @apply my-4 inline-block w-fit rounded-md bg-gray-800 px-10 py-3 font-bold text-white;
-}
-.section-header h2 {
-  font-size: 18px;
-  box-shadow: var(--box-shadow-lg);
-  pointer-events: none;
-  @apply my-4 inline-block w-fit rounded-md bg-gray-800/90 px-10 py-2 text-white;
-}
-.subsection-header {
-  font-size: 18px;
-  text-align: center;
-  font-family: var(--heading-font);
-}
-.subsection-header h2 {
-  @apply my-4 inline-block w-fit rounded-md bg-gray-400/50 px-5 py-2 font-bold text-black;
+
+body {
+  background: var(--bg-primary);
+  color: var(--tx-primary);
+  font-family: var(--font)
 }
 
-
-hr {
-  --margin: 20px;
-  margin-top: var(--margin);
-  margin-bottom: var(--margin);
+nav .body-container {
+  background-color: var(--bg-secondary);
+  color: var(--tx-primary);
+  padding: 1em;
 }
 
-img {
-  box-shadow: var(--box-shadow-lg);
-  max-height: 300px;
-  @apply rounded-lg;
+nav .nav-section {
+  display: inline-block;
 }
-.vseparator {
-  width: 2px;
-  background-color: #00000090;
+nav .router {
+  float: right;
+}
+
+nav .active {
+  a {
+    color: var(--tx-accent);
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
+nav .nav-item {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 72em;
+
+  a {
+    box-shadow: 0 0 var(--tx-accent);
+    padding: 3px;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-radius: 10px;
+  }
+
+  a:hover {
+    color: var(--tx-accent);
+    box-shadow: 0 0 3px var(--tx-accent);
+    cursor: pointer;
+  }
+}
+
+nav .sub-nav .nav-arrow {
+  display: inline-block;
+  padding-right: 0em;
+  padding-left: 0em;
+  cursor: default;
+}
+nav .sub-nav .nav-item {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 72em;
+
+  a {
+    box-shadow: 0 0 var(--tx-accent);
+    padding: 3px;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-radius: 10px;
+  }
+
+  a:hover {
+    color: var(--tx-accent);
+    box-shadow: 0 0 3px var(--tx-accent);
+    cursor: pointer;
+  }
+}
+.sub-nav {
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: var(--bg-accent);
+}
+.sub-nav-root {
+  display: inline-block;
+  padding-left: 0em;
+  padding-right: 0em;
+  a {
+    box-shadow: 0 0 var(--tx-accent);
+    padding: 3px;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-radius: 10px;
+  }
+  a:hover {
+    color: var(--tx-accent);
+    box-shadow: 0 0 3px var(--tx-accent);
+    cursor: pointer;
+  }
 }

@@ -2,7 +2,7 @@ from pathlib import Path
 import os
 import json
 
-jsonFileName = "RenderDictionary.json"
+sonFileName = "RenderDictionary.json"
 outputPath = "./src/routes/works/components/json"
 imageDirectory = "./public/images/renders"
 imgPaths = ["Env", "Char", "CharEnv"]

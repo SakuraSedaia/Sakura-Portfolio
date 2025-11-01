@@ -5,7 +5,11 @@ export default function NotFound() {
     <main class="text-center mx-auto text-gray-700 p-4">
       <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">Not Found</h1>
       <p class="mt-8">
-        I'm sorry, the page you were trying to navigate to does not exist. Please try a different page or click a link below
+        Visit{" "}
+        <a href="https://solidjs.com" target="_blank" class="text-sky-600 hover:underline">
+          solidjs.com
+        </a>{" "}
+        to learn how to build Solid apps.
       </p>
       <p class="my-4">
         <A href="/" class="text-sky-600 hover:underline">
@@ -14,11 +18,6 @@ export default function NotFound() {
         {" - "}
         <A href="/about" class="text-sky-600 hover:underline">
           About Page
-        </A>
-        
-        {" - "}
-        <A href="/sakura-character-rig" class="text-sky-600 hover:underline">
-          SACR
         </A>
       </p>
     </main>

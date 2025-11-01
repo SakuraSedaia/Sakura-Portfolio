@@ -4,9 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
-  },
-  server: {
-    baseURL: process.env.BASE_PATH,
-    preset: "static"
-  },
+  }
 });
