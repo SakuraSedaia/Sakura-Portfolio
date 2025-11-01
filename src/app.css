@@ -78,6 +78,7 @@ h2 {
 }
 .nav-menu-container {
   max-width: 1280px;
+  width: fit-content;
   height: 0px;
   opacity: 0%;
 }
@@ -98,6 +99,7 @@ h2 {
 }
 .nav-menu-column {
   flex-basis: 33%;
+  min-width: 150px;
 }
 .nav-menu-column h2 {
   font-size: 18px;

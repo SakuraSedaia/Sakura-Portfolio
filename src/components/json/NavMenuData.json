@@ -14,16 +14,7 @@
       }
     ]
   },
-  {
-    "heading": "Works",
-    "subtitle": "",
-    "menuItems": [
-      {
-        "pageName": "Renders",
-        "pageURL": "/renders"
-      }
-    ]
-  },
+  
   {
     "heading": "Assets",
     "subtitle": "",

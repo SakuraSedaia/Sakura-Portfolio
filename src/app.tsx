@@ -40,8 +40,6 @@ export default function App() {
         <Route path={["/sakura-character-rig", "/rigs.html"]} component={SACR} />
         <Route path="/sakura-rig-gui" component={SRGUI} />
 
-        <Route path="/renders" component={Renders} />
-
         <Route path="*404" component={NotFound} />
       </Router>
     </div>

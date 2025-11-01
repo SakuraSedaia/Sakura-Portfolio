@@ -4,7 +4,7 @@
       "branch": "stable",
       "label": "Stable",
       "version": "R7.3.0",
-      "github": "https://github.com/SakuraSedaia/SACR-MC-Rig/",
+      "github": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
       "logo": "/images/rig-headers/SACR/R7.3 Full.png",
       "description": "Requires Sakura Rig GUI for rig configuration",
       "styles": [
@@ -27,16 +27,16 @@
     {
       "branch": "dev",
       "label": "Development",
-      "version": "D8.0.0-alpha-02",
-      "github": "https://github.com/SakuraSedaia/SACR-MC-Rig/",
+      "version": "D8.0 A3",
+      "github": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
       "logo": "/images/rig-headers/SACR/E8 Full.png",
       "description": "Comes Bundled with it's own UI Script, not recommended for production",
       "styles": [
         {
           "label": "",
-          "fileName": "/SACR_D8_A02.blend",
-          "size": "254kb",
-          "date": "04/10/2025"
+          "fileName": "/SACR.D8.Alpha.3.zip",
+          "size": "399kb",
+          "date": "10/24/2025"
         }
       ],
       "enabled": true
