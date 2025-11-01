@@ -1,8 +1,12 @@
+import Header from "~/components/header";
+
 
 function sacr() {
 
     return (
-        <div>sacr</div>
+        <div>
+            <Header title="Sakura Minecraft Character Rig" background="sacr" />
+        </div>
     );
 }
 export default sacr;

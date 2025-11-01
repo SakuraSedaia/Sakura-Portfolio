@@ -1,7 +1,11 @@
+import Header from "~/components/header";
+
 function rigs() {
 
     return (
-        <div>rigs</div>
+        <div>
+            <Header title="Rigs" background="rigs"/>
+        </div>
     );
 }
 export default rigs;
