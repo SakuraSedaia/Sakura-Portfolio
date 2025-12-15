@@ -1,0 +1,19 @@
+{
+    "eight": {},
+    "seven": {
+        "7.4.0": {
+            "version": "R7.4.0",
+            "source": "https://github.com/SakuraSedaia/Sakura-Character-Rig/releases/download/",
+            "default": "Zip",
+            "styles": [
+                {
+                    "label": "Zip",
+                    "btn_label": "7.4.0",
+                    "fileName": "SACR_R7.4.0.zip",
+                    "size": "6.42mb",
+                    "date": "03/09/2025"
+                }
+            ]
+        }
+    }
+}

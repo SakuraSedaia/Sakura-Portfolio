@@ -1,0 +1,72 @@
+[
+    {
+        "page": "Home",
+        "path": "",
+        "show": true,
+        "subnav": false,
+        "subpages": [
+            {
+                "page": "",
+                "path": "",
+                "show": false
+            }
+        ]
+    },
+    {
+        "page": "Rigs",
+        "path": "rigs",
+        "show": true,
+        "subnav": true,
+        "subpages": [
+            {
+                "page": "Sakura Character Rig",
+                "path": "sakura-character-rig",
+                "show": true
+            }
+        ]
+    },
+    {
+        "page": "Addons",
+        "path": "addons",
+        "show": true,
+        "subnav": true,
+        "subpages": [
+            {
+                "page": "Sakura Rig Interface",
+                "path": "sakura-rig-interface",
+                "show": true
+            }
+        ]
+    },
+    {
+        "page": "Creations",
+        "path": "creations",
+        "show": false,
+        "subnav": true,
+        "subpages": [
+            {
+                "page": "Renders",
+                "path": "renders",
+                "show": true
+            },
+            {
+                "page": "Animations",
+                "path": "animations",
+                "show": true
+            }
+        ]
+    },
+    {
+        "page": "Contact",
+        "path": "contact",
+        "show": true,
+        "subnav": false,
+        "subpages": [
+            {
+                "page": "",
+                "path": "",
+                "show": false
+            }
+        ]
+    }
+]

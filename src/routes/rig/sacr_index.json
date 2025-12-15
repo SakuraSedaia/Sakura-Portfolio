@@ -1,0 +1,80 @@
+{
+    "stable": [
+        {
+            "branch": "stable",
+            "label": "Stable",
+            "version": "R7.4.0",
+            "github": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
+            "logo": "/images/rig-headers/SACR/R7.4 Full.png",
+            "description": "Rig Interface Addon required to use.",
+            "default": 0,
+            "styles": [
+                {
+                    "id": 0,
+                    "label": ".zip",
+                    "btn_label": "",
+                    "fileName": "SACR_R7.4.0.zip",
+                    "notes": "Contains Asset Library Information and both the Standard and Lite builds",
+                    "size": "6.42mb",
+                    "date": "03/09/2025",
+                    "license": "MIT"
+                },
+                {
+                    "id": 1,
+                    "label": ".blend",
+                    "btn_label": "Standard",
+                    "fileName": "SACR_R7.4.0.blend",
+                    "notes": "This only downloads the Standard build of the rig",
+                    "size": "6.42mb",
+                    "date": "03/09/2025",
+                    "license": "MIT"
+                },
+                {
+                    "id": 2,
+                    "label": ".blend (lite)",
+                    "btn_label": "Lite",
+                    "fileName": "SACR_R7.4.0_L.blend",
+                    "notes": "This only downloads the Lite build of the rig",
+                    "size": "6.42mb",
+                    "date": "03/09/2025",
+                    "license": "MIT"
+                }
+            ]
+        }
+    ],
+    "dev": [
+        {
+            "branch": "dev",
+            "label": "Development",
+            "github": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
+            "logo": "/images/rig-headers/SACR/Development.png",
+            "description": "A Development build of an upcoming SACR Release, not recommended for production use",
+            "default": 0,
+            "styles": [
+                {
+                    "id": 0,
+                    "label": "D8.0 A3 (.zip)",
+                    "btn_label": "8.0 A3 (.zip)",
+                    "git_tag": "D8.0.0-alpha-03",
+                    "fileName": "SACR.D8.Alpha.3.zip",
+                    "notes": "UI Script located inside Archive, can be run as a script or installed as an Addon",
+                    "size": "399kb",
+                    "date": "10/24/2025",
+                    "license": "MIT"
+                },
+                {
+                    "id": 1,
+                    "label": "D8.0 A2 (.blend)",
+                    "btn_label": "8.0 A2 (.blend)",
+                    "git_tag": "D8.0.0-alpha-02",
+                    "fileName": "SACR_D8_A02.blend",
+                    "notes": "UI Script located inside Archive, can be run as a script or installed as an Addon",
+                    "size": "254kb",
+                    "date": "10/04/2025",
+                    "license": "MIT"
+                }
+            ],
+            "enabled": true
+        }
+    ]
+}

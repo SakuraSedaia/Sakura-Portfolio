@@ -5,6 +5,7 @@ dist
 .netlify
 .vinxi
 app.config.timestamp_*.js
+*.hidden
 
 # Environment
 .env
@@ -13,15 +14,13 @@ app.config.timestamp_*.js
 # dependencies
 /node_modules
 
-# Folders
-*.hidden
-
 # IDEs and editors
 /.idea
 .project
 .classpath
 *.launch
 .settings/
+*.code-workspace
 
 # Temp
 gitignore
@@ -29,4 +28,3 @@ gitignore
 # System Files
 .DS_Store
 Thumbs.db
-deploy.old
