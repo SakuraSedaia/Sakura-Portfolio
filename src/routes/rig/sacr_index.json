@@ -3,7 +3,7 @@
         {
             "branch": "stable",
             "label": "Stable",
-            "version": "R7.4.0",
+            "version": "R7.4.1",
             "github": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
             "logo": "/images/rig-headers/SACR/R7.4 Full.png",
             "description": "Rig Interface Addon required to use.",
@@ -13,10 +13,10 @@
                     "id": 0,
                     "label": ".zip",
                     "btn_label": "",
-                    "fileName": "SACR_R7.4.0.zip",
-                    "notes": "Contains Asset Library Information and both the Standard and Lite builds",
-                    "size": "6.42mb",
-                    "date": "03/09/2025",
+                    "fileName": "SACR_R7.4.1.zip",
+                    "notes": "Contains both the Standard and Lite builds",
+                    "size": "1.5mb",
+                    "date": "12/20/2025",
                     "license": "MIT"
                 },
                 {
@@ -25,18 +25,18 @@
                     "btn_label": "Standard",
                     "fileName": "SACR_R7.4.0.blend",
                     "notes": "This only downloads the Standard build of the rig",
-                    "size": "6.42mb",
-                    "date": "03/09/2025",
+                    "size": "7.84mb",
+                    "date": "12/20/2025",
                     "license": "MIT"
                 },
                 {
                     "id": 2,
                     "label": ".blend (lite)",
                     "btn_label": "Lite",
-                    "fileName": "SACR_R7.4.0_L.blend",
+                    "fileName": "SACR_R7.4.1_L.blend",
                     "notes": "This only downloads the Lite build of the rig",
-                    "size": "6.42mb",
-                    "date": "03/09/2025",
+                    "size": "4.92mb",
+                    "date": "12/20/2025",
                     "license": "MIT"
                 }
             ]

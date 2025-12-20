@@ -3,7 +3,7 @@
         {
             "branch": "stable",
             "label": "Stable",
-            "version": "V3.0.0",
+            "version": "V3.1.0",
             "github": "https://github.com/SakuraSedaia/Sedaia-Rig-Interfaces",
             "blender_ext": "https://extensions.blender.org/add-ons/sakura-rig-gui/",
             "logo": "/images/rig-headers/rig-interface/rig-interface-3.png",
@@ -14,11 +14,11 @@
                     "id": 0,
                     "label": "Latest",
                     "btn_label": "",
-                    "git_tag": "V3.0.0",
-                    "fileName": "Sakura_Rig_Interface_V3.0.0.zip",
+                    "git_tag": "V3.1.0",
+                    "fileName": "Sakura_Rig_GUI_V3.1.0.zip",
                     "notes": null,
-                    "size": "22.9 KB",
-                    "date": "10/13/2025",
+                    "size": "22.6 KB",
+                    "date": "12/20/2025",
                     "license": "GPL V3"
                 }
             ]
