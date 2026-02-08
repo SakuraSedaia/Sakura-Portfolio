@@ -1,25 +1,23 @@
-import { A } from "@solidjs/router";
+import { A, useLocation } from "@solidjs/router";
+import Header from "~/components/header.jsx";
 
 export default function NotFound() {
+  const location = useLocation();
   return (
-    <main class="text-center mx-auto text-gray-700 p-4">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">Not Found</h1>
-      <p class="mt-8">
-        Visit{" "}
-        <a href="https://solidjs.com" target="_blank" class="text-sky-600 hover:underline">
-          solidjs.com
-        </a>{" "}
-        to learn how to build Solid apps.
+    <error-404>
+      <Header
+        desc={`404: Content for ${location.pathname} was not found.`}
+        img="about"
+      />
+      <p>
+        I'm sorry, the page you requested could not be found. Please navigate to
+        another page using a link below.
       </p>
-      <p class="my-4">
-        <A href="/" class="text-sky-600 hover:underline">
+      <p>
+        <A href="/" class="link">
           Home
         </A>
-        {" - "}
-        <A href="/about" class="text-sky-600 hover:underline">
-          About Page
-        </A>
       </p>
-    </main>
+    </error-404>
   );
 }

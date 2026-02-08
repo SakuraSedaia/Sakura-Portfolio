@@ -1,13 +1,20 @@
-import Header from "~/components/Header";
+import Header from "~/components/header.jsx";
+import Footer from "~/components/footer.jsx";
+import NotFinished from "~/components/not-finished.jsx";
 
-Header
-function creations() {
+function Creations() {
+  return (
+    <>
+      <Header title="My Works" img="about" />
 
-    return (
-        <div>
-            <Header title="Creations" background="rigs" />
-            <h1>WARNING: This page is under construction. Content is not complete and features will be broken.</h1>
-        </div>
-    );
+      <div class="content-container">
+        <NotFinished />
+      </div>
+
+      <Footer />
+    </>
+  );
 }
-export default creations;
+export default Creations;
+
+

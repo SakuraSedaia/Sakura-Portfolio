@@ -28,3 +28,6 @@ gitignore
 # System Files
 .DS_Store
 Thumbs.db
+/utils/renders/
+/utils/lib/
+/.output.txt

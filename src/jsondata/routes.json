@@ -1,0 +1,82 @@
+[
+  {
+    "page": "Home",
+    "path": "",
+    "show": true,
+    "subnav": false,
+    "subpages": [
+      {
+        "page": "",
+        "path": "",
+        "show": false
+      }
+    ]
+  },
+  {
+    "page": "Assets",
+    "path": "assets",
+    "show": true,
+    "subnav": true,
+    "subpages": [
+      {
+        "page": "SACR",
+        "path": "asset/sakura-character-rig",
+        "show": true
+      },
+      {
+        "page": "Rig Interface",
+        "path": "asset/sakura-rig-interface",
+        "show": true
+      }
+    ]
+  },
+  {
+    "page": "Creations",
+    "path": "creations",
+    "show": true,
+    "subnav": true,
+    "subpages": [
+      {
+        "page": "Renders",
+        "path": "creation/renders",
+        "show": true
+      },
+      {
+        "page": "Animations",
+        "path": "creation/animations",
+        "show": true
+      },
+      {
+        "page": "Websites",
+        "path": "creation/www",
+        "show": true
+      }
+    ]
+  },
+  {
+    "page": "Commissions",
+    "path": "commissions",
+    "show": false,
+    "subnav": false,
+    "subpages": [
+      {
+        "page": "",
+        "path": "",
+        "show": false
+      }
+    ]
+  },
+  {
+    "page": "Contact",
+    "path": "contact",
+    "show": true,
+    "subnav": false,
+    "subpages": [
+      {
+        "page": "",
+        "path": "",
+        "show": false
+      }
+    ]
+  }
+]

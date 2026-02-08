@@ -1,11 +1,18 @@
-import Header from "~/components/Header";
-function renders() {
+import Header from "~/components/header.jsx";
+import Footer from "~/components/footer.jsx";
+import NotFinished from "~/components/not-finished.jsx";
 
-    return (
-        <div>
-            <Header title="Renders" background="rigs" />
-            <h1>WARNING: This page is under construction. Content is not complete and features will be broken.</h1>
-        </div>
-    );
+function Renders() {
+  return (
+    <>
+      <Header title="Renders" img="rigs" />
+      <div class="content-container">
+        <NotFinished />
+      </div>
+      <Footer />
+    </>
+  );
 }
-export default renders;
+export default Renders;
+
+
