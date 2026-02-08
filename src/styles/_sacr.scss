@@ -1,0 +1,95 @@
+.sacr-container {
+  #downloads {
+    heading {
+      h1 {
+        // font-size: 24pt;
+      }
+    }
+
+    h2 {
+    }
+
+    h3 {
+    }
+
+    .build-select {
+      overflow: hidden;
+      padding: 0;
+      .tab {
+        cursor: pointer;
+        padding: .5rem 1rem;
+        border: 0.125rem solid var(--bg-accent);
+        border-left-width: 0;
+        display: inline-block;
+        min-width: 4rem;
+        width: fit-content;
+        text-align: center;
+
+        &:hover {
+          color: var(--tx-contrast-accent);
+          background-color: var(--bg-contrast-light);
+        }
+
+        &:first-child {
+          border-top-left-radius: var(--radius-lg);
+          border-left-width: 0.125rem;
+        }
+        &:last-child {
+          border-top-right-radius: var(--radius-lg);
+        }
+      }
+      .tab.active {
+        color: var(--tx-accent);
+        background-color: var(--bg-accent);
+        cursor: default;
+
+        &:hover {
+          color: var(--tx-accent);
+          background-color: var(--bg-accent);
+        }
+      }
+    }
+
+    .download-info {
+      border-radius: var(--radius-lg);
+      border-top-left-radius: 0;
+      border: 0.125rem solid var(--bg-accent);
+      margin-bottom: 1rem;
+      padding: 1rem;
+
+      p {
+      }
+
+      download-spec {
+        table {
+          text-align: center;
+          border-collapse: collapse;
+          font-size: 10pt;
+          width: 100%;
+          margin-top: 1rem;
+          thead {
+            background-color: var(--bg-accent);
+            tr {
+              th {
+                width: 25%;
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              td {
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    // Branch Styling
+    #stable {}
+
+    #dev {}
+  }
+}

@@ -1,26 +1,31 @@
-import { A } from "@solidjs/router";
-import Counter from "~/components/Counter";
-import buttonMono from "~/components/button/button";
+import Header from "~/components/header.jsx";
+import Footer from "~/components/footer.jsx";
+import About from "~/sections/index/about";
+import NotableProjects from "~/sections/index/notable-projects";
+import PreferredTooling from "~/sections/index/preferred-tooling";
+import Technologies from "~/sections/index/technologies";
+import Resume from "~/sections/index/resume";
+
 export default function Home() {
   return (
-    <main class="text-center mx-auto text-gray-700 p-4">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">Test</h1>
-      <Counter />
-      <p class="mt-8">
-        Visit{" "}
-        <a href="https://solidjs.com" target="_blank" class="text-sky-600 hover:underline">
-          solidjs.com
-        </a>{" "}
-        to learn how to build Solid apps.
-      </p>
-      <p class="my-4">
-        <span>Home</span>
-        {" - "}
-        <A href="/about" class="text-sky-600 hover:underline">
-          About Page
-        </A>{" "}
-        <buttonMono text="About page" href="/about"/>
-      </p>
-    </main>
+    <>
+      <Header
+        title="Sakura Sedaia"
+        img="about"
+        desc="Freelance Software Developer and 3D Artist"
+      />
+
+      <div class={"content-container"}>
+        <About />
+        <NotableProjects />
+        <PreferredTooling />
+        <Technologies />
+        <Resume />
+      </div>
+
+      <Footer />
+    </>
   );
 }
+
+

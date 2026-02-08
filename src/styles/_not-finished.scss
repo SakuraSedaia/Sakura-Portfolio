@@ -1,0 +1,18 @@
+.not-finished {
+  text-align: center;
+  padding-block: 8rem;
+
+  h1 {
+    font-size: 34pt;
+    line-height: 1;
+    color: hsl(var(--tx-accent-val));
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-block-end: 2rem;
+  }
+
+  p {
+    font-size: 16pt;
+    font-weight: 600;
+  }
+}

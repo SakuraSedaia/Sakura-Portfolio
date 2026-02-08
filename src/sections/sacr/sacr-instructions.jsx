@@ -1,0 +1,19 @@
+import { NoHydration } from "solid-js/web";
+
+export default function SACRInstructions() {
+  return (
+    <NoHydration>
+      <section id={"instructions"}>
+        <heading>
+          <h1>Instructions</h1>
+        </heading>
+        <standard-container>
+          <p>
+            This rig is available in two places, here and through it's
+            associated addon
+          </p>
+        </standard-container>
+      </section>
+    </NoHydration>
+  );
+}
