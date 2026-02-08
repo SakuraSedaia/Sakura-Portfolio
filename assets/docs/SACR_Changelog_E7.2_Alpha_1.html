@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SACR E7.2 Alpha #1 Changelog</title>
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+    <h1 id="heading-sakura27s-advanced-character-rig">Sakura's Advanced Character Rig</h1>
+    <p>First Alpha Build of SACR R7.2, this build includes adjustments to various systems, naming consistencies. Various
+        assets have been updated as well to utilize new features included in Blender 4.4.</p>
+    <h2 id="heading-file-info">File Info</h2>
+    <u class="code-line" dir="auto">
+        <li>Dev Version: E7.2 Alpha 1</li>
+        <li>Latest Stable: R7.1.1</li>
+        <li>Blender 4.4</li>
+        <li>Scripts: 0</li>
+    </u>
+    <hr data-line="10" class="code-line" dir="auto" />
+    <h1 id="heading-changes">Changes</h1>
+    <h2 id="heading-outliner">Outliner</h2>
+    <h3 id="heading-outliner-adjustments">Outliner Adjustments</h3>
+    <ul data-line="18" class="code-line" dir="auto">
+        <li>Slight reorganization of outliner</li>
+        <li>Removed redundant Prefixes from a lot of objects</li>
+        <li>Marked the Master Collection as an Asset, making importing SACR into other scenes easier</li>
+    </ul>
+    <h2 id="heading-armature">Armature</h2>
+    <h3 id="heading-armature-adjustments">Armature Adjustments</h3>
+    <ul data-line="26" class="code-line" dir="auto">
+        <li>Subdivided Chest and Hip bone for more flexible torso bending options</li>
+        <li>Changed multiple bones from Quaternation to XYZ Euler</li>
+        <li>Edited and adjusted Modifiers for Mouth Rig, making the Mouth easier to control</li>
+        <li>Square Mouth and Round Mouth exist with the same bones, and can be smoothly switched between</li>
+        <li>Reorganized Bone Collections into Trees and updated Drivers</li>
+        <li>Indivudal Teeth Controllers exposed and made accessible to users</li>
+    </ul>
+    <h3 id="heading-armature-additions">Armature Additions</h3>
+    <ul data-line="35" class="code-line" dir="auto">
+        <li>Re-Added Modifier to automatically move Mouth Parent</li>
+        <li>Added Bone Shapes for Teeth Controlelrs</li>
+    </ul>
+    <hr data-line="38" class="code-line" dir="auto" />
+    <h2 id="heading-mesh">Mesh</h2>
+    <h3 id="heading-mesh-adjustments">Mesh Adjustments</h3>
+    <ul data-line="44" class="code-line" dir="auto">
+        <li>Removed Redundant Eyesparkle Mesh</li>
+        <li>Square Mouth and Round Mouth exist on the same Face Object, and can be smoothly switched between</li>
+        <li>Renamed Multiple Objects to maintain Consistency</li>
+    </ul>
+    <h3 id="heading-mesh-additions">Mesh Additions</h3>
+    <ul data-line="50" class="code-line" dir="auto">
+        <li>Added Driver to Automatically hide Eyebrows when Depth is approximately 0 to prevent Z Fighting</li>
+    </ul>
+    <hr data-line="52" class="code-line" dir="auto" />
+    <h2 id="heading-materials">Materials</h2>
+    <h3 id="heading-material-adjustments">Material Adjustments</h3>
+    <ul data-line="58" class="code-line" dir="auto">
+        <li>Updated Iris &amp; Sclera Materials to R8
+            <ul data-line="59" class="code-line" dir="auto">
+                <li>Eyesparkle now embedded into Iris Material</li>
+                <li>Scale Controllers added to Pupil options</li>
+            </ul>
+        </li>
+        <li>Updated Eyebrow Material to R4 and condensed UV's</li>
+        <li>Various Toggles switched to Boolean Checkmarks</li>
+    </ul>
+
+
+</body>
+
+</html>

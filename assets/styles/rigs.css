@@ -1,0 +1,203 @@
+@import url(global.css);
+.exp-update-alert {
+    background-color: rgb(128, 0, 0);
+    color: white;
+    padding: 0.2in 1in;
+}
+.exp-update-alert h2 {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    letter-spacing: 0.01em;
+}
+
+.body-container h2 {
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 1em;
+    color: #f5f5f5;
+    width: 200px;
+    display: inline-block;
+    font-family: "PT_Sans";
+    box-shadow: var(--box-shadow-sm);
+    padding: 5px;
+}
+.body-container h3 {
+    width: 100%;
+    font-family: var(--secondary-font);
+}
+.body-container p {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    letter-spacing: 0.5px;
+    line-height: 23px;
+}
+
+.sacr {
+    margin-right: var(--content-side-margin);
+    margin-left: var(--content-side-margin);
+    text-align: left;
+    box-shadow: var(--box-shadow-sm);
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: var(--primary-color);
+}
+.sacr .about-rig {
+    display: flex;
+}
+.sacr .about-rig .description {
+    flex-basis: 50%;
+    margin: auto;
+    text-align: center;
+}
+.sacr .about-rig .description h2 span {
+    color: #111111;
+}
+.sacr .about-rig .description p {
+    color: black;
+    width: 90%;
+    text-align: left;
+    display: inline-block;
+    text-indent: 2em;
+}
+.sacr .about-rig .sacr-thumbnail {
+    flex-basis: 50%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    border-left: 2px solid black;
+}
+.sacr .about-rig .sacr-thumbnail img {
+    width: 90%;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 7px 6px 16px -4px rgb(130, 130, 130);
+}
+.sacr .download-rig {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.sacr .download-rig .dl-heading h3 {
+    color: #111111;
+    background-color: transparent;
+}
+.sacr .download-rig .dl-heading p {
+    text-indent: 2rem;
+}
+.sacr .download-rig .info {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.sacr .download-rig .info span {
+    padding-right: 20px;
+    font-size: 14px;
+    font-family: var(--secondary-font);
+}
+.link-contain {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.link-contain div {
+    padding: 10px;
+    justify-content: center;
+    font-family: "Noto Sans";
+    color: #111111;
+    background-color: rgba(255, 255, 255, 0.3411764706);
+    transition-duration: 130ms;
+    cursor: pointer;
+    width: 220px;
+    min-width: 220px;
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-sm);
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+    margin: 1%;
+    margin-left: 0%;
+}
+.link-contain div .download-text {
+    color: black;
+    font-size: 16px;
+    border-left: 0px solid transparent;
+    padding-left: 0px;
+}
+.link-contain div .download-text span {
+    transform: translateY(6px);
+}
+.link-contain div:hover {
+    box-shadow: var(--box-shadow-sm), 0 -4em inset var(--accent-color);
+    cursor: pointer;
+}
+.link-contain div:hover span {
+    pointer-events: none;
+}
+.link-contain div:hover .download-text {
+    color: rgb(97, 9, 60);
+}
+.sacr .rig-version-title {
+    width: 400px;
+}
+.sacr .extras {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.sacr .extras p {
+    text-indent: 2rem;
+    margin-top: 2em;
+}
+.sacr .extras span {
+    padding-right: 20px;
+    font-family: var(--secondary-font);
+}
+
+@media screen and (max-width: 720px) {
+    .exp-update-alert {
+        background-color: rgb(128, 0, 0);
+        color: white;
+        padding: 0.05in 0.2in;
+    }
+    .exp-update-alert h2 {
+        font-family: var(--primary-font);
+        font-size: 1.2em;
+        letter-spacing: 0.01em;
+    }
+    .rig-version-title {
+        width: 200px;
+    }
+    .sacr {
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    .sacr .about-rig {
+        flex-wrap: wrap;
+    }
+    .sacr .about-rig .description {
+        flex-basis: 100%;
+    }
+    .sacr .about-rig .sacr-thumbnail {
+        flex-basis: 60%;
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        border-left: 0px solid transparent;
+    }
+}
+@media all and (max-width: 600px) and (orientation: portrait) {
+    .rig-version-title {
+        width: 200px;
+    }
+    .sacr .download-rig .download .info span {
+        padding-right: 0px;
+    }
+    .sacr .download-rig .download .info span a {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 1em;
+        display: inline-block;
+        margin: 5px;
+    }
+    .sacr .download-rig .download .info span a:hover {
+        background-color: var(--accent-color);
+        color: black;
+    }
+}

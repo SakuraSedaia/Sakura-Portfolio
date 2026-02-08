@@ -1,0 +1,396 @@
+/* Import fonts */
+@import url("../fonts/fonts.css");
+
+:root {
+    /* Internal CSS Configurations */
+    /* Fonts */
+    --primary-font: "Source Sans Pro";
+    /* var(--primary-font) */
+    --secondary-font: "Noto Sans";
+    /* var(--secondary-font) */
+    --minecraft-font: "Minecraft";
+    /* var(--minecraft-font) */
+    /* Transition Durations */
+    --tgl-transition: 100ms;
+    /* var(--tgl-transition) */
+    --nav-transition: 200ms;
+    /* var(--nav-transition) */
+    /* Corner Radius */
+    --radius: .5em;
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(196, 196, 196);
+    --accent-color: rgb(238, 174, 202);
+    /* Box Shadow */
+    --box-shadow-xsm: 0px 3px 5px -1px #00000033, 0px 2px 5px 0px #00000024,
+        0px 1px 10px 0px #00000010;
+    --box-shadow-sm: 0px 3px 5px -1px #00000033, 0px 5px 8px 0px #00000024,
+        0px 1px 14px 0px #0000001f;
+    --box-shadow-lg: 0px 3px 5px -1px #00000075, 0px 5px 8px 0px #00000079,
+        0px 1px 14px 0px #00000036;
+    --box-shadow-inset-xsm: 0px 3px 5px -1px inset #00000033,
+        0px 2px 5px 0px inset #00000024, 0px 1px 10px 0px inset #00000010;
+    --box-shadow-inset-sm: 0px 3px 5px -1px inset #00000033,
+        0px 5px 8px 0px inset #00000024, 0px 1px 14px 0px inset #0000001f;
+    --box-shadow-inset-lg: 0px 3px 5px -1px inset #00000075,
+        0px 5px 8px 0px inset #00000079, 0px 1px 14px 0px inset #00000036;
+    /* Margins */
+    --content-side-margin: 10%;
+    /* var(--content-side-margin) */
+}
+
+* {
+    transition-duration: 300ms;
+    cursor: default;
+}
+
+*[hidden] {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    flex-basis: 0;
+    overflow: hidden;
+}
+
+/* Global Styles */
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+/* Global Link Style */
+.link,
+a {
+    color: rgb(29, 34, 94);
+    cursor: pointer;
+    transition-duration: 235ms;
+}
+
+.link:hover,
+a:hover {
+    color: #e0a0c4;
+    box-shadow: 0px -1.5px inset #e0a0c4;
+}
+
+/* Header Begin */
+.header {
+    background-size: cover;
+    background-position: center center;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.header .header-pattern {
+    background-blend-mode: overlay;
+    background-blend-mode: multiply;
+    padding-bottom: 0;
+}
+
+.header .header-pattern .header-content {
+    text-align: center;
+    color: black;
+    padding-bottom: 0;
+    /* Header Wrapper */
+    /* Header Body */
+    /* Navigation */
+}
+
+.header .header-pattern .header-content .header-top {
+    background-color: rgba(235, 235, 235, 0.7176470588);
+    color: white;
+    display: inline-block;
+    width: 80%;
+    min-width: 200px;
+    text-align: center;
+    font-family: var(--primary-font);
+    margin-bottom: 5%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    box-shadow: var(--box-shadow-sm);
+}
+
+.header .header-pattern .header-content .header-top .header-info {
+    color: black;
+    font-weight: bold;
+}
+
+.header .header-pattern .header-content .header-middle {
+    background-color: rgba(25, 25, 25, 0.8);
+    display: inline-block;
+    width: 80%;
+    min-width: 400px;
+    max-width: 720px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.4588235294), 0px 5px 8px 0px rgba(0, 0, 0, 0.4745098039), 0px 1px 14px 0px rgba(0, 0, 0, 0.2117647059);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    margin-bottom: 5%;
+}
+
+.header .header-pattern .header-content .header-middle h1 {
+    font-family: "Source Sans Pro";
+    color: white;
+    margin-bottom: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-block;
+}
+
+.header .header-pattern .header-content .header-middle h2 {
+    background-color: #f1f1f1;
+    color: black;
+    width: auto;
+    display: inline-block;
+    font-family: "PT_Sans";
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 10px;
+    box-shadow: var(--box-shadow-sm);
+    border-radius: 10px;
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+}
+
+.header .header-pattern .header-content .navigation .nav-content {
+    text-align: center;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+.header .header-pattern .header-content .navigation .nav-content .nav-item {
+    padding: 10px;
+    justify-content: center;
+    font-family: "Noto Sans";
+    color: #111111;
+    background-color: rgba(255, 255, 255, 0.3411764706);
+    transition-duration: 130ms;
+    cursor: pointer;
+    width: 125px;
+    height: 20px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    margin-right: 1%;
+    margin-left: 1%;
+    box-shadow: var(--box-shadow-sm);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+}
+
+.header .header-pattern .header-content .navigation .nav-content .nav-item span {
+    border-bottom: 2px solid transparent;
+}
+
+.header .header-pattern .header-content .navigation .nav-content .nav-item:hover {
+    background-color: rgba(255, 199, 231, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: black;
+    transform: scale(115%);
+    border-radius: 12px;
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+}
+
+.header .header-pattern .header-content .navigation .nav-content .nav-item:hover span {
+    border-bottom: 2px solid black;
+}
+
+.header .header-pattern .header-content .navigation .nav-content .nav-item span {
+    cursor: pointer;
+}
+
+.header .header-pattern .header-content .navigation .nav-content .active {
+    background-color: rgba(159, 200, 238, 0.856);
+    border-radius: 10px;
+}
+
+.header .header-pattern .header-content .navigation .nav-content .active span {
+    border-bottom: 2px solid black;
+}
+
+/* Header End */
+/* Footer begin */
+.footer {
+    background-color: #dedae8;
+    color: #d0ccd9;
+    border-top: 10px solid #d0ccd9;
+    padding-bottom: 1em;
+}
+
+.footer .clusterfuck {
+    padding-bottom: 1em;
+    display: flex;
+    color: black;
+}
+
+.footer .clusterfuck .foot-col {
+    flex-basis: 33.33%;
+    text-align: center;
+    position: relative;
+    color: black;
+}
+
+.footer .clusterfuck .foot-col h4 {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0;
+}
+
+.footer .clusterfuck .foot-col div {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin-top: 0.3em;
+    color: black;
+}
+
+.footer .clusterfuck .foot-col div span {
+    color: black;
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+
+.footer .clusterfuck .foot-col div span:hover {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin-top: 0.3em;
+    color: #e08bbb;
+    box-shadow: 0px -1.5px inset #e08bbb;
+}
+
+.trademark {
+    color: black;
+    font-family: "Source Code Pro", monospace;
+    font-size: 12px;
+    margin-top: 3em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+/* Footer End */
+/* Responsive Shit */
+@media screen and (max-width: 960px) {
+    .about .about-content {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .about .about-content .p2 {
+        display: inherit;
+    }
+
+    .about .about-content .p2 img {
+        width: 85%;
+        height: -moz-fit-content;
+        height: fit-content;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow-sm);
+    }
+
+    .about .about-content .p2 .text {
+        width: initial;
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header .header-pattern .header-content .header-top {
+        width: 100%;
+        border-radius: 0px;
+        margin-bottom: 0px;
+    }
+
+    .header .header-pattern .header-content .header-middle {
+        border-radius: 0px;
+        width: 100%;
+        margin-bottom: 0px;
+        padding-bottom: 5%;
+        padding: 0px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: rgba(25, 25, 25, 0.2);
+        text-align: center;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4588235294), 0px 0px 0px 0px rgba(0, 0, 0, 0.4745098039), 0px 0px 0px 0px rgba(0, 0, 0, 0.2117647059);
+    }
+
+    .header .header-pattern .header-content .header-middle h1 {
+        background-color: rgba(25, 25, 25, 0.8);
+        border-radius: 10px;
+        width: -moz-fit-content;
+        width: fit-content;
+        display: inline-block;
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: var(--box-shadow-sm);
+        margin-bottom: 0px;
+    }
+
+    .header .header-pattern .header-content .header-middle h2 {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .header .header-pattern .header-content .navigation .nav-content {
+        margin-bottom: 0px;
+        height: auto;
+    }
+
+    .header .header-pattern .header-content .navigation .nav-content .nav-item {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 33%;
+        max-width: 50%;
+        min-width: -moz-fit-content;
+        min-width: fit-content;
+        font-size: 20px;
+        border-radius: 0px;
+        background-color: #d0ccd9;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px 0px rgba(0, 0, 0, 0), 1px 0 rgba(0, 0, 0, 0.295) inset, -1px 0 hsla(0deg, 0%, 0%, 0.295) inset, 0px 0px rgb(255, 199, 231);
+        height: 26px;
+        line-height: 26px;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .header .header-pattern .header-content .navigation .nav-content .nav-item:hover {
+        background-color: rgb(255, 199, 231);
+        color: black;
+        transform: scale(100%);
+        border-top: 0px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background-image: linear-gradient(to top right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    }
+
+    .header .header-pattern .header-content .navigation .nav-content .nav-item:hover span {
+        transform: scale(103%);
+    }
+
+    .header .header-pattern .header-content .navigation .nav-content .nav-item[hidden] {
+        display: none;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+}

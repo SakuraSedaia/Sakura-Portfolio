@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Converted from: SACR_Changelog_R7.2.md</title>
+    <meta charset="utf-8"/>
+
+</head>
+<body>
+
+<h1 id="heading-sakura27s-advanced-character-rig">Sakura's Advanced Character Rig</h1>
+<p>SACR R7.2 is a sub-version release to remedy a bunch of issues currently present in hotfix patch 7.1.1 as well as add some minor features to enhance the rig. Main fixes include various performance optimizations, driver fixes, file size reductions, and consistent naming.</p><h2 id="heading-file-info">File Info</h2>
+<p>Release: R7.2<br>
+Blender 4.4<br>
+Scripts: 0</p><hr data-line="10" class="code-line" dir="auto" />
+<h2 id="heading-file-changes">File Changes</h2>
+<h3 id="heading-scene">Scene</h3>
+<ul data-line="16" class="code-line" dir="auto">
+<li>Renamed Scene to match Major Version</li>
+<li>Default &quot;Color Management &gt; View Transform&quot; set to AgX.</li>
+<li>Default &quot;Color Management &gt; Look&quot; Set to Base Contrast.</li>
+</ul>
+<h3 id="heading-timeline">Timeline</h3>
+<ul data-line="22" class="code-line" dir="auto">
+<li>Set default Keying Set to nothing</li>
+<li>Playback Sync set to &quot;Frame Dropping&quot; instead of &quot;Play Every Frame&quot;</li>
+</ul>
+<h3 id="heading-drivers-editor">Drivers Editor</h3>
+<ul data-line="27" class="code-line" dir="auto">
+<li>Organized Armature Drivers by Type</li>
+</ul>
+<hr data-line="29" class="code-line" dir="auto" />
+<h2 id="heading-outliner">Outliner</h2>
+<h3 id="heading-outliner-adjustments">Outliner Adjustments</h3>
+<ul data-line="35" class="code-line" dir="auto">
+<li>Renamed Eyelashes to replace Lash Name with a number in order</li>
+<li>Steve Arm Meshes Renamed to be Arm.4x4.(side)</li>
+<li>Alex Arm Meshes Renamed to be Arm.3x4.(side)</li>
+<li>Renamed the Majority of bones and objects to meet a consistent style, leaving Limb Controls untouched to keep compatability</li>
+<li>Fixed naming of Right Leg IK Locator</li>
+<li>Removed &quot;Armor.&quot; Prefix from Armor Objects, opting just for the piece name</li>
+<li>Eyelashes now included into the &quot;Accessories&quot; Collection</li>
+<li>Unmarked Master Collection as an Asset</li>
+</ul>
+<hr data-line="44" class="code-line" dir="auto" />
+<h2 id="heading-armature">Armature</h2>
+<h3 id="heading-armature-adjustments">Armature Adjustments</h3>
+<ul data-line="50" class="code-line" dir="auto">
+<li>Implemented Square Mouth option for Facerig.</li>
+<li>Fixed Rotation lock for Mouth Bone Shapes.</li>
+<li>Locked Z-Axis control for Jaw and Cheek controls.</li>
+<li>Added Limits to 4 of the Middle Corner Bones to prevent unintended Z-fighting.</li>
+<li>Arm IK &amp; Stretch Can now be smoothly switched between instead of snapping between states.</li>
+<li>Separate Control for Wrist IK Auto-Rotation.</li>
+<li>Edited Bone Colors for the Arms.</li>
+<li>Additional Drivers added for hidding the Arm IK Locators and Pointers.</li>
+<li>Improved functionality of the IK System.
+<ul data-line="59" class="code-line" dir="auto">
+<li>Adjusted Leg and Arm Armature for new IK System.</li>
+<li>Removed IK modifier from Upper Arm and Leg Bones.</li>
+<li>Edited IK modifier on Forearm and Shin Bones</li>
+</ul>
+</li>
+<li>Shaped Controllers can be switched from Solid to Wireframe Displays</li>
+<li>Fixed Alex Arm Transform Fix modifiers on Shoulder Bones</li>
+<li>Removed Half Pixel Downward Adjustment on Slim Arm Transform</li>
+<li>Removed 16 Redundant Angular Ankle Bones</li>
+<li>Ankles now rely on Transform Modifiers instead of Driver controlled restricters</li>
+<li>Removed Dozens of redundant/duplicate drivers</li>
+<li>Recolored Arm IK Pointer Bones to match their respective limb</li>
+<li>Right Arm IK Pointer no longer shows when Right Arm IK is not active</li>
+<li>Removed redundant Custom Properties from Addons</li>
+<li>Integers switched to Booleans where applicable</li>
+</ul>
+<hr data-line="73" class="code-line" dir="auto" />
+<h2 id="heading-mesh">Mesh</h2>
+<h3 id="heading-mesh-adjustments">Mesh Adjustments</h3>
+<ul data-line="79" class="code-line" dir="auto">
+<li>Enabled Optimized Display on the Subdiv modifier on the face mesh.</li>
+<li>Added new 3x3x12 Arm Mesh option</li>
+<li>New Square &amp; Round Mouth now uses the same facemesh and bones</li>
+<li>Added Driver to Extrude Head.</li>
+<li>Fixed Eyebrow Driver.
+<ul data-line="84" class="code-line" dir="auto">
+<li>Eyebrow Driver used Armor Toggle instead of No Face.</li>
+</ul>
+</li>
+<li>Re-enabled Armor Collection.</li>
+<li>Increased Rendered Subdiv on all Meshes
+<ul data-line="87" class="code-line" dir="auto">
+<li>Face Objects raised to 4</li>
+<li>Torso &amp; Arms Raised to 2</li>
+</ul>
+</li>
+<li>Renamed all Armor to follow a more logical naming scheme</li>
+<li>Renamed all Shape Key groups to match their parent object, removing any redundant extrude shape keys</li>
+<li>Removed Redundant BoneShapes</li>
+<li>Removed redundant Custom Properties from Addons</li>
+<li>Condensed all &quot;Smooth by Angle&quot; Geometry Node groups into one</li>
+<li>Fixed Improper UVs on the bottom of the Head</li>
+<li>Re-added Sparkle Objects</li>
+</ul>
+<hr data-line="97" class="code-line" dir="auto" />
+<h2 id="heading-material">Material</h2>
+<h3 id="heading-adjusted-features">Adjusted Features</h3>
+<ul data-line="103" class="code-line" dir="auto">
+<li>Updated Base shader to R4.1
+<ul data-line="104" class="code-line" dir="auto">
+<li>Removed Double Layer Emit, caused issues with other more complex shaders</li>
+</ul>
+</li>
+<li>Updated Iris shader to R9, resolving severe performance drops
+<ul data-line="106" class="code-line" dir="auto">
+<li>Simplified Pupil/Iris Shader, significantly improving performance</li>
+<li>Removed Sparkles from Shader, caused severe performance drops</li>
+</ul>
+</li>
+<li>Updated Sclera Shader to R9</li>
+<li>Upgraded Eye Sparkle Shader to only show the emissive in camera.</li>
+</ul>
+<hr data-line="97" class="code-line" dir="auto" />
+<h2 id="heading-lite-rig-changes-28from-7.229">Lite Rig Changes (From 7.2)</h2>
+<ul data-line="113" class="code-line" dir="auto">
+<li>Removal of all objects in the &quot;Accessories&quot; collection</li>
+<li>Simplified Mesh Geometry</li>
+<li>Supporting Bones for the Hair rig removed</li>
+<li>All Properties associated with removed meshes deleted</li>
+<li>All Materials associated with removed meshes deleted</li>
+<li>Eyesparkle Removed</li>
+<li>Iris Shader simplified
+<ul data-line="120" class="code-line" dir="auto">
+<li>Removed Pupils</li>
+</ul>
+</li>
+<li>Sclera Shader Simplified</li>
+<li>Removed Lattices</li>
+<li>Removed all Bevel and Subdivision modifiers</li>
+</ul>
+
+
+</body>
+</html>

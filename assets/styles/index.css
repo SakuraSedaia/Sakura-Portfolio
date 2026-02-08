@@ -1,0 +1,48 @@
+@import url(global.css);
+.about {
+    color: lightgrey;
+    text-align: center;
+}
+
+.body-container {
+    /* About */
+}
+.body-container .about-content {
+    margin-right: var(--content-side-margin);
+    margin-left: var(--content-side-margin);
+    text-align: center;
+    background-color: var(--primary-color);
+    padding-bottom: 0.75in;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: var(--box-shadow-sm);
+}
+.body-container .about-content h2 {
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 1em;
+    color: #f5f5f5;
+    width: 200px;
+    display: inline-block;
+    font-family: "PT_Sans";
+    box-shadow: var(--box-shadow-sm);
+    padding: 5px;
+}
+.body-container .about-content p {
+    color: black;
+    font-family: "Open Sans";
+    text-align: center;
+}
+.body-container .about-content .p2 {
+    display: flex;
+}
+.body-container .about-content .p2 img {
+    width: 48%;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-sm);
+}
+.body-container .about-content .p2 .text {
+    width: 50%;
+    margin-left: 3%;
+}

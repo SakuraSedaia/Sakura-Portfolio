@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Converted from: SACR_Changelog_E8_A1.md</title>
+    <meta charset="utf-8"/>
+
+</head>
+<body>
+
+<h1 id="heading-sakura27s-advanced-character-rig">Sakura's Advanced Character Rig</h1>
+<h2 id="heading-file-info">File Info</h2>
+<p>Dev Version: 8_A.1<br>
+Latest Stable: R7.1.1<br>
+Blender 4.3.2<br>
+Scripts: 0</p><hr data-line="9" class="code-line" dir="auto" />
+<p>Alpha 1</p><hr data-line="12" class="code-line" dir="auto" />
+<h2 id="heading-outliner">Outliner</h2>
+<h3 id="heading-outliner-adjustments">Outliner Adjustments</h3>
+<ul data-line="18" class="code-line" dir="auto">
+<li>Lattice Collection added for user customizable Lattices</li>
+<li>Marked Master Collection as an Asset, allowing the rig to be imported through the Assets tab</li>
+</ul>
+<h2 id="heading-armature">Armature</h2>
+<h3 id="heading-armature-adjustments">Armature Adjustments</h3>
+<ul data-line="25" class="code-line" dir="auto">
+<li>Reorganized Bone Collection Tree, making future editing easier</li>
+<li>Completely re-rigged the Face
+<ul data-line="27" class="code-line" dir="auto">
+<li>Mouth, Eyes, and Eyelashes now use Bendy Bones, and have greatly improved controllability as standard</li>
+</ul>
+</li>
+<li>Reorganized the entire Driver List</li>
+<li>All drivers on Modifier's &quot;Enabled/Disabled&quot; changed to change their influence</li>
+<li>Changed all references to &quot;Fancy Feet&quot; to &quot;Ankle&quot;</li>
+<li>Fixed Right IK Locator Name, Mirror now works properly</li>
+<li>&quot;ArmK.Stretch.R&quot; Renamed to &quot;ArmIK.Stretch.R&quot; in order to match Left side</li>
+<li>Removed 16 bones from Angular Fancy Feet</li>
+<li>Adjusted Bone Shape for Global properties</li>
+<li>Removed even more redundant Addon Bullcrap</li>
+<li>Updated Custom Property Drivers, now incorporating Booleans for toggle switches</li>
+</ul>
+<h3 id="heading-armature-additions">Armature Additions</h3>
+<ul data-line="40" class="code-line" dir="auto">
+<li>New Bendy style Ankle, able to be hot swapped with classic angular ankle.</li>
+<li>Added two new controllers for Torso</li>
+</ul>
+<hr data-line="43" class="code-line" dir="auto" />
+<h2 id="heading-mesh">Mesh</h2>
+<h3 id="heading-mesh-adjustments">Mesh Adjustments</h3>
+<ul data-line="49" class="code-line" dir="auto">
+<li>Remodeled Face Mesh to match new Armature</li>
+<li>All face related Meshes now contained in the Face Container</li>
+<li>Original Lattice objects turned into presets
+<ul data-line="52" class="code-line" dir="auto">
+<li>Traditional Female deform removed, replaced with individual Taper, Bulge, and Breast controls</li>
+</ul>
+</li>
+<li>Sclera now uses the same Gradient UV setup as the Irises</li>
+<li>Eyelashes Updated
+<ul data-line="55" class="code-line" dir="auto">
+<li>Uses same Bendy Bones as eyes</li>
+<li>Renamed to chronological names</li>
+<li>Show/Hide Drivers now include &quot;No Face&quot; Check</li>
+</ul>
+</li>
+</ul>
+<h3 id="heading-mesh-additions">Mesh Additions</h3>
+<ul data-line="61" class="code-line" dir="auto">
+<li>New lattices added for easier mesh styling</li>
+<li>Nametag added to rig, Functionality using Geo Nodes</li>
+<li>Bendy Ankle mesh for new Bendy Ankle style</li>
+</ul>
+<hr data-line="65" class="code-line" dir="auto" />
+<h2 id="heading-materials">Materials</h2>
+<h3 id="heading-material-adjustments">Material Adjustments</h3>
+<ul data-line="71" class="code-line" dir="auto">
+<li>Eye Sparkle now included in Iris Material</li>
+<li>Pupils now included in Iris Mateiral</li>
+<li>Iris Shader upgraded to Revision 8</li>
+</ul>
+<h3 id="heading-material-additions">Material Additions</h3>
+<ul data-line="77" class="code-line" dir="auto">
+<li>Supporting Materials for Nametag</li>
+</ul>
+
+
+</body>
+</html>

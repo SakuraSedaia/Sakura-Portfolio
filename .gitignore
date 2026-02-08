@@ -1,33 +1,10 @@
-dist
-.wrangler
-.output
-.vercel
-.netlify
-.vinxi
-app.config.timestamp_*.js
-*.hidden
-
-# Environment
-.env
-.env*.local
-
-# dependencies
-/node_modules
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-*.launch
-.settings/
+*.scss
+*.blend1
+*.py
+lost-angel/*
+assets/rig-storage/asset-rigs/*
+wiki/*
+personal-portfolio.code-workspace
+.vscode/*
+*.min*
 *.code-workspace
-
-# Temp
-gitignore
-
-# System Files
-.DS_Store
-Thumbs.db
-/utils/renders/
-/utils/lib/
-/.output.txt

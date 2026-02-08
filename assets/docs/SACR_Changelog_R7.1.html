@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Converted from: SACR_Changelog_R7.1.md</title>
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+    <h1 id="heading-sakura27s-advanced-character-rig">Sakura's Advanced Character Rig</h1>
+    <h2 id="heading-latest-version3a-r7.1">Latest Version: R7.1</h2>
+    <hr data-line="4" class="code-line" dir="auto" />
+    <h2 id="heading-sacr-revision-7.1">SACR Revision 7.1</h2>
+    <h3 id="heading-base-file-settings">Base File Settings</h3>
+    <ul data-line="9" class="code-line" dir="auto">
+        <li>Updated to Blender 4.2 LTS</li>
+        <li>Default &quot;Color Management &gt; View Transform&quot; set to AgX.</li>
+        <li>Default &quot;Color Management &gt; Look&quot; Set to Base Contrast.</li>
+        <li>Performed Various Blend File Optimizations</li>
+    </ul>
+    <hr data-line="14" class="code-line" dir="auto" />
+    <h3 id="heading-rig-changes">Rig Changes</h3>
+    <ul data-line="18" class="code-line" dir="auto">
+        <li>Implemented Square Mouth option for Facerig.</li>
+        <li>Fixed Rotation lock for Mouth Bone Shapes.</li>
+        <li>Locked Z-Axis control for Jaw and Cheek controls.</li>
+        <li>Added Limits to 4 of the Middle Corner Bones to prevent unintended Z-fighting.</li>
+        <li>Arm IK &amp; Stretch Can now be smoothly switched between instead of snapping between states.</li>
+        <li>Separate Control for Wrist IK Auto-Rotation.</li>
+        <li>Edited Bone Colors for the Arms.</li>
+        <li>Additional Drivers added for hidding the Arm IK Locators and Pointers.</li>
+        <li>Improved functionality of the IK System.
+            <ul data-line="27" class="code-line" dir="auto">
+                <li>Adjusted Leg and Arm Armature for new IK System.</li>
+                <li>Removed IK modifier from Upper Arm and Leg Bones.</li>
+                <li>Edited IK modifier on Forearm and Shin Bones</li>
+            </ul>
+        </li>
+        <li>Deform Controllers can be switched from Solid to Wireframe Displays</li>
+        <li>Fixed <code>Global Mouth Position</code> not rotating the mouth as intended.</li>
+        <li>Teeth now move according to <code>Global Mouth Position</code> as well as their respective Jaw.</li>
+        <li>Fixed Polarity of the Cheek Bones, as Left was Right and Right was Left.</li>
+        <li>Updated Face Control Boneshapes to have more consistent Fillets</li>
+        <li>Reorginized Molar Controls and made each control more intuitive</li>
+        <li>Fang Controls now enabled by Default</li>
+        <li>Spacing on Face Controllers improved</li>
+        <li>Removed redundant &quot;mmd&quot; and &quot;ant-landscape&quot; Custom Properties</li>
+        <li>Adjusted Fancy Feet, Allowing for more freedom of movement and better tracking</li>
+        <li>Fixed Misconfigured Transform Space on FF Deform Drivers</li>
+        <li>Removed Deprecated Pupil Drivers</li>
+    </ul>
+    <hr data-line="43" class="code-line" dir="auto" />
+    <h3 id="heading-driver-changes">Driver Changes</h3>
+    <ul data-line="47" class="code-line" dir="auto">
+        <li>Organized Armature Drivers by Type</li>
+        <li>Added Driver for Eyebrow Width Shapekey</li>
+    </ul>
+    <hr data-line="50" class="code-line" dir="auto" />
+    <h3 id="heading-mesh-changes">Mesh Changes</h3>
+    <ul data-line="54" class="code-line" dir="auto">
+        <li>New Face Mesh added for new Square/Round mouth switcher.</li>
+        <li>Removed Hat Layer for Extrude Head.</li>
+        <li>Added Driver to Extrude Head.</li>
+        <li>Fixed Eyebrow Driver.
+            <ul data-line="58" class="code-line" dir="auto">
+                <li>Eyebrow Driver used Armor Toggle instead of No Face.</li>
+            </ul>
+        </li>
+        <li>Re-enabled Armor Collection.</li>
+        <li>Added &quot;Face.&quot; Prefix to all Face Objects</li>
+        <li>Increased Rendered Subdiv on all Meshes
+            <ul data-line="62" class="code-line" dir="auto">
+                <li>Face Objects raised to 4</li>
+                <li>Torso &amp; Arms Raised to 2</li>
+            </ul>
+        </li>
+        <li>Added Width Shapekey to the Eyebrow</li>
+    </ul>
+    <hr data-line="66" class="code-line" dir="auto" />
+    <h3 id="heading-material-changes">Material Changes</h3>
+    <ul data-line="70" class="code-line" dir="auto">
+        <li>Upgraded SACR Iris &amp; Sclera Material to Gen 7
+            <ul data-line="71" class="code-line" dir="auto">
+                <li>Pupils now integrated back into Overall Iris Node Group</li>
+                <li>Simplified Color Handler Process</li>
+                <li>Simplified Luminance Process</li>
+                <li>Simplified Global Illumination Process</li>
+                <li>Condensed Gradiant/Heterochromatic Setup into a Nodegroup</li>
+                <li>Advanced Emission controls now easily accessible</li>
+            </ul>
+        </li>
+        <li>Deleted Pupil Material</li>
+    </ul>
+    <hr data-line="79" class="code-line" dir="auto" />
+    <h3 id="heading-lite-rig-changes">Lite Rig Changes</h3>
+    <ul data-line="83" class="code-line" dir="auto">
+        <li>Long Hair Rig Removed</li>
+        <li>Eyelashes Removed</li>
+        <li>Armor Removed</li>
+        <li>Extrude Head Removed</li>
+        <li>Eye Sparkles Removed</li>
+        <li>Extremely Simplified Mesh</li>
+        <li>All Subdiv Modifiers removed</li>
+        <li>All Autosmooth Modifiers removed</li>
+        <li>Gradient on Iris and Sclera Materials Removed</li>
+    </ul>
+    <hr data-line="66" class="code-line" dir="auto" />
+
+    <h2 id="heading-sacr-revision-7">SACR Revision 7</h2>
+    <h3 id="heading-global-changes">Global Changes</h3>
+    <ul>
+        <li>Simplified Armor Mesh and Material
+            <ul>
+                <li>No more extruded mesh</li>
+                <li>Extremely Simplified Materials</li>
+                <li>Only 1 Armor Texture Included in rig</li>
+                <li>Individual Properties bone merged with main global properties</li>
+            </ul>
+        </li>
+        <li>Rig updated to Blender 4.1</li>
+        <li>Pupils now separated to another object
+            <ul>
+                <li>New Material Added</li>
+                <li>New Object Added</li>
+                <li>Main Pupil Options removed from Iris Gen 6 (Only Textured Pupils Remain)</li>
+            </ul>
+        </li>
+        <li>Removed useless addon custom properties</li>
+        <li>Collections now color coded</li>
+        <li>Rig now has Lite and Standard Versions</li>
+    </ul>
+    <h3 id="heading-mesh-changes">Mesh Changes</h3>
+    <ul>
+        <li>Mouth now has 5 MC Pixels of Depth</li>
+        <li>Teeth now a typical Horseshoe shape</li>
+        <li>Remodeled Face Mesh, Fixing the Mouth Clipping Issue</li>
+        <li>Reset all custom vectors</li>
+        <li>Added Auto-Smoothing Modifier to Arms, Head, and Torso</li>
+        <li>Adjusted Shapekey and Driver for Eye Sparkles</li>
+        <li>Adjusted Sharp-Bend 125 Shape Key</li>
+        <li>Adjusted default Subdivision Surface modifier settings</li>
+    </ul>
+    <h3 id="heading-rig-changes">Rig Changes</h3>
+    <ul>
+        <li>Re-did Face Controls and Properties</li>
+        <li>Face Properties split into 4 Bones (Total, Mouth, Eyes, and Eyebrows)</li>
+        <li>Individual Eye Controls now always show</li>
+        <li>Flip bone is now Togglable, Defaulted to Off</li>
+        <li>Disabled “In Front”</li>
+        <li>Added new Boneshapes and removed reduntant ones</li>
+        <li>Renamed Shapekey Objects in Driver’s editors to match bone with “_shape”</li>
+        <li>Replaced all “cos(var)” invert toggle expressions with “1-var”</li>
+        <li>Condensed all variables to one character</li>
+        <li>Molars are now Togglable, Defaulted to Off</li>
+        <li>Hair Rig now Merged with base SACR Armature</li>
+    </ul>
+    <h3 id="heading-material-changes">Material Changes</h3>
+    <ul>
+        <li>Renamed Materials</li>
+        <li>Fixed UV’s for Eye whites</li>
+        <li>Mouth Inside default color changed to a Dark Red</li>
+        <li>SACR Base Shader updated to Gen 4
+            <ul>
+                <li>Reorganized Inputs</li>
+                <li>Blender Panels now Incorporated</li>
+                <li>Added new SSS Weight Input</li>
+                <li>Added Reflection light path to Emission Pass</li>
+            </ul>
+        </li>
+        <li>SACR Eyewhites Shader updated to Gen 2</li>
+        <li>SACR Iris Shader updated to Gen 6
+            <ul>
+                <li>Pupil Control Completely stripped</li>
+                <li>Blender Panels now Incorporated</li>
+                <li>Removed All Drivers</li>
+            </ul>
+        </li>
+        <li>SACR Eyebrow Shader updated to Gen 3
+            <ul>
+                <li>Blender Panels now Incorporated</li>
+            </ul>
+        </li>
+        <li>All other Shaders updated to use the new Base Shader</li>
+    </ul>
+    <h3 id="heading-base-file-settings">Base File Settings</h3>
+    <ul>
+        <li>Default Rendering Device set to “CPU”</li>
+        <li>“Viewport Denoiser” set to “Off”</li>
+        <li>“Viewport Noise Threshold” set to “Off”</li>
+        <li>“Film &gt; Transparent set” to “Off”</li>
+        <li>“Color Management &gt; Exposure” set to default</li>
+        <li>Changelog is no longer an internal document, reducing file size even further</li>
+    </ul>
+    <h3 id="heading-lite-rig-specifics">Lite Rig Specifics</h3>
+    <ul>
+        <li>Hair Rig Removed</li>
+        <li>Molars removed</li>
+        <li>Super Optimized Mesh (Faces reduced by 75%)</li>
+        <li>All Subdivision Surface modifires Removed</li>
+        <li>Armor removed</li>
+    </ul>
+
+</body>
+
+</html>

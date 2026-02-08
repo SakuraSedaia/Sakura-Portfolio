@@ -1,0 +1,30 @@
+{
+    "SACR": [
+        {
+            "version": "R7.2",
+            "branch": "Stable",
+            "source": "git",
+            "sourceHTTP": "https://github.com/SakuraSedaia/SACR-MC-Rig/releases/download/R7.2.1/",
+            "files": [
+                {
+                    "preset": "Standard",
+                    "filename": "SACR_R7.2.1.blend",
+                    "https": "",
+                    "pyCompat": true
+                },
+                {
+                    "preset": "Lite",
+                    "filename": "SACR_R7.2.1_Lite.blend",
+                    "https": "",
+                    "pyCompat": true
+                },
+                {
+                    "preset": "Beveled",
+                    "filename": "SACR_R7.2.1_Styled.blend",
+                    "https": "",
+                    "pyCompat": true
+                }
+            ]
+        }
+    ]
+}

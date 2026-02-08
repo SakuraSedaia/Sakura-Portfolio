@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SACR | Sakura Sedaia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico" />
+	<link rel="stylesheet" href="assets/styles/rigs.css">
+</head>
+
+<body>
+	<div class="exp-update-alert">
+		<h2>ATTENTION: SACR has recieved a new update: Revision 7.2.1 along with a new Control Addon is available for
+			download!</h2>
+	</div>
+	<!-- HEAD START -->
+	<div class="header"
+		style="background-image: url('assets/images/render-gallery/gallery/CharEnvironment/SakuraATM9-Jul2024.png');background-position: center top">
+		<div class="header-pattern">
+			<div class="header-content">
+				<div class="header-top">
+					<div class="header-info">
+						Sakura Sedaia | Portfolio
+					</div>
+				</div>
+				<br>
+				<div class="header-middle" style="background-color: rgba(65, 65, 65, 0.479);">
+					<img src="assets/images/rig_logos/SACR/R7.2 Full.png" style="display: inline-block;" width="100%">
+				</div>
+				<br>
+				<div class="header-bottom">
+					<div class="header-art">
+						<span hidden>Header Art by: Sakura</span>
+					</div>
+				</div>
+				<div class="navigation">
+					<div class="nav-content">
+						<div class="nav-item" onclick="openInternal('index.html')"><span>About</span></div>
+						<div class="nav-item active" onclick="openInternal('rigs.html')"><span>SACR</span></div>
+						<div class="nav-item" onclick="openInternal('contact.html')"><span>Contact</span></div>
+						<div class="nav-item" onclick="openExternal('https://sakura-sedaia.carrd.co/')">Commissions
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- HEAD END -->
+	<!-- CONTENT START -->
+	<div class="body-container">
+		<div class="sacr">
+			<div class="about-rig">
+				<div class="description">
+					<h2>What is SACR?</h2>
+					<p>
+						Quite simply, SACR is a rig developed by Sakura for use in Blender in the creation of Minecraft
+						Character based renders with a huge emphasis on a comprehensive feature package that is light on
+						the system and easy to use.
+					</p>
+					<h2>Support Server</h2>
+					<p>
+						Should you need help or assistance with SACR, you can contact Sakura directly through the SACR
+						Support server.
+					<div class="link-contain" style="display: inline-block;">
+						<div>Support Discord Server</div>
+					</div>
+					</p>
+				</div>
+				<div class="sacr-thumbnail">
+					<img src="assets/images/rig-previews/SACR/sacr_r7.2_promo.png">
+				</div>
+			</div>
+			<div class="download-rig"> <!-- Revision 7.2 -->
+				<div class="dl-heading">
+					<h3>
+						<span>
+							<img src="assets/images/rig_logos/SACR/R7.2 Full.png" style="display: inline-block;"
+								width="100%" class="rig-version-title"></span>
+					</h3>
+					<p>
+						Revision 7 contains many improvements and changes over it's predecessor, Revision 6. These
+						changes include but are not limited to improved shape Keys, optimized mesh and drivers, return
+						of full rig bone shapes, and a compltetely redone face rig mesh. All changes in R7 aims to bring
+						SACR back to it's roots as an Advanced yet Lightweight Rig that can be used by anyone and
+						everyone, no matter what PC Specs you have.
+					</p>
+					<h3>Version Specific</h3>
+					<p>
+						SACR R7.2 released with a lot of issues and bugs, 7.2.1 is a hotfix update meant to remedy those
+						issues and add crucial identifiers for use with the new Control Addon
+					</p>
+				</div>
+				<div class="info">
+					<span>
+						<a onclick="openMarkdown('SACR_Changelog_R7.2.html')">Open the Changelog</a>
+					</span>
+				</div>
+				<div class="download">
+					<div class="link-contain">
+						<div onclick="openSACR('R', '7.2.1', 'local')">
+							<a class="download-text">
+								Download R7.2.1 Standard
+							</a>
+						</div>
+
+						<div onclick="openSACR('R', '7.2.1', 'local', 'Lite')">
+							<a class="download-text">
+								Download R7.2.1 Lite
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr data-line="4" class="code-line" dir="auto" />
+
+			<div class="download-rig"> <!-- SACR Control Script -->
+				<div class="dl-heading">
+					<h3>
+						<span>
+							<img src="assets/images/rig_logos/Rig GUI/Rig_GUI_V1.0.png" style="display: inline-block;"
+								width="100%" class="rig-version-title"></span>
+					</h3>
+					<p>
+						Alongside the development of SACR R7.2.1, a new control script has been developed in addon form,
+						this control script will be continuously updated as new versions of SACR Come out, with plans
+						for Revision 8 to rely almost exclusively on an addon for all controls, though I will do my best
+						to ensure all old versions of the script are still available for use within Blender while each
+						is compatible. The current UI version only supports R7.2.1 at this time,
+					</p>
+				</div>
+				<div class="info">
+					<span>
+						<a onclick="openMarkdown('SACR_Changelog_R6.1.html')">Open the Changelog</a>
+					</span>
+				</div>
+				<div class="download">
+					<div class="link-contain">
+						<div onclick="openAddon('SACR_GUI_V1.0.0','local')">
+							<a class="download-text">
+								Direct Download
+							</a>
+						</div>
+
+						<div onclick="openAddon('SACR_GUI_V1.0.0','blend')" hidden>
+							<a class="download-text">
+								Blender Extensions
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr data-line="4" class="code-line" dir="auto" />
+			<div class="download-rig" hidden> <!-- Experimental -->
+				<div class="dl-heading">
+					<h3>
+						<span>
+							<img src="assets/images/sacr-logos/E7.2 Full.png" style="display: inline-block;"
+								width="100%" class="rig-version-title"></span>
+					</h3>
+					<p>
+
+					</p>
+				</div>
+				<div class="info">
+					<span>
+						<a onclick="openMarkdown('')">Open the Changelog</a>
+					</span>
+				</div>
+				<div class="download">
+					<div class="link-contain">
+						<div onclick="openSACR('E8-alpha.1')">
+							<a class="download-text">
+								<span><svg height="16" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+										<path
+											d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+									</svg></span>
+								Download E8.0 Indev
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr data-line="4" class="code-line" dir="auto" hidden />
+			<div class="extras">
+				<p>
+					The SACR Github Repository is a great place to find old Stable and Experimental Builds of SACR, and
+					has undergone a complete overhaul at the end of Aug 2024 to have each major version separated by
+					branch rather than having Stable and Experimental in two different repositories, and having each
+					major version in separate folders within each repo.
+				</p>
+				<span>
+					<a onclick="openExternal('https://github.com/SakuraSedaia/SACR-MC-Rig')">
+						Github Repository
+					</a>
+				</span>
+
+				<hr data-line="4" class="code-line" dir="auto" />
+				<p>
+					SACR is licensed under the <a onclick="openMarkdown('SACR_MIT_License.html')">MIT License</a>, as
+					such, users are allowed to download, modify, and redistribute SACR as one's own, however the Rig
+					Creator, Sakura, requests that should one use or modify the SACR rig that credit be given to him.
+					SACR is a free, open source and public rig for use by anyone in their projects, and will forever
+					remain free.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- CONTENT END -->
+	<!-- FOOT BEGIN -->
+	<div class="footer">
+		<div class="clusterfuck">
+			<div class="foot-col">
+				<h4>Site Links</h4>
+				<div onclick="openInternal('index.html')"><span>About Me</span></div>
+				<div onclick="openInternal('rigs.html')"><span>Rigs</span></div>
+				<div onclick="openInternal('contact.html')"><span>Contact</span></div>
+			</div>
+			<div class="foot-col">
+				<h4>Social Links</h4>
+				<div onclick="openExternal('https://youtube.com/c/SakuraSedaia')"><span>Youtube</span></div>
+				<div onclick="openExternal('https://www.deviantart.com/')"><span>DeviantArt</span></div>
+				<div onclick="openExtennal('https://codepen.io/Sakura-Sedaia')"><span>Codepen</span></div>
+			</div>
+			<div class="foot-col">
+
+				<h4><span>External API's</span></h4>
+				<div onclick="openExternal('https://fonts.google.com/')"><span>Google Fonts</span></div>
+				<div onclick="openExternal('https://fontawesome.com/')"><span>Font Awesome</span></div>
+
+			</div>
+
+
+		</div>
+
+		<div class="trademark">&copy; 2024 Sakura Sedaia, All Rights Reserved</div>
+	</div>
+	<!-- FOOT END -->
+
+	<script src="assets/scripts/script.js"></script>
+	<script>
+	</script>
+
+</body>
+
+</html>
