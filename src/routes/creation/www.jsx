@@ -5,8 +5,8 @@ import NotFinished from "~/components/not-finished.jsx";
 function WWW() {
   return (
     <>
-      <Header title="Web Projects" img="about" />
-      <div class="content-container">
+      <Header title={"Web Development"} img={"about"} />
+      <div class={"content-container"}>
         <NotFinished />
       </div>
       <Footer />

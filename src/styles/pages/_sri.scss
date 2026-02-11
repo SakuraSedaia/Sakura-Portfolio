@@ -1,0 +1,30 @@
+.sri-list {
+  list-style-position: inside;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  li {
+    margin-bottom: 0.5rem;
+    &::marker {
+      color: var(--tx-accent);
+      font-weight: bold;
+    }
+  }
+}
+
+ul.sri-list {
+  list-style-type: disc;
+}
+
+ol.sri-list {
+  list-style-type: decimal;
+}
+
+.sri-heading {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.sri-container {
+}

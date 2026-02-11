@@ -8,8 +8,8 @@ export default function Nav(props) {
 
   return (
 		<nav>
-			<nav-container>
-				<nav-title class={"nav-section"}>
+			<div class={"nav-container"}>
+				<div class={"nav-title nav-section"}>
 					<img
 						src={"/images/icon/favicon.ico"}
 						alt={"logo"}
@@ -17,8 +17,8 @@ export default function Nav(props) {
 						style={"transform: scale(1.5); padding-right: 0.25rem;"}
 					/>
 					<A href="/">{props.title}</A>
-				</nav-title>
-				<nav-router class={"nav-section"}>
+				</div>
+				<div class={"nav-router nav-section"}>
 					<For
 						each={Routes}
 						fallback={
@@ -29,22 +29,22 @@ export default function Nav(props) {
 					>
 						{(nav, n) => (
 							<Show when={nav.show === true}>
-								<nav-item class={`${active("/" + nav.path)}`}>
+								<div class={`${active("/" + nav.path)} nav-item`}>
 									<A href={"/" + nav.path}>{nav.page}</A>
-								</nav-item>
+								</div>
 							</Show>
 						)}
 					</For>
-				</nav-router>
-			</nav-container>
+				</div>
+			</div>
 			{/* First, check each route for if Subnav is enabled. If there are any, create a secondary navbar for them and populate it */}
 			<br />
 			<For each={Routes} fallback={
-				<sub-navigation>
-					<nav-item class={"nav-item"}>
+				<div class={"sub-navigation"}>
+					<div class={"nav-item"}>
 						<a>Loading Nav...</a>
-					</nav-item>
-				</sub-navigation>}>
+					</div>
+				</div>}>
 				{(nav, n) => (
 					<Show
 						when={location.pathname.includes(
@@ -52,29 +52,29 @@ export default function Nav(props) {
 						)}
 					>
 						<Show when={nav.subnav === true}>
-							<sub-navigation>
+							<div class={"sub-navigation"}>
 								<For
 									each={nav.subpages}
 									fallback={
-										<nav-item class={"sub-nav-item"}>
+										<div class={"sub-nav-item"}>
 											<a>Loading Nav...</a>
-										</nav-item>
+										</div>
 									}
 								>
 									{(subnav, s) => (
 										<Show when={subnav.show === true}>
 											<i>-</i>
-											<nav-item class={`${active("/" + subnav.path)}`}>
+											<div class={`${active("/" + subnav.path)} sub-nav-item`}>
 												<A href={"/" + subnav.path}>{subnav.page}</A>
-											</nav-item>
+											</div>
 										</Show>
 									)}
 								</For>
-								<nav-arrow> &lt; </nav-arrow>
-								<nav-item class={`${active("/" + nav.path)}`}>
+								<div class={"nav-arrow"}> &lt; </div>
+								<div class={`${active("/" + nav.path)} sub-nav-item`}>
 									<A href={"/" + nav.path}>{nav.page}</A>
-								</nav-item>
-							</sub-navigation>
+								</div>
+							</div>
 						</Show>
 					</Show>
 				)}

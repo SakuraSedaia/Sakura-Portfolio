@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+#notable-projects {
+  .grid-container {
+    .grid-item {
+      .notable-img {
+        border-radius: var(--radius-md);
+      }
+      .projects-link {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

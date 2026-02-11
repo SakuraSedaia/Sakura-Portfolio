@@ -4,14 +4,14 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   
-  header-box {
+  .header-box {
     display: block;
     padding-block: 3rem;
     max-width: 80rem;
     margin: 0 auto;
     padding-inline: 6rem;
 
-    header-content {
+    .header-content {
       width: fit-content;
       padding: 1rem;
       border-radius: var(--radius-lg);
@@ -27,7 +27,7 @@ header {
 // Navigation
 nav {
   text-align: center;
-  nav-container {
+  .nav-container {
     background-color: hsla(var(--bg-accent-val));
     color: hsl(var(--tx-primary-val));
     padding: 1rem;
@@ -39,12 +39,12 @@ nav {
     border: 0.125rem solid hsla(var(--tx-contrast-accent-val), 30%);
     box-shadow: 0 0 .2rem hsla(var(--tx-contrast-accent-val), 50%);
     
-    nav-col {
+    .nav-col {
       display: inline-block;
       width: 50%;
     }
 
-    nav-title {
+    .nav-title {
       display: inline-block;
       text-align: center;
       padding-inline: 1rem;
@@ -70,18 +70,18 @@ nav {
       }
     }
 
-    nav-router {
+    .nav-router {
       display: inline-block;
       flex-basis: 100%;
       text-align: right;
       
-      nav-item {
+      .nav-item {
         display : inline-block;
       }
     }
   }
 
-  sub-navigation {
+  .sub-navigation {
     background-color: hsl(var(--bg-secondary-val));
     padding: 0.5rem;
     justify-content: center;
@@ -93,7 +93,7 @@ nav {
     border-bottom-left-radius: var(--radius-lg);
     border-bottom-right-radius: var(--radius-lg);
 
-    nav-item a {
+    .nav-item a {
       color: hsl(var(--tx-primary-val));
 
       &:hover {
@@ -117,7 +117,7 @@ nav {
         border-radius: var(--radius-lg);
       }
     }
-    nav-arrow {
+    .nav-arrow {
       display: inline-block;
       padding-inline: 0.5rem;
       color: hsl(var(--tx-primary-val));
@@ -139,7 +139,7 @@ nav {
     }
   }
 
-  nav-item {
+  .nav-item {
     display: inline-block;
     flex-basis: 2.5rem;
     text-align: center;
@@ -169,19 +169,19 @@ nav {
 // Navigation and Header Mobile Responsive
 @media screen and (max-width: 720px) {
   header {
-    header-box {
+    .header-box {
       padding-inline: 1rem;
       margin-top: 2rem;
       text-align: center;
 
-      header-content {
+      .header-content {
         display: inline-block;
       }
     }
   }
 
   nav {
-    nav-container {
+    .nav-container {
       display: inline-block;
       padding: 0.5rem 0;
       border-radius: 0;
@@ -189,25 +189,25 @@ nav {
       border-inline-width: 0;
       margin-bottom: 0;
 
-      nav-title {
+      .nav-title {
         display: block;
         margin-bottom: 1rem;
         margin-inline: auto;
         width: 80%;
       }
 
-      nav-router {
+      .nav-router {
         display: flex;
         text-align: center;
 
-        nav-item {
+        .nav-item {
           display: inline-block;
           margin-bottom: 0.5rem;
         }
       }
     }
 
-    sub-navigation {
+    .sub-navigation {
       text-align: center;
       border-radius: var(--radius-lg);
       margin-top: 0;
@@ -217,12 +217,12 @@ nav {
       border-top-right-radius: 0;
       border-top-left-radius: 0;
 
-      nav-item {
+      .nav-item {
         display: inline-block;
         margin-block: 0.25rem;
       }
 
-      nav-arrow {
+      .nav-arrow {
         display: none;
       }
     }

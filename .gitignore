@@ -6,6 +6,7 @@ dist
 .vinxi
 app.config.timestamp_*.js
 *.hidden
+.logs
 
 # Environment
 .env
@@ -31,3 +32,6 @@ Thumbs.db
 /utils/renders/
 /utils/lib/
 /.output.txt
+
+# Sibling Project Sync
+.junie/siblings

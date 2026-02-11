@@ -5,9 +5,9 @@ import NotFinished from "~/components/not-finished.jsx";
 function Creations() {
   return (
     <>
-      <Header title="My Works" img="about" />
+      <Header title={"My Works"} img={"about"} />
 
-      <div class="content-container">
+      <div class={"content-container"}>
         <NotFinished />
       </div>
 

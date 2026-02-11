@@ -4,7 +4,7 @@ import Header from "~/components/header.jsx";
 export default function NotFound() {
   const location = useLocation();
   return (
-    <error-404>
+    <section class={"error-404"}>
       <Header
         desc={`404: Content for ${location.pathname} was not found.`}
         img="about"
@@ -14,10 +14,10 @@ export default function NotFound() {
         another page using a link below.
       </p>
       <p>
-        <A href="/" class="link">
+        <A href="/" class={"link"}>
           Home
         </A>
       </p>
-    </error-404>
+    </section>
   );
 }
