@@ -1,15 +1,5 @@
-@use "styles/variables" as *;
-@use "styles/sedaia-design" as *;
-@use "styles/pages/index" as *;
-@use "styles/pages/404" as *;
-@use "styles/components/header-footer" as *;
-@use "styles/components/not-finished" as *;
-@use "styles/pages/sacr" as *;
-@use "styles/pages/sri" as *;
-@use "styles/pages/assets" as *;
-@use "styles/pages/changelog/index" as *;
-@use "styles/sections/index/notable-projects" as *;
-@use "styles/sections/shared-downloads" as *;
+@use "variables" as *;
+
 
 * {
   transition-duration: 100ms;

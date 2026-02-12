@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use "../variables" as *;
 
 .content-container {
   section {
@@ -25,9 +25,7 @@
             background-color: hsla(var(--bg-accent-val), 0.1);
           }
         }
-        &.resume {
-          transform: translateY(-0.45rem);
-        }
+
       }
     }
   }
