@@ -19,9 +19,9 @@ export default function Header(props) {
 
         <Show when={props.onlyNav === undefined}>
           {/* Header Content */}
-          <header-box>
-            <header-position>
-              <header-content>
+          <div class={"header-box"}>
+            <div class={"header-position"}>
+              <div class={"header-content"}>
                 <Show when={props.title !== undefined}>
                   <h1>{props.title}</h1>
                 </Show>
@@ -29,9 +29,9 @@ export default function Header(props) {
                 <Show when={props.desc !== undefined}>
                   <p>{props.desc}</p>
                 </Show>
-              </header-content>
-            </header-position>
-          </header-box>
+              </div>
+            </div>
+          </div>
         </Show>
       </header>
     </>

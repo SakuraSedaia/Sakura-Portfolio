@@ -4,8 +4,8 @@ import NotFinished from "~/components/not-finished.jsx";
 function Animations() {
   return (
     <>
-      <Header title="Animations" img="rigs" />
-      <div class="content-container">
+      <Header title={"Animations"} img={"rigs"} />
+      <div class={"content-container"}>
         <NotFinished />
       </div>
       <Footer />

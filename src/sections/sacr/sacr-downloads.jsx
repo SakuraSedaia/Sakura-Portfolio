@@ -37,11 +37,11 @@ export default function SACRDownloads(props) {
 
 	return (
     <section id={"downloads"}>
-      <heading>
+      <header>
         <h1>Downloads</h1>
-      </heading>
-      <row-container>
-        <row id={"stable"}>
+      </header>
+      <div class={"row-container"}>
+        <div class={"row"} id={"stable"}>
           <h2>Stable Build</h2>
           <h3>{stable.name} Stable</h3>
 					<div class={"stable-builds build-select"}>
@@ -59,14 +59,14 @@ export default function SACRDownloads(props) {
           <div class={"download-info"}>
 						<p>{stable.builds[stableIndex()].notes}</p>
 
-						<download>
+						<div class={"download"}>
 							<a href={stableDownloadUrl()} class={"btn"}>Download {stable.version}{stable.builds[stableIndex()].suffix}</a>
-						</download>
+						</div>
 						<br />
-						<changelog>
+						<div class={"changelog"}>
 							<A href={`/changelog/SACR_${stable.version}`} class={"link"}>View Changelog</A>
-						</changelog>
-						<download-spec>
+						</div>
+						<div class={"download-spec"}>
 							<table>
 								<thead>
 								<tr>
@@ -85,12 +85,12 @@ export default function SACRDownloads(props) {
 									</tr>
 								</tbody>
 							</table>
-						</download-spec>
+						</div>
 					</div>
-        </row>
+        </div>
 
         <Show when={dev.enabled}>
-          <row id={"dev"}>
+          <div class={"row"} id={"dev"}>
             <h2>Development Builds</h2>
 						<h3>{dev.name} Development</h3>
 						<div class={"dev-builds build-select"}>
@@ -104,14 +104,14 @@ export default function SACRDownloads(props) {
 						</div>
 						<div class={"download-info"}>
 							<p>{dev.builds[devIndex()].notes}</p>
-							<download>
+							<div class={"download"}>
 								<a
 									href={devDownloadUrl()}
 									class={"btn"}>
 									Download {dev.builds[devIndex()].label}
 								</a>
-							</download>
-							<download-spec>
+							</div>
+							<div class={"download-spec"}>
 								<table>
 									<thead>
 									<tr>
@@ -130,12 +130,12 @@ export default function SACRDownloads(props) {
 									</tr>
 									</tbody>
 								</table>
-							</download-spec>
+							</div>
 
 						</div>
-          </row>
+          </div>
         </Show>
-      </row-container>
+      </div>
     </section>
   );
 }

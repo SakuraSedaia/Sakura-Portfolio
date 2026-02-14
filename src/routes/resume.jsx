@@ -5,8 +5,8 @@ import NotFinished from "~/components/not-finished.jsx";
 function Resume() {
   return (
     <>
-      <Header title="Resume" img="about" />
-      <div class="content-container">
+      <Header title={"Resume"} img={"about"} />
+      <div class={"content-container"}>
         <NotFinished />
       </div>
       <Footer />

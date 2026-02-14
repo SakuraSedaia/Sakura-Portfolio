@@ -7,7 +7,7 @@ function Commissions() {
   return (
     <>
       <Header title="Commissions" img="commissions" />
-      <div class="content-container">
+      <div class={"content-container"}>
         <CommissionIntro />
         <CommissionGrid />
       </div>

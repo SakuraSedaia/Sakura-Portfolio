@@ -4,12 +4,12 @@ export default function FeaturedAssets() {
   return (
     <NoHydration>
       <section>
-        <heading>
+        <header>
           <h1>Featured Assets</h1>
-        </heading>
+        </header>
 
-        <column-container>
-          <column>
+        <div class={"column-container"}>
+          <div class={"column"}>
             <img
               src={"/images/rig-headers/SACR/R7.4 Full.png"}
               alt={"Sakura's Advanced Character Rig Logo"}
@@ -24,9 +24,9 @@ export default function FeaturedAssets() {
             <a class={"btn"} href={"/asset/sakura-character-rig"}>
               See Rig Page
             </a>
-          </column>
+          </div>
 
-          <column>
+          <div class={"column"}>
             <img
               src={"/images/rig-headers/rig-interface/rig-interface-3.png"}
               alt={"Sakura's Rig Interface Logo Version 3"}
@@ -38,7 +38,7 @@ export default function FeaturedAssets() {
               being a lightweight, highly customizable minecraft rig able to
               be used on all levels of hardware.
             </p>
-            <div class="btn-centered">
+            <div class={"btn-centered"}>
               <a class={"btn"} href={"/asset/sakura-rig-interface"}>
                 See Extension Page
               </a>
@@ -51,8 +51,8 @@ export default function FeaturedAssets() {
                 Blender Extensions
               </a>
             </div>
-          </column>
-        </column-container>
+          </div>
+        </div>
       </section>
     </NoHydration>
   );

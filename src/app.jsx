@@ -8,8 +8,8 @@ export default function App() {
   return (
     <Router
       root={(props) => (
-        <ErrorBoundary fallback={(err) => <div class="content-container"><h1>Error</h1><p>{err.message}</p></div>}>
-          <Suspense fallback={<div class="content-container"><p>Loading...</p></div>}>
+        <ErrorBoundary fallback={(err) => <div class={"content-container"}><h1>Error</h1><p>{err.message}</p></div>}>
+          <Suspense fallback={<div class={"content-container"}><p>Loading...</p></div>}>
             {props.children}
           </Suspense>
         </ErrorBoundary>

@@ -5,12 +5,12 @@ export default function NotableProjects() {
   return (
 		<NoHydration>
 			<section id={"notable-projects"} breakout full-width>
-				<heading>
+				<header>
 					<h1>Notable Projects</h1>
-				</heading>
+				</header>
 
-				<grid-container>
-					<grid-item>
+				<div class={"grid-container"}>
+					<div class={"grid-item"}>
 						<h1>Frostlight Studios</h1>
 						<hr />
 						<div class={"notable-img"}><img
@@ -36,9 +36,9 @@ export default function NotableProjects() {
 								Github Repo
 							</a>
 						</div>
-					</grid-item>
+					</div>
 
-					<grid-item>
+					<div class={"grid-item"}>
 						<h1>Rig Interface</h1>
 						<hr />
 						<img
@@ -64,8 +64,8 @@ export default function NotableProjects() {
 								Github Repo
 							</a>
 						</div>
-					</grid-item>
-				</grid-container>
+					</div>
+				</div>
 			</section>
 		</NoHydration>
   );
