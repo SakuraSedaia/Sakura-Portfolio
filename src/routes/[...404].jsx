@@ -1,5 +1,5 @@
 import { A, useLocation } from "@solidjs/router";
-import Header from "~/components/header.jsx";
+import Header from "~/sections/header.jsx";
 
 export default function NotFound() {
   const location = useLocation();

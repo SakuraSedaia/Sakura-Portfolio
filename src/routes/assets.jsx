@@ -1,5 +1,5 @@
-import Header from "~/components/header.jsx";
-import Footer from "~/components/footer.jsx";
+import Header from "~/sections/header.jsx";
+import Footer from "~/sections/footer.jsx";
 import AssetsIntro from "~/sections/assets/assets-intro";
 import FeaturedAssets from "~/sections/assets/featured-assets";
 import DownloadableAssets from "~/sections/assets/downloadable-assets";

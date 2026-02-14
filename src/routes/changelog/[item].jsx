@@ -1,6 +1,6 @@
-import Header from "~/components/header.jsx";
+import Header from "~/sections/header.jsx";
 import { SolidMarkdown } from "solid-markdown";
-import Footer from "~/components/footer.jsx";
+import Footer from "~/sections/footer.jsx";
 import { cache, createAsync, useParams } from "@solidjs/router";
 import { Show, Suspense, ErrorBoundary } from "solid-js";
 import NotFinished from "~/components/not-finished.jsx";

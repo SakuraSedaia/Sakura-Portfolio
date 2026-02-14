@@ -1,5 +1,5 @@
 import { createSignal, onMount } from "solid-js";
-import SocialIcon from "./social-icon";
+import SocialIcon from "../components/social-icon.jsx";
 
 function Footer() {
   const [year, setYear] = createSignal(new Date().getFullYear());

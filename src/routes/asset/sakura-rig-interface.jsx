@@ -1,5 +1,5 @@
-import Header from "~/components/header.jsx";
-import Footer from "~/components/footer.jsx";
+import Header from "~/sections/header.jsx";
+import Footer from "~/sections/footer.jsx";
 import AboutSRI from "~/sections/sri/about-sri.jsx";
 import SRIDownloads from "~/sections/sri/sri-downloads.jsx";
 import SRIInstructions from "~/sections/sri/sri-instructions.jsx";
