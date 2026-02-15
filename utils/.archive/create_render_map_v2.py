@@ -39,8 +39,9 @@ SOURCE_RENDERS_DIR = Path(__file__).parent / "renders"
 OUTPUT_WEB_IMAGES_DIR = Path(__file__).parent.parent / "public/images/renders"
 OUTPUT_INDIVIDUAL_JSON_DIR = Path(__file__).parent / "lib"
 CATEGORIES = ["env", "char", "char-env"]
-DEBUG = False
-
+DEBUG = True
+DEBUG_WEB_IMAGES_DIR = Path(__file__).parent / "debug_renders"
+DEBUG_INDIVIDUAL_JSON_DIR = Path(__file__).parent / "debug_lib"
 
 
 class ImageFile:
@@ -81,31 +82,33 @@ class ImageFile:
 		"""
 		return Path(path).exists()
 	
-	def filepath(self, suffix: str) -> Path:
+	def filepath(self, suffix: str, base_dir: Path = OUTPUT_INDIVIDUAL_JSON_DIR) -> Path:
 		"""
 		Calculates the output path for the individual JSON manifest file.
 
 		Args:
 			suffix (str): The file extension to use (usually ".json").
+			base_dir (Path): The base directory for the output JSON.
 
 		Returns:
 			Path: The full path to the intended JSON manifest file.
 		"""
 		relative_path = self.img_path.relative_to(SOURCE_RENDERS_DIR).with_suffix(suffix)
 		# Replace spaces with underscores in the filename part
-		return Path(OUTPUT_INDIVIDUAL_JSON_DIR) / relative_path.parent / relative_path.name.replace(" ", "_")
+		return Path(base_dir) / relative_path.parent / relative_path.name.replace(" ", "_")
 	
-	def imagepath(self, suffix: str) -> Path:
+	def imagepath(self, suffix: str, base_dir: Path = OUTPUT_WEB_IMAGES_DIR) -> Path:
 		"""
-		Calculates the output path for the web-optimized image file in the public directory.
+		Calculates the output path for the web-optimized image file.
 
 		Args:
 			suffix (str): The file extension or suffix to use (e.g., ".jpg").
+			base_dir (Path): The base directory for the output image.
 
 		Returns:
 			Path: The full path to the intended web image file.
 		"""
-		return Path(OUTPUT_WEB_IMAGES_DIR) / self.img_path.relative_to(SOURCE_RENDERS_DIR).with_suffix(suffix)
+		return Path(base_dir) / self.img_path.relative_to(SOURCE_RENDERS_DIR).with_suffix(suffix)
 	
 	def cv2_read(self):
 		"""
@@ -119,7 +122,7 @@ class ImageFile:
 		"""
 		return cv2.imread(self.img_path)
 	
-	def cv2_write(self, max_width: int = 1920, label: str = None, subdir: bool = False) -> Path:
+	def cv2_write(self, max_width: int = 1920, label: str = None, subdir: bool = False, base_dir: Path = OUTPUT_WEB_IMAGES_DIR) -> Path:
 		"""
 		Converts, resizes, and writes the image as a web-optimized JPEG.
 
@@ -127,6 +130,7 @@ class ImageFile:
 			max_width (int): The maximum width allowed for the image. Resizing preserves aspect ratio.
 			label (str, optional): A suffix to append to the filename (e.g., 'lg', 'md', 'sm').
 			subdir (bool): If True, creates a named subdirectory for the image sizes.
+			base_dir (Path): The base directory for the output image.
 
 		Returns:
 			Path: The path where the image was written.
@@ -135,16 +139,16 @@ class ImageFile:
 			IOError: If the image cannot be read or written.
 		"""
 		if not subdir:
-			target_path = self.imagepath(".jpg")
+			target_path = self.imagepath(".jpg", base_dir=base_dir)
 			logger.debug(f"Set Target to {target_path}")
 		else:
 			name = self.filepath(suffix="").name.split("-")[0].replace("_", "-").lower()
-			absolute = self.imagepath("").parent / name
-			relative = absolute.relative_to(OUTPUT_WEB_IMAGES_DIR)
+			absolute = self.imagepath("", base_dir=base_dir).parent / name
+			relative = absolute.relative_to(base_dir)
 			
 			self.mkdir(absolute)
 			
-			new_path = Path(OUTPUT_WEB_IMAGES_DIR) / relative
+			new_path = Path(base_dir) / relative
 			file_name_clean = self.img_path.with_suffix("").name.split("-")[0].replace(" ", "_")
 			target_path = new_path / file_name_clean
 			logger.debug(f"Set Target to {target_path}")
@@ -184,7 +188,7 @@ class ImageFile:
 		
 		return target_path
 		
-	def dump_json(self, data: dict, indent: int = 4) -> None:
+	def dump_json(self, data: dict, indent: int = 4, debug: bool = False, output: Path = OUTPUT_INDIVIDUAL_JSON_DIR) -> None:
 		"""
 		Writes the manifest data to a JSON file.
 		If an existing manifest has a description, it preserves it.
@@ -192,8 +196,10 @@ class ImageFile:
 		Args:
 			data (dict): The manifest data to save.
 			indent (int): Number of spaces for JSON indentation.
+			debug (bool): If True, runs in debug mode.
+			output (Path): The output directory for the JSON manifest.
 		"""
-		path = self.filepath(".json")
+		path = self.filepath(".json", base_dir=output)
 		
 		# Check if the file already exists to preserve the description
 		if path.exists() and not data.get("description"):
@@ -212,12 +218,16 @@ class ImageFile:
 			
 		logger.info(f"Saved Manifest: {path.name}")
 	
-	def generate_web(self) -> None:
+	def generate_web(self, debug: bool = False, path: Path = OUTPUT_WEB_IMAGES_DIR) -> None:
 		"""
 		The main orchestration method for processing an image.
 		- Generates three sizes (lg, md, sm).
 		- Extracts metadata.
 		- Generates and saves the individual JSON manifest.
+
+		Args:
+			debug (bool): If True, runs in debug mode (uses debug path, potentially skips JSON dump).
+			path (Path): The output directory for the web images.
 		"""
 		sizes: tuple = (
 			[1920, 'lg'],
@@ -229,13 +239,15 @@ class ImageFile:
 		logger.info(f"--- Processing: {ImageManifest(self.img_path).get_name()} ---")
 		
 		for s, l in sizes:
-			img_paths.append(str(self.cv2_write(max_width=s, label=l, subdir=True).name))
+			img_paths.append(str(self.cv2_write(max_width=s, label=l, subdir=True, base_dir=path).name))
 		
 		manifest = ImageManifest(self.img_path).get_json(sizes=img_paths)
 	
 		
-		if not DEBUG:
-			self.dump_json(manifest)
+		if debug:
+			self.dump_json(data=manifest, debug=DEBUG, output=DEBUG_INDIVIDUAL_JSON_DIR)
+		else:
+			self.dump_json(data=manifest)
 			
 		logger.info(f"Generated Manifest: {manifest}")
 		logger.info(f"--- Finished Processing: {ImageManifest(self.img_path).get_name()} ---")
@@ -311,6 +323,7 @@ class ImageManifest:
 			"year": self.get_date()[0],
 			"month": self.get_date()[1],
 			"description": "",
+			"folder": self.path.parent.name,
 			"sizes": sizes
 		}
 		return data
@@ -319,7 +332,7 @@ if __name__ == "__main__":
 	if DEBUG:
 		logger.setLevel(logging.DEBUG)
 		img = Path(SOURCE_RENDERS_DIR) / "env" / "Enchanting Room-Oct2023.png"
-		ImageFile(img).generate_web()
+		ImageFile(img).generate_web(debug=DEBUG, path=DEBUG_WEB_IMAGES_DIR)
 		# Example Desc: This is an enchanting room, originally made for the Chronicles of Ardonia Server.
 	else:
 		for dir_index, dir in enumerate(os.listdir(SOURCE_RENDERS_DIR)):

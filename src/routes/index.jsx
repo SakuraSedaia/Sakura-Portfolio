@@ -1,5 +1,5 @@
-import Header from "~/components/header.jsx";
-import Footer from "~/components/footer.jsx";
+import Header from "~/sections/header.jsx";
+import Footer from "~/sections/footer.jsx";
 import About from "~/sections/index/about";
 import NotableProjects from "~/sections/index/notable-projects";
 import PreferredTooling from "~/sections/index/preferred-tooling";

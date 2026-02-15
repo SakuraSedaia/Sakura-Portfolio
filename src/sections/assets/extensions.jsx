@@ -3,16 +3,16 @@ import { NoHydration } from "solid-js/web";
 export default function Extensions() {
   return (
     <NoHydration>
-      <section class="extensions">
-        <heading>
+      <section class={"extensions"}>
+        <header>
           <h1>Extensions</h1>
-        </heading>
+        </header>
 
-        <grid-container>
-          <grid-item>
+        <div class={"grid-container"}>
+          <div class={"grid-item"}>
             <h2>Coming Soon!</h2>
-          </grid-item>
-        </grid-container>
+          </div>
+        </div>
       </section>
     </NoHydration>
   );

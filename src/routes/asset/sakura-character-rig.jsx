@@ -1,5 +1,5 @@
-import Header from "~/components/header.jsx";
-import Footer from "~/components/footer.jsx";
+import Header from "~/sections/header.jsx";
+import Footer from "~/sections/footer.jsx";
 import AboutSACR from "~/sections/sacr/about-sacr";
 import SACRDownloads from "~/sections/sacr/sacr-downloads";
 import SACRInstructions from "~/sections/sacr/sacr-instructions";

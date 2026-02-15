@@ -1,0 +1,23 @@
+@use "../variables" as *;
+
+// Error Page
+error-404 {
+  text-align: center;
+  margin-block: auto;
+  color: hsl(var(--tx-primary-val));
+  padding: 1rem;
+
+  h1 {
+    font-size: 34pt;
+    line-height: 1;
+    color: hsl(var(--tx-accent-val));
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-block-start: 4rem;
+  }
+
+  p {
+    font-size: 16pt;
+    margin-block-end: 4rem;
+  }
+}

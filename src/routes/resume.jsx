@@ -1,12 +1,12 @@
-import Header from "~/components/header.jsx";
-import Footer from "~/components/footer.jsx";
+import Header from "~/sections/header.jsx";
+import Footer from "~/sections/footer.jsx";
 import NotFinished from "~/components/not-finished.jsx";
 
 function Resume() {
   return (
     <>
-      <Header title="Resume" img="about" />
-      <div class="content-container">
+      <Header title={"Resume"} img={"about"} />
+      <div class={"content-container"}>
         <NotFinished />
       </div>
       <Footer />

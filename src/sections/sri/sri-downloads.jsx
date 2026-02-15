@@ -31,11 +31,11 @@ export default function SRIDownloads() {
 
 	return (
 		<section id={"downloads"}>
-			<heading>
+			<header>
 				<h1>Downloads</h1>
-			</heading>
-			<row-container>
-				<row id={"stable"}>
+			</header>
+			<div class={"row-container"}>
+				<div class={"row"} id={"stable"}>
 					<h2>Stable Build</h2>
 					<h3>{stable.label}</h3>
 					<div class={"stable-builds build-select"}>
@@ -56,13 +56,13 @@ export default function SRIDownloads() {
 							<p>{stable.builds[stableIndex()].notes}</p>
 						</Show>
 
-						<download>
+						<div class={"download"}>
 							<a href={stableDownloadUrl()} class={"btn"}>Download {stable.builds[stableIndex()].git_tag}</a>
 							<Show when={stable.blender_ext}>
 								<a href={stable.blender_ext} target="_blank" class={"btn"}>Blender Extensions</a>
 							</Show>
-						</download>
-						<download-spec>
+						</div>
+						<div class={"download-spec"}>
 							<table>
 								<thead>
 									<tr>
@@ -81,12 +81,12 @@ export default function SRIDownloads() {
 									</tr>
 								</tbody>
 							</table>
-						</download-spec>
+						</div>
 					</div>
-				</row>
+				</div>
 
 				<Show when={dev.enabled}>
-					<row id={"dev"}>
+					<div class={"row"} id={"dev"}>
 						<h2>Development Builds</h2>
 						<h3>{dev.label}</h3>
 						<div class={"dev-builds build-select"}>
@@ -103,14 +103,14 @@ export default function SRIDownloads() {
 							<Show when={dev.builds[devIndex()].notes}>
 								<p>{dev.builds[devIndex()].notes}</p>
 							</Show>
-							<download>
+							<div class={"download"}>
 								<a
 									href={devDownloadUrl()}
 									class={"btn"}>
 									Download {dev.builds[devIndex()].git_tag || "Dev"}
 								</a>
-							</download>
-							<download-spec>
+							</div>
+							<div class={"download-spec"}>
 								<table>
 									<thead>
 										<tr>
@@ -129,11 +129,11 @@ export default function SRIDownloads() {
 										</tr>
 									</tbody>
 								</table>
-							</download-spec>
+							</div>
 						</div>
-					</row>
+					</div>
 				</Show>
-			</row-container>
+			</div>
 		</section>
 	);
 }

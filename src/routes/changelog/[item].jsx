@@ -1,6 +1,6 @@
-import Header from "~/components/header.jsx";
+import Header from "~/sections/header.jsx";
 import { SolidMarkdown } from "solid-markdown";
-import Footer from "~/components/footer.jsx";
+import Footer from "~/sections/footer.jsx";
 import { cache, createAsync, useParams } from "@solidjs/router";
 import { Show, Suspense, ErrorBoundary } from "solid-js";
 import NotFinished from "~/components/not-finished.jsx";
@@ -48,12 +48,12 @@ export default function Changelog() {
 	return (
 		<>
 			<Header title={params.item ? `Changelog - ${params.item}` : "Changelog"} img="rigs" />
-			<main class="content-container">
-				<section class="changelog">
+			<main class={"content-container"}>
+				<section class={"changelog"}>
 					<NotFinished />
 					{/*
 					<ErrorBoundary fallback={(err) => (
-						<div class="error-box">
+						<div class={"error-box"}>
 							<h2>Error Rendering Content</h2>
 							<p>{err.message}</p>
 						</div>
