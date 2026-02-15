@@ -76,9 +76,40 @@ nav {
       display: inline-block;
       flex-basis: 100%;
       text-align: right;
-      
+
       .nav-item {
-        display : inline-block;
+        display: inline-block;
+        padding-inline: 0.5rem;
+
+        a {
+          color: hsl(var(--tx-primary-val));
+          padding-inline: 0.5rem;
+          text-decoration: none;
+          display: inline-block;
+          cursor: pointer;
+          border: 0.125rem solid transparent;
+          border-radius: var(--radius-lg);
+
+          &:hover {
+            color: hsl(var(--tx-accent-val));
+            border-color: hsl(var(--tx-accent-val));
+            border-radius: var(--radius-lg);
+          }
+
+          &.active {
+            color: hsl(var(--tx-accent-val));
+            font-weight: 600;
+            border-bottom-color: hsl(var(--tx-accent-val)) !important;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+
+            &:hover {
+              border: 0.125rem solid hsl(var(--tx-primary-val)) !important;
+              color: hsl(var(--tx-primary-val)) !important;
+              border-radius: var(--radius-lg);
+            }
+          }
+        }
       }
     }
   }
@@ -94,76 +125,48 @@ nav {
     max-width: 75rem;
     border-bottom-left-radius: var(--radius-lg);
     border-bottom-right-radius: var(--radius-lg);
+    i {
+      display: inline-block;
+    }
+    .sub-nav-item {
+      display: inline-block;
+      padding-inline: 0.5rem;
 
-    .nav-item a {
-      color: hsl(var(--tx-primary-val));
-
-      &:hover {
-        color: hsl(var(--tx-accent-val)) !important;
-        box-shadow-color: hsl(var(--tx-accent-val)) !important;
-        border-color: hsl(var(--tx-accent-val)) !important;
+      a {
+        color: hsl(var(--tx-primary-val));
+        padding-inline: 0.5rem;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border: 0.125rem solid transparent;
         border-radius: var(--radius-lg);
+
+        &:hover {
+          color: hsl(var(--tx-accent-val));
+          border-color: hsl(var(--tx-accent-val));
+          border-radius: var(--radius-lg);
+        }
+
+        &.active {
+          font-weight: 600;
+          border-bottom-color: hsl(var(--tx-accent-val)) !important;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+          color: hsl(var(--tx-accent-val));
+
+          &:hover {
+            border: 0.125rem solid hsl(var(--tx-primary-val)) !important;
+            color: hsl(var(--tx-primary-val)) !important;
+            border-radius: var(--radius-lg);
+          }
+        }
       }
     }
-    .active a {
-      color: hsl(var(--tx-accent-val)) !important;
-      cursor: pointer;
-      font-weight: 600;
-      border-radius: 0;
-      border: 0.125rem solid transparent !important;
-      border-bottom-color: hsl(var(--tx-accent-val)) !important;
 
-      &:hover {
-        border: 0.125rem solid hsl(var(--tx-primary-val)) !important;
-        color: hsl(var(--tx-primary-val)) !important;
-        border-radius: var(--radius-lg);
-      }
-    }
     .nav-arrow {
       display: inline-block;
       padding-inline: 0.5rem;
       color: hsl(var(--tx-primary-val));
-    }
-  }
-
-  .active a {
-    color: hsl(var(--tx-accent-val)) !important;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 0;
-    border: 0.125rem solid transparent !important;
-    border-bottom-color: hsl(var(--tx-accent-val)) !important;
-
-    &:hover {
-      border: 0.125rem solid hsl(var(--tx-primary-val)) !important;
-      color: hsl(var(--tx-primary-val)) !important;
-      border-radius: var(--radius-lg);
-    }
-  }
-
-  .nav-item {
-    display: inline-block;
-    flex-basis: 2.5rem;
-    text-align: center;
-    padding-inline: 1rem;
-    padding-block: 0.25rem;
-
-    a {
-      font-size: var(--font-size-nav);
-      letter-spacing: 0.5pt;
-      padding: 0.1875rem 0.5rem;
-      border-radius: var(--radius-lg);
-      border: 0.125rem solid transparent;
-      box-shadow: 0 0 hsl(var(--tx-accent-val));
-      text-decoration: none;
-      color: inherit;
-
-      &:hover {
-        color: hsl(var(--tx-accent-val));
-        box-shadow: 0 0 0.1875rem hsl(var(--tx-accent-val));
-        border-color: hsl(var(--tx-accent-val));
-        cursor: pointer;
-      }
     }
   }
 }
