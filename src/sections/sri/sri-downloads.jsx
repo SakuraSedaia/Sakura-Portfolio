@@ -1,5 +1,5 @@
 import { Show, For, createSignal } from "solid-js";
-import addonIndex from "~/jsondata/addon_index.json";
+import addonIndex from "~/jsondata/addon-index.json";
 
 export default function SRIDownloads() {
 	const stable = addonIndex.stable;

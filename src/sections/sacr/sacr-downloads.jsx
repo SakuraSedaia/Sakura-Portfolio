@@ -1,6 +1,6 @@
 import { Show, For, createSignal } from "solid-js";
 import { A } from "@solidjs/router";
-import rigIndex from "~/jsondata/sacr_index.json";
+import rigIndex from "~/jsondata/sacr-index.json";
 
 export default function SACRDownloads(props) {
 	const stable = rigIndex.stable;
