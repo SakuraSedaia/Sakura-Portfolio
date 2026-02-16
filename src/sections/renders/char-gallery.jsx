@@ -1,40 +1,47 @@
-import { For } from "solid-js";
+import { For, createSignal } from "solid-js";
 import renderData from "~/jsondata/render-map.json";
-import DisplayCard from "~/components/display-card";
+import RenderCard from "~/components/render-card.jsx";
+import ImageModal from "~/components/image-modal.jsx";
 
 export default function CharGallery() {
+  const [modalOpen, setModalOpen] = createSignal(false);
+  const [currentImage, setCurrentImage] = createSignal({ src: "", alt: "", description: "" });
+
+  const openModal = (json, cat, folder) => {
+    setCurrentImage({
+      src: `/images/renders${cat}${folder}/${json.sizes[0]}`,
+      alt: json.name,
+      description: json.description
+    });
+    setModalOpen(true);
+  };
+
   return (
-	  <For each={renderData} fallback={<p>Loading...</p>}>
-			{(group) => (
-				// HTML
-				<section id={"char-gallery"}>
-					<heading>
-						<h2>{group.label}</h2>
-					</heading>
-					
-					<grid-container>
-						<For each={group.images}>
-							{(render) => (
-								<div class={"render-card"}>
-									<h2>{render.name}</h2>
-									<a href="#">
-										{/* The Images are loaded from smallest to largest, depending on screen width */}
-										<img
-											src={`/images/renders${group.path}${render.sizes[0]}`}
-											srcSet={`/images/renders${group.path}${render.sizes[0]} 320w, /images/renders${group.path}${render.sizes[1]} 800w, /images/renders${group.path}${render.sizes[2]} 1200w`}
-											alt={render.name}
-											/>
-									</a>
-									<p>{render.description}</p>
-								</div>
-							)}
-						</For>
-					</grid-container>
-				</section>
-				// <DisplayCard data={JSON.stringify(render)} />
-			)}
-			
-		</For>
-	      
+    <>
+      <For each={renderData} fallback={<p>Loading...</p>}>
+        {(group) => (
+          <section id={"char-gallery"}>
+            <div class={"heading"}>
+              <h2>{group.label}</h2>
+            </div>
+            
+            <div class={"grid-container"}>
+              <For each={group.images}>
+                {(render) => (
+                  <RenderCard data={JSON.stringify(render)} cat={group.path} onImageClick={openModal}/>
+                )}
+              </For>
+            </div>
+          </section>
+        )}
+      </For>
+      <ImageModal 
+        show={modalOpen()} 
+        onClose={() => setModalOpen(false)} 
+        imageSrc={currentImage().src} 
+        imageAlt={currentImage().alt}
+        description={currentImage().description}
+      />
+    </>
   );
 }
