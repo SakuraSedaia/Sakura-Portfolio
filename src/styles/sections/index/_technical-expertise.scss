@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+#technical-expertise {
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+
+        &:hover {
+          color: hsl(var(--tx-accent-val));
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
