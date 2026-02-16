@@ -9,12 +9,12 @@
                 "month": "Nov",
                 "description": "",
                 "sizes": [
-                    "Portal_Unfinished-lg.jxl",
-                    "Portal_Unfinished-lg.png",
-                    "Portal_Unfinished-md.jxl",
-                    "Portal_Unfinished-md.png",
-                    "Portal_Unfinished-sm.jxl",
-                    "Portal_Unfinished-sm.png"
+                    "portal-unfinished-lg.jxl",
+                    "portal-unfinished-lg.png",
+                    "portal-unfinished-md.jxl",
+                    "portal-unfinished-md.png",
+                    "portal-unfinished-sm.jxl",
+                    "portal-unfinished-sm.png"
                 ]
             },
             {
@@ -23,12 +23,12 @@
                 "month": "Oct",
                 "description": "",
                 "sizes": [
-                    "Enchanting_Room-lg.jxl",
-                    "Enchanting_Room-lg.png",
-                    "Enchanting_Room-md.jxl",
-                    "Enchanting_Room-md.png",
-                    "Enchanting_Room-sm.jxl",
-                    "Enchanting_Room-sm.png"
+                    "enchanting-room-lg.jxl",
+                    "enchanting-room-lg.png",
+                    "enchanting-room-md.jxl",
+                    "enchanting-room-md.png",
+                    "enchanting-room-sm.jxl",
+                    "enchanting-room-sm.png"
                 ]
             },
             {
@@ -37,12 +37,12 @@
                 "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "Ruined_Shrine-lg.jxl",
-                    "Ruined_Shrine-lg.png",
-                    "Ruined_Shrine-md.jxl",
-                    "Ruined_Shrine-md.png",
-                    "Ruined_Shrine-sm.jxl",
-                    "Ruined_Shrine-sm.png"
+                    "ruined-shrine-lg.jxl",
+                    "ruined-shrine-lg.png",
+                    "ruined-shrine-md.jxl",
+                    "ruined-shrine-md.png",
+                    "ruined-shrine-sm.jxl",
+                    "ruined-shrine-sm.png"
                 ]
             },
             {
@@ -51,12 +51,12 @@
                 "month": "Apr",
                 "description": "",
                 "sizes": [
-                    "Tavern_Set-lg.jxl",
-                    "Tavern_Set-lg.png",
-                    "Tavern_Set-md.jxl",
-                    "Tavern_Set-md.png",
-                    "Tavern_Set-sm.jxl",
-                    "Tavern_Set-sm.png"
+                    "tavern-set-lg.jxl",
+                    "tavern-set-lg.png",
+                    "tavern-set-md.jxl",
+                    "tavern-set-md.png",
+                    "tavern-set-sm.jxl",
+                    "tavern-set-sm.png"
                 ]
             }
         ]
@@ -71,12 +71,12 @@
                 "month": "Jan",
                 "description": "",
                 "sizes": [
-                    "Knight_Jennifer-lg.jxl",
-                    "Knight_Jennifer-lg.png",
-                    "Knight_Jennifer-md.jxl",
-                    "Knight_Jennifer-md.png",
-                    "Knight_Jennifer-sm.jxl",
-                    "Knight_Jennifer-sm.png"
+                    "knight-jennifer-lg.jxl",
+                    "knight-jennifer-lg.png",
+                    "knight-jennifer-md.jxl",
+                    "knight-jennifer-md.png",
+                    "knight-jennifer-sm.jxl",
+                    "knight-jennifer-sm.png"
                 ]
             },
             {
@@ -85,12 +85,12 @@
                 "month": "Jun",
                 "description": "",
                 "sizes": [
-                    "Sakura_Pride-lg.jxl",
-                    "Sakura_Pride-lg.png",
-                    "Sakura_Pride-md.jxl",
-                    "Sakura_Pride-md.png",
-                    "Sakura_Pride-sm.jxl",
-                    "Sakura_Pride-sm.png"
+                    "sakura-pride-lg.jxl",
+                    "sakura-pride-lg.png",
+                    "sakura-pride-md.jxl",
+                    "sakura-pride-md.png",
+                    "sakura-pride-sm.jxl",
+                    "sakura-pride-sm.png"
                 ]
             },
             {
@@ -99,12 +99,12 @@
                 "month": "June",
                 "description": "",
                 "sizes": [
-                    "Naia-lg.jxl",
-                    "Naia-lg.png",
-                    "Naia-md.jxl",
-                    "Naia-md.png",
-                    "Naia-sm.jxl",
-                    "Naia-sm.png"
+                    "naia-lg.jxl",
+                    "naia-lg.png",
+                    "naia-md.jxl",
+                    "naia-md.png",
+                    "naia-sm.jxl",
+                    "naia-sm.png"
                 ]
             },
             {
@@ -113,12 +113,12 @@
                 "month": "May",
                 "description": "",
                 "sizes": [
-                    "Ainya-lg.jxl",
-                    "Ainya-lg.png",
-                    "Ainya-md.jxl",
-                    "Ainya-md.png",
-                    "Ainya-sm.jxl",
-                    "Ainya-sm.png"
+                    "ainya-lg.jxl",
+                    "ainya-lg.png",
+                    "ainya-md.jxl",
+                    "ainya-md.png",
+                    "ainya-sm.jxl",
+                    "ainya-sm.png"
                 ]
             },
             {
@@ -127,12 +127,12 @@
                 "month": "Aug",
                 "description": "",
                 "sizes": [
-                    "Sakura_Yuko-lg.jxl",
-                    "Sakura_Yuko-lg.png",
-                    "Sakura_Yuko-md.jxl",
-                    "Sakura_Yuko-md.png",
-                    "Sakura_Yuko-sm.jxl",
-                    "Sakura_Yuko-sm.png"
+                    "sakura-yuko-lg.jxl",
+                    "sakura-yuko-lg.png",
+                    "sakura-yuko-md.jxl",
+                    "sakura-yuko-md.png",
+                    "sakura-yuko-sm.jxl",
+                    "sakura-yuko-sm.png"
                 ]
             },
             {
@@ -141,12 +141,12 @@
                 "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "Sakura-lg.jxl",
-                    "Sakura-lg.png",
-                    "Sakura-md.jxl",
-                    "Sakura-md.png",
-                    "Sakura-sm.jxl",
-                    "Sakura-sm.png"
+                    "sakura-lg.jxl",
+                    "sakura-lg.png",
+                    "sakura-md.jxl",
+                    "sakura-md.png",
+                    "sakura-sm.jxl",
+                    "sakura-sm.png"
                 ]
             },
             {
@@ -155,12 +155,12 @@
                 "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "ZophieKat-lg.jxl",
-                    "ZophieKat-lg.png",
-                    "ZophieKat-md.jxl",
-                    "ZophieKat-md.png",
-                    "ZophieKat-sm.jxl",
-                    "ZophieKat-sm.png"
+                    "zophiekat-lg.jxl",
+                    "zophiekat-lg.png",
+                    "zophiekat-md.jxl",
+                    "zophiekat-md.png",
+                    "zophiekat-sm.jxl",
+                    "zophiekat-sm.png"
                 ]
             },
             {
@@ -169,12 +169,12 @@
                 "month": "Jul",
                 "description": "",
                 "sizes": [
-                    "Mermaid_Sakura-lg.jxl",
-                    "Mermaid_Sakura-lg.png",
-                    "Mermaid_Sakura-md.jxl",
-                    "Mermaid_Sakura-md.png",
-                    "Mermaid_Sakura-sm.jxl",
-                    "Mermaid_Sakura-sm.png"
+                    "mermaid-sakura-lg.jxl",
+                    "mermaid-sakura-lg.png",
+                    "mermaid-sakura-md.jxl",
+                    "mermaid-sakura-md.png",
+                    "mermaid-sakura-sm.jxl",
+                    "mermaid-sakura-sm.png"
                 ]
             },
             {
@@ -183,12 +183,12 @@
                 "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "Flame_Guardian_Original-lg.jxl",
-                    "Flame_Guardian_Original-lg.png",
-                    "Flame_Guardian_Original-md.jxl",
-                    "Flame_Guardian_Original-md.png",
-                    "Flame_Guardian_Original-sm.jxl",
-                    "Flame_Guardian_Original-sm.png"
+                    "flame-guardian-original-lg.jxl",
+                    "flame-guardian-original-lg.png",
+                    "flame-guardian-original-md.jxl",
+                    "flame-guardian-original-md.png",
+                    "flame-guardian-original-sm.jxl",
+                    "flame-guardian-original-sm.png"
                 ]
             },
             {
@@ -197,12 +197,12 @@
                 "month": "Jan",
                 "description": "",
                 "sizes": [
-                    "Andreas_Actavious-lg.jxl",
-                    "Andreas_Actavious-lg.png",
-                    "Andreas_Actavious-md.jxl",
-                    "Andreas_Actavious-md.png",
-                    "Andreas_Actavious-sm.jxl",
-                    "Andreas_Actavious-sm.png"
+                    "andreas-actavious-lg.jxl",
+                    "andreas-actavious-lg.png",
+                    "andreas-actavious-md.jxl",
+                    "andreas-actavious-md.png",
+                    "andreas-actavious-sm.jxl",
+                    "andreas-actavious-sm.png"
                 ]
             },
             {
@@ -211,12 +211,12 @@
                 "month": "Jul",
                 "description": "",
                 "sizes": [
-                    "Sakura_Voltaris-lg.jxl",
-                    "Sakura_Voltaris-lg.png",
-                    "Sakura_Voltaris-md.jxl",
-                    "Sakura_Voltaris-md.png",
-                    "Sakura_Voltaris-sm.jxl",
-                    "Sakura_Voltaris-sm.png"
+                    "sakura-voltaris-lg.jxl",
+                    "sakura-voltaris-lg.png",
+                    "sakura-voltaris-md.jxl",
+                    "sakura-voltaris-md.png",
+                    "sakura-voltaris-sm.jxl",
+                    "sakura-voltaris-sm.png"
                 ]
             },
             {
@@ -225,12 +225,12 @@
                 "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "Flame_Guardian_Updated-lg.jxl",
-                    "Flame_Guardian_Updated-lg.png",
-                    "Flame_Guardian_Updated-md.jxl",
-                    "Flame_Guardian_Updated-md.png",
-                    "Flame_Guardian_Updated-sm.jxl",
-                    "Flame_Guardian_Updated-sm.png"
+                    "flame-guardian-updated-lg.jxl",
+                    "flame-guardian-updated-lg.png",
+                    "flame-guardian-updated-md.jxl",
+                    "flame-guardian-updated-md.png",
+                    "flame-guardian-updated-sm.jxl",
+                    "flame-guardian-updated-sm.png"
                 ]
             },
             {
@@ -239,12 +239,12 @@
                 "month": "Oct",
                 "description": "",
                 "sizes": [
-                    "Gabriella-lg.jxl",
-                    "Gabriella-lg.png",
-                    "Gabriella-md.jxl",
-                    "Gabriella-md.png",
-                    "Gabriella-sm.jxl",
-                    "Gabriella-sm.png"
+                    "gabriella-lg.jxl",
+                    "gabriella-lg.png",
+                    "gabriella-md.jxl",
+                    "gabriella-md.png",
+                    "gabriella-sm.jxl",
+                    "gabriella-sm.png"
                 ]
             },
             {
@@ -253,12 +253,12 @@
                 "month": "Unknown",
                 "description": "",
                 "sizes": [
-                    "Sakura_Helsor_April2025-lg.jxl",
-                    "Sakura_Helsor_April2025-lg.png",
-                    "Sakura_Helsor_April2025-md.jxl",
-                    "Sakura_Helsor_April2025-md.png",
-                    "Sakura_Helsor_April2025-sm.jxl",
-                    "Sakura_Helsor_April2025-sm.png"
+                    "sakura-helsor_april2025-lg.jxl",
+                    "sakura-helsor_april2025-lg.png",
+                    "sakura-helsor_april2025-md.jxl",
+                    "sakura-helsor_april2025-md.png",
+                    "sakura-helsor_april2025-sm.jxl",
+                    "sakura-helsor_april2025-sm.png"
                 ]
             }
         ]
@@ -273,12 +273,12 @@
                 "month": "July",
                 "description": "",
                 "sizes": [
-                    "Birthday_Overlook-lg.jxl",
-                    "Birthday_Overlook-lg.jpg",
-                    "Birthday_Overlook-md.jxl",
-                    "Birthday_Overlook-md.jpg",
-                    "Birthday_Overlook-sm.jxl",
-                    "Birthday_Overlook-sm.jpg"
+                    "birthday-overlook-lg.jxl",
+                    "birthday-overlook-lg.jpg",
+                    "birthday-overlook-md.jxl",
+                    "birthday-overlook-md.jpg",
+                    "birthday-overlook-sm.jxl",
+                    "birthday-overlook-sm.jpg"
                 ]
             },
             {
@@ -287,12 +287,12 @@
                 "month": "Oct",
                 "description": "",
                 "sizes": [
-                    "Nether_Honeymoon-lg.jxl",
-                    "Nether_Honeymoon-lg.jpg",
-                    "Nether_Honeymoon-md.jxl",
-                    "Nether_Honeymoon-md.jpg",
-                    "Nether_Honeymoon-sm.jxl",
-                    "Nether_Honeymoon-sm.jpg"
+                    "nether-honeymoon-lg.jxl",
+                    "nether-honeymoon-lg.jpg",
+                    "nether-honeymoon-md.jxl",
+                    "nether-honeymoon-md.jpg",
+                    "nether-honeymoon-sm.jxl",
+                    "nether-honeymoon-sm.jpg"
                 ]
             },
             {
@@ -301,12 +301,12 @@
                 "month": "Jun",
                 "description": "",
                 "sizes": [
-                    "Nino_Cyberheist-lg.jxl",
-                    "Nino_Cyberheist-lg.jpg",
-                    "Nino_Cyberheist-md.jxl",
-                    "Nino_Cyberheist-md.jpg",
-                    "Nino_Cyberheist-sm.jxl",
-                    "Nino_Cyberheist-sm.jpg"
+                    "nino-cyberheist-lg.jxl",
+                    "nino-cyberheist-lg.jpg",
+                    "nino-cyberheist-md.jxl",
+                    "nino-cyberheist-md.jpg",
+                    "nino-cyberheist-sm.jxl",
+                    "nino-cyberheist-sm.jpg"
                 ]
             },
             {
@@ -315,12 +315,12 @@
                 "month": "Oct",
                 "description": "",
                 "sizes": [
-                    "Sakura_Sunset-lg.jxl",
-                    "Sakura_Sunset-lg.png",
-                    "Sakura_Sunset-md.jxl",
-                    "Sakura_Sunset-md.png",
-                    "Sakura_Sunset-sm.jxl",
-                    "Sakura_Sunset-sm.png"
+                    "sakura-sunset-lg.jxl",
+                    "sakura-sunset-lg.png",
+                    "sakura-sunset-md.jxl",
+                    "sakura-sunset-md.png",
+                    "sakura-sunset-sm.jxl",
+                    "sakura-sunset-sm.png"
                 ]
             },
             {
@@ -329,12 +329,12 @@
                 "month": "Jul",
                 "description": "",
                 "sizes": [
-                    "Sakura_ATM9-lg.jxl",
-                    "Sakura_ATM9-lg.png",
-                    "Sakura_ATM9-md.jxl",
-                    "Sakura_ATM9-md.png",
-                    "Sakura_ATM9-sm.jxl",
-                    "Sakura_ATM9-sm.png"
+                    "sakura-atm9-lg.jxl",
+                    "sakura-atm9-lg.png",
+                    "sakura-atm9-md.jxl",
+                    "sakura-atm9-md.png",
+                    "sakura-atm9-sm.jxl",
+                    "sakura-atm9-sm.png"
                 ]
             },
             {
@@ -343,12 +343,12 @@
                 "month": "Sept",
                 "description": "",
                 "sizes": [
-                    "Sakura_Office-lg.jxl",
-                    "Sakura_Office-lg.jpg",
-                    "Sakura_Office-md.jxl",
-                    "Sakura_Office-md.jpg",
-                    "Sakura_Office-sm.jxl",
-                    "Sakura_Office-sm.jpg"
+                    "sakura-office-lg.jxl",
+                    "sakura-office-lg.jpg",
+                    "sakura-office-md.jxl",
+                    "sakura-office-md.jpg",
+                    "sakura-office-sm.jxl",
+                    "sakura-office-sm.jpg"
                 ]
             },
             {
@@ -357,12 +357,12 @@
                 "month": "Sept",
                 "description": "",
                 "sizes": [
-                    "Sakura_Couch-lg.jxl",
-                    "Sakura_Couch-lg.jpg",
-                    "Sakura_Couch-md.jxl",
-                    "Sakura_Couch-md.jpg",
-                    "Sakura_Couch-sm.jxl",
-                    "Sakura_Couch-sm.jpg"
+                    "sakura-couch-lg.jxl",
+                    "sakura-couch-lg.jpg",
+                    "sakura-couch-md.jxl",
+                    "sakura-couch-md.jpg",
+                    "sakura-couch-sm.jxl",
+                    "sakura-couch-sm.jpg"
                 ]
             },
             {
@@ -371,12 +371,12 @@
                 "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "Sakura_Blacksmith-lg.jxl",
-                    "Sakura_Blacksmith-lg.png",
-                    "Sakura_Blacksmith-md.jxl",
-                    "Sakura_Blacksmith-md.png",
-                    "Sakura_Blacksmith-sm.jxl",
-                    "Sakura_Blacksmith-sm.png"
+                    "sakura-blacksmith-lg.jxl",
+                    "sakura-blacksmith-lg.png",
+                    "sakura-blacksmith-md.jxl",
+                    "sakura-blacksmith-md.png",
+                    "sakura-blacksmith-sm.jxl",
+                    "sakura-blacksmith-sm.png"
                 ]
             },
             {
@@ -385,12 +385,12 @@
                 "month": "Jul",
                 "description": "",
                 "sizes": [
-                    "Eve_and_Gez-lg.jxl",
-                    "Eve_and_Gez-lg.png",
-                    "Eve_and_Gez-md.jxl",
-                    "Eve_and_Gez-md.png",
-                    "Eve_and_Gez-sm.jxl",
-                    "Eve_and_Gez-sm.png"
+                    "eve-and-gez-lg.jxl",
+                    "eve-and-gez-lg.png",
+                    "eve-and-gez-md.jxl",
+                    "eve-and-gez-md.png",
+                    "eve-and-gez-sm.jxl",
+                    "eve-and-gez-sm.png"
                 ]
             },
             {
@@ -399,12 +399,12 @@
                 "month": "May",
                 "description": "",
                 "sizes": [
-                    "Sakura_Forest_Hike-lg.jxl",
-                    "Sakura_Forest_Hike-lg.png",
-                    "Sakura_Forest_Hike-md.jxl",
-                    "Sakura_Forest_Hike-md.png",
-                    "Sakura_Forest_Hike-sm.jxl",
-                    "Sakura_Forest_Hike-sm.png"
+                    "sakura-forest-hike-lg.jxl",
+                    "sakura-forest-hike-lg.png",
+                    "sakura-forest-hike-md.jxl",
+                    "sakura-forest-hike-md.png",
+                    "sakura-forest-hike-sm.jxl",
+                    "sakura-forest-hike-sm.png"
                 ]
             },
             {
@@ -413,12 +413,12 @@
                 "month": "Apr",
                 "description": "",
                 "sizes": [
-                    "Sakura_Frozen_V2-lg.jxl",
-                    "Sakura_Frozen_V2-lg.png",
-                    "Sakura_Frozen_V2-md.jxl",
-                    "Sakura_Frozen_V2-md.png",
-                    "Sakura_Frozen_V2-sm.jxl",
-                    "Sakura_Frozen_V2-sm.png"
+                    "sakura-frozen-v2-lg.jxl",
+                    "sakura-frozen-v2-lg.png",
+                    "sakura-frozen-v2-md.jxl",
+                    "sakura-frozen-v2-md.png",
+                    "sakura-frozen-v2-sm.jxl",
+                    "sakura-frozen-v2-sm.png"
                 ]
             },
             {
@@ -427,12 +427,12 @@
                 "month": "Jul",
                 "description": "",
                 "sizes": [
-                    "Jen_Birthday-lg.jxl",
-                    "Jen_Birthday-lg.png",
-                    "Jen_Birthday-md.jxl",
-                    "Jen_Birthday-md.png",
-                    "Jen_Birthday-sm.jxl",
-                    "Jen_Birthday-sm.png"
+                    "jen-birthday-lg.jxl",
+                    "jen-birthday-lg.png",
+                    "jen-birthday-md.jxl",
+                    "jen-birthday-md.png",
+                    "jen-birthday-sm.jxl",
+                    "jen-birthday-sm.png"
                 ]
             },
             {
@@ -441,12 +441,12 @@
                 "month": "May",
                 "description": "",
                 "sizes": [
-                    "Tanya_Azura_Family-lg.jxl",
-                    "Tanya_Azura_Family-lg.jpg",
-                    "Tanya_Azura_Family-md.jxl",
-                    "Tanya_Azura_Family-md.jpg",
-                    "Tanya_Azura_Family-sm.jxl",
-                    "Tanya_Azura_Family-sm.jpg"
+                    "tanya-azura-family-lg.jxl",
+                    "tanya-azura-family-lg.jpg",
+                    "tanya-azura-family-md.jxl",
+                    "tanya-azura-family-md.jpg",
+                    "tanya-azura-family-sm.jxl",
+                    "tanya-azura-family-sm.jpg"
                 ]
             },
             {
@@ -455,12 +455,12 @@
                 "month": "Jun",
                 "description": "",
                 "sizes": [
-                    "Sakura_Injured-lg.jxl",
-                    "Sakura_Injured-lg.jpg",
-                    "Sakura_Injured-md.jxl",
-                    "Sakura_Injured-md.jpg",
-                    "Sakura_Injured-sm.jxl",
-                    "Sakura_Injured-sm.jpg"
+                    "sakura-injured-lg.jxl",
+                    "sakura-injured-lg.jpg",
+                    "sakura-injured-md.jxl",
+                    "sakura-injured-md.jpg",
+                    "sakura-injured-sm.jxl",
+                    "sakura-injured-sm.jpg"
                 ]
             },
             {
@@ -469,12 +469,12 @@
                 "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "Saki_and_Asuka_Etheria_Meetup-lg.jxl",
-                    "Saki_and_Asuka_Etheria_Meetup-lg.png",
-                    "Saki_and_Asuka_Etheria_Meetup-md.jxl",
-                    "Saki_and_Asuka_Etheria_Meetup-md.png",
-                    "Saki_and_Asuka_Etheria_Meetup-sm.jxl",
-                    "Saki_and_Asuka_Etheria_Meetup-sm.png"
+                    "saki-and-asuka-etheria-meetup-lg.jxl",
+                    "saki-and-asuka-etheria-meetup-lg.png",
+                    "saki-and-asuka-etheria-meetup-md.jxl",
+                    "saki-and-asuka-etheria-meetup-md.png",
+                    "saki-and-asuka-etheria-meetup-sm.jxl",
+                    "saki-and-asuka-etheria-meetup-sm.png"
                 ]
             },
             {
@@ -483,12 +483,12 @@
                 "month": "Jul",
                 "description": "",
                 "sizes": [
-                    "Azura_Birthday-lg.jxl",
-                    "Azura_Birthday-lg.png",
-                    "Azura_Birthday-md.jxl",
-                    "Azura_Birthday-md.png",
-                    "Azura_Birthday-sm.jxl",
-                    "Azura_Birthday-sm.png"
+                    "azura-birthday-lg.jxl",
+                    "azura-birthday-lg.png",
+                    "azura-birthday-md.jxl",
+                    "azura-birthday-md.png",
+                    "azura-birthday-sm.jxl",
+                    "azura-birthday-sm.png"
                 ]
             },
             {
@@ -497,12 +497,12 @@
                 "month": "Sept",
                 "description": "",
                 "sizes": [
-                    "Jon_and_Jen_Running-lg.jxl",
-                    "Jon_and_Jen_Running-lg.png",
-                    "Jon_and_Jen_Running-md.jxl",
-                    "Jon_and_Jen_Running-md.png",
-                    "Jon_and_Jen_Running-sm.jxl",
-                    "Jon_and_Jen_Running-sm.png"
+                    "jon-and-jen-running-lg.jxl",
+                    "jon-and-jen-running-lg.png",
+                    "jon-and-jen-running-md.jxl",
+                    "jon-and-jen-running-md.png",
+                    "jon-and-jen-running-sm.jxl",
+                    "jon-and-jen-running-sm.png"
                 ]
             },
             {
@@ -511,12 +511,12 @@
                 "month": "Sept",
                 "description": "",
                 "sizes": [
-                    "Sakura_Aid-lg.jxl",
-                    "Sakura_Aid-lg.png",
-                    "Sakura_Aid-md.jxl",
-                    "Sakura_Aid-md.png",
-                    "Sakura_Aid-sm.jxl",
-                    "Sakura_Aid-sm.png"
+                    "sakura-aid-lg.jxl",
+                    "sakura-aid-lg.png",
+                    "sakura-aid-md.jxl",
+                    "sakura-aid-md.png",
+                    "sakura-aid-sm.jxl",
+                    "sakura-aid-sm.png"
                 ]
             },
             {
@@ -525,12 +525,12 @@
                 "month": "Apr",
                 "description": "",
                 "sizes": [
-                    "Sakura_Grieving-lg.jxl",
-                    "Sakura_Grieving-lg.png",
-                    "Sakura_Grieving-md.jxl",
-                    "Sakura_Grieving-md.png",
-                    "Sakura_Grieving-sm.jxl",
-                    "Sakura_Grieving-sm.png"
+                    "sakura-grieving-lg.jxl",
+                    "sakura-grieving-lg.png",
+                    "sakura-grieving-md.jxl",
+                    "sakura-grieving-md.png",
+                    "sakura-grieving-sm.jxl",
+                    "sakura-grieving-sm.png"
                 ]
             },
             {
@@ -539,12 +539,12 @@
                 "month": "Apr",
                 "description": "",
                 "sizes": [
-                    "Sakura_And_Co-lg.jxl",
-                    "Sakura_And_Co-lg.png",
-                    "Sakura_And_Co-md.jxl",
-                    "Sakura_And_Co-md.png",
-                    "Sakura_And_Co-sm.jxl",
-                    "Sakura_And_Co-sm.png"
+                    "sakura-and-co-lg.jxl",
+                    "sakura-and-co-lg.png",
+                    "sakura-and-co-md.jxl",
+                    "sakura-and-co-md.png",
+                    "sakura-and-co-sm.jxl",
+                    "sakura-and-co-sm.png"
                 ]
             },
             {
@@ -553,12 +553,12 @@
                 "month": "Feb",
                 "description": "",
                 "sizes": [
-                    "Kirito_and_Asuna-lg.jxl",
-                    "Kirito_and_Asuna-lg.png",
-                    "Kirito_and_Asuna-md.jxl",
-                    "Kirito_and_Asuna-md.png",
-                    "Kirito_and_Asuna-sm.jxl",
-                    "Kirito_and_Asuna-sm.png"
+                    "kirito-and-asuna-lg.jxl",
+                    "kirito-and-asuna-lg.png",
+                    "kirito-and-asuna-md.jxl",
+                    "kirito-and-asuna-md.png",
+                    "kirito-and-asuna-sm.jxl",
+                    "kirito-and-asuna-sm.png"
                 ]
             },
             {
@@ -567,12 +567,12 @@
                 "month": "Dec",
                 "description": "",
                 "sizes": [
-                    "Sakura_Demon-lg.jxl",
-                    "Sakura_Demon-lg.png",
-                    "Sakura_Demon-md.jxl",
-                    "Sakura_Demon-md.png",
-                    "Sakura_Demon-sm.jxl",
-                    "Sakura_Demon-sm.png"
+                    "sakura-demon-lg.jxl",
+                    "sakura-demon-lg.png",
+                    "sakura-demon-md.jxl",
+                    "sakura-demon-md.png",
+                    "sakura-demon-sm.jxl",
+                    "sakura-demon-sm.png"
                 ]
             },
             {
@@ -581,12 +581,12 @@
                 "month": "Jun",
                 "description": "",
                 "sizes": [
-                    "Sakura_Sword_School-lg.jxl",
-                    "Sakura_Sword_School-lg.png",
-                    "Sakura_Sword_School-md.jxl",
-                    "Sakura_Sword_School-md.png",
-                    "Sakura_Sword_School-sm.jxl",
-                    "Sakura_Sword_School-sm.png"
+                    "sakura-sword-school-lg.jxl",
+                    "sakura-sword-school-lg.png",
+                    "sakura-sword-school-md.jxl",
+                    "sakura-sword-school-md.png",
+                    "sakura-sword-school-sm.jxl",
+                    "sakura-sword-school-sm.png"
                 ]
             },
             {
@@ -595,12 +595,12 @@
                 "month": "Aug",
                 "description": "",
                 "sizes": [
-                    "Sakura_Horror_Forest-lg.jxl",
-                    "Sakura_Horror_Forest-lg.png",
-                    "Sakura_Horror_Forest-md.jxl",
-                    "Sakura_Horror_Forest-md.png",
-                    "Sakura_Horror_Forest-sm.jxl",
-                    "Sakura_Horror_Forest-sm.png"
+                    "sakura-horror-forest-lg.jxl",
+                    "sakura-horror-forest-lg.png",
+                    "sakura-horror-forest-md.jxl",
+                    "sakura-horror-forest-md.png",
+                    "sakura-horror-forest-sm.jxl",
+                    "sakura-horror-forest-sm.png"
                 ]
             },
             {
@@ -609,12 +609,12 @@
                 "month": "Aug",
                 "description": "",
                 "sizes": [
-                    "Amias_Bridge-lg.jxl",
-                    "Amias_Bridge-lg.png",
-                    "Amias_Bridge-md.jxl",
-                    "Amias_Bridge-md.png",
-                    "Amias_Bridge-sm.jxl",
-                    "Amias_Bridge-sm.png"
+                    "amias-bridge-lg.jxl",
+                    "amias-bridge-lg.png",
+                    "amias-bridge-md.jxl",
+                    "amias-bridge-md.png",
+                    "amias-bridge-sm.jxl",
+                    "amias-bridge-sm.png"
                 ]
             },
             {
@@ -623,12 +623,12 @@
                 "month": "Jan",
                 "description": "",
                 "sizes": [
-                    "Niika_and_Lucan_vs_Zombies-lg.jxl",
-                    "Niika_and_Lucan_vs_Zombies-lg.png",
-                    "Niika_and_Lucan_vs_Zombies-md.jxl",
-                    "Niika_and_Lucan_vs_Zombies-md.png",
-                    "Niika_and_Lucan_vs_Zombies-sm.jxl",
-                    "Niika_and_Lucan_vs_Zombies-sm.png"
+                    "niika-and-lucan-vs-zombies-lg.jxl",
+                    "niika-and-lucan-vs-zombies-lg.png",
+                    "niika-and-lucan-vs-zombies-md.jxl",
+                    "niika-and-lucan-vs-zombies-md.png",
+                    "niika-and-lucan-vs-zombies-sm.jxl",
+                    "niika-and-lucan-vs-zombies-sm.png"
                 ]
             },
             {
@@ -637,12 +637,12 @@
                 "month": "Oct",
                 "description": "",
                 "sizes": [
-                    "Saku_and_Az_Cave_Tour-lg.jxl",
-                    "Saku_and_Az_Cave_Tour-lg.png",
-                    "Saku_and_Az_Cave_Tour-md.jxl",
-                    "Saku_and_Az_Cave_Tour-md.png",
-                    "Saku_and_Az_Cave_Tour-sm.jxl",
-                    "Saku_and_Az_Cave_Tour-sm.png"
+                    "saku-and-az-cave-tour-lg.jxl",
+                    "saku-and-az-cave-tour-lg.png",
+                    "saku-and-az-cave-tour-md.jxl",
+                    "saku-and-az-cave-tour-md.png",
+                    "saku-and-az-cave-tour-sm.jxl",
+                    "saku-and-az-cave-tour-sm.png"
                 ]
             },
             {
@@ -651,12 +651,12 @@
                 "month": "Jul",
                 "description": "",
                 "sizes": [
-                    "Naia_Birthday-lg.jxl",
-                    "Naia_Birthday-lg.png",
-                    "Naia_Birthday-md.jxl",
-                    "Naia_Birthday-md.png",
-                    "Naia_Birthday-sm.jxl",
-                    "Naia_Birthday-sm.png"
+                    "naia-birthday-lg.jxl",
+                    "naia-birthday-lg.png",
+                    "naia-birthday-md.jxl",
+                    "naia-birthday-md.png",
+                    "naia-birthday-sm.jxl",
+                    "naia-birthday-sm.png"
                 ]
             },
             {
@@ -665,12 +665,12 @@
                 "month": "Jul",
                 "description": "",
                 "sizes": [
-                    "Mermaid_Sakura_With_Child-lg.jxl",
-                    "Mermaid_Sakura_With_Child-lg.png",
-                    "Mermaid_Sakura_With_Child-md.jxl",
-                    "Mermaid_Sakura_With_Child-md.png",
-                    "Mermaid_Sakura_With_Child-sm.jxl",
-                    "Mermaid_Sakura_With_Child-sm.png"
+                    "mermaid-sakura-with-child-lg.jxl",
+                    "mermaid-sakura-with-child-lg.png",
+                    "mermaid-sakura-with-child-md.jxl",
+                    "mermaid-sakura-with-child-md.png",
+                    "mermaid-sakura-with-child-sm.jxl",
+                    "mermaid-sakura-with-child-sm.png"
                 ]
             },
             {
@@ -679,12 +679,12 @@
                 "month": "Oct",
                 "description": "",
                 "sizes": [
-                    "Old_SoW_Mod_Team-lg.jxl",
-                    "Old_SoW_Mod_Team-lg.png",
-                    "Old_SoW_Mod_Team-md.jxl",
-                    "Old_SoW_Mod_Team-md.png",
-                    "Old_SoW_Mod_Team-sm.jxl",
-                    "Old_SoW_Mod_Team-sm.png"
+                    "old-sow-mod-team-lg.jxl",
+                    "old-sow-mod-team-lg.png",
+                    "old-sow-mod-team-md.jxl",
+                    "old-sow-mod-team-md.png",
+                    "old-sow-mod-team-sm.jxl",
+                    "old-sow-mod-team-sm.png"
                 ]
             },
             {
@@ -693,12 +693,12 @@
                 "month": "Jun",
                 "description": "",
                 "sizes": [
-                    "Sakura_Frozen-lg.jxl",
-                    "Sakura_Frozen-lg.png",
-                    "Sakura_Frozen-md.jxl",
-                    "Sakura_Frozen-md.png",
-                    "Sakura_Frozen-sm.jxl",
-                    "Sakura_Frozen-sm.png"
+                    "sakura-frozen-lg.jxl",
+                    "sakura-frozen-lg.png",
+                    "sakura-frozen-md.jxl",
+                    "sakura-frozen-md.png",
+                    "sakura-frozen-sm.jxl",
+                    "sakura-frozen-sm.png"
                 ]
             },
             {
@@ -707,12 +707,12 @@
                 "month": "Jul",
                 "description": "",
                 "sizes": [
-                    "Mermaid_Sakura_Solo-lg.jxl",
-                    "Mermaid_Sakura_Solo-lg.png",
-                    "Mermaid_Sakura_Solo-md.jxl",
-                    "Mermaid_Sakura_Solo-md.png",
-                    "Mermaid_Sakura_Solo-sm.jxl",
-                    "Mermaid_Sakura_Solo-sm.png"
+                    "mermaid-sakura-solo-lg.jxl",
+                    "mermaid-sakura-solo-lg.png",
+                    "mermaid-sakura-solo-md.jxl",
+                    "mermaid-sakura-solo-md.png",
+                    "mermaid-sakura-solo-sm.jxl",
+                    "mermaid-sakura-solo-sm.png"
                 ]
             },
             {
@@ -721,12 +721,12 @@
                 "month": "Apr",
                 "description": "",
                 "sizes": [
-                    "Sedaia_Family-lg.jxl",
-                    "Sedaia_Family-lg.png",
-                    "Sedaia_Family-md.jxl",
-                    "Sedaia_Family-md.png",
-                    "Sedaia_Family-sm.jxl",
-                    "Sedaia_Family-sm.png"
+                    "sedaia-family-lg.jxl",
+                    "sedaia-family-lg.png",
+                    "sedaia-family-md.jxl",
+                    "sedaia-family-md.png",
+                    "sedaia-family-sm.jxl",
+                    "sedaia-family-sm.png"
                 ]
             },
             {
@@ -735,12 +735,12 @@
                 "month": "Nov",
                 "description": "",
                 "sizes": [
-                    "Saki_and_Azzy_Christmas-lg.jxl",
-                    "Saki_and_Azzy_Christmas-lg.jpg",
-                    "Saki_and_Azzy_Christmas-md.jxl",
-                    "Saki_and_Azzy_Christmas-md.jpg",
-                    "Saki_and_Azzy_Christmas-sm.jxl",
-                    "Saki_and_Azzy_Christmas-sm.jpg"
+                    "saki-and-azzy-christmas-lg.jxl",
+                    "saki-and-azzy-christmas-lg.jpg",
+                    "saki-and-azzy-christmas-md.jxl",
+                    "saki-and-azzy-christmas-md.jpg",
+                    "saki-and-azzy-christmas-sm.jxl",
+                    "saki-and-azzy-christmas-sm.jpg"
                 ]
             },
             {
@@ -749,12 +749,12 @@
                 "month": "Jan",
                 "description": "",
                 "sizes": [
-                    "Sakura_Treehouse-lg.jxl",
-                    "Sakura_Treehouse-lg.jpg",
-                    "Sakura_Treehouse-md.jxl",
-                    "Sakura_Treehouse-md.jpg",
-                    "Sakura_Treehouse-sm.jxl",
-                    "Sakura_Treehouse-sm.jpg"
+                    "sakura-treehouse-lg.jxl",
+                    "sakura-treehouse-lg.jpg",
+                    "sakura-treehouse-md.jxl",
+                    "sakura-treehouse-md.jpg",
+                    "sakura-treehouse-sm.jxl",
+                    "sakura-treehouse-sm.jpg"
                 ]
             },
             {
@@ -763,12 +763,12 @@
                 "month": "Jan",
                 "description": "",
                 "sizes": [
-                    "Tygren_vs_Thalleous-lg.jxl",
-                    "Tygren_vs_Thalleous-lg.png",
-                    "Tygren_vs_Thalleous-md.jxl",
-                    "Tygren_vs_Thalleous-md.png",
-                    "Tygren_vs_Thalleous-sm.jxl",
-                    "Tygren_vs_Thalleous-sm.png"
+                    "tygren-vs-thalleous-lg.jxl",
+                    "tygren-vs-thalleous-lg.png",
+                    "tygren-vs-thalleous-md.jxl",
+                    "tygren-vs-thalleous-md.png",
+                    "tygren-vs-thalleous-sm.jxl",
+                    "tygren-vs-thalleous-sm.png"
                 ]
             },
             {
@@ -777,12 +777,12 @@
                 "month": "Unknown",
                 "description": "",
                 "sizes": [
-                    "Frozen_Phoenix_May2025-lg.jxl",
-                    "Frozen_Phoenix_May2025-lg.png",
-                    "Frozen_Phoenix_May2025-md.jxl",
-                    "Frozen_Phoenix_May2025-md.png",
-                    "Frozen_Phoenix_May2025-sm.jxl",
-                    "Frozen_Phoenix_May2025-sm.png"
+                    "frozen-phoenix_may2025-lg.jxl",
+                    "frozen-phoenix_may2025-lg.png",
+                    "frozen-phoenix_may2025-md.jxl",
+                    "frozen-phoenix_may2025-md.png",
+                    "frozen-phoenix_may2025-sm.jxl",
+                    "frozen-phoenix_may2025-sm.png"
                 ]
             },
             {
@@ -791,12 +791,12 @@
                 "month": "Unknown",
                 "description": "",
                 "sizes": [
-                    "Sakura_Dragon_Egg_Discovery_Dec2020-lg.jxl",
-                    "Sakura_Dragon_Egg_Discovery_Dec2020-lg.png",
-                    "Sakura_Dragon_Egg_Discovery_Dec2020-md.jxl",
-                    "Sakura_Dragon_Egg_Discovery_Dec2020-md.png",
-                    "Sakura_Dragon_Egg_Discovery_Dec2020-sm.jxl",
-                    "Sakura_Dragon_Egg_Discovery_Dec2020-sm.png"
+                    "sakura-dragon-egg-discovery_dec2020-lg.jxl",
+                    "sakura-dragon-egg-discovery_dec2020-lg.png",
+                    "sakura-dragon-egg-discovery_dec2020-md.jxl",
+                    "sakura-dragon-egg-discovery_dec2020-md.png",
+                    "sakura-dragon-egg-discovery_dec2020-sm.jxl",
+                    "sakura-dragon-egg-discovery_dec2020-sm.png"
                 ]
             }
         ]
