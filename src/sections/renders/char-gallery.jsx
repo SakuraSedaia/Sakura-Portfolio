@@ -8,8 +8,10 @@ export default function CharGallery() {
   const [currentImage, setCurrentImage] = createSignal({ src: "", alt: "", description: "" });
 
   const openModal = (json, cat, folder) => {
+    // We use the first size (lg) for the modal
+    const filename = json.sizes[0];
     setCurrentImage({
-      src: `/images/renders${cat}${folder}/${json.sizes[0]}`,
+      src: `/images/renders${cat}${folder}/${filename}`,
       alt: json.name,
       description: json.description
     });

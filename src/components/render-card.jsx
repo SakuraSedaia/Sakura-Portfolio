@@ -1,4 +1,5 @@
 import { Show } from "solid-js";
+import OptimizedImage from "~/components/optimized-image.jsx";
 
 export default function RenderCard(props) {
 	const json = JSON.parse(props.data)
@@ -7,6 +8,15 @@ export default function RenderCard(props) {
 	if (json.description !== "") {
 		showDesc = true
 	}
+
+	// The render manager saves sizes as file names (e.g., "Name-lg.jxl")
+	// We need to get the base name and path
+	const getOptimizedSrc = (filename) => {
+		const base = filename.substring(0, filename.lastIndexOf('.'));
+		// Ensure folder is correct - the pipeline uses slug-named subdirectories
+		return `/images/renders${props.cat}${folder}/${base}.png`; 
+	}
+
   return (
     <div 
 			class={"render-card grid-item"} 
@@ -14,8 +24,11 @@ export default function RenderCard(props) {
 		>
       <h2>{json.name}</h2>
 			<a href="#" onClick={(e) => { e.preventDefault(); props.onImageClick(json, props.cat, folder); }}>
-				<img src={`/images/renders${props.cat}${folder}/${json.sizes[0]}`} alt={json.name} />
-				
+				<OptimizedImage 
+					src={getOptimizedSrc(json.sizes[0])} 
+					alt={json.name} 
+					fallbackExt=".jpg"
+				/>
 			</a>
 	    <div class={"detail"}>
 		    <span>Created in {json.month} {json.year.toString()}</span>

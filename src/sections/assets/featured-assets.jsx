@@ -1,4 +1,5 @@
 import { NoHydration } from "solid-js/web";
+import OptimizedImage from "~/components/optimized-image.jsx";
 
 export default function FeaturedAssets() {
   return (
@@ -10,7 +11,7 @@ export default function FeaturedAssets() {
 
         <div class={"column-container"}>
           <div class={"column"}>
-            <img
+            <OptimizedImage
               src={"/images/rig-headers/SACR/R7.4 Full.png"}
               alt={"Sakura's Advanced Character Rig Logo"}
             />
@@ -27,7 +28,7 @@ export default function FeaturedAssets() {
           </div>
 
           <div class={"column"}>
-            <img
+            <OptimizedImage
               src={"/images/rig-headers/rig-interface/rig-interface-3.png"}
               alt={"Sakura's Rig Interface Logo Version 3"}
             />

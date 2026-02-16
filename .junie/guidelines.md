@@ -46,11 +46,9 @@
 - Ensure that all commands are tested and working correctly before including them in the guidelines.
 
 ### Project Specific Edits
-- If I ask to edit something in the `frostlight-portfolio`, make changes into the `C:\Users\Sakura\Documents\WebstormProjects\frostlight-portfolio-and-blog` project.
-- If I mention `frostlight-portfolio`, refer to the `C:\Users\Sakura\Documents\WebstormProjects\frostlight-portfolio-and-blog` project.
-- `C:\Users\Sakura\Documents\WebstormProjects\Sakura-Portfolio` is the old outdated version of this project.
-- The main goal is to migrate the old SolidStart + Tailwind codebase to SolidStart + SCSS.
-- Any references to the old site should refer to the `C:\Users\Sakura\Documents\WebstormProjects\Sakura-Portfolio` directory.
+- If I ask to edit something in the `frostlight-portfolio`, make changes into the `C:/Users/Sakura/Documents/WebstormProjects/frostlight-portfolio-and-blog` project.
+- If I mention `frostlight-portfolio`, refer to the `C:/Users/Sakura/Documents/WebstormProjects/frostlight-portfolio-and-blog` project.
+- The main goal is to maintain the portfolio site built on the SolidStart + SCSS foundation.
 
 ### Path handling
 - Always use forward slashes `/` for path handling.

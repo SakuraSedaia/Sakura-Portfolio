@@ -1,5 +1,6 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
+import OptimizedImage from "~/components/optimized-image.jsx";
 
 function WWW() {
   return (
@@ -10,7 +11,7 @@ function WWW() {
           <header>
             <h1>Frostlight Studios</h1>
           </header>
-          <img src="/images/card-headers/frostlight-studio-website.png" alt="Frostlight Studios" />
+          <OptimizedImage src="/images/card-headers/frostlight-studio-website.png" alt="Frostlight Studios" />
         </section>
       </div>
       <Footer />

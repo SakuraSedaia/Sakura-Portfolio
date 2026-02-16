@@ -2,8 +2,12 @@ import Nav from "~/components/nav.jsx";
 import SocialIcon from "~/components/social-icon";
 import { A } from "@solidjs/router";
 export default function About() {
+  const bgImg = {
+    "background-image": "image-set(url('/images/headers/about.jxl') type('image/jxl'), url('/images/headers/about.jpg') type('image/jpeg'))"
+  };
+
   return (
-    <header id={"about-me"} style={{"background-image": "url('/images/headers/about.jpg')"}}>
+    <header id={"about-me"} style={bgImg}>
       <Nav title={"Sedaia Designs"} />
       <div class={"header-box"}>
         <div class={"header-position"}>

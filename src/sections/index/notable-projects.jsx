@@ -1,5 +1,6 @@
 import { A } from "@solidjs/router";
 import { NoHydration } from "solid-js/web";
+import OptimizedImage from "~/components/optimized-image.jsx";
 
 export default function NotableProjects() {
   return (
@@ -14,7 +15,7 @@ export default function NotableProjects() {
 						<h1>Frostlight Studios</h1>
 						<hr />
 						<div class={"notable-img"}>
-							<img src={"/images/card-headers/frostlight-studio-website.png"} alt={"Frostlight Studios"} />
+							<OptimizedImage src={"/images/card-headers/frostlight-studio-website.png"} alt={"Frostlight Studios"} />
 						</div>
 						<p>
 							The Frostlight Studios website is an evolution on an old static html design, using SolidJS to create a
@@ -40,7 +41,7 @@ export default function NotableProjects() {
 					<div class={"grid-item"}>
 						<h1>Rig Interface</h1>
 						<hr />
-						<img
+						<OptimizedImage
 							src={"/images/rig-headers/rig-interface/rig-interface-3.png"}
 							alt={"Rig Interface Logo V3"}
 						/>
