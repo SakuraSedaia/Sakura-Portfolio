@@ -23,7 +23,8 @@ The pipeline is designed to automate the processing of media assets (images, GIF
 Processes static images, GIFs, videos, and icons within the source directory (default: `utils/pipeline_sources/images`).
 - **Setup**: Before running the pipeline, ensure Python dependencies are installed. Use `utils/install_requirements.sh` (Linux/macOS) or `utils/install_requirements.bat` (Windows).
 - **Procedural Sources**: The pipeline utilizes a `utils/pipeline_sources` folder to house various procedural inputs. This allows for cleaner organization and future expansion of procedural pipelines.
-- **Static Images**: Converted to `.jxl` (primary) with `.png` (transparent) or `.jpg` (opaque) fallbacks.
+- **Static Images**: Converted to `.jxl` (primary) with `.png` (transparent) or `.jpg` (opaque) fallbacks. Filenames are automatically slugified (lowercase and hyphenated) to ensure web compatibility.
+- **Transparency Support**: Images with alpha channels are encoded using lossless JXL settings to preserve perfect transparency.
 - **GIFs**: Optimized and kept as `.gif`.
 - **Videos**: Compressed to web-optimized H.264 `.mp4`.
 - **Icons**: Optimized into multi-size `.ico` files.

@@ -12,7 +12,7 @@ The transition to SolidJS and SolidStart was chosen to provide fine-grained reac
 - **Modular Architecture:** Highly organized component structure for easy scalability and maintenance.
 - **Dynamic Data:** Uses JSON-driven components to manage assets and project information.
 - **Asset Optimization:** Integrated Python pipeline for JXL conversion with robust PNG/JPG fallbacks.
-- **Responsive Styling:** Styled with SCSS using a structured approach and HSL color definitions.
+- **Responsive Styling:** Styled with SCSS using a structured approach and HSL/HSLA color definitions.
 
 ## 🛠️ Tech Stack
 

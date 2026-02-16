@@ -14,16 +14,16 @@
 ### Styling
 - This project is styled using SCSS.
 - Any modifications to the stylesheets must be done using the SCSS syntax.
-- Any colors used must be formatted using hsl
-- If a provided color is not hsl, it must be converted to hsl.
 - Use the `!important` rule sparingly and only when necessary.
-- Use `em` and `rem` units for element sizing
-- use `pt` units for typography
-- Use `px` for @media queries
-- Global layout styles should be placed in the `_sedaia-design.scss` file.
-- All other styles should be placed in the associated `_custom.scss` file, where the text `custom` is replaced with the name of the page or component.
+- Use `em` and `rem` units for element sizing.
+- Use `pt` units for typography.
+- Use `px` for @media queries.
+- Color formats: use `hsl` or `hsla` for all color definitions.
+- `text-decoration` should never be used when making links; use `box-shadow` for animated link effects.
+- SCSS file structure:
+  - Global framework styles: `src/styles/_sedaia-design.scss`.
+  - Thematic, component, and page styles: Mirrored subdirectories within `src/styles/` (e.g., `src/styles/sections/index/`).
 - Ensure SCSS files are formatted with proper indentation and adhere to the SCSS style guide.
-- `text-decoration` should never be used when making links, as the property cannot be animated to fade in and out unlike `box-shadow` which is the preferred implementation for link effects.
 
 ### Ignore Files
 - Unless directly referenced in the request, ignore any files in `.hidden`

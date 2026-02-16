@@ -97,12 +97,13 @@ Contributions are welcome! To maintain code quality and consistency, please foll
 
 ### 3. Styling (SCSS)
 - **Format:** Use SCSS syntax with proper indentation.
-- **Colors:** All colors must be formatted using **HSL**.
+- **Colors:** All colors must be formatted using **HSL** or **HSLA**.
 - **Sizing:** Use `rem` and `em` for element sizing and `pt` for typography.
 - **Media Queries:** Use `px` for `@media` queries to ensure consistent breakpoints across devices.
 - **Organization:** 
   - Framework essential code belongs in the global design partial (`_sedaia-design.scss`).
   - Thematic, component, and page styles must be placed in mirrored subdirectories within `src/styles/` (e.g., `src/styles/sections/index/`).
+  - Text decoration must not be used for links; use `box-shadow` for animated effects.
 
 ### 4. File & Path Management
 - **Naming:** Use lowercase and hyphens for all files and folders.

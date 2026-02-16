@@ -44,7 +44,7 @@
     - **Multi-size generation**: Generate `lg` (1920px), `md` (1600px), and `sm` (1200px) versions.
     - **Path handling**: Always use `pathlib.Path` for filesystem operations.
     - **Manifest preservation**: Ensure existing descriptions in individual JSON manifests are preserved during regeneration.
-    - **Output structure**: Web images should be stored in a slug-named subdirectory within the category folder (e.g., `public/images/renders/env/enchanting-room/`). Slugs should be lowercase and hyphenated.
+    - **Output structure**: Web images should be stored in a slug-named subdirectory within the category folder (e.g., `public/images/renders/env/enchanting-room/`). Slugs should be lowercase and hyphenated. Filenames should also be slugified (lowercase and hyphenated).
     - **Individual manifests**: Store individual JSON files in the `utils/lib` directory, grouped by category.
     - **Consolidated manifest**: The final manifest is stored at `src/jsondata/render-map.json`, sorted by date descending within each category.
     - **Debug mode**: Use `DEBUG` mode whenever testing the asset optimization pipeline unless asked to run normally by the user. It uses separate `debug_renders` and `debug_lib` directories for safety, and redirects testing to `.hidden/testing` using `.hidden/images_backup_manual` as source. In this mode, only the first image is saved to verify script functionality, while the rest are scanned for real-time validation. When encountering an error while testing, integrate a new test for that specific edge case or error to ensure it can be caught and managed appropriately.
