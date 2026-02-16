@@ -23,6 +23,7 @@
 - Global layout styles should be placed in the `_sedaia-design.scss` file.
 - All other styles should be placed in the associated `_custom.scss` file, where the text `custom` is replaced with the name of the page or component.
 - Ensure SCSS files are formatted with proper indentation and adhere to the SCSS style guide.
+- `text-decoration` should never be used when making links, as the property cannot be animated to fade in and out unlike `box-shadow` which is the preferred implementation for link effects.
 
 ### Ignore Files
 - Unless directly referenced in the request, ignore any files in `.hidden`

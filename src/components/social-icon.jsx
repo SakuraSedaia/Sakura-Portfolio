@@ -10,6 +10,7 @@ export default function SocialIcon(props) {
     reddit: "bi-logos-reddit",
     twitch: "bi-logos-twitch",
     twitter: "bi-logos-twitter",
+    envelope: "bi-envelope",
   };
 
   const iconName = icons[props.name];

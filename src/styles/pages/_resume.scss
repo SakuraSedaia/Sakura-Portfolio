@@ -1,0 +1,170 @@
+@use "../variables" as *;
+
+#resume-header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .header-box {
+    display: block;
+    padding-block: 3rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-inline: 6rem;
+
+    .header-position {
+      display: block;
+    }
+
+    .header-content {
+      width: fit-content;
+      padding: 1.5rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--box-shadow-lg);
+      background-color: hsla(var(--bg-primary-val), 75%);
+      backdrop-filter: blur(0.25rem);
+      border: 0.125rem solid hsla(var(--tx-secondary-val), 25%);
+      display: block;
+
+      h1 {
+        margin-bottom: 0.75rem;
+        font-size: 2.5rem;
+        color: hsl(var(--tx-primary-val));
+      }
+
+      .socials {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+
+        a {
+          display: flex;
+          color: hsl(var(--tx-primary-val));
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 1.1rem;
+          transition: color 0.2s ease-in-out;
+
+          svg {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+
+          &:hover {
+            color: hsl(var(--tx-accent-val));
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile Responsive
+@media screen and (max-width: 720px) {
+  #resume-header {
+    .header-box {
+      padding-inline: 1rem;
+      margin-top: 1rem;
+      text-align: center;
+
+      .header-content {
+        display: inline-block;
+        width: 100%;
+        padding: 1rem;
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .socials {
+          justify-content: center;
+          gap: 1rem;
+          
+          a {
+            font-size: 0.9rem;
+            
+            svg {
+              width: 1.25rem;
+              height: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Resume Content Adjustments
+.content-container {
+  section {
+    // Prevent orphaned bullet points and breaks
+    li {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-bottom: 0.5rem; // Slightly tighter spacing
+    }
+
+    .content-row {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      padding-block: 1rem;
+    }
+
+    // Adjust font sizes for better fit
+    p, li {
+      font-size: 1rem; // Reducing from 1.125rem
+      line-height: 1.6;
+    }
+
+    span {
+      font-size: 1.1rem; // Metadata slightly larger
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      padding: 0.2rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    // Skills column adjustments
+    .column-container.flow {
+      column-width: 18rem; // Slightly narrower columns to fit more or allow better breaks
+      gap: 2rem;
+
+      .column {
+        break-inside: avoid;
+        width: 100%; // Ensure it takes full column width
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .content-container {
+    section {
+      width: 95%;
+      
+      p, li {
+        font-size: 0.9rem;
+      }
+      
+      span {
+        font-size: 1rem;
+      }
+      
+      .column-container.flow {
+        column-count: 1;
+      }
+    }
+  }
+}

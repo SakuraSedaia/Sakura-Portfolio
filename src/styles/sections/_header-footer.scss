@@ -62,7 +62,6 @@ nav {
         font-size: var(--font-size-nav);
         letter-spacing: 0.5pt;
         padding: 0.1875rem 0.5rem;
-        text-decoration: none;
         color: inherit;
 
         &:hover {
@@ -84,7 +83,6 @@ nav {
         a {
           color: hsl(var(--tx-primary-val));
           padding-inline: 0.5rem;
-          text-decoration: none;
           display: inline-block;
           cursor: pointer;
           border: 0.125rem solid transparent;
@@ -135,7 +133,6 @@ nav {
       a {
         color: hsl(var(--tx-primary-val));
         padding-inline: 0.5rem;
-        text-decoration: none;
         display: inline-block;
         cursor: pointer;
         border: 0.125rem solid transparent;
@@ -260,7 +257,6 @@ footer {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          text-decoration: none;
 
           &:hover {
             color: hsl(var(--tx-accent-val));
