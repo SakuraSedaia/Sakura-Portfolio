@@ -50,4 +50,4 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 This project was created with the [Solid CLI](https://github.com/solidjs-community/solid-cli).
 
 ---
-*Created and maintained by Sakura Sedaia.*
+*Created and maintained by Sedaia Designs.*

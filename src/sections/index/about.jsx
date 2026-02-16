@@ -8,11 +8,11 @@ export default function About() {
       <div class={"header-box"}>
         <div class={"header-position"}>
           <div class={"header-content"}>
-            <h1>Who am I?</h1>
+            <h1>Sedaia Designs</h1>
             <p style={"margin-left: 0.5rem;"}>
-              U.S.-based UI Designer and Full-Stack Developer proficient in SolidJS, SCSS, and Python. Beyond
+              A U.S.-based UI Designer and Full-Stack Developer proficient in SolidJS, SCSS, and Python. Beyond
               development, I utilize Blender to produce high-quality Minecraft based renders and create downloadable
-              Minecraft and Hytale 3D assets and rigs for the blender community.
+              Minecraft and Hytale 3D assets and rigs for the Blender community.
             </p>
             <div class={"socials"}>
               <a href={"https://youtube.com/c/SakuraSedaia"}><SocialIcon name={"youtube"} /></a>

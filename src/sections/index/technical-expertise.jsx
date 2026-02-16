@@ -40,9 +40,9 @@ export default function TechnicalExpertise() {
             <h3>Other</h3>
             <hr />
             <ul>
-              <li><a href={"https://www.java.com/"}>Java</a> - Enterprise & Android Development</li>
-              <li><a href={"https://kotlinlang.org/"}>Kotlin</a> - Modern JVM Programming</li>
-	            <li><a>Spreadsheet Management</a></li>
+              <li><a href={"https://www.java.com/"}>Java</a> - Intellij Platform Development</li>
+              <li><a href={"https://kotlinlang.org/"}>Kotlin</a> - Modern Intellij Platform Development</li>
+	            <li><a href={"https://sheets.google.com"}>Spreadsheets</a> - Using Google Sheets and OnlyOffice</li>
             </ul>
           </div>
         </div>
