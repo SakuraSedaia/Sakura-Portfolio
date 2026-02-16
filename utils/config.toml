@@ -28,7 +28,7 @@ supported_videos = [".mp4", ".mov", ".avi"]
 [render_map]
 sizes = { lg = 1920, md = 1600, sm = 1200 }
 categories = [
-    { label = "Environment Renders", path = "env", folder = "Env" },
-    { label = "Character Renders", path = "char", folder = "Char" },
-    { label = "Character & Environment Renders", path = "charenv", folder = "CharEnv" }
+    { label = "Environment Renders", path = "env", folder = "env" },
+    { label = "Character Renders", path = "char", folder = "char" },
+    { label = "Character & Environment Renders", path = "charenv", folder = "char-env" }
 ]
