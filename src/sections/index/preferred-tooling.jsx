@@ -8,8 +8,8 @@ export default function PreferredTooling() {
           <h1>Preferred Tooling</h1>
         </heading>
 
-        <grid-container>
-          <grid-item>
+        <div class={"grid-container"}>
+          <div class={"grid-item"}>
             <h1>IDEs:</h1>
             <hr />
             <h2>
@@ -45,9 +45,9 @@ export default function PreferredTooling() {
               </a>
             </h2>
             <p>Website and Javascript development</p>
-          </grid-item>
+          </div>
 
-          <grid-item>
+          <div class={"grid-item"}>
             <h1>3D Pipeline:</h1>
             <hr />
             <h2>
@@ -71,9 +71,9 @@ export default function PreferredTooling() {
               </a>
             </h2>
             <p>Textures and Voxel Models</p>
-          </grid-item>
+          </div>
 
-          <grid-item>
+          <div class={"grid-item"}>
             <h1>Video Editing:</h1>
             <hr />
             <h2>
@@ -88,9 +88,9 @@ export default function PreferredTooling() {
               </a>
             </h2>
             <p>Video Editing</p>
-          </grid-item>
+          </div>
 
-          <grid-item>
+          <div class={"grid-item"}>
             <h1>Photo Editing:</h1>
             <hr />
             <h2>
@@ -105,8 +105,8 @@ export default function PreferredTooling() {
               </a>
             </h2>
             <p>Photo Editing and Manipulation</p>
-          </grid-item>
-        </grid-container>
+          </div>
+        </div>
       </section>
     </NoHydration>
   );

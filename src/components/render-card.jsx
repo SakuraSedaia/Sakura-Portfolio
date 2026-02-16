@@ -5,9 +5,9 @@ export default function RenderCard(props) {
 	const folder = json.name.toLowerCase().replace(" ", "-");
 	
   return (
-    <div class={"render-card"}>
+    <div class={"render-card grid-item"}>
       <h2>{json.name}</h2>
-			<a href="#">
+			<a href="#" onClick={(e) => { e.preventDefault(); props.onImageClick(json, props.cat, folder); }}>
 				<img src={`/images/renders${props.cat}${folder}/${json.sizes[0]}`} alt={json.name} />
 				
 			</a>
@@ -20,8 +20,6 @@ export default function RenderCard(props) {
 		    <pre>/images/renders{props.cat}{folder}/{json.sizes[0]}</pre>
 		    <pre>{JSON.stringify(json, null, 2)}</pre>
 	    </Show>
-	    
-	    <hr />
     </div>
   );
 }
