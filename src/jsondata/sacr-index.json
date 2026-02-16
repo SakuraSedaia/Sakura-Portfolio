@@ -5,7 +5,7 @@
 		"name": "SACR",
 		"version": "R7.4.1",
 		"github": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
-		"logo": "/images/rig-headers/SACR/R7.4 Full.png",
+		"logo": "/images/rig-headers/SACR/r7.4-full",
 		"description": "Rig Interface Addon required to use.",
 		"default": 0,
 		"builds": [
@@ -46,7 +46,7 @@
 		"label": "Development",
 		"name": "SACR",
 		"github": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
-		"logo": "/images/rig-headers/SACR/Development.png",
+		"logo": "/images/rig-headers/SACR/development",
 		"description": "A Development build of an upcoming SACR Release, not recommended for production use",
 		"default": 0,
 		"builds": [

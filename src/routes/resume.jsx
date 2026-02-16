@@ -93,7 +93,7 @@ function Resume() {
   return (
     <ErrorBoundary fallback={(err) => <div class="content-container"><h1>Error loading Resume</h1><p>{err.message}</p></div>}>
       <Suspense fallback={<div class="content-container"><p>Loading Resume...</p></div>}>
-        <header id={"resume-header"} style={{"background-image": "url('/images/headers/about.jpg')"}}>
+        <header id={"resume-header"} style={{"background-image": "image-set(url('/images/headers/about.jxl') type('image/jxl'), url('/images/headers/about.jpg') type('image/jpeg'))"}}>
           <Nav title={"Resume"} />
           <div class={"header-box"}>
             <div class={"header-position"}>

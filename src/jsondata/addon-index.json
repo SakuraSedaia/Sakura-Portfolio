@@ -6,7 +6,7 @@
         "version": "V3.1.0",
         "github": "https://github.com/SakuraSedaia/Sedaia-Rig-Interfaces",
         "blender_ext": "https://extensions.blender.org/add-ons/sakura-rig-gui/",
-        "logo": "/images/rig-headers/rig-interface/rig-interface-3.png",
+        "logo": "/images/rig-headers/rig-interface/rig-interface-3",
         "description": "The latest stable version, includes all UI's for stable SACR Rigs since R7.2 onward, as well as some utilities to make addon development much easier!",
         "default": 0,
         "builds": [
@@ -29,7 +29,7 @@
         "name": "Rig Interface",
         "version": "",
         "github": "https://github.com/SakuraSedaia/Sedaia-Rig-Interfaces",
-        "logo": "/images/rig-headers/rig-interface/rig-interface-dev.png",
+        "logo": "/images/rig-headers/rig-interface/rig-interface-dev",
         "description": "A Development build of an upcoming SRI Release, not recommended for production use",
         "default": 0,
         "builds": [

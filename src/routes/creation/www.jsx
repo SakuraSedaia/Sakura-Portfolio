@@ -1,21 +1,24 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import OptimizedImage from "~/components/optimized-image.jsx";
+import { Suspense, ErrorBoundary } from "solid-js";
 
 function WWW() {
   return (
-    <>
-      <Header title={"Web Development"} img={"about"} />
-      <div class={"content-container"}>
-        <section>
-          <header>
-            <h1>Frostlight Studios</h1>
-          </header>
-          <OptimizedImage src="/images/card-headers/frostlight-studio-website.png" alt="Frostlight Studios" />
-        </section>
-      </div>
-      <Footer />
-    </>
+    <ErrorBoundary fallback={(err) => <div class="content-container">Error: {err.message}</div>}>
+      <Suspense fallback={<div class="content-container">Loading...</div>}>
+        <Header title={"Web Development"} img={"about"} />
+        <div class={"content-container"}>
+          <section>
+            <header>
+              <h1>Frostlight Studios</h1>
+            </header>
+            <OptimizedImage src="/images/card-headers/frostlight-studio-website" alt="Frostlight Studios" />
+          </section>
+        </div>
+        <Footer />
+      </Suspense>
+    </ErrorBoundary>
   );
 }
 export default WWW;

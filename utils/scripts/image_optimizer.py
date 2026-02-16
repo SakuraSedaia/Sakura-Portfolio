@@ -49,16 +49,16 @@ class ImageOptimizer:
                 ensure_dir(target_base.parent)
 
                 # Save JXL (Primary) using common utility
-                jxl_path = target_base.with_suffix(".jxl")
+                jxl_path = target_base.parent / (target_base.name + ".jxl")
                 save_jxl(img, jxl_path, quality=config_loader.QUALITY)
 
                 # Save Fallback (PNG if transparent, JPG otherwise)
                 if is_transparent(img):
-                    fallback_path = target_base.with_suffix(".png")
+                    fallback_path = target_base.parent / (target_base.name + ".png")
                     img.save(fallback_path, optimize=True)
                 else:
                     img = img.convert("RGB")
-                    fallback_path = target_base.with_suffix(".jpg")
+                    fallback_path = target_base.parent / (target_base.name + ".jpg")
                     img.save(fallback_path, "JPEG", quality=config_loader.QUALITY, optimize=True)
 
                 self.processed_count += 1
@@ -162,8 +162,8 @@ class ImageOptimizer:
             # Check if JXL version already exists in target
             rel_path = file_path.relative_to(self.source_dir)
             slug_name = rel_path.stem.lower().replace(" ", "-")
-            target_jxl = self.target_dir / rel_path.parent / slug_name
-            target_jxl = target_jxl.with_suffix(".jxl")
+            target_base = self.target_dir / rel_path.parent / slug_name
+            target_jxl = target_base.parent / (target_base.name + ".jxl")
             
             # IMPROVED: Explicitly check if the file name contains spaces or multiple dots
             # and ensure target path is clean but matches the expectation

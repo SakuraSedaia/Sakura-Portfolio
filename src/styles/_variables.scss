@@ -42,11 +42,11 @@
   --font-weight: 400;
   --font-heading-weight: 600;
   
-  --font-size-heading: 1.75rem;
-  --font-size-subheading: 1.25rem;
-  --font-size-body: 1.125rem;
-  --font-size-small: 1rem;
-  --font-size-nav: 1.125rem;
+  --font-size-heading: 21pt;
+  --font-size-subheading: 15pt;
+  --font-size-body: 13.5pt;
+  --font-size-small: 12pt;
+  --font-size-nav: 13.5pt;
 
   /* Box Shadows */
   --box-shadow-xsm:
@@ -71,11 +71,11 @@
 // Mobile Responsive Variables
 @media screen and (max-width: 720px) {
   :root {
-    --font-size-heading: 1.5rem;
-    --font-size-subheading: 1.25rem;
-    --font-size-body: 1.125rem;
-    --font-size-small: 1rem;
-    --font-size-nav: 0.875rem;
+    --font-size-heading: 18pt;
+    --font-size-subheading: 15pt;
+    --font-size-body: 13.5pt;
+    --font-size-small: 12pt;
+    --font-size-nav: 10.5pt;
   }
 }
 

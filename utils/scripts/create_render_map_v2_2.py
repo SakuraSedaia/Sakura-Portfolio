@@ -50,15 +50,15 @@ class ImageFile:
             rel_path = self.img_path.relative_to(self.source_renders_dir)
             pbar.set_postfix_str(f"Rendering [{label}.jxl] {rel_path}")
 
-        target_base = target_dir / self.slug / f"{self.name.replace(' ', '_')}-{label}"
-        jxl_path = target_base.with_suffix(".jxl")
+        target_base = target_dir / self.slug / f"{self.name.lower().replace(' ', '-')}-{label}"
+        jxl_path = target_base.parent / (target_base.name + ".jxl")
         
         if jxl_path.exists():
             logger.debug(f"Skipping: {jxl_path.name} (exists)")
             # Return filenames even if skipped for manifest completeness
             with Image.open(self.img_path) as img:
                 ext = ".png" if is_transparent(img) else ".jpg"
-            return [jxl_path.name, target_base.with_suffix(ext).name]
+            return [jxl_path.name, (target_base.parent / (target_base.name + ext)).name]
 
         if skip_save:
             return []
@@ -76,11 +76,11 @@ class ImageFile:
             
             # Save Fallback
             if is_transparent(img_resized):
-                fallback_path = target_base.with_suffix(".png")
+                fallback_path = target_base.parent / (target_base.name + ".png")
                 img_resized.save(fallback_path, optimize=True)
             else:
                 img_resized = img_resized.convert("RGB")
-                fallback_path = target_base.with_suffix(".jpg")
+                fallback_path = target_base.parent / (target_base.name + ".jpg")
                 img_resized.save(fallback_path, "JPEG", quality=config_loader.QUALITY, optimize=True)
             
             return [jxl_path.name, fallback_path.name]

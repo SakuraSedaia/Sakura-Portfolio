@@ -12,7 +12,7 @@ export default function FeaturedAssets() {
         <div class={"column-container"}>
           <div class={"column"}>
             <OptimizedImage
-              src={"/images/rig-headers/SACR/R7.4 Full.png"}
+              src={"/images/rig-headers/SACR/r7.4-full"}
               alt={"Sakura's Advanced Character Rig Logo"}
             />
             <hr />
@@ -29,7 +29,7 @@ export default function FeaturedAssets() {
 
           <div class={"column"}>
             <OptimizedImage
-              src={"/images/rig-headers/rig-interface/rig-interface-3.png"}
+              src={"/images/rig-headers/rig-interface/rig-interface-3"}
               alt={"Sakura's Rig Interface Logo Version 3"}
             />
             <hr />
