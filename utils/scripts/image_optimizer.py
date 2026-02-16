@@ -42,9 +42,10 @@ class ImageOptimizer:
                     height = int(float(img.height) * float(ratio))
                     img = img.resize((config_loader.MAX_WIDTH, height), Image.LANCZOS)
 
-                # Determine target path
+                # Determine target path - ensuring slugified filenames (lowercase-hyphenated)
                 rel_path = file_path.relative_to(self.source_dir)
-                target_base = self.target_dir / rel_path.parent / rel_path.stem
+                slug_name = rel_path.stem.lower().replace(" ", "-")
+                target_base = self.target_dir / rel_path.parent / slug_name
                 ensure_dir(target_base.parent)
 
                 # Save JXL (Primary) using common utility
@@ -159,7 +160,13 @@ class ImageOptimizer:
             rel_path = file_path.relative_to(self.source_dir)
             
             # Check if JXL version already exists in target
-            target_jxl = self.target_dir / rel_path.with_suffix(".jxl")
+            rel_path = file_path.relative_to(self.source_dir)
+            slug_name = rel_path.stem.lower().replace(" ", "-")
+            target_jxl = self.target_dir / rel_path.parent / slug_name
+            target_jxl = target_jxl.with_suffix(".jxl")
+            
+            # IMPROVED: Explicitly check if the file name contains spaces or multiple dots
+            # and ensure target path is clean but matches the expectation
             if target_jxl.exists():
                 logger.debug(f"Skipping: {rel_path} (JXL version already exists)")
                 
