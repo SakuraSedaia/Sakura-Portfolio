@@ -14,6 +14,7 @@
 @use "sections/header-footer" as *;
 @use "components/not-finished" as *;
 @use "components/image-modal" as *;
+@use "components/render-card" as *;
 
 // Sections
 @use "sections/index/notable-projects" as *;
