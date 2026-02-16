@@ -13,17 +13,17 @@ function Template() {
 
       <div class={"content-container"}>
         <section id={"content"}>
-          <heading>
+          <div class={"heading"}>
             <h1>Heading</h1>
-          </heading>
-          <content>
+          </div>
+          <div class={"content"}>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae,
               eius eos. A animi consectetur cupiditate deserunt dolorum enim
               eum, impedit ipsum laboriosam nemo nobis, omnis perspiciatis
               praesentium provident, rem sed.
             </p>
-          </content>
+          </div>
         </section>
       </div>
 

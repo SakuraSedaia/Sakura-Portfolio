@@ -5,15 +5,15 @@ import AssetCard from "./asset-card";
 export default function DownloadableAssets() {
   return (
     <section id={"assets"}>
-      <heading>
+      <div class={"heading"}>
         <h1>Downloadable Assets</h1>
-      </heading>
+      </div>
 
-      <grid-container>
+      <div class={"grid-container"}>
         <For each={assetData.assets}>
           {(asset) => <AssetCard data={JSON.stringify(asset)} />}
         </For>
-      </grid-container>
+      </div>
     </section>
   );
 }

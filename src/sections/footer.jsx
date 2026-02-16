@@ -35,7 +35,7 @@ function Footer() {
 					</li>
         </ul>
       </nav>
-      <copyright>&copy; {year()} Sakura Sedaia. All Rights Reserved.</copyright>
+      <div class={"copyright"}>&copy; {year()} Sakura Sedaia. All Rights Reserved.</div>
     </footer>
   );
 }

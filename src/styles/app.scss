@@ -17,5 +17,8 @@
 @use "components/render-card" as *;
 
 // Sections
+@use "sections/index/about" as *;
 @use "sections/index/notable-projects" as *;
+@use "sections/index/preferred-tooling" as *;
+@use "sections/index/technical-expertise" as *;
 @use "sections/shared-downloads" as *;

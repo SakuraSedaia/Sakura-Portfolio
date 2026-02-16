@@ -1,13 +1,17 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
-import NotFinished from "~/components/not-finished.jsx";
 
 function WWW() {
   return (
     <>
       <Header title={"Web Development"} img={"about"} />
       <div class={"content-container"}>
-        <NotFinished />
+        <section>
+          <header>
+            <h1>Frostlight Studios</h1>
+          </header>
+          <img src="/images/card-headers/frostlight-studio-website.png" alt="Frostlight Studios" />
+        </section>
       </div>
       <Footer />
     </>

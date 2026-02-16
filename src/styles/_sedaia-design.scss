@@ -71,7 +71,7 @@ img {
     .row-container {
       display: block;
 
-      .row {
+      .row, .content-row {
         display: inline-block;
         gap: 1rem;
         border-bottom: 0.0625rem solid hsla(var(--bg-contrast-light-val), 30%);
@@ -82,7 +82,7 @@ img {
         }
 
 
-        &[border] {
+        &.border {
           border-radius: var(--radius-lg);
           border: 0.125rem solid var(--bg-accent);
         }
@@ -114,23 +114,23 @@ img {
           padding-bottom: 0.3rem;
         }
 
-        &[bg-color] {
+        &.bg-color {
           background-color: hsl(var(--bg-secondary-val));
           padding: 1rem;
           border: 0.125rem solid hsla(var(--bg-contrast-light-val), 10%);
         }
 
-        &[shadow] {
+        &.shadow {
           box-shadow: var(--box-shadow-lg);
         }
 
-        &[align-center-v] {
+        &.align-center-v {
           align-items: center;
           vertical-align: middle;
           justify-content: center;
         }
 
-        &[split] {
+        &.split {
           border-radius: var(--radius-lg);
           overflow: hidden;
           width: 90%;
@@ -146,7 +146,7 @@ img {
       }
 
       // Modifiers
-      &[flow] {
+      &.flow {
         // Newspaper Style Column Layout, useful for long lists with a lot of items.
         display: block;
         column-width: 20rem;
@@ -171,13 +171,13 @@ img {
         background-color: hsl(var(--bg-secondary-val));
         border: 0.125rem solid hsla(var(--bg-contrast-light-val), 10%);
 
-        &[gradient] {
+        &.gradient {
           background-color: hsla(var(--bg-accent-val), 75%);
           background-image: var(--bg-gradient-dark);
           border: 0.125rem solid hsla(var(--bg-contrast-light-val), 40%);
         }
 
-        &[emphasis] {
+        &.emphasis {
           // Apply this attribute for grid cards which need extra visual emphasis
           background-color: hsla(var(--bg-accent-val));
         }
@@ -185,7 +185,7 @@ img {
     }
 
     // Modifiers
-    &[full-width] {
+    &.full-width {
       padding-inline: calc($margin + $padding);
       margin-inline: 0;
       background-color: hsla(var(--bg-secondary-val));
@@ -193,24 +193,24 @@ img {
       border-radius: 0 !important;
     }
 
-    &[breakout] {
+    &.breakout {
       background-color: hsla(var(--bg-accent-val));
       color: hsl(var(--tx-accent-val));
       border: 0.125rem solid hsla(var(--tx-accent-val), 50%);
       border-radius: var(--radius-lg);
     }
 
-    &[image] {
+    &.image {
       // Background Image is set in the HTML
       padding-inline: $margin;
       margin-inline: 0;
       border-radius: var(--radius-lg);
     }
 
-    &[no-padding] {
+    &.no-padding {
       padding-inline: 0;
     }
-    &[no-margin] {
+    &.no-margin {
       margin-inline: 0;
     }
   }
@@ -237,7 +237,7 @@ img {
       }
 
       // Modifiers
-      &[breakout] {
+      &.breakout {
         border-top: none;
         padding-inline: 0;
         width: 100%;
@@ -295,7 +295,7 @@ img {
       .grid-container {}
       
       // Modifiers
-      &[breakout] {
+      &.breakout {
         border-inline-width: 0;
         
         div.content {
@@ -303,11 +303,11 @@ img {
         }
       }
       
-      &[image] {}
+      &.image {}
       
-      &[no-padding] {}
+      &.no-padding {}
       
-      &[no-margin] {}
+      &.no-margin {}
     }
   }
 }

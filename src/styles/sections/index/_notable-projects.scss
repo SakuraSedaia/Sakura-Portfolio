@@ -4,7 +4,9 @@
   .grid-container {
     .grid-item {
       .notable-img {
-        border-radius: var(--radius-md);
+        img {
+          border-radius: var(--radius-md);
+        }
       }
       .projects-link {
         display: flex;

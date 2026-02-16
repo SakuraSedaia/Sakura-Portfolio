@@ -3,10 +3,10 @@ import { NoHydration } from "solid-js/web";
 export default function PreferredTooling() {
   return (
     <NoHydration>
-      <section id={"preferred-tooling"}>
-        <heading>
+      <section id={"preferred-tooling"} class={"breakout full-width"}>
+        <div class={"heading"}>
           <h1>Preferred Tooling</h1>
-        </heading>
+        </div>
 
         <div class={"grid-container"}>
           <div class={"grid-item"}>
@@ -21,7 +21,7 @@ export default function PreferredTooling() {
                 PyCharm
               </a>
             </h2>
-            <p>Python and Blender Development</p>
+            <p>Advanced IDE for Python Development</p>
             <hr />
             <h2>
               <a
@@ -32,8 +32,7 @@ export default function PreferredTooling() {
                 Intellij IDEA
               </a>
             </h2>
-            <p>Java and Kotlin</p>
-
+            <p>Leading IDE for Java and Kotlin</p>
             <hr />
             <h2>
               <a
@@ -44,7 +43,7 @@ export default function PreferredTooling() {
                 Webstorm
               </a>
             </h2>
-            <p>Website and Javascript development</p>
+            <p>Ecosystem for Website and Javascript Development</p>
           </div>
 
           <div class={"grid-item"}>
@@ -59,7 +58,7 @@ export default function PreferredTooling() {
                 Blender
               </a>
             </h2>
-            <p>3D Rendering, Modelling, and Rigging</p>
+            <p>Open-Source Suite for 3D Modelling</p>
             <hr />
             <h2>
               <a
@@ -70,11 +69,22 @@ export default function PreferredTooling() {
                 Blockbench
               </a>
             </h2>
-            <p>Textures and Voxel Models</p>
+            <p>Tool for Textures and Voxel Models</p>
+            <hr />
+            <h2>
+              <a
+                href={"https://github.com/BramStoutProductions/MiEx"}
+                target={"_blank"}
+                class={"link"}
+              >
+                MiEx
+              </a>
+            </h2>
+            <p>Minecraft and Hytale World Export Utility</p>
           </div>
 
           <div class={"grid-item"}>
-            <h1>Video Editing:</h1>
+            <h1>Media Editing:</h1>
             <hr />
             <h2>
               <a
@@ -87,11 +97,7 @@ export default function PreferredTooling() {
                 Davinci Resolve
               </a>
             </h2>
-            <p>Video Editing</p>
-          </div>
-
-          <div class={"grid-item"}>
-            <h1>Photo Editing:</h1>
+            <p>Industry Standard for Professional Video Editing</p>
             <hr />
             <h2>
               <a
@@ -104,7 +110,32 @@ export default function PreferredTooling() {
                 Affinity Photo 2
               </a>
             </h2>
-            <p>Photo Editing and Manipulation</p>
+            <p>Software for Photo Editing and Manipulation</p>
+          </div>
+          <div class={"grid-item"}>
+            <h1>Office:</h1>
+            <hr />
+            <h2>
+              <a
+                href={"https://workspace.google.com/"}
+                target={"_blank"}
+                class={"link"}
+              >
+                Google Workspace
+              </a>
+            </h2>
+            <p>Suite for Real-Time Team Collaboration</p>
+            <hr />
+            <h2>
+              <a
+                href={"https://www.onlyoffice.com/"}
+                target={"_blank"}
+                class={"link"}
+              >
+                OnlyOffice
+              </a>
+            </h2>
+            <p>Open-Source Solution for Office Documents</p>
           </div>
         </div>
       </section>

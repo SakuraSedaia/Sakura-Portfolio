@@ -4,15 +4,15 @@ export default function SACRInstructions() {
   return (
     <NoHydration>
       <section id={"instructions"}>
-        <heading>
+        <div class={"heading"}>
           <h1>Instructions</h1>
-        </heading>
-        <standard-container>
+        </div>
+        <div class={"standard-container"}>
           <p>
             This rig is available in two places, here and through it's
             associated addon
           </p>
-        </standard-container>
+        </div>
       </section>
     </NoHydration>
   );
