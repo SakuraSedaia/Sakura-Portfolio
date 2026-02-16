@@ -57,30 +57,19 @@ def is_transparent(img):
     return False
 
 def save_jxl(img, path, quality=85):
-    """Saves a PIL Image as JXL using jxlpy encoder directly."""
-    # Convert image to bytes in correct format for jxlpy
-    if img.mode == "P":
-        img = img.convert("RGBA") if "transparency" in img.info else img.convert("RGB")
+    """Saves a PIL Image as JXL using the JXLImagePlugin."""
+    from jxlpy import JXLImagePlugin
     
     # Ensure we are in a supported mode for JXL encoding
-    if img.mode not in ("RGB", "RGBA"):
+    if img.mode == "P":
+        img = img.convert("RGBA") if "transparency" in img.info else img.convert("RGB")
+    elif img.mode not in ("RGB", "RGBA"):
         img = img.convert("RGBA") if "A" in img.getbands() else img.convert("RGB")
     
-    # JXLPyEncoder(quality, (width, height), num_color_channels, num_extra_channels, alpha_bits)
-    if img.mode == "RGBA":
-        # For RGBA, 3 color channels + 1 extra (alpha)
-        # Using lossless (quality=100) for images with alpha to prevent rendering artifacts
-        # as lossy JXL alpha can be problematic in some browsers/decoders.
-        encoder = jxlpy.JXLPyEncoder(100, img.size, 3, 1, 8)
-    else:
-        # For RGB, 3 color channels, 0 extra
-        encoder = jxlpy.JXLPyEncoder(quality, img.size, 3, 0, 0)
-    
-    encoder.add_frame(img.tobytes())
-    
-    with open(path, "wb") as f:
-        f.write(encoder.get_output())
-    encoder.close()
+    # Use PIL's native save method via the plugin
+    # quality=100 in jxlpy (via PIL plugin) usually maps correctly to lossless if supported
+    # or high quality. We'll use the provided quality.
+    img.save(path, format="JXL", quality=quality)
 
 def check_dependencies():
     """Checks if all modules in requirements.txt are installed."""
