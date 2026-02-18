@@ -4,7 +4,6 @@ import Footer from "~/sections/footer.jsx";
 import { cache, createAsync, useParams } from "@solidjs/router";
 import { Show, Suspense, ErrorBoundary, For } from "solid-js";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
-import NotFinished from "~/components/ui/not-finished.jsx";
 
 const changelogs = import.meta.glob("../../markdown/changelogs/*.md", {
 	query: "?raw",

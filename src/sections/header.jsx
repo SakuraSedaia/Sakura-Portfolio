@@ -1,5 +1,5 @@
 import Nav from "~/components/navigation/nav.jsx";
-import { createSignal, Show } from "solid-js";
+import { Show } from "solid-js";
 
 export default function Header(props) {
   const bgImg = () => {
