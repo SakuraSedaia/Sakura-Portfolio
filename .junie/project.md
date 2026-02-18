@@ -7,8 +7,8 @@
 
 #### Project Structure (Key Paths)
 - `!/src/`: Main application source code.
-- `!/src/components/`: Reusable UI components.
-- `!/src/sections/`: Page-specific sections.
+- `!/src/components/`: Categorized reusable UI components (`navigation/`, `media/`, `ui/`).
+- `!/src/sections/`: Page-specific sections (may include local `components/` subdirectories).
 - `!/src/jsondata/`: JSON data files for dynamic content.
 - `!/src/styles/`: Global SCSS files and mirrored partial subdirectories (`components/`, `sections/`, `pages/`).
 - `!/src/app.scss`: Main SCSS entry point.

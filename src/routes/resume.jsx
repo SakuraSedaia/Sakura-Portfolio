@@ -1,5 +1,5 @@
 import Nav from "~/components/navigation/nav.jsx";
-import SocialIcon from "~/components/navigation/social-icon.jsx";
+import SocialIcon from "~/components/media/social-icon.jsx";
 import Footer from "~/sections/footer.jsx";
 import { SolidMarkdown } from "solid-markdown";
 import resumeContent from "~/markdown/resume.md?raw";

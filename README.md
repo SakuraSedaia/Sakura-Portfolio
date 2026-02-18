@@ -26,11 +26,11 @@ The transition to SolidJS and SolidStart was chosen to provide fine-grained reac
 
 ```text
 ├── src/
-│   ├── components/       # Reusable UI components
-│   ├── sections/         # Page-specific sections
+│   ├── components/       # Categorized reusable UI components (navigation, media, ui)
+│   ├── sections/         # Page-specific sections (with components/ subdirs where needed)
 │   ├── jsondata/         # Static data (e.g., rig manifests, addon indices)
 │   ├── routes/           # File-based routing (SolidStart)
-│   ├── styles/           # SCSS partials (mirrors components/sections/pages folders)
+│   ├── styles/           # SCSS partials (mirrors src/ structure)
 │   ├── app.jsx           # Main application entry point
 │   ├── app.scss          # Main SCSS entry point
 │   ├── entry-client.jsx  # Client-side entry point
