@@ -12,7 +12,8 @@
       position: absolute;
       background-color: var(--bg-accent);
       transition: all 250ms ease-in-out;
-      border-radius: var(--radius-lg);
+      border-top-left-radius: var(--radius-lg);
+      border-top-right-radius: var(--radius-lg);
       z-index: 0;
       border: 0.125rem solid var(--bg-accent);
       box-sizing: border-box;
