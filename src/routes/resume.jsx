@@ -5,6 +5,7 @@ import Footer from "~/sections/footer.jsx";
 import { SolidMarkdown } from "solid-markdown";
 import resumeContent from "~/markdown/resume.md?raw";
 import { For, Show, createMemo, ErrorBoundary, Suspense } from "solid-js";
+import Breadcrumb from "~/components/breadcrumb.jsx";
 
 function Resume() {
   // Simple parser to split markdown into sections based on ## headers
@@ -76,17 +77,30 @@ function Resume() {
   const sections = () => resumeData().sections;
 
   const getContactLink = (item) => {
+    const mdMatch = item.match(/\[(.*?)\]\((.*?)\)/);
+
     if (item.includes('mailto:') || item.includes('@')) {
-      const email = item.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/)?.[0] || item;
-      return { href: `mailto:${email}`, text: email, icon: 'envelope' };
+      let email = item.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/)?.[0] || item;
+      let text = email;
+      if (mdMatch) {
+        // If the contact is provided as a markdown link like [Email](address)
+        text = mdMatch[1] || text;
+        email = (mdMatch[2] || email).replace(/^mailto:/i, '');
+      }
+      return { href: `mailto:${email}`, text, icon: 'envelope', copyText: email };
     }
+
     if (item.includes('github.com')) {
-      const match = item.match(/\[(.*?)\]\((.*?)\)/);
-      if (match) {
-        return { href: match[2], text: match[1], icon: 'github' };
+      if (mdMatch) {
+        return { href: mdMatch[2], text: mdMatch[1], icon: 'github' };
       }
       return { href: item, text: 'GitHub', icon: 'github' };
     }
+
+    if (mdMatch) {
+      return { href: mdMatch[2], text: mdMatch[1], icon: null };
+    }
+
     return { href: '#', text: item, icon: null };
   };
 
@@ -104,13 +118,26 @@ function Resume() {
                     {(item) => {
                       const link = getContactLink(item);
                       return (
-                        <a href={link.href} class={"link"}>
+                        <a
+                          href={link.href}
+                          class={"link"}
+                          title={link.icon === 'envelope' ? 'Click to copy email address' : undefined}
+                          onclick={(e) => {
+                            if (link.icon === 'envelope') {
+                              e?.preventDefault?.();
+                              const toCopy = link.copyText || link.href?.replace(/^mailto:/i, '');
+                              if (typeof navigator !== 'undefined' && navigator.clipboard && toCopy) {
+                                navigator.clipboard.writeText(toCopy).catch(() => {
+                                  // Fallback: do nothing silently
+                                });
+                              }
+                            }
+                          }}
+                        >
                           <Show when={link.icon}>
                             <SocialIcon name={link.icon} />
                           </Show>
-                          <Show when={link.icon !== 'envelope'}>
-                            {link.text}
-                          </Show>
+                          {link.text}
                         </a>
                       );
                     }}
@@ -121,6 +148,10 @@ function Resume() {
           </div>
         </header>
         <div class={"content-container"}>
+	        <Breadcrumb items={[
+		        { label: "Home", href: "/"},
+		        { label: "Resume", href: "/resume" }
+	        ]} />
           <For each={sections()}>
             {(section) => (
               <section id={section.id}>

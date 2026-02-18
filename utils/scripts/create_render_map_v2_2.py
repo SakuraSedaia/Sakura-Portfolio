@@ -4,7 +4,6 @@ from pathlib import Path
 from PIL import Image
 import jxlpy
 from tqdm import tqdm
-import calendar
 
 import config_loader
 from common import ensure_dir, is_transparent, setup_logging, save_jxl

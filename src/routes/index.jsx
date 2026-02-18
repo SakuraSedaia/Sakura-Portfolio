@@ -6,6 +6,7 @@ import PreferredTooling from "~/sections/index/preferred-tooling";
 import TechnicalExpertise from "~/sections/index/technical-expertise";
 import Resume from "~/sections/index/resume";
 import { Suspense, ErrorBoundary } from "solid-js";
+import Breadcrumb from "~/components/breadcrumb.jsx";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
         <About />
 
         <div class={"content-container"}>
+	        <Breadcrumb items={[
+		        { label: "Home", href: "/" }
+	        ]} />
           <NotableProjects />
           <PreferredTooling />
           <TechnicalExpertise />

@@ -30,5 +30,5 @@ sizes = { lg = 1920, md = 1600, sm = 1200 }
 categories = [
     { label = "Environment Renders", path = "env", folder = "env" },
     { label = "Character Renders", path = "char", folder = "char" },
-    { label = "Character & Environment Renders", path = "charenv", folder = "char-env" }
+    { label = "Character & Environment Renders", path = "char-env", folder = "char-env" }
 ]

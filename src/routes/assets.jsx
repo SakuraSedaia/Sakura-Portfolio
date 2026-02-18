@@ -5,6 +5,7 @@ import FeaturedAssets from "~/sections/assets/featured-assets";
 import DownloadableAssets from "~/sections/assets/downloadable-assets";
 import Extensions from "~/sections/assets/extensions";
 import { Suspense, ErrorBoundary } from "solid-js";
+import Breadcrumb from "~/components/breadcrumb.jsx";
 
 function Assets() {
   return (
@@ -13,6 +14,9 @@ function Assets() {
         <Header title="Assets and Extensions" img="renders" />
 
         <div class={"content-container"}>
+	        <Breadcrumb items={[
+	        	{ label: "Assets", href: "/assets" }
+	        ]} />
           <AssetsIntro />
           <FeaturedAssets />
           <DownloadableAssets />

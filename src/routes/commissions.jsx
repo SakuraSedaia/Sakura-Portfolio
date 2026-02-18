@@ -3,6 +3,7 @@ import Footer from "~/sections/footer.jsx";
 import CommissionIntro from "~/sections/commissions/commission-intro";
 import CommissionGrid from "~/sections/commissions/commission-grid";
 import { Suspense, ErrorBoundary } from "solid-js";
+import Breadcrumb from "~/components/breadcrumb.jsx";
 
 function Commissions() {
   return (
@@ -10,6 +11,9 @@ function Commissions() {
       <Suspense fallback={<div class="content-container">Loading...</div>}>
         <Header title="Commissions" img="commissions" />
         <div class={"content-container"}>
+	        <Breadcrumb items={[
+		        { label: "Assets", href: "/assets" }
+	        ]} />
           <CommissionIntro />
           <CommissionGrid />
         </div>

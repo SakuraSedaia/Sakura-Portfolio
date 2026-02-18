@@ -1,6 +1,7 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import OptimizedImage from "~/components/optimized-image.jsx";
+import Breadcrumb from "~/components/breadcrumb.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
 
 function WWW() {
@@ -9,6 +10,10 @@ function WWW() {
       <Suspense fallback={<div class="content-container">Loading...</div>}>
         <Header title={"Web Development"} img={"about"} />
         <div class={"content-container"}>
+          <Breadcrumb items={[
+            { label: "Creations", href: "/creations" },
+            { label: "Web Dev" }
+          ]} />
           <section>
             <header>
               <h1>Frostlight Studios</h1>

@@ -1,6 +1,7 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import { A } from "@solidjs/router";
+import Breadcrumb from "~/components/breadcrumb.jsx";
 
 function Template() {
   return (
@@ -12,6 +13,9 @@ function Template() {
       />
 
       <div class={"content-container"}>
+        <Breadcrumb items={[
+        	{ label: "Page Template", href: "/page-template" }
+        ]} />
         <section id={"content"}>
           <div class={"heading"}>
             <h1>Heading</h1>

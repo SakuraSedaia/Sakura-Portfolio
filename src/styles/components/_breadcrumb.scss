@@ -1,0 +1,54 @@
+@use "../variables" as *;
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-bottom: 0.0625rem solid hsla(var(--bg-contrast-light-val), 10%);
+  margin-inline: 4rem; // Align with section margins in sedaia-design
+
+  .breadcrumb-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: var(--font-size-body);
+    font-family: var(--font-main), sans-serif;
+  }
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    color: hsl(var(--tx-secondary-val));
+
+    .separator {
+      margin-inline: 0.5rem;
+      color: hsla(var(--tx-primary-val), 50%);
+      font-size: 0.8em;
+    }
+
+    .current {
+      color: hsl(var(--tx-primary-val));
+      font-weight: 500;
+    }
+
+    .link {
+      // Styling is inherited from .link global class, 
+      // but we can add breadcrumb-specific tweaks if needed.
+    }
+  }
+}
+
+// Media query for smaller screens
+@media screen and (max-width: 720px) {
+  .breadcrumb {
+    padding-inline: 0.5rem;
+    margin-inline: 1rem;
+    
+    .breadcrumb-list {
+      font-size: var(--font-size-small);
+    }
+  }
+}

@@ -1,5 +1,5 @@
 Jonathan Burger
-jcburger2003@outlook.com
+[Email](jcburger2003@outlook.com)
 [GitHub](https://github.com/SakuraSedaia)
 
 ## Professional Summary

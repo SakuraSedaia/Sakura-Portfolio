@@ -3,6 +3,7 @@ import { SolidMarkdown } from "solid-markdown";
 import Footer from "~/sections/footer.jsx";
 import { cache, createAsync, useParams } from "@solidjs/router";
 import { Show, Suspense, ErrorBoundary, For } from "solid-js";
+import Breadcrumb from "~/components/breadcrumb.jsx";
 import NotFinished from "~/components/not-finished.jsx";
 
 const changelogs = import.meta.glob("../../markdown/changelogs/*.md", {
@@ -89,6 +90,10 @@ export default function Changelog() {
 		<>
 			<Header title={params.item ? `Changelog - ${params.item}` : "Changelog"} img="rigs" />
 			<main class={"content-container"}>
+				<Breadcrumb items={[
+					{ label: "Changelogs", href: "/changelog" },
+					{ label: params.item || "Current" }
+				]} />
 				<section class={"changelog"}>
 					<ErrorBoundary fallback={(err) => (
 						<div class={"error-box"}>
