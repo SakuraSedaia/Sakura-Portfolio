@@ -5,7 +5,7 @@ import FeaturedAssets from "~/sections/assets/featured-assets";
 import DownloadableAssets from "~/sections/assets/downloadable-assets";
 import Extensions from "~/sections/assets/extensions";
 import { Suspense, ErrorBoundary } from "solid-js";
-import Breadcrumb from "~/components/breadcrumb.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 function Assets() {
   return (

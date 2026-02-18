@@ -3,7 +3,7 @@ import Footer from "~/sections/footer.jsx";
 import CommissionIntro from "~/sections/commissions/commission-intro";
 import CommissionGrid from "~/sections/commissions/commission-grid";
 import { Suspense, ErrorBoundary } from "solid-js";
-import Breadcrumb from "~/components/breadcrumb.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 function Commissions() {
   return (

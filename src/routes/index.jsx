@@ -5,7 +5,7 @@ import PreferredTooling from "~/sections/index/preferred-tooling";
 import TechnicalExpertise from "~/sections/index/technical-expertise";
 import Resume from "~/sections/index/resume";
 import { Suspense, ErrorBoundary } from "solid-js";
-import Breadcrumb from "~/components/breadcrumb.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 export default function Home() {
   return (

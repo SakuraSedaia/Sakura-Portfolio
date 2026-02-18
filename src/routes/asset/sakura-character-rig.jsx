@@ -4,7 +4,7 @@ import AboutSACR from "~/sections/sacr/about-sacr";
 import SACRDownloads from "~/sections/sacr/sacr-downloads";
 import SACRInstructions from "~/sections/sacr/sacr-instructions";
 import { Suspense, ErrorBoundary } from "solid-js";
-import Breadcrumb from "~/components/breadcrumb.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 function SACR() {
   return (

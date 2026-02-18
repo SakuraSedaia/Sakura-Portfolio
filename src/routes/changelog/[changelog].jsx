@@ -3,8 +3,8 @@ import { SolidMarkdown } from "solid-markdown";
 import Footer from "~/sections/footer.jsx";
 import { cache, createAsync, useParams } from "@solidjs/router";
 import { Show, Suspense, ErrorBoundary, For } from "solid-js";
-import Breadcrumb from "~/components/breadcrumb.jsx";
-import NotFinished from "~/components/not-finished.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
+import NotFinished from "~/components/ui/not-finished.jsx";
 
 const changelogs = import.meta.glob("../../markdown/changelogs/*.md", {
 	query: "?raw",
@@ -126,7 +126,10 @@ export default function Changelog() {
 																	p: (props) => <p style={{"white-space": "pre-line"}} {...props} />,
 																	ul: (props) => <ul {...props} />,
 																	li: (props) => <li {...props} />,
-																	a: (props) => <a {...props} class="link" />
+																	a: (props) => {
+																		const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
+																		return isInternal ? <A {...props} class="link" /> : <a {...props} class="link" />;
+																	}
 																}}
 															/>
 														</Show>
@@ -141,8 +144,11 @@ export default function Changelog() {
 																			p: (props) => <p style={{"white-space": "pre-line"}} {...props} />,
 																			ul: (props) => <ul {...props} />,
 																			li: (props) => <li {...props} />,
-																			a: (props) => <a {...props} class="link" />
-																		}}
+ 																		a: (props) => {
+ 																			const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
+ 																			return isInternal ? <A {...props} class="link" /> : <a {...props} class="link" />;
+ 																		}
+ 																	}}
 																	/>
 																</div>
 															)}

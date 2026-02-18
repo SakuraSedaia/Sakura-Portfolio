@@ -1,8 +1,8 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
-import NotFinished from "~/components/not-finished.jsx";
+import NotFinished from "~/components/ui/not-finished.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
-import Breadcrumb from "~/components/breadcrumb.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 function Creations() {
   return (

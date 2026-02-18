@@ -1,4 +1,4 @@
-import DownloadLink from "~/components/download-link";
+import DownloadLink from "~/components/ui/download-link";
 
 export default function AssetCard(props) {
     const asset = JSON.parse(props.data);

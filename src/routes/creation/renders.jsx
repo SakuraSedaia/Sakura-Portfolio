@@ -1,7 +1,7 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import CharGallery from "~/sections/renders/char-gallery.jsx";
-import Breadcrumb from "~/components/breadcrumb.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
 
 function Renders() {

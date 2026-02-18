@@ -1,7 +1,7 @@
 import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { Suspense, ErrorBoundary } from "solid-js";
-import Nav from "~/components/nav";
+import Nav from "~/components/navigation/nav";
 import "./styles/app.scss";
 
 export default function App() {

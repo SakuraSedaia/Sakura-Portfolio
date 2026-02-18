@@ -1,5 +1,5 @@
 import { Show } from "solid-js";
-import OptimizedImage from "~/components/optimized-image.jsx";
+import OptimizedImage from "~/components/media/optimized-image.jsx";
 
 export default function RenderCard(props) {
 	const json = JSON.parse(props.data)

@@ -6,6 +6,7 @@
 
 ### AI Agent Interaction
 - Always reference the `.junie/context.md` and `.junie/project.md` files at the beginning of a session to ensure alignment with the project's current state and architectural decisions.
+
 ### Logging & Summaries
 - Maintain logs of all chat sessions in the `.logs/` folder. Log files are organized by date (e.g., `chat-session-YYYY-MM-DD.log`). Append all entries for the same day to that day's log file.
 - When explicitly requested to provide a "context summary" or "summary of the day/session", create a separate file in the `.logs/` folder named `summary_YYYY-MM-DD.md` (e.g., `summary_2026-02-10.md`) containing the summarized highlights.

@@ -1,7 +1,7 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
-import OptimizedImage from "~/components/optimized-image.jsx";
-import Breadcrumb from "~/components/breadcrumb.jsx";
+import OptimizedImage from "~/components/media/optimized-image.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
 
 function WWW() {

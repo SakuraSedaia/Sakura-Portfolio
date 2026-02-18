@@ -88,6 +88,7 @@ Contributions are welcome! To maintain code quality and consistency, please foll
   - Always wrap HTML attributes in curly braces (e.g., `class={styles.container}`).
   - Use semantic HTML elements (`<main>`, `<section>`, `<nav>`, etc.) for structure.
   - Wrap page sections in their own components using `<section>` tags with unique IDs.
+  - Wrap internal links with the `<A>` component from `@solidjs/router` to ensure proper SPA navigation.
 - **Python (Automation):**
   - Follow the modular structure in `utils/scripts/`.
   - Use `pathlib.Path` for all filesystem operations.
@@ -97,13 +98,13 @@ Contributions are welcome! To maintain code quality and consistency, please foll
 
 ### 3. Styling (SCSS)
 - **Format:** Use SCSS syntax with proper indentation.
-- **Colors:** All colors must be formatted using **HSL** or **HSLA**.
+- **Colors:** All colors must be formatted using **HSL** or **HSLA**. Prefer using the predefined CSS variables from `_variables.scss`.
 - **Sizing:** Use `rem` and `em` for element sizing and `pt` for typography.
 - **Media Queries:** Use `px` for `@media` queries to ensure consistent breakpoints across devices.
 - **Organization:** 
   - Framework essential code belongs in the global design partial (`_sedaia-design.scss`).
   - Thematic, component, and page styles must be placed in mirrored subdirectories within `src/styles/` (e.g., `src/styles/sections/index/`).
-  - Text decoration must not be used for links; use `box-shadow` for animated effects.
+  - `text-decoration` must not be used for links (except global resets); use `box-shadow` for animated effects.
 
 ### 4. File & Path Management
 - **Naming:** Use lowercase and hyphens for all files and folders.

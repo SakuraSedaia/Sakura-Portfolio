@@ -1,5 +1,6 @@
 import { NoHydration } from "solid-js/web";
-import OptimizedImage from "~/components/optimized-image.jsx";
+import OptimizedImage from "~/components/media/optimized-image.jsx";
+import { A } from "@solidjs/router";
 
 export default function FeaturedAssets() {
   return (
@@ -22,9 +23,9 @@ export default function FeaturedAssets() {
               being a lightweight, highly customizable minecraft rig able to
               be used on all levels of hardware.
             </p>
-            <a class={"btn"} href={"/asset/sakura-character-rig"}>
+            <A class={"btn"} href={"/asset/sakura-character-rig"}>
               See Rig Page
-            </a>
+            </A>
           </div>
 
           <div class={"column"}>
@@ -40,9 +41,9 @@ export default function FeaturedAssets() {
               be used on all levels of hardware.
             </p>
             <div class={"btn-centered"}>
-              <a class={"btn"} href={"/asset/sakura-rig-interface"}>
+              <A class={"btn"} href={"/asset/sakura-rig-interface"}>
                 See Extension Page
-              </a>
+              </A>
               <a
                 class={"btn"}
                 href={

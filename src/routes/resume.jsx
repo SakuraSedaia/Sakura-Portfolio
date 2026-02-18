@@ -1,10 +1,10 @@
-import Nav from "~/components/nav.jsx";
-import SocialIcon from "~/components/social-icon.jsx";
+import Nav from "~/components/navigation/nav.jsx";
+import SocialIcon from "~/components/navigation/social-icon.jsx";
 import Footer from "~/sections/footer.jsx";
 import { SolidMarkdown } from "solid-markdown";
 import resumeContent from "~/markdown/resume.md?raw";
 import { For, Show, createMemo, ErrorBoundary, Suspense } from "solid-js";
-import Breadcrumb from "~/components/breadcrumb.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 function Resume() {
   // Simple parser to split markdown into sections based on ## headers
@@ -166,7 +166,10 @@ function Resume() {
                       p: (props) => <p style={{"white-space": "pre-line"}} {...props} />,
                       ul: (props) => <ul {...props} />,
                       li: (props) => <li {...props} />,
-                      a: (props) => <a {...props} />
+                      a: (props) => {
+                        const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
+                        return isInternal ? <A {...props} /> : <a {...props} />;
+                      }
                     }}
                   />
                 </Show>
@@ -199,7 +202,10 @@ function Resume() {
                               li: (props) => <li {...props} />,
                               strong: (props) => <strong {...props} />,
                               em: (props) => <em {...props} />,
-                              a: (props) => <a {...props} class={"link"} />
+                              a: (props) => {
+                                const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
+                                return isInternal ? <A {...props} class={"link"} /> : <a {...props} class={"link"} />;
+                              }
                             }}
                           />
                         </div>
@@ -219,7 +225,10 @@ function Resume() {
                             components={{
                               ul: (props) => <ul {...props} />,
                               li: (props) => <li {...props} />,
-                              a: (props) => <a {...props} class={"link"} />
+                              a: (props) => {
+                                const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
+                                return isInternal ? <A {...props} class={"link"} /> : <a {...props} class={"link"} />;
+                              }
                             }}
                           />
                         </div>
@@ -237,7 +246,10 @@ function Resume() {
                           children={sub.content}
                           components={{
                             p: (props) => <p style={{"white-space": "pre-line"}} {...props} />,
-                            a: (props) => <a {...props} class={"link"} />
+                            a: (props) => {
+                              const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
+                              return isInternal ? <A {...props} class={"link"} /> : <a {...props} class={"link"} />;
+                            }
                           }}
                         />
                       </div>

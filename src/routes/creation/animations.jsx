@@ -1,7 +1,7 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
-import Breadcrumb from "~/components/breadcrumb.jsx";
-import NotFinished from "~/components/not-finished.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
+import NotFinished from "~/components/ui/not-finished.jsx";
 function Animations() {
   return (
     <>

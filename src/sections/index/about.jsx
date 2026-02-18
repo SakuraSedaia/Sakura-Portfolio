@@ -1,5 +1,5 @@
-import Nav from "~/components/nav.jsx";
-import SocialIcon from "~/components/social-icon";
+import Nav from "~/components/navigation/nav.jsx";
+import SocialIcon from "~/components/navigation/social-icon";
 import { A } from "@solidjs/router";
 export default function About() {
   const bgImg = {

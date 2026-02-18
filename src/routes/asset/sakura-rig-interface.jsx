@@ -4,7 +4,7 @@ import AboutSRI from "~/sections/sri/about-sri.jsx";
 import SRIDownloads from "~/sections/sri/sri-downloads.jsx";
 import SRIInstructions from "~/sections/sri/sri-instructions.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
-import Breadcrumb from "~/components/breadcrumb.jsx";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 function SRIMain() {
   return (

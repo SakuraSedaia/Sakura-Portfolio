@@ -1,6 +1,6 @@
 import { A } from "@solidjs/router";
 import { NoHydration } from "solid-js/web";
-import OptimizedImage from "~/components/optimized-image.jsx";
+import OptimizedImage from "~/components/media/optimized-image.jsx";
 
 export default function NotableProjects() {
   return (

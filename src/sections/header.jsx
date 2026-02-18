@@ -1,4 +1,4 @@
-import Nav from "~/components/nav.jsx";
+import Nav from "~/components/navigation/nav.jsx";
 import { createSignal, Show } from "solid-js";
 
 export default function Header(props) {
