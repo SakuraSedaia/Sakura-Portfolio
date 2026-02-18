@@ -8,7 +8,7 @@
 - Page components and routes should be wrapped in `Suspense` and `ErrorBoundary` to handle loading states and catch runtime errors.
 - Do not hardcode the `url` prop in the `Router` component in `app.jsx` unless specifically required for SSR state, as it can cause unexpected redirects on page reload.
 - When loading dynamic content (e.g., Markdown files via `import.meta.glob`) based on route parameters, use robust and case-insensitive matching logic to ensure compatibility across different environments.
-- Use directory-based parameterized routing (e.g., `src/routes/changelog/[item].jsx`) for cleaner route structure and to ensure reliable parameter resolution.
+- Use directory-based parameterized routing (e.g., `src/routes/changelog/[changelog].jsx`) for cleaner route structure and to ensure reliable parameter resolution.
 - Always implement loading fallbacks and explicit "not found" or error states for dynamic routes.
 
 ### Styling

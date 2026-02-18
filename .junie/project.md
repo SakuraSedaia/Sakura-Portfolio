@@ -57,4 +57,4 @@
 - Component styles: Associated `_custom.scss` file.
 
 #### Project-Specific Routing
-- Example: `src/routes/changelog/[item].jsx`.
+- Example: `src/routes/changelog/[changelog].jsx`.
