@@ -1,4 +1,3 @@
-import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import About from "~/sections/index/about";
 import NotableProjects from "~/sections/index/notable-projects";

@@ -1,4 +1,3 @@
-import Header from "~/sections/header.jsx";
 import Nav from "~/components/nav.jsx";
 import SocialIcon from "~/components/social-icon.jsx";
 import Footer from "~/sections/footer.jsx";
