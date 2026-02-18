@@ -4,6 +4,22 @@
   .build-select {
     overflow: hidden;
     padding: 0;
+    position: relative;
+    display: flex;
+    width: fit-content;
+
+    .tab-indicator {
+      position: absolute;
+      background-color: var(--bg-accent);
+      transition: all 250ms ease-in-out;
+      border-radius: var(--radius-lg);
+      z-index: 0;
+      border: 0.125rem solid var(--bg-accent);
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+    }
+
     .tab {
       cursor: pointer;
       padding: .5rem 1rem;
@@ -13,10 +29,13 @@
       min-width: 4rem;
       width: fit-content;
       text-align: center;
+      position: relative;
+      z-index: 1;
+      transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
 
       &:hover {
         color: var(--tx-contrast-accent);
-        background-color: var(--bg-contrast-light);
+        background-color: hsla(var(--bg-contrast-light-val), 0.1);
       }
 
       &:first-child {
@@ -29,12 +48,12 @@
     }
     .tab.active {
       color: var(--tx-accent);
-      background-color: var(--bg-accent);
+      background-color: transparent !important; // Use transparent since indicator provides background
       cursor: default;
 
       &:hover {
         color: var(--tx-accent);
-        background-color: var(--bg-accent);
+        background-color: transparent !important;
       }
     }
   }

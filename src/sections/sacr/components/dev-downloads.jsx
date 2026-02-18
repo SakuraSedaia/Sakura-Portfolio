@@ -1,22 +1,48 @@
-import { createSignal, For } from "solid-js";
+import { createSignal, For, onMount, createEffect } from "solid-js";
 
 export default function DevDownloads(props) {
 	const dev = props.data;
 	const [devIndex, setDevIndex] = createSignal(0);
+	const [indicatorStyle, setIndicatorStyle] = createSignal({});
+	let containerRef;
+	let tabRefs = [];
 
 	const downloadPath = "releases/download/";
 	const activeDev = (id) => (id === devIndex() ? "tab active" : "tab");
 
 	const devDownloadUrl = () => `${dev.github}${downloadPath}${dev.builds[devIndex()].git_tag}/${dev.builds[devIndex()].fileName}`;
 
+	const updateIndicator = () => {
+		const activeTab = tabRefs[devIndex()];
+		if (activeTab && containerRef) {
+			setIndicatorStyle({
+				left: `${activeTab.offsetLeft}px`,
+				width: `${activeTab.offsetWidth}px`,
+				height: `${activeTab.offsetHeight}px`
+			});
+		}
+	};
+
+	onMount(() => {
+		updateIndicator();
+		window.addEventListener("resize", updateIndicator);
+	});
+
+	createEffect(() => {
+		devIndex();
+		updateIndicator();
+	});
+
 	return (
 		<div class={"row"} id={"dev"}>
 			<h2>Development Builds</h2>
 			<h3>{dev.name} Development</h3>
-			<div class={"dev-builds build-select"}>
+			<div class={"dev-builds build-select"} ref={containerRef}>
+				<div class="tab-indicator" style={indicatorStyle()} />
 				<For each={dev.builds}>
-					{(build) => (
+					{(build, index) => (
 						<a
+							ref={(el) => (tabRefs[index()] = el)}
 							class={`${activeDev(build.id)}`}
 							onClick={() => setDevIndex(build.id)}
 						>
