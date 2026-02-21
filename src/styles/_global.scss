@@ -107,10 +107,9 @@ ol.styled-list {
   margin-block: 0.5rem;
 
   &:hover {
-    color: hsl(var(--bg-primary-val)) !important;
-    background-color: hsl(var(--tx-accent-val));
-    box-shadow: 0 0 0.1875rem hsl(var(--tx-accent-val));
     border-color: hsl(var(--tx-accent-val));
+    background-color: hsla(var(--tx-accent-val), 0.1);
+    box-shadow: 0 0 0.1875rem hsl(var(--tx-accent-val));
   }
 
   &:active {

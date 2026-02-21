@@ -22,7 +22,7 @@ export default function About() {
               <a href={"https://youtube.com/c/SakuraSedaia"}><SocialIcon name={"youtube"} /></a>
               <a href={"https://github.com/SakuraSedaia"}><SocialIcon name={"github"} /></a>
               <a href={"https://www.deviantart.com/sakurasedaia"}><SocialIcon name={"deviantart"} /></a>
-              <A href={"/resume"} class={"btn"}>View my Resume</A>
+              <A href={"/resume"} class={"btn"}>My Resume</A>
             </div>
           </div>
         </div>

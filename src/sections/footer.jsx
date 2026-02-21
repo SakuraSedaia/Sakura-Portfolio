@@ -17,22 +17,22 @@ function Footer() {
         <ul>
           <li>
             <a href={"https://github.com/SakuraSedaia"} class={"link"}>
-              <SocialIcon name={"github"}/> Github
+              <SocialIcon name={"github"}/><span>Github</span>
             </a>
           </li>
           <li>
             <a href={"https://youtube.com/c/SakuraSedaia"} class={"link"}>
-              <SocialIcon name={"youtube"}/> YouTube
+              <SocialIcon name={"youtube"}/><span>YouTube</span>
             </a>
           </li>
           <li>
             <a href={"https://discord.gg/Qk4pfbG7Pf"} class={"link"}>
-              <SocialIcon name={"discord"}/> Discord
+              <SocialIcon name={"discord"}/><span>Discord</span>
             </a>
           </li>
 					<li>
 						<a href={"https://www.deviantart.com/sakurasedaia"} class={"link"}>
-							<SocialIcon name={"deviantart"}/> DeviantArt
+							<SocialIcon name={"deviantart"}/><span>DeviantArt</span>
 						</a>
 					</li>
         </ul>
