@@ -18,7 +18,7 @@ function WWW() {
             <header>
               <h1>Frostlight Studios</h1>
             </header>
-            <OptimizedImage src="/images/card-headers/frostlight-studio-website" alt="Frostlight Studios" />
+            <OptimizedImage src="/images/card-headers/frostlight-studios-org-preview" alt="Frostlight Studios" />
           </section>
         </div>
         <Footer />
