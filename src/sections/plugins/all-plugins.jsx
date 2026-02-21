@@ -3,8 +3,6 @@ import addonIndex from "~/jsondata/addon-index.json";
 import PluginCard from "./plugin-card";
 
 export default function AllPlugins() {
-  const blenderDev = addonIndex.BlenderDevelopment.find(i => i.branch === "stable");
-  const sri = addonIndex.SakuraRigInterface.find(i => i.branch === "stable");
 
   return (
     <NoHydration>
@@ -14,14 +12,6 @@ export default function AllPlugins() {
         </div>
 
         <div class={"column-container"}>
-          <PluginCard 
-            data={sri} 
-            href={"/plugin/sakura-rig-interface"} 
-          />
-          <PluginCard 
-            data={blenderDev} 
-            href={"/plugin/blender-development"} 
-          />
         </div>
       </section>
     </NoHydration>

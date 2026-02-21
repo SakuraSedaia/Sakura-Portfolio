@@ -1,4 +1,4 @@
-import { createSignal, For, onMount, createEffect } from "solid-js";
+import { createSignal, For, onMount, createEffect, onCleanup } from "solid-js";
 import { A } from "@solidjs/router";
 
 export default function StableDownloads(props) {
@@ -26,7 +26,9 @@ export default function StableDownloads(props) {
 
 	onMount(() => {
 		updateIndicator();
-		window.addEventListener("resize", updateIndicator);
+		const resizeListener = () => updateIndicator();
+		window.addEventListener("resize", resizeListener);
+		onCleanup(() => window.removeEventListener("resize", resizeListener));
 	});
 
 	createEffect(() => {

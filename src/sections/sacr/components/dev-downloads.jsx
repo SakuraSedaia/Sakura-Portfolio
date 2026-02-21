@@ -1,4 +1,4 @@
-import { createSignal, For, onMount, createEffect } from "solid-js";
+import { createSignal, For, onMount, createEffect, onCleanup } from "solid-js";
 
 export default function DevDownloads(props) {
 	const dev = props.data;
@@ -25,7 +25,9 @@ export default function DevDownloads(props) {
 
 	onMount(() => {
 		updateIndicator();
-		window.addEventListener("resize", updateIndicator);
+		const resizeListener = () => updateIndicator();
+		window.addEventListener("resize", resizeListener);
+		onCleanup(() => window.removeEventListener("resize", resizeListener));
 	});
 
 	createEffect(() => {

@@ -3,15 +3,14 @@ import addonIndex from "~/jsondata/addon-index.json";
 
 export default function BlenderDevIssues() {
   const data = addonIndex.BlenderDevelopment;
-  const stable = data.find(i => i.branch === "stable");
-  const repo = stable.repo;
+  const repo = data.repo;
   const issuesUrl = `${repo}/issues`;
 
   return (
     <NoHydration>
       <section id={"issues"}>
         <div class={"heading"}>
-          <h1>Issues</h1>
+          <h1>Issues and Feature Requests</h1>
         </div>
         <div class={"standard-container"}>
           <p>

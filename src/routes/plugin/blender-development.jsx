@@ -1,11 +1,11 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import AboutBlenderDev from "~/sections/blender-development/about.jsx";
-import BlenderDevDownloads from "~/sections/blender-development/downloads.jsx";
 import BlenderDevInstructions from "~/sections/blender-development/instructions.jsx";
 import BlenderDevIssues from "~/sections/blender-development/issues.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
+import BlendCharmDownloads from "~/sections/blender-development/downloads.jsx";
 
 function BlenderDevMain() {
   return (
@@ -19,7 +19,7 @@ function BlenderDevMain() {
             { label: "Blender Extension Development" }
           ]} />
           <AboutBlenderDev />
-          <BlenderDevDownloads />
+	        <BlendCharmDownloads />
           <BlenderDevInstructions />
           <BlenderDevIssues />
         </div>

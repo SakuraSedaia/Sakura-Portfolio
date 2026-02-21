@@ -146,3 +146,29 @@ p {
     font-size: var(--font-size-small);
   }
 }
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 10pt;
+  width: 100%;
+  margin-top: 1rem;
+  thead {
+    background-color: var(--bg-accent);
+    tr {
+      td {
+        width: 25%;
+        border: 1px solid var(--bg-contrast-dark);
+        padding: 0.5rem;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        border: 1px solid var(--bg-contrast-dark);
+        padding: 0.5rem;
+      }
+    }
+  }
+}
