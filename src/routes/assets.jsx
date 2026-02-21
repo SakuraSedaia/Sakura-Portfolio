@@ -3,7 +3,6 @@ import Footer from "~/sections/footer.jsx";
 import AssetsIntro from "~/sections/assets/assets-intro";
 import FeaturedAssets from "~/sections/assets/featured-assets";
 import DownloadableAssets from "~/sections/assets/downloadable-assets";
-import Extensions from "~/sections/assets/extensions";
 import { Suspense, ErrorBoundary } from "solid-js";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
@@ -21,7 +20,6 @@ function Assets() {
           <FeaturedAssets />
           <DownloadableAssets />
           <hr />
-          <Extensions />
         </div>
 
         <Footer />
