@@ -8,7 +8,7 @@ export default function ContactSection() {
 
   return (
     <section id={"contact"}>
-      <content>
+      <div class={"content"}>
         <p>
           You can find me in my{" "}
           <a
@@ -27,7 +27,7 @@ export default function ContactSection() {
           Mailing address is not shown for privacy and security reasons, and
           will be provided when absolutely required for business purposes.
         </p>
-      </content>
+      </div>
     </section>
   );
 }

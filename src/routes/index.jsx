@@ -1,30 +1,31 @@
-import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import About from "~/sections/index/about";
 import NotableProjects from "~/sections/index/notable-projects";
 import PreferredTooling from "~/sections/index/preferred-tooling";
-import Technologies from "~/sections/index/technologies";
+import TechnicalExpertise from "~/sections/index/technical-expertise";
 import Resume from "~/sections/index/resume";
+import { Suspense, ErrorBoundary } from "solid-js";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 export default function Home() {
   return (
-    <>
-      <Header
-        title="Sakura Sedaia"
-        img="about"
-        desc="Freelance Software Developer and 3D Artist"
-      />
-
-      <div class={"content-container"}>
+    <ErrorBoundary fallback={(err) => <div>Error: {err.message}</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <About />
-        <NotableProjects />
-        <PreferredTooling />
-        <Technologies />
-        <Resume />
-      </div>
 
-      <Footer />
-    </>
+        <div class={"content-container"}>
+	        <Breadcrumb items={[
+		        { label: "Home", href: "/" }
+	        ]} />
+          <NotableProjects />
+          <PreferredTooling />
+          <TechnicalExpertise />
+          <Resume />
+        </div>
+
+        <Footer />
+      </Suspense>
+    </ErrorBoundary>
   );
 }
 

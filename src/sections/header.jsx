@@ -1,9 +1,12 @@
-import Nav from "~/components/nav.jsx";
-import { createSignal, Show } from "solid-js";
+import Nav from "~/components/navigation/nav.jsx";
+import { Show } from "solid-js";
 
 export default function Header(props) {
-  const bgImg = {
-    "background-image": "url('/images/headers/" + props.img + ".jpg')"
+  const bgImg = () => {
+    const path = `/images/headers/${props.img}`;
+    return {
+      "background-image": `image-set(url("${path}.jxl") type("image/jxl"), url("${path}.jpg") type("image/jpeg"))`
+    };
   };
 
   let page_title = props.page_title;
@@ -13,7 +16,7 @@ export default function Header(props) {
 
   return (
     <>
-      <header style={bgImg}>
+      <header style={bgImg()}>
         {/* Navigation Content */}
         <Nav title={page_title} />
 

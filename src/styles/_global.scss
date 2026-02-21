@@ -1,6 +1,29 @@
 @use "variables" as *;
 
 
+body {
+  margin: 0;
+  background-color: hsl(var(--bg-primary-val));
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: hsl(var(--tx-primary-val));
+  font-family: var(--font-main), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  min-height: 50vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 * {
   transition-duration: 100ms;
 }
@@ -30,6 +53,34 @@ p {
   letter-spacing: 0.025em;
 }
 
+.styled-list {
+  list-style-position: inside;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  li {
+    margin-bottom: 0.5rem;
+    &::marker {
+      color: var(--tx-accent);
+      font-weight: bold;
+    }
+  }
+}
+
+ul.styled-list {
+  list-style-type: disc;
+}
+
+ol.styled-list {
+  list-style-type: decimal;
+}
+
+.styled-heading {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .btn-center {
   display: inline-block;
   text-align: center;
@@ -37,7 +88,11 @@ p {
   text-indent: 0;
   padding-top: 1rem;
 }
-
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 .btn {
   display: inline-block;
   color: hsl(var(--tx-primary-val));
@@ -47,13 +102,12 @@ p {
   padding: 0.3em 2em;
   border-radius: var(--radius-lg);
   cursor: pointer;
-  text-decoration: none;
   transition: all 100ms;
   font-size: var(--font-size-body);
   margin-block: 0.5rem;
 
   &:hover {
-    color: hsl(var(--bg-primary-val));
+    color: hsl(var(--bg-primary-val)) !important;
     background-color: hsl(var(--tx-accent-val));
     box-shadow: 0 0 0.1875rem hsl(var(--tx-accent-val));
     border-color: hsl(var(--tx-accent-val));
@@ -75,7 +129,6 @@ p {
   padding: 0.3em 2em;
   border-radius: var(--radius-lg);
   cursor: pointer;
-  text-decoration: none;
   transition: all 100ms;
   font-size: var(--font-size-body);
 
@@ -94,7 +147,6 @@ p {
 .link {
   color: hsl(var(--tx-accent-val));
   cursor: pointer;
-  text-decoration: none;
 
   &:hover {
     color: hsla(var(--tx-accent-val), 50%);
@@ -102,7 +154,7 @@ p {
   }
 }
 
-heading h1 {
+.heading h1 {
   background-color: hsl(var(--tx-accent-val));
   color: hsl(var(--bg-primary-val));
   width: fit-content;
@@ -111,7 +163,7 @@ heading h1 {
   border-radius: var(--radius-md);
 }
 
-heading h2 {
+.heading h2 {
   color: hsl(var(--tx-primary-val));
   width: fit-content;
   font-weight: var(--font-heading-weight);
@@ -143,5 +195,31 @@ heading h2 {
 @media screen and (max-width: 720px) {
   .btn {
     font-size: var(--font-size-small);
+  }
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 10pt;
+  width: 100%;
+  margin-top: 1rem;
+  thead {
+    background-color: var(--bg-accent);
+    tr {
+      td {
+        width: 25%;
+        border: 0.0625rem solid var(--bg-contrast-dark);
+        padding: 0.5rem;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        border: 0.0625rem solid var(--bg-contrast-dark);
+        padding: 0.5rem;
+      }
+    }
   }
 }

@@ -2,8 +2,8 @@ import { A } from "@solidjs/router";
 
 export default function CommissionGrid() {
   return (
-    <section grid breakout>
-      <grid-item>
+    <section class={"grid breakout"}>
+      <div class={"grid-item"}>
         <h2>3D Render</h2>
         <p>
           Want a 3D Render? I can make a full render start to finish on whatever
@@ -15,9 +15,9 @@ export default function CommissionGrid() {
         <A href={"/"} class={"btn"}>
           See Rates
         </A>
-      </grid-item>
+      </div>
 
-      <grid-item>
+      <div class={"grid-item"}>
         <h2>3D Model</h2>
         <p>
           Need an Asset for your project? I can model it in Blender and export
@@ -27,9 +27,9 @@ export default function CommissionGrid() {
         <A href={"/"} class={"btn"}>
           See Rates
         </A>
-      </grid-item>
+      </div>
 
-      <grid-item>
+      <div class={"grid-item"}>
         <h2>Blender Rig</h2>
         <p>
           Need an Rig for your project? I can work on and develop a new rig for
@@ -41,9 +41,9 @@ export default function CommissionGrid() {
         <A href={"/"} class={"btn"}>
           See Rates
         </A>
-      </grid-item>
+      </div>
 
-      <grid-item>
+      <div class={"grid-item"}>
         <h2>Blender Extension Interface</h2>
         <p>
           Have a Blender Rig or Asset you want a custom interface for? Using
@@ -55,9 +55,9 @@ export default function CommissionGrid() {
         <A href={"/"} class={"btn"}>
           See Rates
         </A>
-      </grid-item>
+      </div>
 
-      <grid-item>
+      <div class={"grid-item"}>
         <h2>Web Front-End</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
@@ -68,9 +68,9 @@ export default function CommissionGrid() {
         <A href={"/"} class={"btn"}>
           See Rates
         </A>
-      </grid-item>
+      </div>
 
-      <grid-item>
+      <div class={"grid-item"}>
         <h2>Web Component</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
@@ -81,7 +81,7 @@ export default function CommissionGrid() {
         <A href={"/"} class={"btn"}>
           See Rates
         </A>
-      </grid-item>
+      </div>
     </section>
   );
 }

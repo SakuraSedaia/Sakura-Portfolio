@@ -1,0 +1,181 @@
+{
+	"BlenderDevelopment": {
+		"name": "Blender Development Plugin",
+		"repo": "https://github.com/Sakura-Sedaia/BlenderExtensions",
+		"software": "PyCharm",
+		"distribution":{
+			"platform": "intellij",
+			"link": "",
+			"id": 0,
+			"enabled": false
+		},
+		"branches": {
+			"stable": {
+				"description": "Stable Branch",
+				"path": "plugins/intellij/blend-charm-stable",
+				"namePrefix": "BlendCharmStable",
+				"versions": [
+					{
+						"version": "1.0.0",
+						"date": "MM/DD/YYYY",
+						"builds": [
+							{
+								"size": "-.-- MB",
+								"license": "",
+								"notes" : "Coming Soon",
+								"disabled": true
+							}
+						]
+					}
+				]
+			},
+			"dev": {
+				"description": "Development Branch",
+				"path": "plugins/intellij/blend-charm-dev",
+				"versions": []
+			}
+		}
+	},
+	"SakuraRigInterface": {
+		"name": "Sakura Rig Interface",
+		"repo": "https://github.com/Sakura-Sedaia/Sakura-Rig-Interfaces",
+		"software": "Blender",
+		"license": "GNU/GPL V3",
+		"description": "A Blender Addon for creating rigs and rigs controllers.",
+		"distribution": {
+			"platform": "blender_ext",
+			"link": "https://extensions.blender.org/add-ons/sakura-rig-gui/",
+			"id": 0,
+			"enabled": true
+		},
+		"branches": {
+			"stable": {
+				"description": "Stable builds of the Rig Interface Collection.",
+				"path": "plugins/blender/sri-stable",
+				"namePrefix": "Sakura_Rig_GUI",
+				"versions": [
+					{
+						"version": "V3.1.0",
+						"date": "10/21/2025",
+						"compatibility": {
+							"minVersion": "4.2 LTS",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "22.6 KB",
+								"notes": "V3.1.0 is a corrective release that streamlines UI navigation and user-friendliness, adds missing eye material options, and optimizes backend code for improved maintainability."
+							}
+						]
+					},
+					{
+						"version": "V3.0.0",
+						"date": "12/10/2025",
+						"compatibility": {
+							"minVersion": "4.2 LTS",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "23.0 KB",
+								"notes": "V3.0.0 introduces significant architectural improvements, a new UI for the latest SACR versions, and a new utility for downloading Minecraft skins."
+							}
+						]
+					},
+					{
+						"version": "V2.0.0",
+						"date": "10/04/2025",
+						"compatibility": {
+							"minVersion": "4.2 LTS",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "1.4 MB",
+								"notes": "V2.0.0 focuses on architectural restructuring to support multiple rig types beyond SACR R7.2."
+							}
+						]
+					},
+					{
+						"version": "V1.2.0",
+						"date": "09/15/2025",
+						"compatibility": {
+							"minVersion": "4.2 LTS",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "6.1 KB",
+								"notes": "V1.2.0 adds material properties for easier editing and includes compatibility improvements for older SACR versions."
+							}
+						]
+					},
+					{
+						"version": "V1.1.0",
+						"date": "08/20/2025",
+						"compatibility": {
+							"minVersion": "4.2 LTS",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "4.3 KB",
+								"notes": "This design-focused update introduces a streamlined UI using collapsible panels to improve navigation and layout clarity."
+							}
+						]
+					},
+					{
+						"version": "V1.0.1",
+						"date": "07/29/2025",
+						"compatibility": {
+							"minVersion": "4.2 LTS",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "3.9 KB",
+								"notes": "V1.0.1 is a minor update addressing initial feedback and stability."
+							}
+						]
+					},
+					{
+						"version": "V1.0.0",
+						"date": "07/21/2025",
+						"compatibility": {
+							"minVersion": "4.2 LTS",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "3.8 KB",
+								"notes": "Initial release of the Sakura Rig Interface with support for SACR R7.2.1."
+							}
+						]
+					}
+				]
+			},
+			"dev": {
+				"description": "Development Branch",
+				"path": "plugins/blender/sri-dev",
+				"namePrefix": "Sakura_Rig_GUI_Dev",
+				"enabled": false,
+				"versions": [
+					{
+						"version": "V0.0.0",
+						"date": "MM/DD/YYYY",
+						"compatibility":  {
+							"minVersion": "4.2 LTS",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "--.-- KB",
+								"notes" : "Initial development version"
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

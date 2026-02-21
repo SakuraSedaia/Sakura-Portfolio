@@ -1,0 +1,19 @@
+@use "../../variables" as *;
+
+#preferred-tooling {
+  color: hsl(0, 0%, 100%);
+
+  .grid-item {
+    h1, h2, p {
+      color: hsl(0, 0%, 100%);
+    }
+
+    .link {
+      color: hsl(0, 0%, 100%);
+
+      &:hover {
+        color: hsl(var(--tx-accent-val));
+      }
+    }
+  }
+}

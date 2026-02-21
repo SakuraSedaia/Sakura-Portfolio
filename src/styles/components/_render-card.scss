@@ -1,0 +1,40 @@
+@use "../variables" as *;
+
+.render-card {
+  text-align: center;
+
+  h2 {
+    font-size: var(--font-size-subheading);
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+
+    img {
+      border-radius: var(--radius-md);
+      max-height: var(--render-card-max-height, 10em);
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .detail {
+    margin-top: 0.5rem;
+    font-size: var(--font-size-small);
+    color: hsla(var(--tx-primary-val), 70%);
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: var(--font-size-body);
+  }
+}

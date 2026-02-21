@@ -1,0 +1,13 @@
+.blender-dev-container {
+}
+
+.ai-notice {
+  background-color: hsla(var(--tx-accent-val), 0.1);
+  border-left: 0.25rem solid var(--tx-accent);
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+
+  h3 {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,25 @@
+export default function SocialIcon(props) {
+  const icons = {
+    discord: "bi-logos-discord",
+    github: "bi-logos-github",
+    youtube: "bi-logos-youtube",
+    deviantart: "bi-logos-deviantart",
+    git: "bi-logos-git",
+    instagram: "bi-logos-instagram",
+    pinterest: "bi-logos-pinterest",
+    reddit: "bi-logos-reddit",
+    twitch: "bi-logos-twitch",
+    twitter: "bi-logos-twitter",
+    envelope: "bi-envelope",
+  };
+
+  const iconName = icons[props.name];
+  
+  if (!iconName) return null;
+
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" class={props.class}>
+      <use href={`/images/vectors/${iconName}.svg#${iconName}`} />
+    </svg>
+  );
+}

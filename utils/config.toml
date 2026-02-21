@@ -1,0 +1,34 @@
+[general]
+debug = false
+max_width = 1920
+ignore_list = ["renders", "vectors"]
+
+[paths]
+sources_root = "utils/pipeline_sources"
+images_source = "utils/pipeline_sources/images"
+public_images = "public/images"
+source_renders = "utils/pipeline_sources/images/renders"
+lib_dir = "utils/lib"
+backup_dir = ".hidden/image_backup"
+manual_backup_dir = ".hidden/images_backup_manual"
+render_map_output = "src/jsondata/render-map.json"
+
+[debug_paths]
+testing_source = ".hidden/images_backup_manual"
+testing_output = ".hidden/testing"
+debug_renders = ".hidden/testing/renders"
+debug_lib = ".hidden/testing/lib"
+debug_manifest = ".hidden/testing/render-map.json"
+
+[formats]
+quality = 85
+supported_images = [".png", ".jpg", ".jpeg", ".webp"]
+supported_videos = [".mp4", ".mov", ".avi"]
+
+[render_map]
+sizes = { lg = 1920, md = 1600, sm = 1200 }
+categories = [
+    { label = "Environment Renders", path = "env", folder = "env" },
+    { label = "Character Renders", path = "char", folder = "char" },
+    { label = "Character & Environment Renders", path = "char-env", folder = "char-env" }
+]

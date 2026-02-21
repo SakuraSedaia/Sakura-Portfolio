@@ -4,22 +4,29 @@ import AssetsIntro from "~/sections/assets/assets-intro";
 import FeaturedAssets from "~/sections/assets/featured-assets";
 import DownloadableAssets from "~/sections/assets/downloadable-assets";
 import Extensions from "~/sections/assets/extensions";
+import { Suspense, ErrorBoundary } from "solid-js";
+import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 function Assets() {
   return (
-    <>
-      <Header title="Assets and Extensions" img="renders" />
+    <ErrorBoundary fallback={(err) => <div class="content-container">Error: {err.message}</div>}>
+      <Suspense fallback={<div class="content-container">Loading...</div>}>
+        <Header title="Assets and Extensions" img="renders" />
 
-      <div class={"content-container"}>
-        <AssetsIntro />
-        <FeaturedAssets />
-        <DownloadableAssets />
-        <hr />
-        <Extensions />
-      </div>
+        <div class={"content-container"}>
+	        <Breadcrumb items={[
+	        	{ label: "Assets", href: "/assets" }
+	        ]} />
+          <AssetsIntro />
+          <FeaturedAssets />
+          <DownloadableAssets />
+          <hr />
+          <Extensions />
+        </div>
 
-      <Footer />
-    </>
+        <Footer />
+      </Suspense>
+    </ErrorBoundary>
   );
 }
 export default Assets;

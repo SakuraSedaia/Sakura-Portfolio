@@ -4,10 +4,10 @@ export default function AboutSACR() {
   return (
     <NoHydration>
       <section id={"about"}>
-        <heading>
+        <div class={"heading"}>
           <h1>About SACR</h1>
-        </heading>
-        <standard-container>
+        </div>
+        <div class={"standard-container"}>
           <p>
             Sakura's Advanced Character Rig is a lightweight and highly
             customizable rig for{" "}
@@ -19,7 +19,7 @@ export default function AboutSACR() {
             grown through various forms through the years, and now is fully
             integrated with a UI Extension for greater customizability
           </p>
-        </standard-container>
+        </div>
       </section>
     </NoHydration>
   );

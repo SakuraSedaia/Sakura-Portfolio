@@ -1,557 +1,96 @@
 [
     {
-        "label": "Characters in Environments",
-        "path": "/char-env/",
-        "images": [
-            {
-                "name": "Nether Honeymoon",
-                "year": 2025,
-                "month": "October",
-                "description": "",
-                "sizes": [
-                    "Nether_Honeymoon-lg.jpg",
-                    "Nether_Honeymoon-md.jpg",
-                    "Nether_Honeymoon-sm.jpg"
-                ]
-            },
-            {
-                "name": "Birthday Overlook",
-                "year": 2025,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Birthday_Overlook-lg.jpg",
-                    "Birthday_Overlook-md.jpg",
-                    "Birthday_Overlook-sm.jpg"
-                ]
-            },
-            {
-                "name": "Frozen Phoenix",
-                "year": 2025,
-                "month": "May",
-                "description": "",
-                "sizes": [
-                    "Frozen_Phoenix-lg.jpg",
-                    "Frozen_Phoenix-md.jpg",
-                    "Frozen_Phoenix-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Sunset",
-                "year": 2024,
-                "month": "October",
-                "description": "",
-                "sizes": [
-                    "Sakura_Sunset-lg.jpg",
-                    "Sakura_Sunset-md.jpg",
-                    "Sakura_Sunset-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura ATM9",
-                "year": 2024,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Sakura_ATM9-lg.jpg",
-                    "Sakura_ATM9-md.jpg",
-                    "Sakura_ATM9-sm.jpg"
-                ]
-            },
-            {
-                "name": "Nino Cyberheist",
-                "year": 2024,
-                "month": "June",
-                "description": "",
-                "sizes": [
-                    "Nino_Cyberheist-lg.jpg",
-                    "Nino_Cyberheist-md.jpg",
-                    "Nino_Cyberheist-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Office",
-                "year": 2024,
-                "month": "April",
-                "description": "",
-                "sizes": [
-                    "Sakura_Office-lg.jpg",
-                    "Sakura_Office-md.jpg",
-                    "Sakura_Office-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Office",
-                "year": 2023,
-                "month": "September",
-                "description": "",
-                "sizes": [
-                    "Sakura_Office-lg.jpg",
-                    "Sakura_Office-md.jpg",
-                    "Sakura_Office-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Couch",
-                "year": 2023,
-                "month": "September",
-                "description": "",
-                "sizes": [
-                    "Sakura_Couch-lg.jpg",
-                    "Sakura_Couch-md.jpg",
-                    "Sakura_Couch-sm.jpg"
-                ]
-            },
-            {
-                "name": "Eve and Gez",
-                "year": 2023,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Eve_and_Gez-lg.jpg",
-                    "Eve_and_Gez-md.jpg",
-                    "Eve_and_Gez-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Blacksmith",
-                "year": 2023,
-                "month": "March",
-                "description": "",
-                "sizes": [
-                    "Sakura_Blacksmith-lg.jpg",
-                    "Sakura_Blacksmith-md.jpg",
-                    "Sakura_Blacksmith-sm.jpg"
-                ]
-            },
-            {
-                "name": "Jen Birthday",
-                "year": 2022,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Jen_Birthday-lg.jpg",
-                    "Jen_Birthday-md.jpg",
-                    "Jen_Birthday-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Forest Hike",
-                "year": 2022,
-                "month": "May",
-                "description": "",
-                "sizes": [
-                    "Sakura_Forest_Hike-lg.jpg",
-                    "Sakura_Forest_Hike-md.jpg",
-                    "Sakura_Forest_Hike-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Frozen V2",
-                "year": 2022,
-                "month": "April",
-                "description": "",
-                "sizes": [
-                    "Sakura_Frozen_V2-lg.jpg",
-                    "Sakura_Frozen_V2-md.jpg",
-                    "Sakura_Frozen_V2-sm.jpg"
-                ]
-            },
-            {
-                "name": "Jon and Jen Running",
-                "year": 2021,
-                "month": "September",
-                "description": "",
-                "sizes": [
-                    "Jon_and_Jen_Running-lg.jpg",
-                    "Jon_and_Jen_Running-md.jpg",
-                    "Jon_and_Jen_Running-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Aid",
-                "year": 2021,
-                "month": "September",
-                "description": "",
-                "sizes": [
-                    "Sakura_Aid-lg.jpg",
-                    "Sakura_Aid-md.jpg",
-                    "Sakura_Aid-sm.jpg"
-                ]
-            },
-            {
-                "name": "Azura Birthday",
-                "year": 2021,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Azura_Birthday-lg.jpg",
-                    "Azura_Birthday-md.jpg",
-                    "Azura_Birthday-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Injured",
-                "year": 2021,
-                "month": "June",
-                "description": "",
-                "sizes": [
-                    "Sakura_Injured-lg.jpg",
-                    "Sakura_Injured-md.jpg",
-                    "Sakura_Injured-sm.jpg"
-                ]
-            },
-            {
-                "name": "Tanya Azura Family",
-                "year": 2021,
-                "month": "May",
-                "description": "",
-                "sizes": [
-                    "Tanya_Azura_Family-lg.jpg",
-                    "Tanya_Azura_Family-md.jpg",
-                    "Tanya_Azura_Family-sm.jpg"
-                ]
-            },
-            {
-                "name": "Saki and Asuka Etheria Meetup",
-                "year": 2021,
-                "month": "March",
-                "description": "",
-                "sizes": [
-                    "Saki_and_Asuka_Etheria_Meetup-lg.jpg",
-                    "Saki_and_Asuka_Etheria_Meetup-md.jpg",
-                    "Saki_and_Asuka_Etheria_Meetup-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Demon",
-                "year": 2020,
-                "month": "December",
-                "description": "",
-                "sizes": [
-                    "Sakura_Demon-lg.jpg",
-                    "Sakura_Demon-md.jpg",
-                    "Sakura_Demon-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Dragon Egg Discovery",
-                "year": 2020,
-                "month": "December",
-                "description": "",
-                "sizes": [
-                    "Sakura_Dragon_Egg_Discovery-lg.jpg",
-                    "Sakura_Dragon_Egg_Discovery-md.jpg",
-                    "Sakura_Dragon_Egg_Discovery-sm.jpg"
-                ]
-            },
-            {
-                "name": "Saki and Azzy Christmas",
-                "year": 2020,
-                "month": "November",
-                "description": "",
-                "sizes": [
-                    "Saki_and_Azzy_Christmas-lg.jpg",
-                    "Saki_and_Azzy_Christmas-md.jpg",
-                    "Saki_and_Azzy_Christmas-sm.jpg"
-                ]
-            },
-            {
-                "name": "Saku and Az Cave Tour",
-                "year": 2020,
-                "month": "October",
-                "description": "",
-                "sizes": [
-                    "Saku_and_Az_Cave_Tour-lg.jpg",
-                    "Saku_and_Az_Cave_Tour-md.jpg",
-                    "Saku_and_Az_Cave_Tour-sm.jpg"
-                ]
-            },
-            {
-                "name": "Old SoW Mod Team",
-                "year": 2020,
-                "month": "October",
-                "description": "",
-                "sizes": [
-                    "Old_SoW_Mod_Team-lg.jpg",
-                    "Old_SoW_Mod_Team-md.jpg",
-                    "Old_SoW_Mod_Team-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Horror Forest",
-                "year": 2020,
-                "month": "August",
-                "description": "",
-                "sizes": [
-                    "Sakura_Horror_Forest-lg.jpg",
-                    "Sakura_Horror_Forest-md.jpg",
-                    "Sakura_Horror_Forest-sm.jpg"
-                ]
-            },
-            {
-                "name": "Amias Bridge",
-                "year": 2020,
-                "month": "August",
-                "description": "",
-                "sizes": [
-                    "Amias_Bridge-lg.jpg",
-                    "Amias_Bridge-md.jpg",
-                    "Amias_Bridge-sm.jpg"
-                ]
-            },
-            {
-                "name": "Naia Birthday",
-                "year": 2020,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Naia_Birthday-lg.jpg",
-                    "Naia_Birthday-md.jpg",
-                    "Naia_Birthday-sm.jpg"
-                ]
-            },
-            {
-                "name": "Mermaid Sakura With Child",
-                "year": 2020,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Mermaid_Sakura_With_Child-lg.jpg",
-                    "Mermaid_Sakura_With_Child-md.jpg",
-                    "Mermaid_Sakura_With_Child-sm.jpg"
-                ]
-            },
-            {
-                "name": "Mermaid Sakura Solo",
-                "year": 2020,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Mermaid_Sakura_Solo-lg.jpg",
-                    "Mermaid_Sakura_Solo-md.jpg",
-                    "Mermaid_Sakura_Solo-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Sword School",
-                "year": 2020,
-                "month": "June",
-                "description": "",
-                "sizes": [
-                    "Sakura_Sword_School-lg.jpg",
-                    "Sakura_Sword_School-md.jpg",
-                    "Sakura_Sword_School-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Frozen",
-                "year": 2020,
-                "month": "June",
-                "description": "",
-                "sizes": [
-                    "Sakura_Frozen-lg.jpg",
-                    "Sakura_Frozen-md.jpg",
-                    "Sakura_Frozen-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Grieving",
-                "year": 2020,
-                "month": "April",
-                "description": "",
-                "sizes": [
-                    "Sakura_Grieving-lg.jpg",
-                    "Sakura_Grieving-md.jpg",
-                    "Sakura_Grieving-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura And Co",
-                "year": 2020,
-                "month": "April",
-                "description": "",
-                "sizes": [
-                    "Sakura_And_Co-lg.jpg",
-                    "Sakura_And_Co-md.jpg",
-                    "Sakura_And_Co-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sedaia Family",
-                "year": 2020,
-                "month": "April",
-                "description": "",
-                "sizes": [
-                    "Sedaia_Family-lg.jpg",
-                    "Sedaia_Family-md.jpg",
-                    "Sedaia_Family-sm.jpg"
-                ]
-            },
-            {
-                "name": "Kirito and Asuna",
-                "year": 2020,
-                "month": "February",
-                "description": "",
-                "sizes": [
-                    "Kirito_and_Asuna-lg.jpg",
-                    "Kirito_and_Asuna-md.jpg",
-                    "Kirito_and_Asuna-sm.jpg"
-                ]
-            },
-            {
-                "name": "Niika and Lucan vs Zombies",
-                "year": 2020,
-                "month": "January",
-                "description": "",
-                "sizes": [
-                    "Niika_and_Lucan_vs_Zombies-lg.jpg",
-                    "Niika_and_Lucan_vs_Zombies-md.jpg",
-                    "Niika_and_Lucan_vs_Zombies-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Treehouse",
-                "year": 2020,
-                "month": "January",
-                "description": "",
-                "sizes": [
-                    "Sakura_Treehouse-lg.jpg",
-                    "Sakura_Treehouse-md.jpg",
-                    "Sakura_Treehouse-sm.jpg"
-                ]
-            },
-            {
-                "name": "Tygren vs Thalleous",
-                "year": 2020,
-                "month": "January",
-                "description": "",
-                "sizes": [
-                    "Tygren_vs_Thalleous-lg.jpg",
-                    "Tygren_vs_Thalleous-md.jpg",
-                    "Tygren_vs_Thalleous-sm.jpg"
-                ]
-            }
-        ]
-    },
-    {
-        "label": "Environments",
+        "label": "Environment Renders",
         "path": "/env/",
         "images": [
             {
                 "name": "Portal Unfinished",
                 "year": 2023,
-                "month": "November",
+                "month": "Nov",
                 "description": "",
                 "sizes": [
-                    "Portal_Unfinished-lg.jpg",
-                    "Portal_Unfinished-md.jpg",
-                    "Portal_Unfinished-sm.jpg"
+                    "portal-unfinished-lg.jxl",
+                    "portal-unfinished-lg.png",
+                    "portal-unfinished-md.jxl",
+                    "portal-unfinished-md.png",
+                    "portal-unfinished-sm.jxl",
+                    "portal-unfinished-sm.png"
                 ]
             },
             {
                 "name": "Enchanting Room",
                 "year": 2023,
-                "month": "October",
+                "month": "Oct",
                 "description": "",
                 "sizes": [
-                    "Enchanting_Room-lg.jpg",
-                    "Enchanting_Room-md.jpg",
-                    "Enchanting_Room-sm.jpg"
+                    "enchanting-room-lg.jxl",
+                    "enchanting-room-lg.png",
+                    "enchanting-room-md.jxl",
+                    "enchanting-room-md.png",
+                    "enchanting-room-sm.jxl",
+                    "enchanting-room-sm.png"
                 ]
             },
             {
                 "name": "Ruined Shrine",
                 "year": 2022,
-                "month": "March",
+                "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "Ruined_Shrine-lg.jpg",
-                    "Ruined_Shrine-md.jpg",
-                    "Ruined_Shrine-sm.jpg"
+                    "ruined-shrine-lg.jxl",
+                    "ruined-shrine-lg.png",
+                    "ruined-shrine-md.jxl",
+                    "ruined-shrine-md.png",
+                    "ruined-shrine-sm.jxl",
+                    "ruined-shrine-sm.png"
                 ]
             },
             {
                 "name": "Tavern Set",
                 "year": 2020,
-                "month": "April",
+                "month": "Apr",
                 "description": "",
                 "sizes": [
-                    "Tavern_Set-lg.jpg",
-                    "Tavern_Set-md.jpg",
-                    "Tavern_Set-sm.jpg"
+                    "tavern-set-lg.jxl",
+                    "tavern-set-lg.png",
+                    "tavern-set-md.jxl",
+                    "tavern-set-md.png",
+                    "tavern-set-sm.jxl",
+                    "tavern-set-sm.png"
                 ]
             }
         ]
     },
     {
-        "label": "Character Portraits",
+        "label": "Character Renders",
         "path": "/char/",
         "images": [
             {
-                "name": "Sakura Helsor",
-                "year": 2025,
-                "month": "April",
+                "name": "Knight Jennifer",
+                "year": 2022,
+                "month": "Jan",
                 "description": "",
                 "sizes": [
-                    "Sakura_Helsor-lg.jpg",
-                    "Sakura_Helsor-md.jpg",
-                    "Sakura_Helsor-sm.jpg"
+                    "knight-jennifer-lg.jxl",
+                    "knight-jennifer-lg.png",
+                    "knight-jennifer-md.jxl",
+                    "knight-jennifer-md.png",
+                    "knight-jennifer-sm.jxl",
+                    "knight-jennifer-sm.png"
                 ]
             },
             {
                 "name": "Sakura Pride",
                 "year": 2022,
-                "month": "June",
+                "month": "Jun",
                 "description": "",
                 "sizes": [
-                    "Sakura_Pride-lg.jpg",
-                    "Sakura_Pride-md.jpg",
-                    "Sakura_Pride-sm.jpg"
-                ]
-            },
-            {
-                "name": "Knight Jennifer",
-                "year": 2022,
-                "month": "January",
-                "description": "",
-                "sizes": [
-                    "Knight_Jennifer-lg.jpg",
-                    "Knight_Jennifer-md.jpg",
-                    "Knight_Jennifer-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Yuko",
-                "year": 2020,
-                "month": "August",
-                "description": "",
-                "sizes": [
-                    "Sakura_Yuko-lg.jpg",
-                    "Sakura_Yuko-md.jpg",
-                    "Sakura_Yuko-sm.jpg"
-                ]
-            },
-            {
-                "name": "Mermaid Sakura",
-                "year": 2020,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Mermaid_Sakura-lg.jpg",
-                    "Mermaid_Sakura-md.jpg",
-                    "Mermaid_Sakura-sm.jpg"
-                ]
-            },
-            {
-                "name": "Sakura Voltaris",
-                "year": 2020,
-                "month": "July",
-                "description": "",
-                "sizes": [
-                    "Sakura_Voltaris-lg.jpg",
-                    "Sakura_Voltaris-md.jpg",
-                    "Sakura_Voltaris-sm.jpg"
+                    "sakura-pride-lg.jxl",
+                    "sakura-pride-lg.png",
+                    "sakura-pride-md.jxl",
+                    "sakura-pride-md.png",
+                    "sakura-pride-sm.jxl",
+                    "sakura-pride-sm.png"
                 ]
             },
             {
@@ -560,9 +99,12 @@
                 "month": "June",
                 "description": "",
                 "sizes": [
-                    "Naia-lg.jpg",
-                    "Naia-md.jpg",
-                    "Naia-sm.jpg"
+                    "naia-lg.jxl",
+                    "naia-lg.png",
+                    "naia-md.jxl",
+                    "naia-md.png",
+                    "naia-sm.jxl",
+                    "naia-sm.png"
                 ]
             },
             {
@@ -571,75 +113,690 @@
                 "month": "May",
                 "description": "",
                 "sizes": [
-                    "Ainya-lg.jpg",
-                    "Ainya-md.jpg",
-                    "Ainya-sm.jpg"
+                    "ainya-lg.jxl",
+                    "ainya-lg.png",
+                    "ainya-md.jxl",
+                    "ainya-md.png",
+                    "ainya-sm.jxl",
+                    "ainya-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Yuko",
+                "year": 2020,
+                "month": "Aug",
+                "description": "",
+                "sizes": [
+                    "sakura-yuko-lg.jxl",
+                    "sakura-yuko-lg.png",
+                    "sakura-yuko-md.jxl",
+                    "sakura-yuko-md.png",
+                    "sakura-yuko-sm.jxl",
+                    "sakura-yuko-sm.png"
                 ]
             },
             {
                 "name": "Sakura",
                 "year": 2020,
-                "month": "March",
+                "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "Sakura-lg.jpg",
-                    "Sakura-md.jpg",
-                    "Sakura-sm.jpg"
+                    "sakura-lg.jxl",
+                    "sakura-lg.png",
+                    "sakura-md.jxl",
+                    "sakura-md.png",
+                    "sakura-sm.jxl",
+                    "sakura-sm.png"
                 ]
             },
             {
                 "name": "ZophieKat",
                 "year": 2020,
-                "month": "March",
+                "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "ZophieKat-lg.jpg",
-                    "ZophieKat-md.jpg",
-                    "ZophieKat-sm.jpg"
+                    "zophiekat-lg.jxl",
+                    "zophiekat-lg.png",
+                    "zophiekat-md.jxl",
+                    "zophiekat-md.png",
+                    "zophiekat-sm.jxl",
+                    "zophiekat-sm.png"
+                ]
+            },
+            {
+                "name": "Mermaid Sakura",
+                "year": 2020,
+                "month": "Jul",
+                "description": "",
+                "sizes": [
+                    "mermaid-sakura-lg.jxl",
+                    "mermaid-sakura-lg.png",
+                    "mermaid-sakura-md.jxl",
+                    "mermaid-sakura-md.png",
+                    "mermaid-sakura-sm.jxl",
+                    "mermaid-sakura-sm.png"
                 ]
             },
             {
                 "name": "Flame Guardian Original",
                 "year": 2020,
-                "month": "March",
+                "month": "Mar",
                 "description": "",
                 "sizes": [
-                    "Flame_Guardian_Original-lg.jpg",
-                    "Flame_Guardian_Original-md.jpg",
-                    "Flame_Guardian_Original-sm.jpg"
-                ]
-            },
-            {
-                "name": "Flame Guardian Updated",
-                "year": 2020,
-                "month": "March",
-                "description": "",
-                "sizes": [
-                    "Flame_Guardian_Updated-lg.jpg",
-                    "Flame_Guardian_Updated-md.jpg",
-                    "Flame_Guardian_Updated-sm.jpg"
+                    "flame-guardian-original-lg.jxl",
+                    "flame-guardian-original-lg.png",
+                    "flame-guardian-original-md.jxl",
+                    "flame-guardian-original-md.png",
+                    "flame-guardian-original-sm.jxl",
+                    "flame-guardian-original-sm.png"
                 ]
             },
             {
                 "name": "Andreas Actavious",
                 "year": 2020,
-                "month": "January",
+                "month": "Jan",
                 "description": "",
                 "sizes": [
-                    "Andreas_Actavious-lg.jpg",
-                    "Andreas_Actavious-md.jpg",
-                    "Andreas_Actavious-sm.jpg"
+                    "andreas-actavious-lg.jxl",
+                    "andreas-actavious-lg.png",
+                    "andreas-actavious-md.jxl",
+                    "andreas-actavious-md.png",
+                    "andreas-actavious-sm.jxl",
+                    "andreas-actavious-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Voltaris",
+                "year": 2020,
+                "month": "Jul",
+                "description": "",
+                "sizes": [
+                    "sakura-voltaris-lg.jxl",
+                    "sakura-voltaris-lg.png",
+                    "sakura-voltaris-md.jxl",
+                    "sakura-voltaris-md.png",
+                    "sakura-voltaris-sm.jxl",
+                    "sakura-voltaris-sm.png"
+                ]
+            },
+            {
+                "name": "Flame Guardian Updated",
+                "year": 2020,
+                "month": "Mar",
+                "description": "",
+                "sizes": [
+                    "flame-guardian-updated-lg.jxl",
+                    "flame-guardian-updated-lg.png",
+                    "flame-guardian-updated-md.jxl",
+                    "flame-guardian-updated-md.png",
+                    "flame-guardian-updated-sm.jxl",
+                    "flame-guardian-updated-sm.png"
                 ]
             },
             {
                 "name": "Gabriella",
                 "year": 2019,
-                "month": "October",
+                "month": "Oct",
                 "description": "",
                 "sizes": [
-                    "Gabriella-lg.jpg",
-                    "Gabriella-md.jpg",
-                    "Gabriella-sm.jpg"
+                    "gabriella-lg.jxl",
+                    "gabriella-lg.png",
+                    "gabriella-md.jxl",
+                    "gabriella-md.png",
+                    "gabriella-sm.jxl",
+                    "gabriella-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Helsor_April2025",
+                "year": 2000,
+                "month": "Unknown",
+                "description": "",
+                "sizes": [
+                    "sakura-helsor_april2025-lg.jxl",
+                    "sakura-helsor_april2025-lg.png",
+                    "sakura-helsor_april2025-md.jxl",
+                    "sakura-helsor_april2025-md.png",
+                    "sakura-helsor_april2025-sm.jxl",
+                    "sakura-helsor_april2025-sm.png"
+                ]
+            }
+        ]
+    },
+    {
+        "label": "Character & Environment Renders",
+        "path": "/char-env/",
+        "images": [
+            {
+                "name": "Birthday Overlook",
+                "year": 2025,
+                "month": "July",
+                "description": "",
+                "sizes": [
+                    "birthday-overlook-lg.jxl",
+                    "birthday-overlook-lg.jpg",
+                    "birthday-overlook-md.jxl",
+                    "birthday-overlook-md.jpg",
+                    "birthday-overlook-sm.jxl",
+                    "birthday-overlook-sm.jpg"
+                ]
+            },
+            {
+                "name": "Nether Honeymoon",
+                "year": 2025,
+                "month": "Oct",
+                "description": "",
+                "sizes": [
+                    "nether-honeymoon-lg.jxl",
+                    "nether-honeymoon-lg.jpg",
+                    "nether-honeymoon-md.jxl",
+                    "nether-honeymoon-md.jpg",
+                    "nether-honeymoon-sm.jxl",
+                    "nether-honeymoon-sm.jpg"
+                ]
+            },
+            {
+                "name": "Nino Cyberheist",
+                "year": 2024,
+                "month": "Jun",
+                "description": "",
+                "sizes": [
+                    "nino-cyberheist-lg.jxl",
+                    "nino-cyberheist-lg.jpg",
+                    "nino-cyberheist-md.jxl",
+                    "nino-cyberheist-md.jpg",
+                    "nino-cyberheist-sm.jxl",
+                    "nino-cyberheist-sm.jpg"
+                ]
+            },
+            {
+                "name": "Sakura Sunset",
+                "year": 2024,
+                "month": "Oct",
+                "description": "",
+                "sizes": [
+                    "sakura-sunset-lg.jxl",
+                    "sakura-sunset-lg.png",
+                    "sakura-sunset-md.jxl",
+                    "sakura-sunset-md.png",
+                    "sakura-sunset-sm.jxl",
+                    "sakura-sunset-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura ATM9",
+                "year": 2024,
+                "month": "Jul",
+                "description": "",
+                "sizes": [
+                    "sakura-atm9-lg.jxl",
+                    "sakura-atm9-lg.png",
+                    "sakura-atm9-md.jxl",
+                    "sakura-atm9-md.png",
+                    "sakura-atm9-sm.jxl",
+                    "sakura-atm9-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Office",
+                "year": 2023,
+                "month": "Sept",
+                "description": "",
+                "sizes": [
+                    "sakura-office-lg.jxl",
+                    "sakura-office-lg.jpg",
+                    "sakura-office-md.jxl",
+                    "sakura-office-md.jpg",
+                    "sakura-office-sm.jxl",
+                    "sakura-office-sm.jpg"
+                ]
+            },
+            {
+                "name": "Sakura Couch",
+                "year": 2023,
+                "month": "Sept",
+                "description": "",
+                "sizes": [
+                    "sakura-couch-lg.jxl",
+                    "sakura-couch-lg.jpg",
+                    "sakura-couch-md.jxl",
+                    "sakura-couch-md.jpg",
+                    "sakura-couch-sm.jxl",
+                    "sakura-couch-sm.jpg"
+                ]
+            },
+            {
+                "name": "Sakura Blacksmith",
+                "year": 2023,
+                "month": "Mar",
+                "description": "",
+                "sizes": [
+                    "sakura-blacksmith-lg.jxl",
+                    "sakura-blacksmith-lg.png",
+                    "sakura-blacksmith-md.jxl",
+                    "sakura-blacksmith-md.png",
+                    "sakura-blacksmith-sm.jxl",
+                    "sakura-blacksmith-sm.png"
+                ]
+            },
+            {
+                "name": "Eve and Gez",
+                "year": 2023,
+                "month": "Jul",
+                "description": "",
+                "sizes": [
+                    "eve-and-gez-lg.jxl",
+                    "eve-and-gez-lg.png",
+                    "eve-and-gez-md.jxl",
+                    "eve-and-gez-md.png",
+                    "eve-and-gez-sm.jxl",
+                    "eve-and-gez-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Forest Hike",
+                "year": 2022,
+                "month": "May",
+                "description": "",
+                "sizes": [
+                    "sakura-forest-hike-lg.jxl",
+                    "sakura-forest-hike-lg.png",
+                    "sakura-forest-hike-md.jxl",
+                    "sakura-forest-hike-md.png",
+                    "sakura-forest-hike-sm.jxl",
+                    "sakura-forest-hike-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Frozen V2",
+                "year": 2022,
+                "month": "Apr",
+                "description": "",
+                "sizes": [
+                    "sakura-frozen-v2-lg.jxl",
+                    "sakura-frozen-v2-lg.png",
+                    "sakura-frozen-v2-md.jxl",
+                    "sakura-frozen-v2-md.png",
+                    "sakura-frozen-v2-sm.jxl",
+                    "sakura-frozen-v2-sm.png"
+                ]
+            },
+            {
+                "name": "Jen Birthday",
+                "year": 2022,
+                "month": "Jul",
+                "description": "",
+                "sizes": [
+                    "jen-birthday-lg.jxl",
+                    "jen-birthday-lg.png",
+                    "jen-birthday-md.jxl",
+                    "jen-birthday-md.png",
+                    "jen-birthday-sm.jxl",
+                    "jen-birthday-sm.png"
+                ]
+            },
+            {
+                "name": "Tanya Azura Family",
+                "year": 2021,
+                "month": "May",
+                "description": "",
+                "sizes": [
+                    "tanya-azura-family-lg.jxl",
+                    "tanya-azura-family-lg.jpg",
+                    "tanya-azura-family-md.jxl",
+                    "tanya-azura-family-md.jpg",
+                    "tanya-azura-family-sm.jxl",
+                    "tanya-azura-family-sm.jpg"
+                ]
+            },
+            {
+                "name": "Sakura Injured",
+                "year": 2021,
+                "month": "Jun",
+                "description": "",
+                "sizes": [
+                    "sakura-injured-lg.jxl",
+                    "sakura-injured-lg.jpg",
+                    "sakura-injured-md.jxl",
+                    "sakura-injured-md.jpg",
+                    "sakura-injured-sm.jxl",
+                    "sakura-injured-sm.jpg"
+                ]
+            },
+            {
+                "name": "Saki and Asuka Etheria Meetup",
+                "year": 2021,
+                "month": "Mar",
+                "description": "",
+                "sizes": [
+                    "saki-and-asuka-etheria-meetup-lg.jxl",
+                    "saki-and-asuka-etheria-meetup-lg.png",
+                    "saki-and-asuka-etheria-meetup-md.jxl",
+                    "saki-and-asuka-etheria-meetup-md.png",
+                    "saki-and-asuka-etheria-meetup-sm.jxl",
+                    "saki-and-asuka-etheria-meetup-sm.png"
+                ]
+            },
+            {
+                "name": "Azura Birthday",
+                "year": 2021,
+                "month": "Jul",
+                "description": "",
+                "sizes": [
+                    "azura-birthday-lg.jxl",
+                    "azura-birthday-lg.png",
+                    "azura-birthday-md.jxl",
+                    "azura-birthday-md.png",
+                    "azura-birthday-sm.jxl",
+                    "azura-birthday-sm.png"
+                ]
+            },
+            {
+                "name": "Jon and Jen Running",
+                "year": 2021,
+                "month": "Sept",
+                "description": "",
+                "sizes": [
+                    "jon-and-jen-running-lg.jxl",
+                    "jon-and-jen-running-lg.png",
+                    "jon-and-jen-running-md.jxl",
+                    "jon-and-jen-running-md.png",
+                    "jon-and-jen-running-sm.jxl",
+                    "jon-and-jen-running-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Aid",
+                "year": 2021,
+                "month": "Sept",
+                "description": "",
+                "sizes": [
+                    "sakura-aid-lg.jxl",
+                    "sakura-aid-lg.png",
+                    "sakura-aid-md.jxl",
+                    "sakura-aid-md.png",
+                    "sakura-aid-sm.jxl",
+                    "sakura-aid-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Grieving",
+                "year": 2020,
+                "month": "Apr",
+                "description": "",
+                "sizes": [
+                    "sakura-grieving-lg.jxl",
+                    "sakura-grieving-lg.png",
+                    "sakura-grieving-md.jxl",
+                    "sakura-grieving-md.png",
+                    "sakura-grieving-sm.jxl",
+                    "sakura-grieving-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura And Co",
+                "year": 2020,
+                "month": "Apr",
+                "description": "",
+                "sizes": [
+                    "sakura-and-co-lg.jxl",
+                    "sakura-and-co-lg.png",
+                    "sakura-and-co-md.jxl",
+                    "sakura-and-co-md.png",
+                    "sakura-and-co-sm.jxl",
+                    "sakura-and-co-sm.png"
+                ]
+            },
+            {
+                "name": "Kirito and Asuna",
+                "year": 2020,
+                "month": "Feb",
+                "description": "",
+                "sizes": [
+                    "kirito-and-asuna-lg.jxl",
+                    "kirito-and-asuna-lg.png",
+                    "kirito-and-asuna-md.jxl",
+                    "kirito-and-asuna-md.png",
+                    "kirito-and-asuna-sm.jxl",
+                    "kirito-and-asuna-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Demon",
+                "year": 2020,
+                "month": "Dec",
+                "description": "",
+                "sizes": [
+                    "sakura-demon-lg.jxl",
+                    "sakura-demon-lg.png",
+                    "sakura-demon-md.jxl",
+                    "sakura-demon-md.png",
+                    "sakura-demon-sm.jxl",
+                    "sakura-demon-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Sword School",
+                "year": 2020,
+                "month": "Jun",
+                "description": "",
+                "sizes": [
+                    "sakura-sword-school-lg.jxl",
+                    "sakura-sword-school-lg.png",
+                    "sakura-sword-school-md.jxl",
+                    "sakura-sword-school-md.png",
+                    "sakura-sword-school-sm.jxl",
+                    "sakura-sword-school-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Horror Forest",
+                "year": 2020,
+                "month": "Aug",
+                "description": "",
+                "sizes": [
+                    "sakura-horror-forest-lg.jxl",
+                    "sakura-horror-forest-lg.png",
+                    "sakura-horror-forest-md.jxl",
+                    "sakura-horror-forest-md.png",
+                    "sakura-horror-forest-sm.jxl",
+                    "sakura-horror-forest-sm.png"
+                ]
+            },
+            {
+                "name": "Amias Bridge",
+                "year": 2020,
+                "month": "Aug",
+                "description": "",
+                "sizes": [
+                    "amias-bridge-lg.jxl",
+                    "amias-bridge-lg.png",
+                    "amias-bridge-md.jxl",
+                    "amias-bridge-md.png",
+                    "amias-bridge-sm.jxl",
+                    "amias-bridge-sm.png"
+                ]
+            },
+            {
+                "name": "Niika and Lucan vs Zombies",
+                "year": 2020,
+                "month": "Jan",
+                "description": "",
+                "sizes": [
+                    "niika-and-lucan-vs-zombies-lg.jxl",
+                    "niika-and-lucan-vs-zombies-lg.png",
+                    "niika-and-lucan-vs-zombies-md.jxl",
+                    "niika-and-lucan-vs-zombies-md.png",
+                    "niika-and-lucan-vs-zombies-sm.jxl",
+                    "niika-and-lucan-vs-zombies-sm.png"
+                ]
+            },
+            {
+                "name": "Saku and Az Cave Tour",
+                "year": 2020,
+                "month": "Oct",
+                "description": "",
+                "sizes": [
+                    "saku-and-az-cave-tour-lg.jxl",
+                    "saku-and-az-cave-tour-lg.png",
+                    "saku-and-az-cave-tour-md.jxl",
+                    "saku-and-az-cave-tour-md.png",
+                    "saku-and-az-cave-tour-sm.jxl",
+                    "saku-and-az-cave-tour-sm.png"
+                ]
+            },
+            {
+                "name": "Naia Birthday",
+                "year": 2020,
+                "month": "Jul",
+                "description": "",
+                "sizes": [
+                    "naia-birthday-lg.jxl",
+                    "naia-birthday-lg.png",
+                    "naia-birthday-md.jxl",
+                    "naia-birthday-md.png",
+                    "naia-birthday-sm.jxl",
+                    "naia-birthday-sm.png"
+                ]
+            },
+            {
+                "name": "Mermaid Sakura With Child",
+                "year": 2020,
+                "month": "Jul",
+                "description": "",
+                "sizes": [
+                    "mermaid-sakura-with-child-lg.jxl",
+                    "mermaid-sakura-with-child-lg.png",
+                    "mermaid-sakura-with-child-md.jxl",
+                    "mermaid-sakura-with-child-md.png",
+                    "mermaid-sakura-with-child-sm.jxl",
+                    "mermaid-sakura-with-child-sm.png"
+                ]
+            },
+            {
+                "name": "Old SoW Mod Team",
+                "year": 2020,
+                "month": "Oct",
+                "description": "",
+                "sizes": [
+                    "old-sow-mod-team-lg.jxl",
+                    "old-sow-mod-team-lg.png",
+                    "old-sow-mod-team-md.jxl",
+                    "old-sow-mod-team-md.png",
+                    "old-sow-mod-team-sm.jxl",
+                    "old-sow-mod-team-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Frozen",
+                "year": 2020,
+                "month": "Jun",
+                "description": "",
+                "sizes": [
+                    "sakura-frozen-lg.jxl",
+                    "sakura-frozen-lg.png",
+                    "sakura-frozen-md.jxl",
+                    "sakura-frozen-md.png",
+                    "sakura-frozen-sm.jxl",
+                    "sakura-frozen-sm.png"
+                ]
+            },
+            {
+                "name": "Mermaid Sakura Solo",
+                "year": 2020,
+                "month": "Jul",
+                "description": "",
+                "sizes": [
+                    "mermaid-sakura-solo-lg.jxl",
+                    "mermaid-sakura-solo-lg.png",
+                    "mermaid-sakura-solo-md.jxl",
+                    "mermaid-sakura-solo-md.png",
+                    "mermaid-sakura-solo-sm.jxl",
+                    "mermaid-sakura-solo-sm.png"
+                ]
+            },
+            {
+                "name": "Sedaia Family",
+                "year": 2020,
+                "month": "Apr",
+                "description": "",
+                "sizes": [
+                    "sedaia-family-lg.jxl",
+                    "sedaia-family-lg.png",
+                    "sedaia-family-md.jxl",
+                    "sedaia-family-md.png",
+                    "sedaia-family-sm.jxl",
+                    "sedaia-family-sm.png"
+                ]
+            },
+            {
+                "name": "Saki and Azzy Christmas",
+                "year": 2020,
+                "month": "Nov",
+                "description": "",
+                "sizes": [
+                    "saki-and-azzy-christmas-lg.jxl",
+                    "saki-and-azzy-christmas-lg.jpg",
+                    "saki-and-azzy-christmas-md.jxl",
+                    "saki-and-azzy-christmas-md.jpg",
+                    "saki-and-azzy-christmas-sm.jxl",
+                    "saki-and-azzy-christmas-sm.jpg"
+                ]
+            },
+            {
+                "name": "Sakura Treehouse",
+                "year": 2020,
+                "month": "Jan",
+                "description": "",
+                "sizes": [
+                    "sakura-treehouse-lg.jxl",
+                    "sakura-treehouse-lg.jpg",
+                    "sakura-treehouse-md.jxl",
+                    "sakura-treehouse-md.jpg",
+                    "sakura-treehouse-sm.jxl",
+                    "sakura-treehouse-sm.jpg"
+                ]
+            },
+            {
+                "name": "Tygren vs Thalleous",
+                "year": 2020,
+                "month": "Jan",
+                "description": "",
+                "sizes": [
+                    "tygren-vs-thalleous-lg.jxl",
+                    "tygren-vs-thalleous-lg.png",
+                    "tygren-vs-thalleous-md.jxl",
+                    "tygren-vs-thalleous-md.png",
+                    "tygren-vs-thalleous-sm.jxl",
+                    "tygren-vs-thalleous-sm.png"
+                ]
+            },
+            {
+                "name": "Frozen Phoenix_May2025",
+                "year": 2000,
+                "month": "Unknown",
+                "description": "",
+                "sizes": [
+                    "frozen-phoenix_may2025-lg.jxl",
+                    "frozen-phoenix_may2025-lg.png",
+                    "frozen-phoenix_may2025-md.jxl",
+                    "frozen-phoenix_may2025-md.png",
+                    "frozen-phoenix_may2025-sm.jxl",
+                    "frozen-phoenix_may2025-sm.png"
+                ]
+            },
+            {
+                "name": "Sakura Dragon Egg Discovery_Dec2020",
+                "year": 2000,
+                "month": "Unknown",
+                "description": "",
+                "sizes": [
+                    "sakura-dragon-egg-discovery_dec2020-lg.jxl",
+                    "sakura-dragon-egg-discovery_dec2020-lg.png",
+                    "sakura-dragon-egg-discovery_dec2020-md.jxl",
+                    "sakura-dragon-egg-discovery_dec2020-md.png",
+                    "sakura-dragon-egg-discovery_dec2020-sm.jxl",
+                    "sakura-dragon-egg-discovery_dec2020-sm.png"
                 ]
             }
         ]

@@ -1,5 +1,5 @@
 import { createSignal, onMount } from "solid-js";
-import SocialIcon from "../components/social-icon.jsx";
+import SocialIcon from "../components/media/social-icon.jsx";
 
 function Footer() {
   const [year, setYear] = createSignal(new Date().getFullYear());
@@ -35,7 +35,7 @@ function Footer() {
 					</li>
         </ul>
       </nav>
-      <copyright>&copy; {year()} Sakura Sedaia. All Rights Reserved.</copyright>
+      <div class={"copyright"}>&copy; {year()} Sedaia Designs. All Rights Reserved.</div>
     </footer>
   );
 }

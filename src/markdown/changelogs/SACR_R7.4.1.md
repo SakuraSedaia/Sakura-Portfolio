@@ -2,7 +2,7 @@
 
 ## File Info
 
-Latest Stable: R7.4.1
+Version: R7.4.1
 Blender 5.0
 
 ---

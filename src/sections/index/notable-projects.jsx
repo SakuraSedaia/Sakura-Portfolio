@@ -1,10 +1,11 @@
 import { A } from "@solidjs/router";
 import { NoHydration } from "solid-js/web";
+import OptimizedImage from "~/components/media/optimized-image.jsx";
 
 export default function NotableProjects() {
   return (
 		<NoHydration>
-			<section id={"notable-projects"} breakout full-width>
+			<section id={"notable-projects"}>
 				<header>
 					<h1>Notable Projects</h1>
 				</header>
@@ -13,10 +14,9 @@ export default function NotableProjects() {
 					<div class={"grid-item"}>
 						<h1>Frostlight Studios</h1>
 						<hr />
-						<div class={"notable-img"}><img
-							src={"/images/card-headers/frostlight-studio-website.jpg"}
-							alt={"Frostlight Studio Website Preview"}
-						/></div>
+						<div class={"notable-img"}>
+							<OptimizedImage src={"/images/card-headers/frostlight-studio-website"} alt={"Frostlight Studios"} />
+						</div>
 						<p>
 							The Frostlight Studios website is an evolution on an old static html design, using SolidJS to create a
 							wonderfully realized and performant website which helps define who Frostlight Studios is and what they do,
@@ -24,7 +24,7 @@ export default function NotableProjects() {
 						</p>
 						<div class={"projects-link"}>
 							<a
-								href={"https://frostlight-studios.vercel.app/"}
+								href={"https://frostlight-studios.org/"}
 								class={"btn"}
 							>
 								Visit Website
@@ -41,8 +41,8 @@ export default function NotableProjects() {
 					<div class={"grid-item"}>
 						<h1>Rig Interface</h1>
 						<hr />
-						<img
-							src={"/images/rig-headers/rig-interface/rig-interface-3.png"}
+						<OptimizedImage
+							src={"/images/rig-headers/rig-interface/rig-interface-3"}
 							alt={"Rig Interface Logo V3"}
 						/>
 						<p>

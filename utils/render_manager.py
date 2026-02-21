@@ -161,8 +161,10 @@ class RenderProcessor:
         logger.info(f"--- Processing: {name} ---")
         
         # Subdirectory logic
+        # Ensure target directory is unique by including parent folder name if it's not the category
         name_slug = name.replace(" ", "-").lower()
-        target_dir = self.web_dir / img_path.parent.relative_to(self.source_dir) / name_slug
+        rel_parent = img_path.parent.relative_to(self.source_dir)
+        target_dir = self.web_dir / rel_parent / name_slug
         self.ensure_dir(target_dir)
 
         sizes_paths = []
@@ -187,7 +189,16 @@ class RenderProcessor:
             sizes_paths.append(target_path.name)
 
         # JSON Metadata
-        json_path = self.json_dir / img_path.parent.relative_to(self.source_dir) / f"{name.replace(' ', '_')}.json"
+        # Edgecase: same name but different date. Folder name usually includes the date.
+        json_name = name.replace(' ', '_')
+        if img_path.parent.name != parts[1]:
+            # If the folder name is not just the month/year (e.g. "Sakura-2024"), use it to differentiate
+            json_name = f"{json_name}_{img_path.parent.name.replace(' ', '_')}"
+        else:
+            # Fallback to name_month_year if they are likely to collide
+            json_name = f"{json_name}_{month}_{year}"
+            
+        json_path = self.json_dir / img_path.parent.relative_to(self.source_dir) / f"{json_name}.json"
         self.ensure_dir(json_path.parent)
         
         manifest_data = {
@@ -217,8 +228,9 @@ class RenderProcessor:
         if not cat_dir.is_dir():
             logger.warning(f"Category directory not found: {cat_dir}")
             return
-        for img_path in cat_dir.iterdir():
-            self.process_image(img_path)
+        for img_path in cat_dir.rglob("*"):
+            if img_path.is_file():
+                self.process_image(img_path)
 
     def process_all(self) -> None:
         for cat in CATEGORIES:
@@ -243,7 +255,7 @@ class ManifestAssembler:
         if not cat_dir.is_dir():
             return []
         images = []
-        for json_file in cat_dir.glob("*.json"):
+        for json_file in cat_dir.rglob("*.json"):
             try:
                 with open(json_file, 'r') as f:
                     images.append(json.load(f))
