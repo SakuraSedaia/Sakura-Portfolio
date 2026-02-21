@@ -16,8 +16,7 @@
 - This project is styled using SCSS.
 - Any modifications to the stylesheets must be done using the SCSS syntax.
 - Use the `!important` rule sparingly and only when necessary.
-- Use `em` and `rem` units for element sizing.
-- Use `pt` units for typography.
+- Use `em` and `rem` units for element sizing and typography.
 - Use `px` for @media queries.
 - Color formats: use `hsl` or `hsla` for all color definitions.
 - Prefer using CSS variables for colors (e.g., `hsl(var(--tx-primary-val))`) as defined in `src/styles/_variables.scss`.

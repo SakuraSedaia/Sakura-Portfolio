@@ -2,7 +2,7 @@ import { Show, For, createSignal } from "solid-js";
 import addonIndex from "~/jsondata/addon-index.json";
 import DownloadAssets from "~/components/ui/download-assets.jsx";
 
-export default function SRIDownloads() {
+export default function Downloads() {
 	
 	const data = addonIndex.SakuraRigInterface;
 	const branches = data.branches;

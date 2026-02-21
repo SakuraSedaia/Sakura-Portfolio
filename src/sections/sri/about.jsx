@@ -1,10 +1,10 @@
 import { NoHydration } from "solid-js/web";
 import { A } from "@solidjs/router";
 
-export default function AboutSRI() {
+export default function About() {
 	return (
 		<NoHydration>
-			<section id={"about-sri"}>
+			<section id={"sri-about"}>
 				<div class={"heading"}>
           <h1>About Sakura's Rig Interface</h1>
 				</div>

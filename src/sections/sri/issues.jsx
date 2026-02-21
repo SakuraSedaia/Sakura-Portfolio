@@ -1,10 +1,10 @@
 import { NoHydration } from "solid-js/web";
 
-export default function SRIIssues() {
+export default function Issues() {
 
   return (
     <NoHydration>
-      <section id={"issues"}>
+      <section id={"sri-issues"}>
         <div class={"heading"}>
           <h1>Issues</h1>
         </div>

@@ -10,7 +10,10 @@
 - `!/src/components/`: Categorized reusable UI components (`navigation/`, `media/`, `ui/`).
 - `!/src/sections/`: Page-specific sections (may include local `components/` subdirectories).
 - `!/src/jsondata/`: JSON data files for dynamic content.
-- `!/src/styles/`: Global SCSS files and mirrored partial subdirectories (`components/`, `sections/`, `pages/`).
+- `!/src/styles/`: Global SCSS files and mirrored partial subdirectories.
+  - `sections/` sub-directory will contain partials for shared sections (e.g. Header, Footer, etc.)
+  - `pages/` sub-directory will contain partials for page-specific components contained in a single file per page `_page.scss` (e.g. About, Notable Projects, etc.)
+  - `components/` sub-directory will contain partials for reusable UI components (e.g. buttons, cards, etc.)
 - `!/src/app.scss`: Main SCSS entry point.
 - `!/public/`: Static assets, including processed images.
 - `!/utils/`: Python scripts for automation (image processing, manifest assembly).
