@@ -11,7 +11,6 @@
 - Maintain logs of all chat sessions in the `.logs/` folder. Log files are organized by date (e.g., `chat-session-YYYY-MM-DD.log`). Append all entries for the same day to that day's log file.
 - When explicitly requested to provide a "context summary" or "summary of the day/session", create a separate file in the `.logs/` folder named `summary_YYYY-MM-DD.md` (e.g., `summary_2026-02-10.md`) containing the summarized highlights.
 - When adding new rules or details to the documentation in `.junie/`, ensure they are placed within their respective sections (e.g., technical rules in `guidelines.md`, project-specific data in `project.md`, and architectural/workflow context in `context.md`) to maintain organization and reduce the need for future refactoring.
-- **Guideline Sync**: When updating internal guidelines (`.junie/guidelines.md`) with new rules applicable to development style, structure, or coding standards, ensure that the public-facing `CONTRIBUTING.md` is also updated to reflect these changes.
 
 ### Development Workflow
 - **Logging**: Every chat session MUST be logged in `.logs/`, unless the user explicitly starts a request with "No Log". In that case, do not log the session, do not commit the associated changes, and do not mention the omission in the response.

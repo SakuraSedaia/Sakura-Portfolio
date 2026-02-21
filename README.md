@@ -51,11 +51,6 @@ The transition to SolidJS and SolidStart was chosen to provide fine-grained reac
 └── package.json          # Project dependencies and scripts
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details on how to set up the project and our coding standards.
-
-
 This project was created with the [Solid CLI](https://github.com/solidjs-community/solid-cli).
 
 ---
