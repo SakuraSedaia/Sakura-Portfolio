@@ -74,5 +74,32 @@
     .download-spec {
 
     }
+
+    .download-link {
+      display: inline-block;
+
+      &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        filter: grayscale(1);
+      }
+
+      a {
+        align-items: center;
+        padding: 0.25rem 1rem;
+        background-color: hsl(var(--bg-primary-val));
+        border: 0.125rem solid hsl(var(--tx-primary-val));
+        border-radius: var(--radius-lg);
+        cursor: pointer;
+        transition: all 200ms ease;
+        font-size: var(--font-size-body);
+        color: white;
+
+        &:hover {
+          border-color: hsl(var(--tx-accent-val));
+          background-color: hsla(var(--tx-accent-val), 0.1);
+        }
+      }
+    }
   }
 }
