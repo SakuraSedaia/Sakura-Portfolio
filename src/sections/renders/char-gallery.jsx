@@ -9,7 +9,7 @@ export default function CharGallery() {
 
   const openModal = (json, cat, folder) => {
     // We use the first size (lg) for the modal
-    const filename = json.sizes[0];
+    const filename = json.sizes[0].split('.')[0];
     setCurrentImage({
       src: `/images/renders${cat}${folder}/${filename}`,
       alt: json.name,
