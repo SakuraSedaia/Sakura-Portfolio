@@ -14,7 +14,7 @@ export default function RenderCard(props) {
 	const getOptimizedSrc = (filename) => {
 		const base = filename.substring(0, filename.lastIndexOf('.'));
 		// Ensure folder is correct - the pipeline uses slug-named subdirectories
-		return `/images/renders${props.cat}${folder}/${base}.png`; 
+		return `/images/renders${props.cat}${folder}/${base}`;
 	}
 
   return (
