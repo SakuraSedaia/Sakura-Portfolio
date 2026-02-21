@@ -6,8 +6,7 @@ export default function OptimizedImage(props) {
   // Extract base path without extension
   const baseSrc = () => {
     const src = local.src;
-    const lastDot = src.lastIndexOf('.');
-    return lastDot !== -1 ? src.substring(0, lastDot) : src;
+    return src;
   };
   const originalExt = () => {
     const src = local.src;
