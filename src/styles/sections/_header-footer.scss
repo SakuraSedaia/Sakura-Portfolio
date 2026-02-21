@@ -27,26 +27,24 @@ header {
 }
 
 // Navigation
-nav {
+header nav {
   text-align: center;
   .nav-container {
     background-color: hsla(var(--bg-accent-val));
     color: hsl(var(--tx-primary-val));
-    padding: 1rem;
-    max-width: 80rem;
-    display: inline-flex;
+
     width: 100%;
+    display: inline-flex;
     border-radius: var(--radius-lg);
     margin-top: 1rem;
     border: 0.125rem solid hsla(var(--tx-contrast-accent-val), 30%);
     box-shadow: 0 0 .2rem hsla(var(--tx-contrast-accent-val), 50%);
     backdrop-filter: blur(0.25rem);
     
-    .nav-col {
-      display: inline-block;
-      width: 50%;
+    .nav-section {
+      margin: 1rem;
     }
-
+    
     .nav-title {
       display: inline-block;
       text-align: center;
@@ -222,7 +220,7 @@ footer {
 // Navigation and Header Mobile Responsive
 @media screen and (max-width: 720px) {
   body {
-    padding-bottom: 8rem;
+    padding-top: 3.5rem;
   }
 
   header {
@@ -238,59 +236,7 @@ footer {
   }
   
   header nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: hsla(var(--bg-primary-val), 75%);
-    backdrop-filter: blur(0.25rem);
-    border-top: 0.0625rem solid hsla(var(--tx-primary-val), 15%);
-
-    br {
-      display: none;
-    }
-
-    .nav-container {
-      display: inline-block;
-      padding: 0.5rem 0;
-      border-radius: 0;
-      max-width: 100%;
-      border-inline-width: 0;
-      margin-bottom: 0;
-      
-      .nav-title {
-        display: none;
-      }
-      
-      .nav-router {
-        display: flex;
-        text-align: center;
-        
-        .nav-item {
-          display: inline-block;
-          margin-bottom: 0.5rem;
-        }
-      }
-    }
-    
-    .sub-navigation {
-      text-align: center;
-      border-radius: 0;
-      margin-top: 0;
-      display: inline-block;
-      margin-inline: 0;
-      padding-inline: 0;
-      
-      .nav-item {
-        display: inline-block;
-        margin-block: 0.25rem;
-      }
-      
-      .nav-arrow {
-        display: none;
-      }
-    }
+    display: none;
   }
   
   footer {

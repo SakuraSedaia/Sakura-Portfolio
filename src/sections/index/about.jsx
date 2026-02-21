@@ -1,14 +1,23 @@
 import Nav from "~/components/navigation/nav.jsx";
+import MobileNav from "~/components/navigation/mobile-nav.jsx";
+import { useMobile } from "~/hooks/use-mobile.js";
 import SocialIcon from "~/components/media/social-icon.jsx";
 import { A } from "@solidjs/router";
 export default function About() {
+  const isMobile = useMobile();
   const bgImg = {
     "background-image": "image-set(url('/images/headers/about.jxl') type('image/jxl'), url('/images/headers/about.jpg') type('image/jpeg'))"
   };
 
   return (
-    <header id={"about-me"} style={bgImg}>
-      <Nav title={"Sedaia Designs"} />
+    <>
+      <Show when={isMobile()}>
+        <MobileNav title={"Sedaia Designs"} />
+      </Show>
+      <header id={"about-me"} style={bgImg}>
+        <Show when={!isMobile()}>
+          <Nav title={"Sedaia Designs"} />
+        </Show>
       <div class={"header-box"}>
         <div class={"header-position"}>
           <div class={"header-content"}>
@@ -28,5 +37,6 @@ export default function About() {
         </div>
       </div>
     </header>
+  </>
   );
 }
