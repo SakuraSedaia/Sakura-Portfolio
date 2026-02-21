@@ -28,7 +28,7 @@
 
       h1 {
         margin-bottom: 0.75rem;
-        font-size: 30pt;
+        font-size: 2.5rem;
         color: hsl(var(--tx-primary-val));
       }
 
@@ -43,7 +43,7 @@
           color: hsl(var(--tx-primary-val));
           align-items: center;
           gap: 0.5rem;
-          font-size: 13.2pt;
+          font-size: 1.1rem;
           transition: color 0.2s ease-in-out;
 
           svg {
@@ -74,7 +74,7 @@
         padding: 1rem;
 
         h1 {
-          font-size: 24pt;
+          font-size: 2rem;
         }
 
         .socials {
@@ -82,7 +82,7 @@
           gap: 1rem;
           
           a {
-            font-size: 10.8pt;
+            font-size: 0.9rem;
             
             svg {
               width: 1.25rem;
@@ -113,26 +113,26 @@
 
     // Adjust font sizes for better fit
     p, li {
-      font-size: 12pt; // Reducing from 13.5pt
+      font-size: 1rem; // Reducing from 1.125rem
       line-height: 1.6;
     }
 
     span {
-      font-size: 13.2pt; // Metadata slightly larger
+      font-size: 1.1rem; // Metadata slightly larger
       margin-bottom: 0.5rem;
     }
 
     h1 {
-      font-size: 18pt;
+      font-size: 1.5rem;
       padding: 0.2rem 1.5rem;
     }
 
     h2 {
-      font-size: 14.4pt;
+      font-size: 1.2rem;
     }
 
     h3 {
-      font-size: 13.2pt;
+      font-size: 1.1rem;
     }
 
     // Skills column adjustments
@@ -155,11 +155,11 @@
       width: 95%;
       
       p, li {
-        font-size: 10.8pt;
+        font-size: 0.9rem;
       }
       
       span {
-        font-size: 12pt;
+        font-size: 1rem;
       }
       
       .column-container.flow {

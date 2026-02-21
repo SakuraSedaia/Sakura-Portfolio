@@ -1,3 +1,143 @@
 @use "../variables" as *;
-@use "../sections/index/about" as *;
 
+#about-me {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	.header-box {
+		display: block;
+		padding-block: 3rem;
+		max-width: 80rem;
+		margin: 0 auto;
+		padding-inline: 6rem;
+		
+		.header-position {
+			// Position styles if needed
+			display: block;
+		}
+		
+		.header-content {
+			width: fit-content;
+			padding: 1rem;
+			border-radius: var(--radius-lg);
+			box-shadow: var(--box-shadow-lg);
+			background-color: hsla(var(--bg-primary-val), 75%);
+			backdrop-filter: blur(0.25rem);
+			border: 0.125rem solid hsla(var(--tx-secondary-val), 25%);
+			display: block;
+			
+			h1 {
+				// Typography for 'Who am I?'
+				margin-bottom: 0.5rem;
+			}
+			
+			p {
+				margin-left: 0.5rem;
+				// Additional paragraph styles
+			}
+			
+			.socials {
+				display: flex;
+				gap: 1.5rem;
+				align-items: center;
+				margin-top: 1rem;
+				
+				a {
+					display: flex;
+					color: hsl(var(--tx-primary-val));
+					align-items: center;
+					justify-content: center;
+					font-size: var(--font-size-body);
+					
+					&:hover {
+						color: hsl(var(--tx-accent-val));
+					}
+					
+					&.btn {
+						margin-block: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Mobile Responsive
+@media screen and (max-width: 720px) {
+	#about-me {
+		.header-box {
+			padding-inline: 1rem;
+			margin-top: 2rem;
+			text-align: center;
+			
+			.header-content {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+#notable-projects {
+	.grid-container {
+		.grid-item {
+			.notable-img {
+				img {
+					border-radius: var(--radius-md);
+				}
+			}
+			.projects-link {
+				display: flex;
+				text-align: center;
+				flex-direction: row;
+				justify-content: center;
+				gap: 0.5rem;
+				a {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+
+#preferred-tooling {
+	color: hsl(0, 0%, 100%);
+	
+	.grid-item {
+		h1, h2, p {
+			color: hsl(0, 0%, 100%);
+		}
+		
+		.link {
+			color: hsl(0, 0%, 100%);
+			
+			&:hover {
+				color: hsl(var(--tx-accent-val));
+			}
+		}
+	}
+}
+
+
+#technical-expertise {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		
+		li {
+			margin-bottom: 0.5rem;
+			
+			a {
+				color: hsl(0, 0%, 100%);
+				box-shadow: inset 0 0 0 0 hsl(var(--tx-accent-val));
+				transition: box-shadow 0.3s ease-in-out;
+				
+				&:hover {
+					color: hsl(var(--tx-accent-val));
+					box-shadow: inset 0 -0.125rem 0 0 hsl(var(--tx-accent-val));
+				}
+			}
+		}
+	}
+}

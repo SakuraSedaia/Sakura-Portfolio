@@ -4,7 +4,7 @@ import { A } from "@solidjs/router";
 export default function AboutSRI() {
 	return (
 		<NoHydration>
-			<section id={"about"}>
+			<section id={"about-sri"}>
 				<div class={"heading"}>
           <h1>About Sakura's Rig Interface</h1>
 				</div>

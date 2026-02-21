@@ -29,7 +29,7 @@
       display: block;
       margin-bottom: 1rem;
       font-family: var(--font), serif;
-      font-size: 15pt;
+      font-size: 1.25rem;
       line-height: 1.75;
     }
     li {
@@ -175,6 +175,10 @@
       }
     }
 
+    .standard-container {
+      margin-inline: .5rem;
+    }
+    
     // Modifiers
     &.full-width {
       padding-inline: calc($margin + $padding);

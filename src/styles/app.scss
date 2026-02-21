@@ -5,15 +5,14 @@
 // Pages
 @use "pages/index" as *;
 @use "pages/404" as *;
-@use "pages/sacr" as *;
-@use "pages/sri" as *;
-@use "pages/blender-development" as *;
+@use "pages/asset/sacr" as *;
+@use "pages/plugin/sri" as *;
+@use "pages/plugin/blender-development" as *;
 @use "pages/assets" as *;
 @use "pages/changelog/index" as *;
 @use "pages/resume" as *;
 
 // Components
-@use "sections/header-footer" as *;
 @use "components/not-finished" as *;
 @use "components/breadcrumb" as *;
 @use "components/image-modal" as *;
@@ -21,8 +20,5 @@
 @use "components/download-assets" as *;
 
 // Sections
-@use "sections/index/about" as *;
-@use "sections/index/notable-projects" as *;
-@use "sections/index/preferred-tooling" as *;
-@use "sections/index/technical-expertise" as *;
+@use "sections/header-footer" as *;
 @use "sections/shared-downloads" as *;

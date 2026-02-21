@@ -41,7 +41,7 @@
     background: none;
     border: none;
     color: hsl(var(--tx-primary-val));
-    font-size: 24pt;
+    font-size: 2rem;
     cursor: pointer;
     line-height: 1;
 
@@ -57,13 +57,13 @@
 
     h3 {
       margin-bottom: 0.5rem;
-      font-size: 18pt;
+      font-size: 1.5rem;
       color: hsl(var(--tx-primary-val));
     }
 
     p {
       color: hsl(var(--tx-secondary-val));
-      font-size: 12pt;
+      font-size: 1rem;
     }
   }
 }
