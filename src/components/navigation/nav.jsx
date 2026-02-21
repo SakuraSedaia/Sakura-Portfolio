@@ -17,22 +17,25 @@ export default function Nav(props) {
 					<A href="/" end>{props.title}</A>
 				</div>
 				<div class={"nav-router nav-section"}>
-					<For
-						each={Routes}
-						fallback={
-							<div class={"nav-item"}>
-								<A href={"/"} end>Loading Nav...</A>
-							</div>
-						}
-					>
-						{(nav, n) => (
-							<Show when={nav.show === true}>
+					
+					<div class={"nav-router-bg"}>
+						<For
+							each={Routes}
+							fallback={
 								<div class={"nav-item"}>
-									<A href={"/" + nav.path} end>{nav.page}</A>
+									<A href={"/"} end>Loading Nav...</A>
 								</div>
-							</Show>
-						)}
-					</For>
+							}
+						>
+							{(nav, n) => (
+								<Show when={nav.show === true}>
+									<div class={"nav-item"}>
+										<A href={"/" + nav.path} end>{nav.page}</A>
+									</div>
+								</Show>
+							)}
+						</For>
+					</div>
 				</div>
 			</div>
 			{/* First, check each route for if Subnav is enabled. If there are any, create a secondary navbar for them and populate it */}

@@ -77,35 +77,43 @@ nav {
       text-align: right;
       font-size: var(--font-size-nav);
 
-      .nav-item {
+      .nav-router-bg {
+        background-color: hsla(var(--bg-primary-val), 75%);
+        border-radius: var(--radius-lg);
+        width: fit-content;
         display: inline-block;
-        padding-inline: 0.5rem;
-
-        a {
-          color: hsl(var(--tx-primary-val));
-          padding-inline: 0.5rem;
+        padding-block: 0.25rem;
+        
+        .nav-item {
           display: inline-block;
-          cursor: pointer;
-          border: 0.125rem solid transparent;
-          border-radius: var(--radius-lg);
-
-          &:hover {
-            color: hsl(var(--tx-accent-val));
-            border-color: hsl(var(--tx-accent-val));
+          padding-inline: 0.5rem;
+          
+          a {
+            color: hsl(var(--tx-primary-val));
+            padding-inline: 0.5rem;
+            display: inline-block;
+            cursor: pointer;
+            border: 0.125rem solid transparent;
             border-radius: var(--radius-lg);
-          }
-
-          &.active {
-            color: hsl(var(--tx-accent-val));
-            font-weight: 600;
-            border-bottom-color: hsl(var(--tx-accent-val)) !important;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-
+            
             &:hover {
-              border: 0.125rem solid hsl(var(--tx-primary-val)) !important;
-              color: hsl(var(--tx-primary-val)) !important;
+              color: hsl(var(--tx-accent-val));
+              border-color: hsl(var(--tx-accent-val));
               border-radius: var(--radius-lg);
+            }
+            
+            &.active {
+              color: hsl(var(--tx-accent-val));
+              font-weight: 600;
+              border-bottom-color: hsl(var(--tx-accent-val)) !important;
+              border-bottom-right-radius: 0;
+              border-bottom-left-radius: 0;
+              
+              &:hover {
+                border: 0.125rem solid hsl(var(--tx-primary-val)) !important;
+                color: hsl(var(--tx-primary-val)) !important;
+                border-radius: var(--radius-lg);
+              }
             }
           }
         }
