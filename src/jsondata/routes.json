@@ -22,14 +22,27 @@
         "page": "SACR",
         "path": "asset/sakura-character-rig",
         "show": true
-      },
-      {
-        "page": "Rig Interface",
-        "path": "asset/sakura-rig-interface",
-        "show": true
       }
     ]
   },
+	{
+		"page": "Plugins",
+		"path": "plugins",
+		"show": true,
+		"subnav": true,
+		"subpages": [
+			{
+				"page": "Blender Dev",
+				"path": "plugin/blender-development",
+				"show": true
+			},
+			{
+				"page": "Rig UI",
+				"path": "plugin/sakura-rig-interface",
+				"show": true
+			}
+		]
+	},
   {
     "page": "Creations",
     "path": "creations",

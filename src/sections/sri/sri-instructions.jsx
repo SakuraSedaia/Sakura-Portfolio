@@ -5,9 +5,9 @@ export default function SRIInstructions() {
 	return (
 		<NoHydration>
 			<section id={"instructions"}>
-				<header>
+				<div class={"heading"}>
 					<h1>Instructions</h1>
-				</header>
+				</div>
 				<div class={"standard-container"}>
 					<h3>Recommended Install</h3>
 					<p>

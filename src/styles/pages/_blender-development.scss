@@ -1,0 +1,41 @@
+.blender-dev-list {
+  list-style-position: inside;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  li {
+    margin-bottom: 0.5rem;
+    &::marker {
+      color: var(--tx-accent);
+      font-weight: bold;
+    }
+  }
+}
+
+ul.blender-dev-list {
+  list-style-type: disc;
+}
+
+ol.blender-dev-list {
+  list-style-type: decimal;
+}
+
+.blender-dev-heading {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.blender-dev-container {
+}
+
+.ai-notice {
+  background-color: hsla(var(--tx-accent-val), 0.1);
+  border-left: 4px solid var(--tx-accent);
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+
+  h3 {
+    margin-top: 0;
+  }
+}

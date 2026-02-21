@@ -1,49 +1,97 @@
 {
-    "stable": {
-        "branch": "stable",
-        "label": "Stable",
-        "name": "Rig Interface",
-        "version": "V3.1.0",
-        "github": "https://github.com/SakuraSedaia/Sedaia-Rig-Interfaces",
-        "blender_ext": "https://extensions.blender.org/add-ons/sakura-rig-gui/",
-        "logo": "/images/rig-headers/rig-interface/rig-interface-3",
-        "description": "The latest stable version, includes all UI's for stable SACR Rigs since R7.2 onward, as well as some utilities to make addon development much easier!",
-        "default": 0,
-        "builds": [
-            {
-                "id": 0,
-                "label": "Latest",
-                "btn_label": "",
-                "git_tag": "V3.1.0",
-                "fileName": "Sakura_Rig_GUI_V3.1.0.zip",
-                "notes": null,
-                "size": "22.6 KB",
-                "date": "12/20/2025",
-                "license": "GPL V3"
-            }
-        ]
-    },
-    "dev": {
-        "branch": "dev",
-        "label": "Development",
-        "name": "Rig Interface",
-        "version": "",
-        "github": "https://github.com/SakuraSedaia/Sedaia-Rig-Interfaces",
-        "logo": "/images/rig-headers/rig-interface/rig-interface-dev",
-        "description": "A Development build of an upcoming SRI Release, not recommended for production use",
-        "default": 0,
-        "builds": [
-            {
-                "id": 0,
-                "label": "Alpha",
-                "btn_label": "",
-                "fileName": "/",
-                "notes": null,
-                "size": "--kb",
-                "date": "MM/DD/YYYY",
-                "license": "GPL V3"
-            }
-        ],
-        "enabled": false
-    }
+	"BlenderDevelopment": [
+		{
+			"branch": "stable",
+			"label": "Stable",
+			"name": "Blender Development Plugin",
+			"version": "V1.0.0",
+			"description": "A plugin for PyCharm that allows for the easy development of Blender extensions.",
+			"jetbrains_info": {
+				"link": "https://plugins.jetbrains.com/plugin/19003-blender-development-plugin",
+				"id": "19003",
+				"enabled": false
+			},
+			"logo": "/images/card-headers/blend-dev-prototype",
+			"repo": "https://github.com/Sakura-Sedaia/BlenderExtensions",
+			"builds": [
+				{
+					"id": 0,
+					"label": "Latest",
+					"fileName": "BlenderExtensions-1.0.0.zip",
+					"git_tag": "V1.0.0",
+					"date": "11/20/2024",
+					"size": "2.4 MB",
+					"license": "Apache 2.0"
+				}
+			]
+		},
+		{
+			"enabled": false,
+			"branch": "dev",
+			"label": "Development",
+			"name": "Blender Development Plugin",
+			"version": "V1.1.0-Snapshot",
+			"description": "A plugin for PyCharm that allows for the easy development of Blender extensions. Includes additional features and bug fixes.",
+			"logo": "/images/plugins/blender-dev/blender-dev-logo",
+			"repo": "https://github.com/Sakura-Sedaia/BlenderExtensions",
+			"builds": [
+				{
+					"id": 0,
+					"label": "Snapshot",
+					"fileName": "BlenderExtensions-1.1.0-Snapshot.zip",
+					"git_tag": "V1.1.0-Snapshot",
+					"date": "02/18/2026",
+					"size": "2.5 MB",
+					"license": "Apache 2.0"
+				}
+			]
+		}
+	],
+	"SakuraRigInterface": [
+		{
+			"branch": "stable",
+			"label": "Stable",
+			"name": "Rig Interface",
+			"version": "V3.1.0",
+			"description": "The latest stable version, includes all UI's for stable SACR Rigs since R7.2 onward, as well as some utilities to make addon development much easier!",
+			"logo": "/images/card-headers/rig-interface-3",
+			"repo": "https://github.com/SakuraSedaia/Sedaia-Rig-Interfaces",
+			"blender_ext": {
+				"link": "https://extensions.blender.org/add-ons/sakura-rig-gui/",
+				"enabled": true
+			},
+			"builds": [
+				{
+					"id": 0,
+					"label": "Latest",
+					"fileName": "Sakura_Rig_GUI_V3.1.0.zip",
+					"git_tag": "V3.1.0",
+					"size": "22.6 KB",
+					"date": "12/20/2025",
+					"license": "GPL V3"
+				}
+			]
+		},
+		{
+			"branch": "dev",
+			"label": "Development",
+			"name": "Rig Interface",
+			"version": "",
+			"description": "A Development build of an upcoming SRI Release, not recommended for production use",
+			"logo": "/images/rig-headers/rig-interface/rig-interface-dev",
+			"repo": "https://github.com/SakuraSedaia/Sedaia-Rig-Interfaces",
+			"enabled": false,
+			"builds": [
+				{
+					"id": 0,
+					"label": "Alpha",
+					"fileName": "/",
+					"git_tag": "",
+					"size": "--kb",
+					"date": "MM/DD/YYYY",
+					"license": "GPL V3"
+				}
+			]
+		}
+	]
 }

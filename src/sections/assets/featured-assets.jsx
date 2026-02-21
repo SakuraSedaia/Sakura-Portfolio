@@ -6,14 +6,14 @@ export default function FeaturedAssets() {
   return (
     <NoHydration>
       <section>
-        <header>
+        <div class={"heading"}>
           <h1>Featured Assets</h1>
-        </header>
+        </div>
 
         <div class={"column-container"}>
           <div class={"column"}>
             <OptimizedImage
-              src={"/images/rig-headers/SACR/r7.4-full"}
+              src={"/images/card-headers/character-rig-7.4"}
               alt={"Sakura's Advanced Character Rig Logo"}
             />
             <hr />
@@ -28,32 +28,6 @@ export default function FeaturedAssets() {
             </A>
           </div>
 
-          <div class={"column"}>
-            <OptimizedImage
-              src={"/images/rig-headers/rig-interface/rig-interface-3"}
-              alt={"Sakura's Rig Interface Logo Version 3"}
-            />
-            <hr />
-            <p>
-              Sakura's Advanced Character Rig is a Minecraft Character rig
-              developed for use in Blender 3D with the original purpose of
-              being a lightweight, highly customizable minecraft rig able to
-              be used on all levels of hardware.
-            </p>
-            <div class={"btn-centered"}>
-              <A class={"btn"} href={"/asset/sakura-rig-interface"}>
-                See Extension Page
-              </A>
-              <a
-                class={"btn"}
-                href={
-                  "https://extensions.blender.org/add-ons/sakura-rig-gui/"
-                }
-              >
-                Blender Extensions
-              </a>
-            </div>
-          </div>
         </div>
       </section>
     </NoHydration>

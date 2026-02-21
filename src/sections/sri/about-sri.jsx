@@ -5,9 +5,9 @@ export default function AboutSRI() {
 	return (
 		<NoHydration>
 			<section id={"about"}>
-				<header>
-    <h1>About Sakura's Rig Interface</h1>
-				</header>
+				<div class={"heading"}>
+          <h1>About Sakura's Rig Interface</h1>
+				</div>
 				<div class={"standard-container"}>
 					<p>
 						The Rig Interface extension is an API extension which provides utilities for working with and creating new and using Python based rig interfaces such as those found in use by <A href="/asset/sakura-character-rig" class={"link"}>my own SACR project</A>, <a href="https://www.youtube.com/watch?v=XZZUk8BqVOE" class={"link"} target="_blank">Endertainer's MCS2 rig</a>, <a href="https://www.youtube.com/watch?v=8mnU203_S_s" class={"link"} target="_blank">Timy's Character Rig V7</a>, and several other advanced rigs. This addon is created in Blender's Python API and included operators include:

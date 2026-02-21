@@ -1,8 +1,8 @@
 import { Show, For, createSignal } from "solid-js";
 import addonIndex from "~/jsondata/addon-index.json";
 
-export default function SRIDownloads() {
-	const data = addonIndex.SakuraRigInterface;
+export default function BlenderDevDownloads() {
+	const data = addonIndex.BlenderDevelopment;
 	const stable = data.find(i => i.branch === "stable");
 	const dev = data.find(i => i.branch === "dev");
 
@@ -38,7 +38,7 @@ export default function SRIDownloads() {
 			<div class={"row-container"}>
 				<div class={"row"} id={"stable"}>
 					<h2>Stable Build</h2>
-					<h3>{stable.label}</h3>
+					<h3>{stable.label || "Stable"}</h3>
 					<div class={"stable-builds build-select"}>
 						<For each={stable.builds}>
 							{(build, index) => (
@@ -59,8 +59,8 @@ export default function SRIDownloads() {
 
 						<div class={"download"}>
 							<a href={stableDownloadUrl()} class={"btn"}>Download {stable.builds[stableIndex()].git_tag}</a>
-							<Show when={stable.blender_ext && stable.blender_ext.enabled !== false}>
-								<a href={stable.blender_ext.link || stable.blender_ext} target="_blank" class={"btn"}>Blender Extensions</a>
+							<Show when={stable.jetbrains_info && stable.jetbrains_info.enabled !== false}>
+								<a href={stable.jetbrains_info.link} target="_blank" class={"btn"}>JetBrains Marketplace</a>
 							</Show>
 						</div>
 						<div class={"download-spec"}>
@@ -86,10 +86,10 @@ export default function SRIDownloads() {
 					</div>
 				</div>
 
-				<Show when={dev && dev.enabled}>
+				<Show when={dev && dev.enabled !== false}>
 					<div class={"row"} id={"dev"}>
 						<h2>Development Builds</h2>
-						<h3>{dev.label}</h3>
+						<h3>{dev.label || "Development"}</h3>
 						<div class={"dev-builds build-select"}>
 							<For each={dev.builds}>
 								{(build, index) => (
@@ -134,6 +134,20 @@ export default function SRIDownloads() {
 						</div>
 					</div>
 				</Show>
+			</div>
+
+			<div class={"standard-container"}>
+				<h3>Installation</h3>
+				<p>
+					Since this is an IntelliJ Platform plugin, it must be installed through PyCharm's plugin manager:
+				</p>
+				<ol class={"blender-dev-list"}>
+					<li>Download the latest plugin distribution ZIP file from either the JetBrains Marketplace or the button above.</li>
+					<li>In PyCharm, open <strong>Settings</strong> (or <strong>Preferences</strong> on macOS) &gt; <strong>Plugins</strong>.</li>
+					<li>Click the gear icon (⚙️) next to the "Installed" tab and select <strong>Install Plugin from Disk...</strong>.</li>
+					<li>Navigate to the downloaded ZIP file and click <strong>OK</strong>.</li>
+					<li>Restart PyCharm to complete the installation.</li>
+				</ol>
 			</div>
 		</section>
 	);
