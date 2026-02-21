@@ -1,6 +1,5 @@
 import Nav from "~/components/navigation/nav.jsx";
 import MobileNav from "~/components/navigation/mobile-nav.jsx";
-import { useMobile } from "~/hooks/use-mobile.js";
 import SocialIcon from "~/components/media/social-icon.jsx";
 import Footer from "~/sections/footer.jsx";
 import { SolidMarkdown } from "solid-markdown";
@@ -9,7 +8,6 @@ import { For, Show, createMemo, ErrorBoundary, Suspense } from "solid-js";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 function Resume() {
-  const isMobile = useMobile();
   // Simple parser to split markdown into sections based on ## headers
   const parseResume = (content) => {
     if (!content) return { headerInfo: { name: '', contact: [] }, sections: [] };
@@ -109,13 +107,9 @@ function Resume() {
   return (
     <ErrorBoundary fallback={(err) => <div class="content-container"><h1>Error loading Resume</h1><p>{err.message}</p></div>}>
       <Suspense fallback={<div class="content-container"><p>Loading Resume...</p></div>}>
-        <Show when={isMobile()}>
-          <MobileNav title={"Resume"} />
-        </Show>
+        <MobileNav title={"Resume"} />
         <header id={"resume-header"} style={{"background-image": "image-set(url('/images/headers/about.jxl') type('image/jxl'), url('/images/headers/about.jpg') type('image/jpeg'))"}}>
-          <Show when={!isMobile()}>
-            <Nav title={"Resume"} />
-          </Show>
+          <Nav title={"Resume"} />
           <div class={"header-box"}>
             <div class={"header-position"}>
               <div class={"header-content"}>
