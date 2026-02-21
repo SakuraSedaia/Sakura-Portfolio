@@ -7,22 +7,28 @@ export default function MobileNav(props) {
   const [isOpen, setIsOpen] = createSignal(false);
 
   onCleanup(() => {
-    document.body.style.overflow = "auto";
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = "auto";
+    }
   });
 
   const toggleMenu = () => {
     const newState = !isOpen();
     setIsOpen(newState);
-    if (newState) {
-        document.body.style.overflow = "hidden";
-    } else {
-        document.body.style.overflow = "auto";
+    if (typeof document !== 'undefined') {
+      if (newState) {
+          document.body.style.overflow = "hidden";
+      } else {
+          document.body.style.overflow = "auto";
+      }
     }
   };
 
   const closeMenu = () => {
     setIsOpen(false);
-    document.body.style.overflow = "auto";
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = "auto";
+    }
   };
 
   return (
