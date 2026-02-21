@@ -67,6 +67,10 @@
     margin-bottom: 1rem;
     padding: 1rem;
 
+    &.no-tabs {
+      border-top-left-radius: var(--radius-lg);
+    }
+
     .download-spec {
 
     }

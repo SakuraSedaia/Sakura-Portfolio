@@ -13,7 +13,7 @@ export default function SRIInstructions() {
 					<p>
 						This method is the most recommended as it allows for easy installation and updates of the addon without needing to manually download and install it every time.
 					</p>
-					<ol class={"sri-list"}>
+					<ol class={"styled-list"}>
 						<li>Open Blender, and navigate to User Preferences &gt; Get Extensions</li>
 						<li>If Needed, enable Online Access</li>
 						<li>Search for and install "Sakura's Rig Interface"</li>
@@ -23,7 +23,7 @@ export default function SRIInstructions() {
 					</ol>
 					<h3>Manual Install</h3>
 					<p>To get started with Sakura's Rig Interface, follow these steps:</p>
-					<ol class={"sri-list"}>
+					<ol class={"styled-list"}>
 						<li>Download the Latest release of Sakura's Rig Interfaces Addon from either <A href="/asset/sakura-rig-interface" class={"link"}>above</A> or the <a href="https://extensions.blender.org/add-ons/sakura-rig-interfaces/" class={"link"} target="_blank">Blender Extensions</a> site</li>
 						<li>Open Blender, and navigate to User Preferences &gt; Addons</li>
 						<li>Open the Dropdown Arrow on the Top Right</li>

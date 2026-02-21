@@ -1,32 +1,5 @@
 @use "variables" as *;
 
-body {
-  margin: 0;
-  background-color: hsl(var(--bg-primary-val));
-  background-image: var(--bg-gradient);
-  background-attachment: fixed;
-  color: hsl(var(--tx-primary-val));
-  font-family: var(--font-main), sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-main {
-  min-height: 50vh;
-}
-
-p {
-  letter-spacing: 0.025em;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
 .content-container {
   margin-inline: auto;
   padding-block: 1rem;

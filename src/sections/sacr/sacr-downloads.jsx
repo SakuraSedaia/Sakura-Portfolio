@@ -1,21 +1,20 @@
 import { Show } from "solid-js";
 import rigIndex from "~/jsondata/sacr-index.json";
-import StableDownloads from "./components/stable-downloads";
-import DevDownloads from "./components/dev-downloads";
+import DownloadAssets from "~/components/ui/download-assets.jsx";
 
 export default function SACRDownloads(props) {
-	const stable = rigIndex.stable;
-	const dev = rigIndex.dev;
+	const data = rigIndex.SACR;
+	const branches = data.branches;
 
 	return (
 		<section id={"downloads"}>
-			<header>
+			<div class={"heading"}>
 				<h1>Downloads</h1>
-			</header>
-			<div class={"row-container"}>
-				<StableDownloads data={stable} />
-				<Show when={dev.enabled}>
-					<DevDownloads data={dev} />
+			</div>
+			<div class={"column-container"}>
+				<DownloadAssets json={JSON.stringify(branches.stable)} software={data.software} />
+				<Show when={branches.dev.enabled}>
+					<DownloadAssets json={JSON.stringify(branches.dev)} software={data.software} />
 				</Show>
 			</div>
 		</section>

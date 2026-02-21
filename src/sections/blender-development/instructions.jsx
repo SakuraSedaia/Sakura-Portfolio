@@ -8,8 +8,8 @@ export default function BlenderDevInstructions() {
           <h1>Operating Instructions</h1>
         </div>
         <div class={"standard-container"}>
-          <h2 class={"blender-dev-heading"}>Setup</h2>
-          <ol class={"blender-dev-list"}>
+          <h2 class={"styled-heading"}>Setup</h2>
+          <ol class={"styled-list"}>
             <li>Open <strong>Run/Debug Configurations</strong> (Run &gt; Edit Configurations...).</li>
             <li>Click <strong>+</strong> and select <strong>Blender</strong>.</li>
             <li>(Optional) Open the <strong>Blender Management</strong> tool window on the right sidebar to view, download, or delete managed Blender versions, or to clear the project's <code>.blender_sandbox</code> folder.</li>
@@ -19,10 +19,10 @@ export default function BlenderDevInstructions() {
             <li>(Testing only) Set the <strong>Addon source directory</strong> and optionally a <strong>symlink name</strong>.</li>
             <li>(Optional) In <strong>Settings</strong> &gt; <strong>Tools</strong> &gt; <strong>Blender Extension Integration</strong>, check <strong>Auto-reload extension on save</strong>.</li>
           </ol>
-          <h2 class={"blender-dev-heading"}>Logging and Troubleshooting</h2>
+          <h2 class={"styled-heading"}>Logging and Troubleshooting</h2>
           <p>The plugin maintains a runtime log in the project root: <code>blender_plugin.log</code>. This log contains detailed information about Blender downloads, symbolic links, and startup arguments.</p>
-          <h2 class={"blender-dev-heading"}>Usage</h2>
-          <ul class={"blender-dev-list"}>
+          <h2 class={"styled-heading"}>Usage</h2>
+          <ul class={"styled-list"}>
             <li><strong>Testing:</strong> Create a new <strong>Blender</strong> Run Configuration, select the <strong>Testing</strong> template, and run it.</li>
             <li><strong>Manual Reload:</strong> Go to the <strong>Blender</strong> menu and select <strong>Reload Extension</strong>, or use the shortcut <code>Ctrl+Alt+R</code>.</li>
             <li><strong>Automatic Reload:</strong> If enabled in settings, simply save any file in your project (<code>Ctrl+S</code>).</li>

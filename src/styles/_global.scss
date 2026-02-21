@@ -1,6 +1,29 @@
 @use "variables" as *;
 
 
+body {
+  margin: 0;
+  background-color: hsl(var(--bg-primary-val));
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: hsl(var(--tx-primary-val));
+  font-family: var(--font-main), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  min-height: 50vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 * {
   transition-duration: 100ms;
 }
@@ -28,6 +51,34 @@ h3 {
 
 p {
   letter-spacing: 0.025em;
+}
+
+.styled-list {
+  list-style-position: inside;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  li {
+    margin-bottom: 0.5rem;
+    &::marker {
+      color: var(--tx-accent);
+      font-weight: bold;
+    }
+  }
+}
+
+ul.styled-list {
+  list-style-type: disc;
+}
+
+ol.styled-list {
+  list-style-type: decimal;
+}
+
+.styled-heading {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .btn-center {
@@ -158,7 +209,7 @@ table {
     tr {
       td {
         width: 25%;
-        border: 1px solid var(--bg-contrast-dark);
+        border: 0.0625rem solid var(--bg-contrast-dark);
         padding: 0.5rem;
       }
     }
@@ -166,7 +217,7 @@ table {
   tbody {
     tr {
       td {
-        border: 1px solid var(--bg-contrast-dark);
+        border: 0.0625rem solid var(--bg-contrast-dark);
         padding: 0.5rem;
       }
     }

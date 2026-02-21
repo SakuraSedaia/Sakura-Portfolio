@@ -1,78 +1,74 @@
 {
-	"stable": {
-		"branch": "stable",
-		"label": "Stable",
-		"name": "SACR",
-		"version": "R7.4.1",
-		"github": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
-		"logo": "/images/card-headers/character-rig-7.4",
-		"description": "Rig Interface Addon required to use.",
-		"default": 0,
-		"builds": [
-			{
-				"id": 0,
-				"label": "Packaged",
-				"btn_label": "",
-				"suffix": ".zip",
-				"notes": "Contains both the Standard and Lite builds",
-				"size": "1.5mb",
-				"date": "12/20/2025",
-				"license": "MIT"
+	"SACR": {
+		"name": "Sakura Character Rig",
+		"repo": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
+		"software": "Blender",
+		"branches": {
+			"stable": {
+				"description": "Stable Branch",
+				"path": "assets/blender/SACR/Stable",
+				"namePrefix": "SACR",
+				"license": "MIT",
+				"versions": [
+					{
+						"version": "R7.4.1",
+						"date": "12/20/2025",
+						"changelog": "SACR_R7.4.1",
+						"builds": [
+							{
+								"label": "Packaged",
+								"fileName": "SACR_R7.4.1.zip",
+								"size": "1.5mb",
+								"notes": "Contains both the Standard and Lite builds"
+							},
+							{
+								"label": "Standard",
+								"fileName": "SACR_R7.4.1.blend",
+								"size": "7.84mb",
+								"notes": "This only downloads the Standard build of the rig"
+							},
+							{
+								"label": "Lite",
+								"fileName": "SACR_R7.4.1_L.blend",
+								"size": "4.92mb",
+								"notes": "This only downloads the Lite build of the rig"
+							}
+						]
+					}
+				]
 			},
-			{
-				"id": 1,
-				"label": "Standard",
-				"btn_label": "Standard",
-				"suffix": ".blend",
-				"notes": "This only downloads the Standard build of the rig",
-				"size": "7.84mb",
-				"date": "12/20/2025",
-				"license": "MIT"
-			},
-			{
-				"id": 2,
-				"label": "Lite",
-				"btn_label": "Lite",
-				"suffix": "_L.blend",
-				"notes": "This only downloads the Lite build of the rig",
-				"size": "4.92mb",
-				"date": "12/20/2025",
-				"license": "MIT"
+			"dev": {
+				"description": "Development Branch",
+				"path": "assets/blender/SACR/Dev",
+				"namePrefix": "SACR",
+				"enabled": true,
+				"versions": [
+					{
+						"version": "D8.0 A3",
+						"date": "10/24/2025",
+						"builds": [
+							{
+								"fileName": "SACR.D8.Alpha.3.zip",
+								"size": "399kb",
+								"notes": "UI Script located inside Archive, can be run as a script or installed as an Addon",
+								"license": "MIT"
+							}
+						]
+					},
+					{
+						"version": "D8.0 A2",
+						"date": "10/04/2025",
+						"builds": [
+							{
+								"fileName": "SACR_D8_A02.blend",
+								"size": "254kb",
+								"notes": "UI Script located inside Archive, can be run as a script or installed as an Addon",
+								"license": "MIT"
+							}
+						]
+					}
+				]
 			}
-		]
-	},
-	"dev": {
-		"branch": "dev",
-		"label": "Development",
-		"name": "SACR",
-		"github": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
-		"logo": "/images/card-headers/character-rig-dev",
-		"description": "A Development build of an upcoming SACR Release, not recommended for production use",
-		"default": 0,
-		"builds": [
-			{
-				"id": 0,
-				"version": "D8.0 A3",
-				"label": "8.0 A3 (.zip)",
-				"git_tag": "D8.0.0-alpha-03",
-				"fileName": "SACR.D8.Alpha.3.zip",
-				"notes": "UI Script located inside Archive, can be run as a script or installed as an Addon",
-				"size": "399kb",
-				"date": "10/24/2025",
-				"license": "MIT"
-			},
-			{
-				"id": 1,
-				"version": "D8.0 A2",
-				"label": "8.0 A2 (.blend)",
-				"git_tag": "D8.0.0-alpha-02",
-				"fileName": "SACR_D8_A02.blend",
-				"notes": "UI Script located inside Archive, can be run as a script or installed as an Addon",
-				"size": "254kb",
-				"date": "10/04/2025",
-				"license": "MIT"
-			}
-		],
-		"enabled": true
+		}
 	}
 }

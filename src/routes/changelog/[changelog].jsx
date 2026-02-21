@@ -42,8 +42,8 @@ const getChangelog = cache(async (item) => {
 
 export default function Changelog() {
 	const params = useParams();
-	console.log("Changelog component rendering for item:", params.item);
-	const content = createAsync(() => getChangelog(params.item));
+	console.log("Changelog component rendering for:", params.changelog);
+	const content = createAsync(() => getChangelog(params.changelog));
 
 	const parseChangelog = (content) => {
 		if (!content) return [];
@@ -87,11 +87,11 @@ export default function Changelog() {
 
 	return (
 		<>
-			<Header title={params.item ? `Changelog - ${params.item}` : "Changelog"} img="rigs" />
+			<Header title={params.changelog ? `Changelog - ${params.changelog}` : "Changelog"} img="rigs" />
 			<main class={"content-container"}>
 				<Breadcrumb items={[
 					{ label: "Changelogs", href: "/changelog" },
-					{ label: params.item || "Current" }
+					{ label: params.changelog || "Current" }
 				]} />
 				<section class={"changelog"}>
 					<ErrorBoundary fallback={(err) => (

@@ -17,8 +17,8 @@ export default function AboutBlenderDev() {
           <p>
             Blender Extension Development integration for PyCharm. This plugin allows you to launch Blender from within PyCharm and automatically or manually reload your Blender extensions during development.
           </p>
-          <h2 class={"blender-dev-heading"}>Features</h2>
-          <ul class={"blender-dev-list"}>
+          <h2 class={"styled-heading"}>Features</h2>
+          <ul class={"styled-list"}>
             <li><strong>Testing:</strong> Launch a Blender instance in a development environment with auto-reload, sandboxing, and symlinking enabled.</li>
             <li><strong>Auto-Reload:</strong> Automatically reload your extension in Blender whenever you save a file in PyCharm.</li>
             <li><strong>Manual Reload:</strong> Trigger a reload manually using a keyboard shortcut or menu action.</li>
