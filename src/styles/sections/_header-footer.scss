@@ -40,6 +40,7 @@ nav {
     margin-top: 1rem;
     border: 0.125rem solid hsla(var(--tx-contrast-accent-val), 30%);
     box-shadow: 0 0 .2rem hsla(var(--tx-contrast-accent-val), 50%);
+    backdrop-filter: blur(0.25rem);
     
     .nav-col {
       display: inline-block;
@@ -177,74 +178,16 @@ nav {
   }
 }
 
-// Navigation and Header Mobile Responsive
-@media screen and (max-width: 720px) {
-  header {
-    .header-box {
-      padding-inline: 1rem;
-      margin-top: 2rem;
-      text-align: center;
-
-      .header-content {
-        display: inline-block;
-      }
-    }
-  }
-
-  nav {
-    .nav-container {
-      display: inline-block;
-      padding: 0.5rem 0;
-      border-radius: 0;
-      max-width: 100%;
-      border-inline-width: 0;
-      margin-bottom: 0;
-
-      .nav-title {
-        display: block;
-        margin-bottom: 1rem;
-        margin-inline: auto;
-        width: 80%;
-      }
-
-      .nav-router {
-        display: flex;
-        text-align: center;
-
-        .nav-item {
-          display: inline-block;
-          margin-bottom: 0.5rem;
-        }
-      }
-    }
-
-    .sub-navigation {
-      text-align: center;
-      border-radius: var(--radius-lg);
-      margin-top: 0;
-      display: inline-block;
-      margin-inline: 0;
-      padding-inline: 0;
-      border-top-right-radius: 0;
-      border-top-left-radius: 0;
-
-      .nav-item {
-        display: inline-block;
-        margin-block: 0.25rem;
-      }
-
-      .nav-arrow {
-        display: none;
-      }
-    }
-  }
-}
-
 // Footer Styling
 footer {
   background-color: hsl(var(--bg-secondary-val));
   padding: 1rem;
   text-align: center;
+  .footer-socials {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
   nav {
     padding-bottom: 2rem;
     text-align: center;
@@ -254,13 +197,12 @@ footer {
       list-style-type: none;
       padding: 0;
       text-align: center;
-      h2 {
-        margin-block: 0;
-      }
+      margin-top: 0;
+      
       li {
         display: inline-block;
-        padding: 0.5rem;
-
+        padding: 0 0.5rem 0.5rem;
+        
         a {
           color: hsl(var(--tx-primary-val));
           display: flex;
@@ -271,6 +213,82 @@ footer {
             color: hsl(var(--tx-accent-val));
           }
         }
+      }
+    }
+  }
+}
+
+
+// Navigation and Header Mobile Responsive
+@media screen and (max-width: 720px) {
+  body {
+    padding-bottom: 8rem;
+  }
+
+  header {
+    .header-box {
+      padding-inline: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+      
+      .header-content {
+        display: inline-block;
+      }
+    }
+  }
+  
+  header nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: hsla(var(--bg-primary-val), 75%);
+    backdrop-filter: blur(0.25rem);
+    border-top: 0.0625rem solid hsla(var(--tx-primary-val), 15%);
+
+    br {
+      display: none;
+    }
+
+    .nav-container {
+      display: inline-block;
+      padding: 0.5rem 0;
+      border-radius: 0;
+      max-width: 100%;
+      border-inline-width: 0;
+      margin-bottom: 0;
+      
+      .nav-title {
+        display: none;
+      }
+      
+      .nav-router {
+        display: flex;
+        text-align: center;
+        
+        .nav-item {
+          display: inline-block;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+    
+    .sub-navigation {
+      text-align: center;
+      border-radius: 0;
+      margin-top: 0;
+      display: inline-block;
+      margin-inline: 0;
+      padding-inline: 0;
+      
+      .nav-item {
+        display: inline-block;
+        margin-block: 0.25rem;
+      }
+      
+      .nav-arrow {
+        display: none;
       }
     }
   }

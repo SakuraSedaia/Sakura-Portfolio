@@ -10,9 +10,11 @@ function Footer() {
 
   return (
     <footer>
+	    <div class={"footer-socials"}>
+	      <h2>Socials</h2>
+	    </div>
       <nav class={"socials"}>
         <ul>
-          <h2>Socials</h2>
           <li>
             <a href={"https://github.com/SakuraSedaia"} class={"link"}>
               <SocialIcon name={"github"}/> Github
