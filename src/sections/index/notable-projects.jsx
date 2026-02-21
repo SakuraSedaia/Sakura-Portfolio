@@ -15,7 +15,7 @@ export default function NotableProjects() {
 						<h1>Frostlight Studios</h1>
 						<hr />
 						<div class={"notable-img"}>
-							<OptimizedImage src={"/images/card-headers/frostlight-studio-website"} alt={"Frostlight Studios"} />
+							<OptimizedImage src={"/images/card-headers/frostlight-studios-org-preview"} alt={"Frostlight Studios"} />
 						</div>
 						<p>
 							The Frostlight Studios website is an evolution on an old static html design, using SolidJS to create a
@@ -42,7 +42,7 @@ export default function NotableProjects() {
 						<h1>Rig Interface</h1>
 						<hr />
 						<OptimizedImage
-							src={"/images/rig-headers/rig-interface/rig-interface-3"}
+							src={"/images/card-headers/rig-interface-3"}
 							alt={"Rig Interface Logo V3"}
 						/>
 						<p>
@@ -52,7 +52,7 @@ export default function NotableProjects() {
 						</p>
 						<div class={"projects-link"}>
 							<A
-								href={"/asset/sakura-rig-interface"}
+								href={"/plugin/sakura-rig-interface"}
 								class={"btn"}
 							>
 								Go to Page

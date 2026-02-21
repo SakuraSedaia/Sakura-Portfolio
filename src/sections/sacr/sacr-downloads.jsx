@@ -12,9 +12,9 @@ export default function SACRDownloads(props) {
 				<h1>Downloads</h1>
 			</div>
 			<div class={"column-container"}>
-				<DownloadAssets json={JSON.stringify(branches.stable)} software={data.software} />
+				<DownloadAssets json={JSON.stringify(branches.stable)} software={data.software} repo={data.repo}/>
 				<Show when={branches.dev.enabled}>
-					<DownloadAssets json={JSON.stringify(branches.dev)} software={data.software} />
+					<DownloadAssets json={JSON.stringify(branches.dev)} software={data.software} repo={data.repo}/>
 				</Show>
 			</div>
 		</section>

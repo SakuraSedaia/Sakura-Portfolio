@@ -5,7 +5,7 @@ import OptimizedImage from "~/components/media/optimized-image.jsx";
 export default function PluginCard(props) {
   const plugin = props.data;
   return (
-    <div class={"column"}>
+    <div class={"grid-item split"}>
       <Show when={plugin.logo}>
         <OptimizedImage
           src={plugin.logo}

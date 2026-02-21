@@ -3,7 +3,10 @@
 		"name": "Blender Development Plugin",
 		"repo": "https://github.com/Sakura-Sedaia/BlenderExtensions",
 		"software": "PyCharm",
-		"distribution":{
+		"description": "A PyCharm plugin to help develop blender addons and scripts with ease.",
+		"logo": "/images/card-headers/blend-dev-prototype",
+		"featured": false,
+		"jetbrains_info":{
 			"platform": "intellij",
 			"link": "",
 			"id": 0,
@@ -42,7 +45,9 @@
 		"software": "Blender",
 		"license": "GNU/GPL V3",
 		"description": "A Blender Addon for creating rigs and rigs controllers.",
-		"distribution": {
+		"logo": "/images/card-headers/rig-interface-3",
+		"featured": false,
+		"blender_ext": {
 			"platform": "blender_ext",
 			"link": "https://extensions.blender.org/add-ons/sakura-rig-gui/",
 			"id": 0,

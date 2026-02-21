@@ -154,6 +154,20 @@
           border: 0.125rem solid hsla(var(--bg-contrast-light-val), 40%);
         }
 
+        &.split {
+          border-radius: var(--radius-lg);
+          overflow: hidden;
+          width: 90%;
+          margin-inline: auto;
+          padding: 1rem;
+          border: 0.125rem solid hsla(var(--bg-contrast-light-val), 10%);
+          box-shadow: var(--box-shadow-lg);
+          min-height: fit-content;
+          height: auto;
+          margin-bottom: 1rem;
+          background-color: hsla(var(--bg-primary-val), 50%);
+        }
+
         &.emphasis {
           // Apply this attribute for grid cards which need extra visual emphasis
           background-color: hsla(var(--bg-accent-val));

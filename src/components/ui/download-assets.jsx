@@ -159,6 +159,10 @@ export default function DownloadAssets(props) {
 					<h2>Changes Summary</h2>
 					<p>{build()?.notes}</p>
 					<A href={`/changelog/${build()?.changelog || `${branch.namePrefix}_${build()?.version}`}`} class={"link"}>View full Changelog</A>
+					<Show when={props.repo}>
+						{" - "}
+						<a href={props.repo} target="_blank" class={"link"}>Repository</a>
+					</Show>
 				</div>
 			</div>
 		</div>
