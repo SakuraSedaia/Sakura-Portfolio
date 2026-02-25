@@ -34,6 +34,7 @@ header nav {
     color: hsl(var(--tx-primary-val));
 
     width: 100%;
+    max-width: 80rem;
     display: inline-flex;
     border-radius: var(--radius-lg);
     margin-top: 1rem;
@@ -78,10 +79,10 @@ header nav {
 
       .nav-router-bg {
         background-color: hsla(var(--bg-primary-val), 75%);
-        border-radius: var(--radius-lg);
+        border-radius: var(--radius-xl);
         width: fit-content;
         display: inline-block;
-        padding-block: 0.25rem;
+        padding: 0.25rem;
         
         .nav-item {
           display: inline-block;
@@ -113,6 +114,20 @@ header nav {
                 color: hsl(var(--tx-primary-val)) !important;
                 border-radius: var(--radius-lg);
               }
+            }
+          }
+          
+          &:first-child {
+            padding-left: 0;
+            a {
+              border-bottom-left-radius: var(--radius-lg) !important;
+            }
+          }
+          
+          &:last-child {
+            padding-right: 0;
+            a {
+              border-bottom-right-radius: var(--radius-lg) !important;
             }
           }
         }

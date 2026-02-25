@@ -2,6 +2,8 @@ import Nav from "~/components/navigation/nav.jsx";
 import MobileNav from "~/components/navigation/mobile-nav.jsx";
 import SocialIcon from "~/components/media/social-icon.jsx";
 import { A } from "@solidjs/router";
+
+
 export default function About() {
   const bgImg = {
     "background-image": "image-set(url('/images/headers/about.jxl') type('image/jxl'), url('/images/headers/about.jpg') type('image/jpeg'))"
