@@ -87,20 +87,18 @@ header nav {
         
         .nav-item {
           display: inline-block;
-          padding-inline: 0.5rem;
           
           a {
             color: hsl(var(--tx-primary-val));
-            padding-inline: 0.5rem;
+            padding-inline: 1rem;
             display: inline-block;
             cursor: pointer;
             border: 0.125rem solid transparent;
-            border-radius: var(--radius-lg);
             
             &:hover {
               color: hsl(var(--tx-accent-val));
-              border-color: hsl(var(--tx-accent-val));
-              border-radius: var(--radius-lg);
+              border-bottom-color: hsl(var(--tx-accent-val));
+              background-color: hsla(var(--tx-accent-val), 0.1);
             }
             
             //noinspection ALL
@@ -112,9 +110,9 @@ header nav {
               border-bottom-left-radius: 0;
               
               &:hover {
-                border: 0.125rem solid hsl(var(--tx-primary-val)) !important;
+                border-bottom: 0.125rem solid hsl(var(--tx-primary-val)) !important;
+                background-color: hsla(var(--tx-primary-val), 0.1);
                 color: hsl(var(--tx-primary-val)) !important;
-                border-radius: var(--radius-lg);
               }
             }
           }
@@ -123,6 +121,7 @@ header nav {
             padding-left: 0;
             a {
               border-bottom-left-radius: var(--radius-lg) !important;
+              border-top-left-radius: var(--radius-lg) !important;
             }
           }
           
@@ -130,6 +129,7 @@ header nav {
             padding-right: 0;
             a {
               border-bottom-right-radius: var(--radius-lg) !important;
+              border-top-right-radius: var(--radius-lg) !important;
             }
           }
         }
@@ -154,32 +154,32 @@ header nav {
     .sub-nav-item {
       display: inline-block;
       padding-inline: 0.5rem;
-
+      
       a {
         color: hsl(var(--tx-primary-val));
-        padding-inline: 0.5rem;
+        padding-inline: .5rem;
         display: inline-block;
         cursor: pointer;
         border: 0.125rem solid transparent;
-        border-radius: var(--radius-lg);
-
+        
         &:hover {
           color: hsl(var(--tx-accent-val));
-          border-color: hsl(var(--tx-accent-val));
-          border-radius: var(--radius-lg);
+          border-bottom-color: hsl(var(--tx-accent-val));
+          background-color: hsla(var(--tx-accent-val), 0.1);
         }
-
+        
+        //noinspection ALL
         &.active {
+          color: hsl(var(--tx-accent-val));
           font-weight: 600;
           border-bottom-color: hsl(var(--tx-accent-val)) !important;
           border-bottom-right-radius: 0;
           border-bottom-left-radius: 0;
-          color: hsl(var(--tx-accent-val));
-
+          
           &:hover {
-            border: 0.125rem solid hsl(var(--tx-primary-val)) !important;
+            border-bottom: 0.125rem solid hsl(var(--tx-primary-val)) !important;
+            background-color: hsla(var(--tx-primary-val), 0.1);
             color: hsl(var(--tx-primary-val)) !important;
-            border-radius: var(--radius-lg);
           }
         }
       }
