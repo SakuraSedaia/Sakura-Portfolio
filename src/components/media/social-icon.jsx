@@ -11,6 +11,7 @@ export default function SocialIcon(props) {
     twitch: "bi-logos-twitch",
     twitter: "bi-logos-twitter",
     envelope: "bi-envelope",
+	  globe: "bi-globe",
   };
 
   const iconName = icons[props.name];
@@ -18,7 +19,7 @@ export default function SocialIcon(props) {
   if (!iconName) return null;
 
   return (
-    <svg viewBox="0 0 24 24" fill="currentColor" class={props.class}>
+    <svg viewBox="0 0 24 24" fill="currentColor" class={`icon`}>
       <use href={`/images/vectors/${iconName}.svg#${iconName}`} />
     </svg>
   );
