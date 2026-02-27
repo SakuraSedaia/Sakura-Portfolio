@@ -12,7 +12,8 @@ header {
     max-width: 80rem;
     margin: 0 auto;
     padding-inline: 6rem;
-
+    
+    //noinspection CssInvalidFunction
     .header-content {
       width: fit-content;
       padding: 1rem;
@@ -102,6 +103,7 @@ header nav {
               border-radius: var(--radius-lg);
             }
             
+            //noinspection ALL
             &.active {
               color: hsl(var(--tx-accent-val));
               font-weight: 600;
@@ -188,6 +190,13 @@ header nav {
       padding-inline: 0.5rem;
       color: hsl(var(--tx-primary-val));
     }
+  }
+  
+  .sub-nav-spacer {
+    width: 100%;
+    height: 2rem;
+    content: "";
+    display: block;
   }
 }
 
