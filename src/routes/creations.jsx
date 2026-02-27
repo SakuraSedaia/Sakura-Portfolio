@@ -3,20 +3,27 @@ import Footer from "~/sections/footer.jsx";
 import NotFinished from "~/components/ui/not-finished.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
+import { A } from "@solidjs/router";
 
 function Creations() {
   return (
     <ErrorBoundary fallback={(err) => <div class="content-container">Error: {err.message}</div>}>
       <Suspense fallback={<div class="content-container">Loading...</div>}>
         <Header title={"My Works"} img={"about"} />
-
-        <div class={"content-container"}>
+        <main class={"content-container"}>
 	        <Breadcrumb items={[
 		        { label: "Creations", href: "/creations" }
 	        ]} />
+	        <div>
+		        <h2 style={"padding-left: 3rem;"}>Router</h2>
+		        <ul class={"styled-list"}>
+			        <li><A href={"/creation/renders"} class={"link"}>Renders</A></li>
+			        <li><A href={"/creation/animations"} class={"link"}>Animations</A></li>
+			        <li><A href={"/creation/www"} class={"link"}>Websites</A></li>
+		        </ul>
+	        </div>
           <NotFinished />
-        </div>
-
+        </main>
         <Footer />
       </Suspense>
     </ErrorBoundary>

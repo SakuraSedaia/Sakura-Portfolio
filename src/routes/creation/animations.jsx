@@ -6,13 +6,13 @@ function Animations() {
   return (
     <>
       <Header title={"Animations"} img={"rigs"} />
-      <div class={"content-container"}>
+      <main class={"content-container"}>
         <Breadcrumb items={[
           { label: "Creations", href: "/creations" },
           { label: "Animations" }
         ]} />
         <NotFinished />
-      </div>
+      </main>
       <Footer />
     </>
   );

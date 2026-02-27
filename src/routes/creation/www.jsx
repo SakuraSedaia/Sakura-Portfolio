@@ -9,7 +9,7 @@ function WWW() {
     <ErrorBoundary fallback={(err) => <div class="content-container">Error: {err.message}</div>}>
       <Suspense fallback={<div class="content-container">Loading...</div>}>
         <Header title={"Web Development"} img={"about"} />
-        <div class={"content-container"}>
+        <main class={"content-container"}>
           <Breadcrumb items={[
             { label: "Creations", href: "/creations" },
             { label: "Web Dev" }
@@ -20,7 +20,7 @@ function WWW() {
             </header>
             <OptimizedImage src="/images/card-headers/frostlight-studios-org-preview" alt="Frostlight Studios" />
           </section>
-        </div>
+        </main>
         <Footer />
       </Suspense>
     </ErrorBoundary>

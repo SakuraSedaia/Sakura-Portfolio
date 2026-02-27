@@ -9,13 +9,13 @@ function Renders() {
     <ErrorBoundary fallback={(err) => <div class="content-container">Error: {err.message}</div>}>
       <Suspense fallback={<div class="content-container">Loading...</div>}>
         <Header title={"Renders"} img={"commissions"} />
-        <div class={"content-container"}>
+        <main class={"content-container"}>
           <Breadcrumb items={[
             { label: "Creations", href: "/creations" },
             { label: "Renders" }
           ]} />
           <CharGallery />
-        </div>
+        </main>
         <Footer />
       </Suspense>
     </ErrorBoundary>

@@ -11,8 +11,7 @@ function SACR() {
     <ErrorBoundary fallback={(err) => <div class="content-container">Error: {err.message}</div>}>
       <Suspense fallback={<div class="content-container">Loading...</div>}>
         <Header title="Sakura Minecraft Character Rig" img="sacr" />
-
-        <div class={"content-container sacr-container"}>
+        <main class={"content-container sacr-container"}>
           <Breadcrumb items={[
             { label: "Assets", href: "/assets" },
             { label: "Sakura Character Rig" }
@@ -20,7 +19,7 @@ function SACR() {
           <AboutSACR />
           <SACRDownloads />
           <SACRInstructions />
-        </div>
+        </main>
         <Footer />
       </Suspense>
     </ErrorBoundary>
