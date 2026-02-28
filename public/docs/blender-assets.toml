@@ -1,0 +1,19 @@
+[blender]
+files = [
+    "sakura_vanilla_tools_and_weapons.blend",
+    "SoW_Armory_Season1.blend",
+    "uv_block_base.blend"
+]
+
+[blender.SACR]
+directories = ["Dev", "Stable"]
+
+[blender.SACR.Stable]
+files = [
+    "SACR_R7.4.1_L.blend",
+    "SACR_R7.4.1.blend",
+    "SACR_R7.4.1.zip"
+]
+
+[blender.SACR.Dev]
+files = []

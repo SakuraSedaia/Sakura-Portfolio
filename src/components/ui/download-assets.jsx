@@ -14,6 +14,7 @@ export default function DownloadAssets(props) {
 			map.set(v.version, v.builds.map(b => ({
 				...b,
 				version: v.version,
+				fileName: b.fileName || v.fileName,
 				date: b.date || v.date,
 				changelog: b.changelog || v.changelog,
 				compatibility: b.compatibility || v.compatibility
@@ -34,8 +35,7 @@ export default function DownloadAssets(props) {
 
 	const filePath = createMemo(() => {
 		if (!build()) return "";
-		if (build().fileName) return `${branch.path}/${build().fileName}`;
-		return `${branch.path}/${branch.namePrefix}_${build().version}.zip`;
+		return `${branch.path}/${build().fileName}`;
 	});
 
 	let dropdownRef;
@@ -158,7 +158,7 @@ export default function DownloadAssets(props) {
 				<div class={"download-notes"}>
 					<h2>Changes Summary</h2>
 					<p>{build()?.notes}</p>
-					<A href={`/changelog/${build()?.changelog || `${branch.namePrefix}_${build()?.version}`}`} class={"link"}>View full Changelog</A>
+					<A href={`/changelog/${build()?.changelog || build()?.fileName?.replace(".zip", "") || `${branch.namePrefix}_${build()?.version}`}`} class={"link"}>View full Changelog</A>
 					<Show when={props.repo}>
 						{" - "}
 						<a href={props.repo} target="_blank" class={"link"}>Repository</a>

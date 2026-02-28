@@ -8,24 +8,26 @@ export default function BlenderDevInstructions() {
           <h1>Operating Instructions</h1>
         </div>
         <div class={"standard-container"}>
-          <h2 class={"styled-heading"}>Setup</h2>
+          <div class={"notice"}>
+            <h3>More In-Depth Documentation</h3>
+            <p>
+              For more detailed documentation, including in-depth configuration, architectural overviews, and usage guides, please visit the official <a href="https://wiki.sakura-sedaia.com/docs/blender-development-pycharm/index.html" target="_blank" class={"link"}>Blender Development for PyCharm Wiki</a>.
+            </p>
+          </div>
+          <h2 class={"styled-heading"}>Configuration and Setup</h2>
           <ol class={"styled-list"}>
-            <li>Open <strong>Run/Debug Configurations</strong> (Run &gt; Edit Configurations...).</li>
-            <li>Click <strong>+</strong> and select <strong>Blender</strong>.</li>
-            <li>(Optional) Open the <strong>Blender Management</strong> tool window on the right sidebar to view, download, or delete managed Blender versions, or to clear the project's <code>.blender_sandbox</code> folder.</li>
-            <li>Choose a configuration template: <strong>Testing</strong>, <strong>Build</strong>, <strong>Validate</strong>, or <strong>Command</strong>.</li>
-            <li>Choose a Blender version from the <strong>Blender version</strong> dropdown (4.2+). Blender 5.0 is the default version.</li>
-            <li>(Testing only) Toggle <strong>Enable Sandboxing</strong> to isolate your development environment.</li>
-            <li>(Testing only) Set the <strong>Addon source directory</strong> and optionally a <strong>symlink name</strong>.</li>
-            <li>(Optional) In <strong>Settings</strong> &gt; <strong>Tools</strong> &gt; <strong>Blender Extension Integration</strong>, check <strong>Auto-reload extension on save</strong>.</li>
+            <li>In PyCharm, install the plugin from disk via <strong>Settings</strong> &gt; <strong>Plugins</strong> &gt; Gear Icon.</li>
+            <li>Create a new <strong>Blender</strong> Run Configuration (Testing, Build, Validate, or Command).</li>
+            <li>Select your <strong>Blender version</strong> and optionally enable <strong>Sandboxing</strong> for project isolation.</li>
+            <li>Enable <strong>Auto-reload extension on save</strong> in <strong>Settings</strong> &gt; <strong>Tools</strong> &gt; <strong>Blender Extension Integration</strong>.</li>
           </ol>
-          <h2 class={"styled-heading"}>Logging and Troubleshooting</h2>
-          <p>The plugin maintains a runtime log in the project root: <code>blender_plugin.log</code>. This log contains detailed information about Blender downloads, symbolic links, and startup arguments.</p>
+          <h2 class={"styled-heading"}>Blender Management</h2>
+          <p>The <strong>Blender Management</strong> tool window on the right sidebar allows you to download Blender versions (4.2+ to 5.0) and manage your <code>.blender-sandbox</code> folder.</p>
           <h2 class={"styled-heading"}>Usage</h2>
           <ul class={"styled-list"}>
-            <li><strong>Testing:</strong> Create a new <strong>Blender</strong> Run Configuration, select the <strong>Testing</strong> template, and run it.</li>
-            <li><strong>Manual Reload:</strong> Go to the <strong>Blender</strong> menu and select <strong>Reload Extension</strong>, or use the shortcut <code>Ctrl+Alt+R</code>.</li>
-            <li><strong>Automatic Reload:</strong> If enabled in settings, simply save any file in your project (<code>Ctrl+S</code>).</li>
+            <li><strong>Automatic Reload:</strong> Triggered on file save (<code>Ctrl+S</code>) once enabled in settings.</li>
+            <li><strong>Manual Reload:</strong> Use <code>Ctrl+Alt+R</code> or the <strong>Blender</strong> &gt; <strong>Reload Extension</strong> menu.</li>
+            <li><strong>Custom Splash:</strong> Add <code>splash.png</code> to your project root to personalize sandboxed sessions.</li>
           </ul>
         </div>
       </section>

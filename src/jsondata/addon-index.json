@@ -16,17 +16,18 @@
 			"stable": {
 				"description": "Stable Branch",
 				"path": "plugins/intellij/blend-charm-stable",
-				"namePrefix": "BlendCharmStable",
 				"versions": [
 					{
-						"version": "1.0.0",
-						"date": "MM/DD/YYYY",
+						"version": "0.1.0-Snapshot-01",
+						"label": "0.1.0 Alpha",
+						"date": "02/28/2026",
+						"fileName": "BlenderExtensions-0.1.0-SNAPSHOT-01.zip",
 						"builds": [
 							{
-								"size": "-.-- MB",
-								"license": "",
-								"notes" : "Coming Soon",
-								"disabled": true
+								"size": "3.44 MB",
+								"license": "GNU/GPL V3",
+								"notes" : "",
+								"disabled": false
 							}
 						]
 					}
@@ -57,11 +58,11 @@
 			"stable": {
 				"description": "Stable builds of the Rig Interface Collection.",
 				"path": "plugins/blender/sri-stable",
-				"namePrefix": "Sakura_Rig_GUI",
 				"versions": [
 					{
 						"version": "V3.1.0",
 						"date": "10/21/2025",
+						"fileName": "Sakura_Rig_GUI_V3.1.0.zip",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -76,6 +77,7 @@
 					{
 						"version": "V3.0.0",
 						"date": "12/10/2025",
+						"fileName": "Sakura_Rig_GUI_V3.0.0.zip",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -90,6 +92,7 @@
 					{
 						"version": "V2.0.0",
 						"date": "10/04/2025",
+						"fileName": "Sakura_Rig_GUI_V2.0.0.zip",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -104,6 +107,7 @@
 					{
 						"version": "V1.2.0",
 						"date": "09/15/2025",
+						"fileName": "Sakura_Rig_GUI_V1.2.0.zip",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -118,6 +122,7 @@
 					{
 						"version": "V1.1.0",
 						"date": "08/20/2025",
+						"fileName": "Sakura_Rig_GUI_V1.1.0.zip",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -132,6 +137,7 @@
 					{
 						"version": "V1.0.1",
 						"date": "07/29/2025",
+						"fileName": "Sakura_Rig_GUI_V1.0.1.zip",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -146,6 +152,7 @@
 					{
 						"version": "V1.0.0",
 						"date": "07/21/2025",
+						"fileName": "Sakura_Rig_GUI_V1.0.0.zip",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -162,20 +169,20 @@
 			"dev": {
 				"description": "Development Branch",
 				"path": "plugins/blender/sri-dev",
-				"namePrefix": "Sakura_Rig_GUI_Dev",
 				"enabled": false,
 				"versions": [
 					{
 						"version": "V0.0.0",
 						"date": "MM/DD/YYYY",
-						"compatibility":  {
+						"fileName": "Sakura_Rig_GUI_V0.0.0.zip",
+						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
 						},
 						"builds": [
 							{
 								"size": "--.-- KB",
-								"notes" : "Initial development version"
+								"notes": "Initial development version"
 							}
 						]
 					}
