@@ -2,6 +2,7 @@ import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import NotFinished from "~/components/ui/not-finished.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
+import { A } from "@solidjs/router";
 import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
