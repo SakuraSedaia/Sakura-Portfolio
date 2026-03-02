@@ -5,9 +5,20 @@ import Footer from "~/sections/footer.jsx";
 import { SolidMarkdown } from "solid-markdown";
 import resumeContent from "~/markdown/resume.md?raw";
 import { For, Show, createMemo, ErrorBoundary, Suspense } from "solid-js";
+import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
+import { useLocation } from "@solidjs/router";
+import Routes from "~/jsondata/routes.json";
 
 function Resume() {
+  const location = useLocation();
+
+  const isHiddenFromSearch = createMemo(() => {
+    const path = location.pathname.replace(/^\/|\/$/g, "");
+    const mainRoute = Routes.find(r => r.path === path);
+    return !!mainRoute?.hide_from_search;
+  });
+
   // Simple parser to split markdown into sections based on ## headers
   const parseResume = (content) => {
     if (!content) return { headerInfo: { name: '', contact: [] }, sections: [] };
@@ -107,6 +118,11 @@ function Resume() {
   return (
     <ErrorBoundary fallback={(err) => <div class="content-container"><h1>Error loading Resume</h1><p>{err.message}</p></div>}>
       <Suspense fallback={<div class="content-container"><p>Loading Resume...</p></div>}>
+        <Show when={isHiddenFromSearch()}>
+          <Meta name="robots" content="noindex, nofollow" />
+        </Show>
+        <Title>Resume - Sedaia Designs</Title>
+        <Meta name="description" content="Professional resume and experience of Sedaia Designs, showcasing technical expertise and past projects." />
         <MobileNav title={"Resume"} />
         <header id={"resume-header"} style={{"background-image": "image-set(url('/images/headers/about.jxl') type('image/jxl'), url('/images/headers/about.jpg') type('image/jpeg'))"}}>
           <Nav title={"Resume"} />

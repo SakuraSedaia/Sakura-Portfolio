@@ -1,8 +1,31 @@
 import Nav from "~/components/navigation/nav.jsx";
 import MobileNav from "~/components/navigation/mobile-nav.jsx";
-import { Show } from "solid-js";
+import { Show, createMemo } from "solid-js";
+import { useLocation } from "@solidjs/router";
+import { Meta } from "@solidjs/meta";
+import Routes from "~/jsondata/routes.json";
 
 export default function Header(props) {
+  const location = useLocation();
+
+  const isHiddenFromSearch = createMemo(() => {
+    const path = location.pathname.replace(/^\/|\/$/g, "");
+    
+    // Check main routes
+    const mainRoute = Routes.find(r => r.path === path || (r.path === "" && path === ""));
+    if (mainRoute?.hide_from_search) return true;
+
+    // Check subpages
+    for (const route of Routes) {
+      if (route.subpages) {
+        const subpage = route.subpages.find(s => s.path === path);
+        if (subpage?.hide_from_search) return true;
+      }
+    }
+
+    return false;
+  });
+
   const bgImg = () => {
     const path = `/images/headers/${props.img}`;
     return {
@@ -17,6 +40,9 @@ export default function Header(props) {
 
   return (
     <>
+      <Show when={isHiddenFromSearch()}>
+        <Meta name="robots" content="noindex, nofollow" />
+      </Show>
       <MobileNav title={page_title} />
       <header style={bgImg()}>
         {/* Navigation Content */}

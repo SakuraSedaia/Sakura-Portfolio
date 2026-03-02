@@ -2,13 +2,15 @@ import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import NotFinished from "~/components/ui/not-finished.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
+import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
-import { A } from "@solidjs/router";
 
 function Creations() {
   return (
     <ErrorBoundary fallback={(err) => <div class="content-container">Error: {err.message}</div>}>
       <Suspense fallback={<div class="content-container">Loading...</div>}>
+        <Title>Creations - Sedaia Designs</Title>
+        <Meta name="description" content="A gallery of my creative works, including renders, animations, and web development projects." />
         <Header title={"My Works"} img={"about"} />
         <main class={"content-container"}>
 	        <Breadcrumb items={[

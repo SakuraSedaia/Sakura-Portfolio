@@ -1,8 +1,9 @@
 import Header from "~/sections/header.jsx";
 import { SolidMarkdown } from "solid-markdown";
 import Footer from "~/sections/footer.jsx";
-import { cache, createAsync, useParams } from "@solidjs/router";
+import { cache, createAsync, useParams, A } from "@solidjs/router";
 import { Show, Suspense, ErrorBoundary, For } from "solid-js";
+import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 const changelogs = import.meta.glob("../../markdown/changelogs/*.md", {
@@ -87,6 +88,8 @@ export default function Changelog() {
 
 	return (
 		<>
+			<Title>{params.changelog ? `Changelog: ${params.changelog} - Sedaia Designs` : "Changelog - Sedaia Designs"}</Title>
+			<Meta name="description" content={params.changelog ? `Detailed changelog and update history for ${params.changelog}.` : "Browse the update history and changelogs for projects and assets by Sedaia Designs."} />
 			<Header title={params.changelog ? `Changelog - ${params.changelog}` : "Changelog"} img="rigs" />
 			<main class={"content-container"}>
 				<Breadcrumb items={[

@@ -1,16 +1,28 @@
 import Nav from "~/components/navigation/nav.jsx";
 import MobileNav from "~/components/navigation/mobile-nav.jsx";
 import SocialIcon from "~/components/media/social-icon.jsx";
-import { A } from "@solidjs/router";
-
+import { A, useLocation } from "@solidjs/router";
+import { Meta } from "@solidjs/meta";
+import { createMemo, Show } from "solid-js";
+import Routes from "~/jsondata/routes.json";
 
 export default function About() {
+  const location = useLocation();
+  const isHiddenFromSearch = createMemo(() => {
+    const path = location.pathname.replace(/^\/|\/$/g, "");
+    const mainRoute = Routes.find(r => r.path === path || (r.path === "" && path === ""));
+    return !!mainRoute?.hide_from_search;
+  });
+
   const bgImg = {
     "background-image": "image-set(url('/images/headers/about.jxl') type('image/jxl'), url('/images/headers/about.jpg') type('image/jpeg'))"
   };
 
   return (
     <>
+      <Show when={isHiddenFromSearch()}>
+        <Meta name="robots" content="noindex, nofollow" />
+      </Show>
       <MobileNav title={"Sedaia Designs"} />
       <header id={"about-me"} style={bgImg}>
         <Nav title={"Sedaia Designs"} />

@@ -4,12 +4,15 @@ import AssetsIntro from "~/sections/assets/assets-intro";
 import FeaturedAssets from "~/sections/assets/featured-assets";
 import DownloadableAssets from "~/sections/assets/downloadable-assets";
 import { Suspense, ErrorBoundary } from "solid-js";
+import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 
 function Assets() {
   return (
     <ErrorBoundary fallback={(err) => <div class="content-container">Error: {err.message}</div>}>
       <Suspense fallback={<div class="content-container">Loading...</div>}>
+        <Title>Assets - Sedaia Designs</Title>
+        <Meta name="description" content="Explore a collection of high-quality assets and extensions for Minecraft and other creative projects." />
         <Header title="Assets and Extensions" img="renders" />
 
         <div class={"content-container"}>
