@@ -3,9 +3,10 @@ export default function DownloadLink(props) {
   
   return (
     <a 
-      href={downloadPath} 
-      download 
-      class={props.class || ""}
+      href={props.disabled ? "#" : downloadPath} 
+      download={props.disabled ? undefined : true}
+      class={`${props.class || ""} ${props.disabled ? "disabled" : ""}`}
+      onClick={(e) => { if (props.disabled) e.preventDefault(); }}
     >
       {props.children || "Download"}
     </a>

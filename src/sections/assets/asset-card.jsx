@@ -8,7 +8,7 @@ export default function AssetCard(props) {
             <h2>{asset.name}</h2>
             <hr />
             <p>{asset.description}</p>
-            <DownloadLink class={"btn"} path={downloadPath}>Download</DownloadLink>
+            <DownloadLink class={`btn ${asset.disabled ? 'disabled' : ''}`} path={downloadPath} disabled={asset.disabled}>Download</DownloadLink>
         </div>
     );
 }
