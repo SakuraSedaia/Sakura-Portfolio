@@ -18,10 +18,45 @@
 				"path": "plugins/intellij/blend-charm-stable",
 				"versions": [
 					{
-						"version": "0.1.0-Snapshot-01",
+						"version": "V1.0.0",
+						"label": "Blender Development V1",
+						"date": "TBA",
+						"fileName": "BlenderExtensions-1.0.0.zip",
+						"builds": [
+							{
+								"size": "0.00 MB",
+								"license": "GNU/GPL V3",
+								"notes" : "This version is currently unavailable for download.",
+								"disabled": true
+							}
+						]
+					}
+				]
+			},
+			"dev": {
+				"description": "Development Branch",
+				"path": "plugins/intellij/blend-charm-dev",
+				"enabled": true,
+				"versions": [
+					{
+						"version": "0.2.0 Alpha",
+						"label": "0.2.0 Beta",
+						"date": "03/02/2026",
+						"fileName": "BlenderDevelopment-0.2.0-SNAPSHOT.zip",
+						"builds": [
+							{
+								"size": "3.85 MB",
+								"license": "GNU/GPL V3",
+								"notes" : "V0.2.0 is a Beta release that introduces significant architectural improvements, a new UI for the latest SACR versions, and a new utility for downloading Minecraft skins.",
+								"disabled": false
+							}
+						]
+					},
+					{
+						"version": "0.1.0 Alpha",
 						"label": "0.1.0 Alpha",
 						"date": "02/28/2026",
-						"fileName": "BlenderExtensions-0.1.0-SNAPSHOT-01.zip",
+						"fileName": "BlenderDevelopment-0.1.0-SNAPSHOT.zip",
 						"builds": [
 							{
 								"size": "3.44 MB",
@@ -32,11 +67,6 @@
 						]
 					}
 				]
-			},
-			"dev": {
-				"description": "Development Branch",
-				"path": "plugins/intellij/blend-charm-dev",
-				"versions": []
 			}
 		}
 	},

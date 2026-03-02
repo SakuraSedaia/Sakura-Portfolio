@@ -128,7 +128,7 @@ export default function DownloadAssets(props) {
 
 				<div class={`download-info ${currentVariations().length <= 1 ? 'no-tabs' : ''}`}>
 					<div class={`download-link ${build()?.disabled ? 'disabled' : ''}`}>
-						<DownloadLink path={filePath()}>Download {build()?.label || ""}</DownloadLink>
+						<DownloadLink path={filePath()} disabled={build()?.disabled}>Download {build()?.label || ""}</DownloadLink>
 					</div>
 					
 					<table>

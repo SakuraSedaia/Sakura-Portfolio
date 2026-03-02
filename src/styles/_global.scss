@@ -120,6 +120,13 @@ ol.styled-list {
   &:active {
     background-color: hsl(350, 32%, 61%);
   }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    filter: grayscale(1);
+    cursor: not-allowed;
+  }
 }
 
 .btn-invert {
