@@ -2,9 +2,9 @@ import { Show, For, createSignal } from "solid-js";
 import addonIndex from "~/jsondata/addon-index.json";
 import DownloadAssets from "~/components/ui/download-assets.jsx";
 
-export default function BlendCharmDownloads() {
-	
-	const data = addonIndex.BlenderDevelopment;
+export default function BlenderDevDownloads() {
+	const index = addonIndex
+	const data = index.BlenderDevelopment;
 	const branches = data.branches;
 	
 	

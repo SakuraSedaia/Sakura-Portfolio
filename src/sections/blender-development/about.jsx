@@ -1,6 +1,6 @@
 import { NoHydration } from "solid-js/web";
 
-export default function AboutBlenderDev() {
+export default function BlenderDevAbout() {
   return (
     <NoHydration>
       <section id={"about"}>
