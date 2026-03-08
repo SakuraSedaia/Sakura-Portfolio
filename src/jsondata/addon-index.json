@@ -27,7 +27,7 @@
 								"size": "0.00 MB",
 								"license": "GNU/GPL V3",
 								"notes" : "This version is currently unavailable for download.",
-								"disabled": true
+								"disabled": false
 							}
 						]
 					}
@@ -39,6 +39,20 @@
 				"enabled": true,
 				"versions": [
 					{
+						"version": "0.3.0 Alpha",
+						"label": "0.3.0 Alpha",
+						"date": "03/08/2026",
+						"fileName": "BlenderPythonDevelopment-0.3.0-SNAPSHOT.zip",
+						"builds": [
+							{
+								"size": "3.52 MB",
+								"license": "GNU/GPL V3",
+								"notes" : "V0.3.0 improves on feature stability while adding Blender Status Bar widget, multi-source folder support, and full internationalization for 11 languages.",
+								"disabled": false
+							}
+						]
+					},
+					{
 						"version": "0.2.0 Alpha",
 						"label": "0.2.0 Beta",
 						"date": "03/02/2026",
@@ -47,7 +61,7 @@
 							{
 								"size": "3.85 MB",
 								"license": "GNU/GPL V3",
-								"notes" : "V0.2.0 is a Beta release that introduces significant architectural improvements, a new UI for the latest SACR versions, and a new utility for downloading Minecraft skins.",
+								"notes" : "V0.2.0 introduces a real-time status bar widget, a specialized project type for extensions, and cross-platform detection improvements.",
 								"disabled": false
 							}
 						]
@@ -61,7 +75,7 @@
 							{
 								"size": "3.44 MB",
 								"license": "GNU/GPL V3",
-								"notes" : "",
+								"notes" : "Initial Release of the Blender Development Plugin, featuring basic support for sandboxing, version management, and hot-reloading.",
 								"disabled": false
 							}
 						]
