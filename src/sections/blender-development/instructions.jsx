@@ -11,7 +11,7 @@ export default function BlenderDevInstructions() {
           <div class={"notice"}>
             <h3>More In-Depth Documentation</h3>
             <p>
-              For more detailed documentation, including in-depth configuration, architectural overviews, and usage guides, please visit the official <a href="https://wiki.sakura-sedaia.com/docs/blender-development-pycharm/index.html" target="_blank" class={"link"}>Blender Development for PyCharm Wiki</a>.
+              For more detailed and up to date documentation, including in-depth configuration, architectural overviews, and usage guides, please visit the official <a href="https://wiki.sakura-sedaia.com/docs/blender-development-pycharm/index.html" target="_blank" class={"link"}>Blender Development for PyCharm Wiki</a>.
             </p>
           </div>
           <h2 class={"styled-heading"}>Configuration and Setup</h2>
