@@ -16,6 +16,7 @@ export default function BlenderDevIssues() {
           <p>
             For any bugs, feature requests, or general issues, please file a report on the <a href={issuesUrl} class={"link"} target="_blank">GitHub repository</a>.
           </p>
+	        
         </div>
       </section>
     </NoHydration>

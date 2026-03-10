@@ -1,0 +1,9 @@
+@mixin link {
+  color: hsl(var(--tx-accent-val));
+  cursor: pointer;
+
+  &:hover {
+    color: hsla(var(--tx-accent-val), 50%);
+    box-shadow: 0 0.1em hsla(var(--tx-accent-val), 50%);
+  }
+}

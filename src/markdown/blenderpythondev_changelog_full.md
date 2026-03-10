@@ -25,7 +25,7 @@
 - **Run Configuration Stability**: Fixed absolute path handling for sandboxed installations and corrected CLI argument syntax for preset configurations.
 - **UI Stability**: Resolved crashes in the version management tool window and improved New Project Wizard validation.
 - **Logging**: Added log rotation for better disk usage management and expanded debug output for connection handshakes.
-- 
+
 ## [0.2.0] - 2026-03-01
 ### Added
 - **Blender Status Indicator**: Added a real-time status bar widget to monitor Blender connection states (Connected, Disconnected, Not Running).

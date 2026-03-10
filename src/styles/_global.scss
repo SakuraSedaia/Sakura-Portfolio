@@ -1,5 +1,5 @@
 @use "variables" as *;
-
+@use "mixins" as *;
 
 body {
   margin: 0;
@@ -155,16 +155,11 @@ ol.styled-list {
   }
 }
 
+
+
 .link {
-  color: hsl(var(--tx-accent-val));
-  cursor: pointer;
-
-  &:hover {
-    color: hsla(var(--tx-accent-val), 50%);
-    box-shadow: 0 0.1em hsla(var(--tx-accent-val), 50%);
-  }
+  @include link;
 }
-
 .heading h1 {
   background-color: hsl(var(--tx-accent-val));
   color: hsl(var(--bg-primary-val));

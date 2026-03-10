@@ -19,7 +19,9 @@
 @use "components/render-card" as *;
 @use "components/download-assets" as *;
 @use "components/mobile-nav" as *;
+@use "components/tooltip" as *;
 
 // Sections
 @use "sections/header-footer" as *;
 @use "sections/shared-downloads" as *;
+@use "sections/known-issues" as *;

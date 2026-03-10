@@ -1,0 +1,29 @@
+@use "../mixins" as *;
+
+.tooltip-container {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted black;
+
+  .tooltip {
+    position: absolute;
+    opacity: 0;
+    width: 12rem;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -6rem;
+    transition: opacity 0.3s;
+    padding: 0.5rem;
+    border-radius: var(--radius-md);
+    background-color: hsla(var(--tx-accent-val), .9);
+    color: var(--bg-primary);
+    font-size: var(--font-size-small);
+    z-index: 1;
+  }
+
+  &:hover {
+    span.tooltip {
+      opacity: 100%;
+    }
+  }
+}
