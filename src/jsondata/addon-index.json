@@ -26,8 +26,8 @@
 							{
 								"size": "0.00 MB",
 								"license": "GNU/GPL V3",
-								"notes" : "This version is currently unavailable for download.",
-								"disabled": false
+								"notes" : "This project has not been officially released yet, but is available for testing and feedback through the Development Branch.",
+								"disabled": true
 							}
 						]
 					}
@@ -39,6 +39,20 @@
 				"enabled": true,
 				"versions": [
 					{
+						"version": "0.4.0 Alpha",
+						"label": "0.4.0 Alpha",
+						"date": "03/15/2026",
+						"fileName": "BlenderPythonDevelopment-0.4.0-SNAPSHOT.zip",
+						"builds": [
+							{
+								"size": "3.54 MB",
+								"license": "GNU/GPL V3",
+								"notes": "V0.4.0 Alpha introduces integrated linter setup with fake-bpy-module, automated Python interpreter configuration, and significant improvements to the Blender downloader and UI management.",
+								"disabled": false
+							}
+						]
+					},
+					{
 						"version": "0.3.0 Alpha",
 						"label": "0.3.0 Alpha",
 						"date": "03/08/2026",
@@ -47,7 +61,7 @@
 							{
 								"size": "3.52 MB",
 								"license": "GNU/GPL V3",
-								"notes" : "V0.3.0 improves on feature stability while adding Blender Status Bar widget, multi-source folder support, and full internationalization for 11 languages.",
+								"notes": "V0.3.0 improves on feature stability while adding Blender Status Bar widget, multi-source folder support, and full internationalization for 11 languages.",
 								"disabled": false
 							}
 						]
@@ -61,7 +75,7 @@
 							{
 								"size": "3.85 MB",
 								"license": "GNU/GPL V3",
-								"notes" : "V0.2.0 introduces a real-time status bar widget, a specialized project type for extensions, and cross-platform detection improvements.",
+								"notes": "V0.2.0 introduces a real-time status bar widget, a specialized project type for extensions, and cross-platform detection improvements.",
 								"disabled": false
 							}
 						]
@@ -75,7 +89,7 @@
 							{
 								"size": "3.44 MB",
 								"license": "GNU/GPL V3",
-								"notes" : "Initial Release of the Blender Development Plugin, featuring basic support for sandboxing, version management, and hot-reloading.",
+								"notes": "Initial Release of the Blender Development Plugin, featuring basic support for sandboxing, version management, and hot-reloading.",
 								"disabled": false
 							}
 						]
