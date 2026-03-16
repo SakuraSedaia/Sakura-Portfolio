@@ -1,17 +1,17 @@
 import { For, createSignal } from "solid-js";
-import renderData from "~/jsondata/render-map.json";
-import RenderCard from "~/sections/renders/components/render-card.jsx";
-import ImageModal from "~/sections/renders/components/image-modal.jsx";
+import renderData from "~/json-data/render-map.json";
+import RenderCard from "~/components/render-assets/render-card.jsx";
+import ImageModal from "~/components/render-assets/image-modal.jsx";
 
-export default function CharGallery() {
+export default function ImageGallery() {
   const [modalOpen, setModalOpen] = createSignal(false);
   const [currentImage, setCurrentImage] = createSignal({ src: "", alt: "", description: "" });
 
-  const openModal = (json, cat, folder) => {
+  const openModal = (json, cat, folder, isHeader) => {
     // We use the first size (lg) for the modal
     const filename = json.sizes[0].split('.')[0];
     setCurrentImage({
-      src: `/images/renders${cat}${folder}/${filename}`,
+      src: isHeader ? `/images/card-headers/${filename}` : `/images/renders${cat}${folder}/${filename}`,
       alt: json.name,
       description: json.description
     });
@@ -30,7 +30,7 @@ export default function CharGallery() {
             <div class={"grid-container"}>
               <For each={group.images}>
                 {(render) => (
-                  <RenderCard data={JSON.stringify(render)} cat={group.path} onImageClick={openModal}/>
+                  <RenderCard data={render} cat={group.path} onImageClick={openModal}/>
                 )}
               </For>
             </div>

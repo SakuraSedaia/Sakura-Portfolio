@@ -1,10 +1,10 @@
 import { Show, For, createSignal } from "solid-js";
-import addonIndex from "~/jsondata/addon-index.json";
+import addonIndex from "~/json-data/addon-index.json";
 import DownloadPlugins from "~/components/ui/download-plugins.jsx";
 
-export default function BlenderDevDownloads() {
-	const index = addonIndex
-	const data = index.BlenderDevelopment;
+export default function Downloads() {
+	
+	const data = addonIndex.SakuraRigInterface;
 	const branches = data.branches;
 	
 	

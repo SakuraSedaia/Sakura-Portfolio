@@ -1,5 +1,5 @@
 import { NoHydration } from "solid-js/web";
-import addonIndex from "~/jsondata/addon-index.json";
+import addonIndex from "~/json-data/addon-index.json";
 
 export default function BlenderDevIssues() {
   const data = addonIndex.BlenderDevelopment;

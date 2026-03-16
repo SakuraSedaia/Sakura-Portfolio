@@ -1,5 +1,5 @@
 import { Show } from "solid-js";
-import rigIndex from "~/jsondata/sacr-index.json";
+import rigIndex from "~/json-data/sacr-index.json";
 import DownloadAssets from "~/components/ui/download-assets.jsx";
 
 export default function SACRDownloads(props) {
