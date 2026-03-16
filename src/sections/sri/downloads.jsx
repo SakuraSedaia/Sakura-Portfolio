@@ -1,6 +1,6 @@
 import { Show, For, createSignal } from "solid-js";
 import addonIndex from "~/jsondata/addon-index.json";
-import DownloadAssets from "~/components/ui/download-assets.jsx";
+import DownloadPlugins from "~/components/ui/download-plugins.jsx";
 
 export default function Downloads() {
 	
@@ -14,10 +14,10 @@ export default function Downloads() {
 				<h1>Downloads</h1>
 			</div>
 			<div class={"column-container"}>
-				<DownloadAssets json={JSON.stringify(branches.stable)} software={data.software} repo={data.repo}/>
+				<DownloadPlugins json={JSON.stringify(branches.stable)} software={data.software} repo={data.repo}/>
 				
 				<Show when={branches.dev.enabled}>
-					<DownloadAssets json={JSON.stringify(branches.dev)} software={data.software} repo={data.repo}/>
+					<DownloadPlugins json={JSON.stringify(branches.dev)} software={data.software} repo={data.repo}/>
 				</Show>
 			</div>
 		</section>
