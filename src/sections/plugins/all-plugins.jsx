@@ -1,6 +1,6 @@
 import { NoHydration } from "solid-js/web";
 import { For } from "solid-js";
-import addonIndex from "~/jsondata/addon-index.json";
+import addonIndex from "~/json-data/addon-index.json";
 import PluginCard from "./plugin-card";
 
 export default function AllPlugins() {

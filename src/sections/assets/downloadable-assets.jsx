@@ -1,5 +1,5 @@
 import { For } from "solid-js";
-import assetData from "~/jsondata/asset-index.json";
+import assetData from "~/json-data/asset-index.json";
 import AssetCard from "./asset-card";
 
 export default function DownloadableAssets() {

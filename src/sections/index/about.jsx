@@ -4,7 +4,7 @@ import SocialIcon from "~/components/media/social-icon.jsx";
 import { A, useLocation } from "@solidjs/router";
 import { Meta } from "@solidjs/meta";
 import { createMemo, Show } from "solid-js";
-import Routes from "~/jsondata/routes.json";
+import Routes from "~/json-data/routes.json";
 
 export default function About() {
   const location = useLocation();
