@@ -2,7 +2,7 @@ import DownloadLink from "~/components/ui/download-link";
 
 export default function AssetCard(props) {
     const asset = JSON.parse(props.data);
-		const downloadPath = `${asset.software.toLowerCase()}/${asset.link}`;
+		const downloadPath = `assets/${asset.software.toLowerCase()}/${asset.link}`;
     return (
         <div class={"grid-item"}>
             <h2>{asset.name}</h2>

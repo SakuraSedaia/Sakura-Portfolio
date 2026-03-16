@@ -35,7 +35,12 @@ export default function DownloadAssets(props) {
 
 	const filePath = createMemo(() => {
 		if (!build()) return "";
-		return `${branch.path}/${build().fileName}`;
+		// Ensure path starts with assets/ as per guidelines
+		let path = branch.path;
+		if (!path.startsWith("assets/")) {
+			path = `assets/${path}`;
+		}
+		return `${path}/${build().fileName}`;
 	});
 
 	let dropdownRef;
