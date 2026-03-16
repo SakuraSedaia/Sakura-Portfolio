@@ -1,6 +1,6 @@
 @use "../variables" as *;
 
-.render-card {
+.render-card, .featured-card {
   text-align: center;
 
   h2 {

@@ -1,44 +1,56 @@
-import OptimizedImage from "~/components/media/optimized-image.jsx";
-import renderMap from "~/jsondata/render-map.json";
+import renderMap from "~/json-data/render-map.json";
+import ImageModal from "~/components/render-assets/image-modal.jsx";
+import FeaturedCard from "~/components/creations/featured-card.jsx";
+import { createSignal } from "solid-js";
 
 export default function FeaturedCreations() {
+	const [modalOpen, setModalOpen] = createSignal(false);
+	const [currentImage, setCurrentImage] = createSignal({ src: "", alt: "", description: "" });
 	const featuredRender = "Frozen Phoenix"
 	
-	let groupMap = {
-		"label": "Initializing...",
-		"path": "",
-		"images": [
-			{
-				"name": "Initializing...",
-				"sizes": []
-			}
-		]
+	let renderJson = {
+		"name": "Initializing...",
+		"sizes": [""],
+		"description": ""
 	}
-	let json = groupMap.images[0]
-	let renderName = json.name;
-	let renderFolder = renderName.toLowerCase().replaceAll(" ", "-");
-	let renderCat = groupMap.path;
+	let renderCat = "";
 	let fallbackExt = ".jpg"
 	
 	for (const group of renderMap) {
 		for (const render of group.images) {
 			if (render.name.includes(featuredRender)) {
-				json = render
-				renderName = render.name;
-				renderFolder = renderName.toLowerCase().replaceAll(" ", "-");
+				renderJson = render;
 				renderCat = group.path;
-				fallbackExt = json.sizes[1]?.substring(json.sizes[1].lastIndexOf('.')) ?? fallbackExt;
+				fallbackExt = renderJson.sizes[1]?.substring(renderJson.sizes[1].lastIndexOf('.')) ?? fallbackExt;
 				break;
 			}
 		}
 	}
+
+	const openModal = (json, cat, folder, isHeader) => {
+		const filename = json.sizes[0].split('.')[0];
+		setCurrentImage({
+			src: isHeader ? `/images/card-headers/${filename}` : `/images/renders${cat}${folder}/${filename}`,
+			alt: json.name,
+			description: json.description
+		});
+		setModalOpen(true);
+	};
 	
-	const getOptimizedSrc = (filename) => {
-		const base = filename.substring(0, filename.lastIndexOf('.'));
-		// Ensure the folder is correct - the pipeline uses slug-named subdirectories
-		return `/images/renders${renderCat}${renderFolder}/${base}`;
+	const blenderDevJson = {
+		"name": "Blender Development",
+		"sizes": [
+			"blend-dev-prototype-screenshot.jxl",
+			"blend-dev-prototype-screenshot.png"
+		],
+		"description": "A suite of debugging and development tools designed to aid developers of Blender for use in PyCharm",
+		"month": "March",
+		"year": 2026,
+		"tags": [
+			"Blender",
+		]
 	}
-	
+
 	return (
 		<section id={"featuredCreations"}>
 			<div class={"heading"}>
@@ -46,17 +58,30 @@ export default function FeaturedCreations() {
 			</div>
 			
 			<div class={"grid-container"}>
-				<div class={"grid-item"}>
-					<h2>{renderName}</h2>
-					<a href="#" onClick={(e) => { e.preventDefault(); props.onImageClick(json, props.cat, renderFolder); }}>
-						<OptimizedImage
-							src={getOptimizedSrc(json.sizes[0])}
-							alt={renderName}
-							fallbackExt={fallbackExt}
-						/>
-					</a>
-				</div>
+				<FeaturedCard 
+					data={renderJson} 
+					cat={renderCat} 
+					type="Render" 
+					fallbackExt={fallbackExt} 
+					onImageClick={openModal} 
+				/>
+				
+				<FeaturedCard 
+					data={blenderDevJson} 
+					isHeader={true} 
+					fallbackExt=".png" 
+					detailText="Last Updated: March 15, 2026" 
+					link="/plugin/blender-development"
+				/>
 			</div>
+
+			<ImageModal
+				show={modalOpen()}
+				onClose={() => setModalOpen(false)}
+				imageSrc={currentImage().src}
+				imageAlt={currentImage().alt}
+				description={currentImage().description}
+			/>
 		</section>
 	)
 }

@@ -2,7 +2,7 @@ import { Show } from "solid-js";
 import OptimizedImage from "~/components/media/optimized-image.jsx";
 
 export default function RenderCard(props) {
-	const json = JSON.parse(props.data)
+	const json = typeof props.data === "string" ? JSON.parse(props.data) : props.data;
 	const folder = json.name.toLowerCase().replaceAll(" ", "-");
 	let showDesc = false
 	if (json.description !== "") {
@@ -23,7 +23,7 @@ export default function RenderCard(props) {
 			style={props.maxHeight ? { "--render-card-max-height": props.maxHeight } : {}}
 		>
       <h2>{json.name}</h2>
-			<a href="#" onClick={(e) => { e.preventDefault(); props.onImageClick(json, props.cat, folder); }}>
+			<a href="#" onClick={(e) => { e.preventDefault(); props.onImageClick(json, props.cat, folder, false); }}>
 				<OptimizedImage 
 					src={getOptimizedSrc(json.sizes[0])} 
 					alt={json.name} 
@@ -33,9 +33,6 @@ export default function RenderCard(props) {
 	    <div class={"detail"}>
 		    <span>Created in {json.month} {json.year.toString()}</span>
 	    </div>
-	    <Show when={showDesc}>
-	      <p>{json.description}</p>
-	    </Show>
 	    <Show when={props.debug}>
 		    <pre>/images/renders{props.cat}{folder}/{json.sizes[0]}</pre>
 		    <pre>{JSON.stringify(json, null, 2)}</pre>
