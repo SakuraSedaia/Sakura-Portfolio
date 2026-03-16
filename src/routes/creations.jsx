@@ -5,6 +5,7 @@ import { Suspense, ErrorBoundary } from "solid-js";
 import { A } from "@solidjs/router";
 import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
+import FeaturedCreations from "~/sections/creations/featured-creations.jsx";
 
 function Creations() {
   return (
@@ -25,7 +26,7 @@ function Creations() {
 			        <li><A href={"/creation/www"} class={"link"}>Websites</A></li>
 		        </ul>
 	        </div>
-          <NotFinished />
+          <FeaturedCreations />
         </main>
         <Footer />
       </Suspense>
