@@ -1,6 +1,6 @@
 import { useLocation, A } from "@solidjs/router";
 import { For, Show, createSignal, onCleanup } from "solid-js";
-import Routes from "~/jsondata/routes.json";
+import Routes from "~/json-data/routes.json";
 
 export default function MobileNav(props) {
 	const location = useLocation();

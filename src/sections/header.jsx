@@ -3,7 +3,7 @@ import MobileNav from "~/components/navigation/mobile-nav.jsx";
 import { Show, createMemo } from "solid-js";
 import { useLocation } from "@solidjs/router";
 import { Meta } from "@solidjs/meta";
-import Routes from "~/jsondata/routes.json";
+import Routes from "~/json-data/routes.json";
 
 export default function Header(props) {
   const location = useLocation();

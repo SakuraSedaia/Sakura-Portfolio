@@ -1,9 +1,9 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
-import About from "~/sections/sri/about.jsx";
-import Downloads from "~/sections/sri/downloads.jsx";
-import Instructions from "~/sections/sri/instructions.jsx";
-import Issues from "~/sections/sri/issues.jsx";
+import About from "~/sections/plugins/sri/about.jsx";
+import Downloads from "~/sections/plugins/sri/downloads.jsx";
+import Instructions from "~/sections/plugins/sri/instructions.jsx";
+import Issues from "~/sections/plugins/sri/issues.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
 import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";

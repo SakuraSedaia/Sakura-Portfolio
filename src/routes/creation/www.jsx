@@ -1,7 +1,7 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
-import MyWebPages from "~/sections/www/my-web-pages.jsx";
+import MyWebPages from "~/sections/creations/www/my-web-pages.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
 import { Title, Meta } from "@solidjs/meta";
 

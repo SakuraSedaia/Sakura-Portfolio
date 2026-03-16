@@ -8,7 +8,7 @@ import { For, Show, createMemo, ErrorBoundary, Suspense } from "solid-js";
 import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 import { useLocation } from "@solidjs/router";
-import Routes from "~/jsondata/routes.json";
+import Routes from "~/json-data/routes.json";
 
 function Resume() {
   const location = useLocation();

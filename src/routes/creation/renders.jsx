@@ -1,6 +1,6 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
-import CharGallery from "~/sections/renders/char-gallery.jsx";
+import ImageGallery from "~/sections/creations/renders/image-gallery.jsx";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
 import { Title, Meta } from "@solidjs/meta";
@@ -17,7 +17,7 @@ function Renders() {
             { label: "Creations", href: "/creations" },
             { label: "Renders" }
           ]} />
-          <CharGallery />
+          <ImageGallery />
         </main>
         <Footer />
       </Suspense>

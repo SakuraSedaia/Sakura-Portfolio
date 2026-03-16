@@ -1,6 +1,6 @@
 import { useLocation, A } from "@solidjs/router";
 import { For, Show } from "solid-js";
-import Routes from "~/jsondata/routes.json";
+import Routes from "~/json-data/routes.json";
 import NavRouterSub from "./nav-router-sub.jsx";
 // TODO: Add background moving animations to the nav elements when a new page is selected.
 

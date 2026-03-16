@@ -1,10 +1,10 @@
 import Header from "~/sections/header.jsx";
 import Footer from "~/sections/footer.jsx";
-import BlenderDevAbout from "~/sections/blender-development/about.jsx";
-import BlenderDevInstructions from "~/sections/blender-development/instructions.jsx";
-import BlenderDevDownloads from "~/sections/blender-development/downloads.jsx";
-import BlenderDevIssues from "~/sections/blender-development/issues.jsx";
-import BlenderDevKnownIssues from "~/sections/blender-development/known-issues.jsx";
+import BlenderDevAbout from "~/sections/plugins/blender-development/about.jsx";
+import BlenderDevInstructions from "~/sections/plugins/blender-development/instructions.jsx";
+import BlenderDevDownloads from "~/sections/plugins/blender-development/downloads.jsx";
+import BlenderDevIssues from "~/sections/plugins/blender-development/issues.jsx";
+import BlenderDevKnownIssues from "~/sections/plugins/blender-development/known-issues.jsx";
 import { Suspense, ErrorBoundary } from "solid-js";
 import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
