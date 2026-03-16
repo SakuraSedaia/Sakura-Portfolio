@@ -15,7 +15,7 @@ export default function KnownIssueItem(props) {
 					<Tooltip text={`Github Issue #${issueNumber}`}>
 						
 							<a href={props.issueLink} class={"link"} target={"_blank"}>
-								{props.title}
+								Issue #{issueNumber} - {props.title}
 							</a>
 					</Tooltip>
 				)}
