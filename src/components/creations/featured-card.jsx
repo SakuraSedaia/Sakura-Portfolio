@@ -1,6 +1,7 @@
 import { Show } from "solid-js";
 import OptimizedImage from "~/components/media/optimized-image.jsx";
 import { A } from "@solidjs/router";
+import Tooltip from "~/components/ui/tooltip.jsx";
 
 export default function FeaturedCard(props) {
 	const json = typeof props.data === "string" ? JSON.parse(props.data) : props.data;
@@ -24,26 +25,29 @@ export default function FeaturedCard(props) {
 			<Show when={showDesc}>
 				<p>{json.description}</p>
 			</Show>
-			<Show 
-				when={props.link} 
-				fallback={
-					<a href="#" onClick={(e) => { e.preventDefault(); props.onImageClick(json, props.cat, folder, props.isHeader); }}>
+			
+			<Tooltip text={props.tooltipText || "Click to Open"}>
+				<Show
+					when={props.link}
+					fallback={
+							<a href="#" onClick={(e) => { e.preventDefault(); props.onImageClick(json, props.cat, folder, props.isHeader); }}>
+								<OptimizedImage
+									src={getOptimizedSrc(json.sizes[0])}
+									alt={json.name}
+									fallbackExt={props.fallbackExt || ".jpg"}
+								/>
+							</a>
+					}
+				>
+					<A href={props.link}>
 						<OptimizedImage
 							src={getOptimizedSrc(json.sizes[0])}
 							alt={json.name}
 							fallbackExt={props.fallbackExt || ".jpg"}
 						/>
-					</a>
-				}
-			>
-				<A href={props.link}>
-					<OptimizedImage
-						src={getOptimizedSrc(json.sizes[0])}
-						alt={json.name}
-						fallbackExt={props.fallbackExt || ".jpg"}
-					/>
-				</A>
-			</Show>
+					</A>
+				</Show>
+			</Tooltip>
 		</div>
 	);
 }

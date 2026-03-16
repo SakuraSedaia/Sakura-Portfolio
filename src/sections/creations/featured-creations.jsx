@@ -1,5 +1,5 @@
 import renderMap from "~/json-data/render-map.json";
-import ImageModal from "~/components/render-assets/image-modal.jsx";
+import ImageModal from "~/components/creations/image-modal.jsx";
 import FeaturedCard from "~/components/creations/featured-card.jsx";
 import { createSignal } from "solid-js";
 
@@ -37,17 +37,17 @@ export default function FeaturedCreations() {
 		setModalOpen(true);
 	};
 	
-	const blenderDevJson = {
-		"name": "Blender Development",
+	const FrostlightJson = {
+		"name": "Frostlight Website",
 		"sizes": [
-			"blend-dev-prototype-screenshot.jxl",
-			"blend-dev-prototype-screenshot.png"
+			"frostlight-studios-org-preview.jxl",
+			"frostlight-studios-org-preview.png"
 		],
-		"description": "A suite of debugging and development tools designed to aid developers of Blender for use in PyCharm",
-		"month": "March",
+		"description": "",
+		"month": "February 22",
 		"year": 2026,
 		"tags": [
-			"Blender",
+			"",
 		]
 	}
 
@@ -63,15 +63,17 @@ export default function FeaturedCreations() {
 					cat={renderCat} 
 					type="Render" 
 					fallbackExt={fallbackExt} 
-					onImageClick={openModal} 
+					onImageClick={openModal}
+					tooltipText={"Click to Open"}
 				/>
 				
 				<FeaturedCard 
-					data={blenderDevJson} 
+					data={FrostlightJson}
 					isHeader={true} 
 					fallbackExt=".png" 
-					detailText="Last Updated: March 15, 2026" 
-					link="/plugin/blender-development"
+					detailText="Last Updated: Feb 22, 2026"
+					link="https://frostlight-studios.org"
+					tooltipText={"Click to Open"}
 				/>
 			</div>
 

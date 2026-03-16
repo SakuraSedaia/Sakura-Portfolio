@@ -1,5 +1,6 @@
 import { Show } from "solid-js";
 import OptimizedImage from "~/components/media/optimized-image.jsx";
+import Tooltip from "~/components/ui/tooltip.jsx";
 
 export default function RenderCard(props) {
 	const json = typeof props.data === "string" ? JSON.parse(props.data) : props.data;
@@ -23,13 +24,15 @@ export default function RenderCard(props) {
 			style={props.maxHeight ? { "--render-card-max-height": props.maxHeight } : {}}
 		>
       <h2>{json.name}</h2>
-			<a href="#" onClick={(e) => { e.preventDefault(); props.onImageClick(json, props.cat, folder, false); }}>
-				<OptimizedImage 
-					src={getOptimizedSrc(json.sizes[0])} 
-					alt={json.name} 
-					fallbackExt=".jpg"
-				/>
-			</a>
+	    <Tooltip text={props.tooltipText || "Click to Open"}>
+				<a href="#" onClick={(e) => { e.preventDefault(); props.onImageClick(json, props.cat, folder, false); }}>
+					<OptimizedImage
+						src={getOptimizedSrc(json.sizes[0])}
+						alt={json.name}
+						fallbackExt=".jpg"
+					/>
+				</a>
+	    </Tooltip>
 	    <div class={"detail"}>
 		    <span>Created in {json.month} {json.year.toString()}</span>
 	    </div>

@@ -1,4 +1,4 @@
-import Tooltip from "../navigation/tooltip.jsx";
+import Tooltip from "./tooltip.jsx";
 
 export default function KnownIssueItem(props) {
 	const issueNumber = props.issueLink.substring(props.issueLink.lastIndexOf("/") + 1);

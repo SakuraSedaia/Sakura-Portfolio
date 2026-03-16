@@ -1,7 +1,7 @@
 import { For, createSignal } from "solid-js";
 import renderData from "~/json-data/render-map.json";
-import RenderCard from "~/components/render-assets/render-card.jsx";
-import ImageModal from "~/components/render-assets/image-modal.jsx";
+import RenderCard from "~/components/creations/render-card.jsx";
+import ImageModal from "~/components/creations/image-modal.jsx";
 
 export default function ImageGallery() {
   const [modalOpen, setModalOpen] = createSignal(false);
