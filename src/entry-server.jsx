@@ -8,7 +8,7 @@ export default createHandler(() => (
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+					<title>Sedaia Designs</title>
           <link rel="icon" href="/images/icon/favicon.ico" />
           <link rel="stylesheet" href="/fonts/fonts.css" />
 
