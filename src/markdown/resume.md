@@ -4,7 +4,7 @@ Jonathan Burger
 
 ## Professional Summary
 
-Engineering Student at DMACC with a diverse background spanning Data Center operations, Automotive Repair, and Production Assembly. Proven expertise in advanced mechanical systems, technical troubleshooting, and team leadership. Transitioning into Engineering with proficiency in CAD, Python, and UI development, combining hands-on industrial experience with modern software engineering principles. Authorized to work in the US for any employer.
+U.S.-based UI Designer and Full-Stack Developer proficient in SolidJS, SCSS, and Python. Beyond development, I utilize Blender to produce high-quality Minecraft based renders and create downloadable Minecraft and Hytale 3D assets and rigs for the Blender community. Combining a strong foundation in Engineering at DMACC with a diverse background spanning Data Center operations and Industrial Assembly, I offer a unique blend of hands-on technical troubleshooting and modern software engineering principles to build scalable, user-centric digital solutions.
 
 ## Work Experience
 
@@ -74,7 +74,8 @@ Engineering Student at DMACC with a diverse background spanning Data Center oper
 
 ### Technical & Engineering
 - **Software:** [AutoCAD](https://www.autodesk.com/products/autocad/overview), [CAD](https://en.wikipedia.org/wiki/Computer-aided_design), [Blender](https://www.blender.org/), [Adobe Photoshop](https://www.adobe.com/products/photoshop.html), [Adobe Creative Suite](https://www.adobe.com/creativecloud.html), [Microsoft Office](https://www.office.com/) ([Excel](https://www.microsoft.com/en-us/microsoft-365/excel), [Word](https://www.microsoft.com/en-us/microsoft-365/word), [Copilot 365](https://www.microsoft.com/en-us/microsoft-365/copilot)), [Google Workspace](https://workspace.google.com/).
-- **Development:** [Python](https://www.python.org/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [SolidJS](https://www.solidjs.com/), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [Git](https://git-scm.com/), [GitHub](https://github.com/), [Gitea](https://about.gitea.com/), [SSH](https://en.wikipedia.org/wiki/Secure_Shell), [Docker](https://www.docker.com/).
+- **AI Tools:** [Junie](https://junie.ai), [Gemini 1.5 Pro](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/), [GPT-4o](https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/).
+- **Development:** [Python](https://www.python.org/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [Java](https://www.java.com/), [Kotlin](https://kotlinlang.org/), [SolidJS](https://www.solidjs.com/), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [Git](https://git-scm.com/), [GitHub](https://github.com/), [Gitea](https://about.gitea.com/), [SSH](https://en.wikipedia.org/wiki/Secure_Shell), [Docker](https://www.docker.com/).
 - **Systems:** [Linux](https://www.linux.org/) ([Debian](https://www.debian.org/) and [Arch](https://archlinux.org/)), [Windows](https://www.microsoft.com/en-us/windows), [SSH](https://en.wikipedia.org/wiki/Secure_Shell), Technical Proficiency, Analysis.
 
 ### Mechanical & Industrial

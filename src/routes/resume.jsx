@@ -186,7 +186,7 @@ function Resume() {
                       li: (props) => <li {...props} />,
                       a: (props) => {
                         const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
-                        return isInternal ? <A {...props} /> : <a {...props} />;
+                        return isInternal ? <A {...props} /> : <a {...props} target={"_blank"} />;
                       }
                     }}
                   />
@@ -222,7 +222,7 @@ function Resume() {
                               em: (props) => <em {...props} />,
                               a: (props) => {
                                 const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
-                                return isInternal ? <A {...props} class={"link"} /> : <a {...props} class={"link"} />;
+                                return isInternal ? <A {...props} class={"link"} /> : <a {...props} class={"link"} target={"_blank"} />;
                               }
                             }}
                           />
@@ -245,7 +245,7 @@ function Resume() {
                               li: (props) => <li {...props} />,
                               a: (props) => {
                                 const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
-                                return isInternal ? <A {...props} class={"link"} /> : <a {...props} class={"link"} />;
+                                return isInternal ? <A {...props} class={"link"} /> : <a {...props} class={"link"} target={"_blank"} />;
                               }
                             }}
                           />
@@ -266,7 +266,7 @@ function Resume() {
                             p: (props) => <p style={{"white-space": "pre-line"}} {...props} />,
                             a: (props) => {
                               const isInternal = props.href?.startsWith("/") && !props.href?.startsWith("//");
-                              return isInternal ? <A {...props} class={"link"} /> : <a {...props} class={"link"} />;
+                              return isInternal ? <A {...props} class={"link"} /> : <a {...props} class={"link"} target={"_blank"} />;
                             }
                           }}
                         />
