@@ -18,8 +18,8 @@
 							{
 								"label": "Packaged",
 								"fileName": "SACR_R7.4.1.zip",
-								"size": "1.5mb",
-								"notes": "Contains both the Standard and Lite builds"
+								"size": "1.6mb",
+								"notes": "Contains both the Standard and Lite builds, as well as the required UI Extension"
 							},
 							{
 								"label": "Standard",
