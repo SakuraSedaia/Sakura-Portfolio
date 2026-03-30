@@ -11,7 +11,7 @@ export default function DownloadPlugins(props) {
 		const versions = branch.versions || [];
 		
 		versions.forEach(v => {
-			map.set(v.version, v.builds.map(b => ({
+			map.set(v.version, (v.builds || []).map(b => ({
 				...b,
 				version: v.version,
 				fileName: b.fileName || v.fileName,
@@ -30,19 +30,35 @@ export default function DownloadPlugins(props) {
 	const [variationIndex, setVariationIndex] = createSignal(0);
 	const [isOpen, setIsOpen] = createSignal(false);
 	
-	const currentVariations = createMemo(() => versionsMap().get(selectedVersion()) || []);
-	const build = createMemo(() => currentVariations()[variationIndex()] || currentVariations()[0]);
+	// Use createMemo to ensure we're getting the correct data based on current signals
+	const currentVariations = createMemo(() => {
+		const version = selectedVersion();
+		return versionsMap().get(version) || [];
+	});
+
+	const build = createMemo(() => {
+		const variations = currentVariations();
+		const index = variationIndex();
+		return variations[index] || variations[0];
+	});
 
 	const filePath = createMemo(() => {
-		if (!build()) return "";
+		const currentBuild = build();
+		if (!currentBuild || !currentBuild.fileName) return "";
+		
+		let path = branch.path || "";
 		// Ensure path starts with plugins/ (plural) as per guidelines
-		let path = branch.path;
 		if (path.startsWith("plugin/")) {
 			path = path.replace("plugin/", "plugins/");
-		} else if (!path.startsWith("plugins/")) {
+		} else if (path && !path.startsWith("plugins/")) {
 			path = `plugins/${path}`;
 		}
-		return `${path}/${build().fileName}`;
+		
+		// Ensure no leading/trailing slashes for join
+		const cleanPath = path.replace(/^\/+|\/+$/g, "");
+		const cleanFileName = currentBuild.fileName.replace(/^\/+/, "");
+		
+		return cleanPath ? `${cleanPath}/${cleanFileName}` : cleanFileName;
 	});
 
 	let dropdownRef;

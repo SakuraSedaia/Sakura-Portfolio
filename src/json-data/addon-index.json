@@ -6,7 +6,7 @@
 		"description": "A PyCharm plugin to help develop blender addons and scripts with ease.",
 		"logo": "/images/card-headers/blend-dev-prototype",
 		"featured": false,
-		"jetbrains_info":{
+		"jetbrains_info": {
 			"platform": "intellij",
 			"link": "",
 			"id": 0,
@@ -26,7 +26,7 @@
 							{
 								"size": "0.00 MB",
 								"license": "GNU/GPL V3",
-								"notes" : "This project has not been officially released yet, but is available for testing and feedback through the Development Branch.",
+								"notes": "This project has not been officially released yet, but is available for testing and feedback through the Development Branch.",
 								"disabled": true
 							}
 						]
@@ -38,6 +38,20 @@
 				"path": "plugins/intellij/blend-charm-dev",
 				"enabled": true,
 				"versions": [
+					{
+						"version": "0.5.0 Alpha",
+						"label": "0.5.0 Alpha",
+						"date": "03/15/2026",
+						"fileName": "BlenderPythonDevelopment-0.4.0-SNAPSHOT.zip",
+						"builds": [
+							{
+								"size": "3.54 MB",
+								"license": "GNU/GPL V3",
+								"notes": "V0.5.0 Alpha refines the Linter Setup, removes the automated Interpreter Configuration, Reorganizes the UI, and adds support for Blender 5.1.",
+								"disabled": false
+							}
+						]
+					},
 					{
 						"version": "0.4.0 Alpha",
 						"label": "0.4.0 Alpha",
