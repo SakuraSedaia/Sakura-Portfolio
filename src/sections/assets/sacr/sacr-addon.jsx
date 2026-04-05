@@ -1,4 +1,4 @@
-import A from "@solidjs/router";
+import { A } from "@solidjs/router";
 
 export default function SACRAddon() {
 	return (
@@ -8,11 +8,7 @@ export default function SACRAddon() {
 			</div>
 			<div class={"standard-container"}>
 				<p>
-					View the associated Extension here:
-					{" "}
-					<A href={"/plugin/sakura-rig-interface"} class={"link"} target={"_blank"}>
-						SACR Blender Addon
-					</A>
+					View the associated Extension here: <A href={"/plugin/sakura-rig-interface"} class={"link"} target={"_blank"}>SACR Blender Addon</A>
 				</p>
 			</div>
 		</section>

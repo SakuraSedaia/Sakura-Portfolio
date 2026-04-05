@@ -7,7 +7,7 @@ import resumeContent from "~/markdown/resume.md?raw";
 import { For, Show, createMemo, ErrorBoundary, Suspense } from "solid-js";
 import { Title, Meta } from "@solidjs/meta";
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
-import { useLocation } from "@solidjs/router";
+import { useLocation, A } from "@solidjs/router";
 import Routes from "~/json-data/routes.json";
 
 function Resume() {
