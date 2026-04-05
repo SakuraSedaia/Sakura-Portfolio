@@ -58,6 +58,11 @@
 - When referencing an Image, use absolute paths.
 - When using the word `root` in a path, use the `src` directory as the root. Only refer to root as the Linux root directory when explicitly asked.
 
+### Git Commits
+- When committing changes, always author the commit by `SakuraSedaia <sakusedaia@outlook.com>`.
+- Always add Junie as a co-author by appending the following trailer flag to the `git commit` command: `--trailer "Co-authored-by: Junie <junie@jetbrains.com>"`
+- Do NOT initiate commits on your own. Only commit when the user or guidelines explicitly request it.
+
 ### Helper Scripts
 - Use the `utils` folder to store helper scripts.
 - Use the `utils` folder to store scripts that are used to automate processes.
