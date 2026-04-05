@@ -241,19 +241,19 @@
 			"dev": {
 				"description": "Development Branch",
 				"path": "plugins/blender/sri-dev",
-				"enabled": false,
+				"enabled": true,
 				"versions": [
 					{
-						"version": "V0.0.0",
-						"date": "MM/DD/YYYY",
-						"fileName": "Sakura_Rig_GUI_V0.0.0.zip",
+						"version": "V4.0.0-Alpha 1",
+						"date": "05/05/2026",
+						"fileName": "Sakura_Rig_GUI_Dev-4.0.0_Alpha_1.zip",
 						"compatibility": {
-							"minVersion": "4.2 LTS",
+							"minVersion": "5.0",
 							"maxVersion": "Latest"
 						},
 						"builds": [
 							{
-								"size": "--.-- KB",
+								"size": "50.5 KB",
 								"notes": "Initial development version"
 							}
 						]
