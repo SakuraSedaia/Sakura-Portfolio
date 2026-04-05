@@ -21,6 +21,7 @@
 @use "components/download-plugins" as *;
 @use "components/mobile-nav" as *;
 @use "components/tooltip" as *;
+@use "components/deprecation-notice" as *;
 
 // Sections
 @use "sections/header-footer" as *;
