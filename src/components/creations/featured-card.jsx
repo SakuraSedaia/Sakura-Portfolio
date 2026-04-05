@@ -9,7 +9,8 @@ export default function FeaturedCard(props) {
 	const showDesc = json.description && json.description !== "";
 
 	const getOptimizedSrc = (filename) => {
-		const base = filename.substring(0, filename.lastIndexOf('.'));
+		const lastDot = filename.lastIndexOf('.');
+		const base = lastDot !== -1 ? filename.substring(0, lastDot) : filename;
 		if (props.isHeader) {
 			return `/images/card-headers/${base}`;
 		}

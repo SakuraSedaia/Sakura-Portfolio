@@ -13,7 +13,8 @@ export default function RenderCard(props) {
 	// The render manager saves sizes as file names (e.g., "Name-lg.jxl")
 	// We need to get the base name and path
 	const getOptimizedSrc = (filename) => {
-		const base = filename.substring(0, filename.lastIndexOf('.'));
+		const lastDot = filename.lastIndexOf('.');
+		const base = lastDot !== -1 ? filename.substring(0, lastDot) : filename;
 		// Ensure folder is correct - the pipeline uses slug-named subdirectories
 		return `/images/renders${props.cat}${folder}/${base}`;
 	}

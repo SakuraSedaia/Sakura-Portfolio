@@ -148,6 +148,16 @@
         background-color: hsl(var(--bg-secondary-val));
         border: 0.125rem solid hsla(var(--bg-contrast-light-val), 10%);
 
+        img {
+          max-height: 15rem;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+          display: block;
+          margin: 0 auto;
+          border-radius: var(--radius-md);
+        }
+
         &.gradient {
           background-color: hsla(var(--bg-accent-val), 75%);
           background-image: var(--bg-gradient-dark);
