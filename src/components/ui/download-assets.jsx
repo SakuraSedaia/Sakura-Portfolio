@@ -163,7 +163,7 @@ export default function DownloadAssets(props) {
 				<div class={"download-notes"}>
 					<h2>Changes Summary</h2>
 					<p>{build()?.notes}</p>
-					<A href={`/changelog/${build()?.changelog || build()?.fileName?.replace(".zip", "") || `${branch.namePrefix}_${build()?.version}`}`} class={"link"}>View full Changelog</A>
+					<A href={`/changelog/${build()?.changelog || build()?.fileName?.split('.')[0] || `${branch.namePrefix}_${build()?.version}`}`} class={"link"}>View full Changelog</A>
 					<Show when={props.repo}>
 						{" - "}
 						<a href={props.repo} target="_blank" class={"link"}>Repository</a>

@@ -135,6 +135,7 @@
 						"version": "V3.1.0",
 						"date": "10/21/2025",
 						"fileName": "Sakura_Rig_GUI_V3.1.0.zip",
+						"changelog": "Sakura_Rig_GUI_V3.1.0",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -150,6 +151,7 @@
 						"version": "V3.0.0",
 						"date": "12/10/2025",
 						"fileName": "Sakura_Rig_GUI_V3.0.0.zip",
+						"changelog": "Sakura_Rig_GUI_V3.0.0",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -165,6 +167,7 @@
 						"version": "V2.0.0",
 						"date": "10/04/2025",
 						"fileName": "Sakura_Rig_GUI_V2.0.0.zip",
+						"changelog": "Sakura_Rig_GUI_V2.0.0",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -180,6 +183,7 @@
 						"version": "V1.2.0",
 						"date": "09/15/2025",
 						"fileName": "Sakura_Rig_GUI_V1.2.0.zip",
+						"changelog": "Sakura_Rig_GUI_V1.2.0",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -195,6 +199,7 @@
 						"version": "V1.1.0",
 						"date": "08/20/2025",
 						"fileName": "Sakura_Rig_GUI_V1.1.0.zip",
+						"changelog": "Sakura_Rig_GUI_V1.1.0",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -210,6 +215,7 @@
 						"version": "V1.0.1",
 						"date": "07/29/2025",
 						"fileName": "Sakura_Rig_GUI_V1.0.1.zip",
+						"changelog": "Sakura_Rig_GUI_V1.0.1",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -225,6 +231,7 @@
 						"version": "V1.0.0",
 						"date": "07/21/2025",
 						"fileName": "Sakura_Rig_GUI_V1.0.0.zip",
+						"changelog": "Sakura_Rig_GUI_V1.0.0",
 						"compatibility": {
 							"minVersion": "4.2 LTS",
 							"maxVersion": "Latest"
@@ -244,9 +251,42 @@
 				"enabled": true,
 				"versions": [
 					{
+						"version": "V4.0.0-Alpha 3",
+						"date": "05/08/2026",
+						"fileName": "Sakura_Rig_GUI_Dev-4.0.0-Alpha-3.zip",
+						"changelog": "Sakura_Rig_GUI_V4.0.0_Alpha_3",
+						"compatibility": {
+							"minVersion": "5.0",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "72.4 KB",
+								"notes": "Feature Refinements, Bug Fixes, and UI improvements."
+							}
+						]
+					},
+					{
+						"version": "V4.0.0-Alpha 2",
+						"date": "05/05/2026",
+						"fileName": "Sakura_Rig_GUI_Dev-4.0.0_Alpha_2.zip",
+						"changelog": "Sakura_Rig_GUI_V4.0.0_Alpha_2",
+						"compatibility": {
+							"minVersion": "5.0",
+							"maxVersion": "Latest"
+						},
+						"builds": [
+							{
+								"size": "53.6 KB",
+								"notes": "Feature Additions and Refinements"
+							}
+						]
+					},
+					{
 						"version": "V4.0.0-Alpha 1",
 						"date": "05/05/2026",
 						"fileName": "Sakura_Rig_GUI_Dev-4.0.0_Alpha_1.zip",
+						"changelog": "Sakura_Rig_GUI_V4.0.0_Alpha_1",
 						"compatibility": {
 							"minVersion": "5.0",
 							"maxVersion": "Latest"

@@ -5,7 +5,7 @@ import SACRDownloads from "~/sections/assets/sacr/sacr-downloads";
 import SACRAddon from "~/sections/assets/sacr/sacr-addon";
 
 import Breadcrumb from "~/components/navigation/breadcrumb.jsx";
-import DeprecationNotice from "~/components/ui/deprecation_notice.jsx";
+import DeprecationNotice from "~/components/ui/deprecation-notice.jsx";
 
 import { Suspense, ErrorBoundary } from "solid-js";
 import { Title, Meta } from "@solidjs/meta";
