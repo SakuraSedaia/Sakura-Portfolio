@@ -16,7 +16,7 @@ function Footer() {
       <nav class={"socials"}>
         <ul>
           <li>
-            <a href={"https://github.com/SakuraSedaia"} class={"link"}>
+            <a href={"https://codeberg.org/SakuraSedaia"} class={"link"}>
               <SocialIcon name={"github"}/><span>Github</span>
             </a>
           </li>

@@ -1,7 +1,7 @@
 {
 	"SACR": {
 		"name": "Sakura Character Rig",
-		"repo": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
+  "repo": "https://codeberg.org/SakuraSedaia/Sakura-Character-Rig/",
 		"software": "Blender",
 		"branches": {
 			"stable": {

@@ -37,7 +37,7 @@ export default function About() {
             </p>
             <div class={"socials"}>
               <a href={"https://youtube.com/c/SakuraSedaia"}><SocialIcon name={"youtube"} /></a>
-              <a href={"https://github.com/SakuraSedaia"}><SocialIcon name={"github"} /></a>
+              <a href={"https://codeberg.org/SakuraSedaia"}><SocialIcon name={"github"} /></a>
               <a href={"https://www.deviantart.com/sakurasedaia"}><SocialIcon name={"deviantart"} /></a>
               <A href={"/resume"} class={"btn"}>My Resume</A>
             </div>
