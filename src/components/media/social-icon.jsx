@@ -3,7 +3,7 @@ export default function SocialIcon(props) {
     discord: "bi-logos-discord",
     github: "bi-logos-github",
     youtube: "bi-logos-youtube",
-    deviantart: "bi-logos-deviantart",
+    codeberg: "bi-logos-codeberg",
     git: "bi-logos-git",
     instagram: "bi-logos-instagram",
     pinterest: "bi-logos-pinterest",

@@ -31,8 +31,8 @@ function Footer() {
             </a>
           </li>
 					<li>
-						<a href={"https://www.deviantart.com/sakurasedaia"} class={"link"}>
-							<SocialIcon name={"deviantart"}/><span>DeviantArt</span>
+						<a href={"https://codeberg.org/SakuraSedaia"} class={"link"}>
+							<SocialIcon name={"codeberg"}/><span>Codeberg</span>
 						</a>
 					</li>
         </ul>
