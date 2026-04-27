@@ -1,7 +1,7 @@
 {
 	"BlenderDevelopment": {
 		"name": "Blender Development Plugin",
-		"repo": "https://github.com/Sakura-Sedaia/BlenderExtensions",
+		"repo": "https://codeberg.org/SakuraSedaia/blender_pycharm",
 		"software": "PyCharm",
 		"description": "A PyCharm plugin to help develop blender addons and scripts with ease.",
 		"logo": "/images/card-headers/blend-dev-prototype",
@@ -39,10 +39,24 @@
 				"enabled": true,
 				"versions": [
 					{
+						"version": "0.6.0 Alpha",
+						"label": "0.6.0 Alpha",
+						"date": "04/26/2026",
+						"fileName": "BlenderPythonDevelopment-0.6.0-SNAPSHOT.zip",
+						"builds": [
+							{
+								"size": "3.8 MB",
+								"license": "GNU/GPL V3",
+								"notes": "Blender Development for PyCharm 0.6.0 significantly strengthens the foundation of the plugin. The move to uv, the improved project setup tools, the safer execution flow, and the extensive threading and process fixes make this release faster, more predictable, and better suited for real-world Blender extension development across Windows, macOS, and Linux.",
+								"disabled": false
+							}
+						]
+					},
+					{
 						"version": "0.5.0 Alpha",
 						"label": "0.5.0 Alpha",
 						"date": "03/15/2026",
-						"fileName": "BlenderPythonDevelopment-0.4.0-SNAPSHOT.zip",
+						"fileName": "BlenderPythonDevelopment-0.5.0-SNAPSHOT.zip",
 						"builds": [
 							{
 								"size": "3.54 MB",

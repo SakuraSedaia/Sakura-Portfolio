@@ -5,29 +5,41 @@ export default function BlenderDevAbout() {
     <NoHydration>
       <section id={"about"}>
         <div class={"heading"}>
-          <h1>About Blender Extension Development for PyCharm</h1>
+          <h1>About Blender Development for PyCharm</h1>
         </div>
         <div class={"standard-container"}>
           <p>
-            Blender Extension Development integration for PyCharm. This plugin allows you to launch Blender from within PyCharm and automatically or manually reload your Blender extensions during development.
+            Blender Development for PyCharm is a comprehensive plugin that streamlines the creation and debugging of Blender extensions by enabling seamless launch and real-time reloading directly from the IDE. It features a dedicated management system for multiple Blender versions (LTS 4.2+, 5.0, & 5.1) and more.
           </p>
           <h2 class={"styled-heading"}>Features</h2>
           <ul class={"styled-list"}>
-            <li><strong>Automated Environment Management:</strong> One-click downloads for Blender versions 4.2 to 5.0, automatic system installation detection, faster scans with version metadata caching, and integrated connection status.</li>
-            <li><strong>Sandboxed Development:</strong> Isolate your development environment using a project-local <code>.blender-sandbox</code> folder, with support for multiple addon source folders and custom project-specific preferences.</li>
-            <li><strong>Real-time Hot-Reloading:</strong> Automatically or manually reload your extension in Blender with robust <code>sys.modules</code> cache purging and a real-time status bar widget for monitoring connection states.</li>
-            <li><strong>Smart Project Templates:</strong> Quickly bootstrap new extensions with a structure that mirrors PyCharm’s Pure Python setup, including a New Project Wizard for <code>blender_manifest.toml</code> configuration and specialized project types, and setting the project interpreter to your MBV's (Managed Blender Version) packaged python runtime.</li>
-            <li><strong>Integrated CLI Tools:</strong> One-click building into ZIP distributions, manifest validation, and support for custom Blender commands directly from the IDE.</li>
-            <li><strong>Smart UI Integration:</strong> Automatic custom Blender icons for <code>.blend</code> and <code>.blend1</code> files, and integrated logging via <code>blender_plugin.log</code>.</li>
-            <li><strong>User Configuration Import:</strong> When sandboxing is enabled, optionally import your main Blender preferences, startup files, and bookmarks into the sandbox.</li>
-            <li><strong>Custom Splash Screens:</strong> Use a project-specific <code>splash.png</code> in your project root to personalize your development sessions.</li>
+            <li><strong>Integrated Blender Management:</strong> A dedicated system for discovering, downloading, and managing multiple Blender versions (LTS 4.2+ and newer) with automatic linter configuration and sandbox isolation.</li>
+            <li><strong>Real-Time Extension Development:</strong> Robust auto-reload capabilities powered by bidirectional TCP communication, allowing for instant feedback and live updates directly within Blender as you save your code.</li>
+            <li><strong>Automated Project Lifecycle:</strong> Streamlined project creation via an integrated wizard that handles multi-source directory management, manifest configuration, and automated Python virtual environment setup using <strong>uv</strong>.</li>
+            <li><strong>Project Maintenance & Traits:</strong> Built-in tools for managing existing projects, including the generation of agent guidelines, run configurations, <code>.gitignore</code> templates, and GPL licenses for existing projects.</li>
+            <li><strong>Platform-Aware Validation:</strong> Smart detection of system-specific requirements, such as filesystem execution permissions (e.g., <code>noexec</code> on Linux), with guided resolution steps.</li>
+            <li><strong>Global Ready:</strong> Comprehensive internationalization support for 11 languages, ensuring a native experience for developers worldwide.</li>
           </ul>
+
+          <h2 class={"styled-heading"}>License</h2>
+          <p>
+            This project is licensed under the <strong>GNU General Public License v3.0 (GPL-3.0)</strong>.
+          </p>
         </div>
 	      <div class={"notice ai-notice"}>
-		      <h3>AI Content Notice</h3>
+		      <h3>AI Usage Declaration</h3>
 		      <p>
-			      This project was developed almost exclusively using the AI integration tools by JetBrains s.r.o. in IntelliJ IDEA. The AI tools were used to generate the initial code and documentation.
+			      This project is developed in collaboration with <strong>Junie</strong>, an AI agent by JetBrains integrated into IntelliJ IDEA. AI assistance is utilized for:
 		      </p>
+          <ul class={"styled-list"}>
+            <li><strong>Code Generation & Architecture:</strong> Implementing core logic, refactoring, and documentation.</li>
+            <li><strong>Quality Assurance:</strong> Assisting with code reviews, optimization, and bug fixing.</li>
+            <li><strong>Internationalization:</strong> Localizing the plugin into 11+ languages.</li>
+            <li><strong>Workflow Automation:</strong> Managing repetitive tasks, git commits, and documentation updates.</li>
+          </ul>
+          <p>
+            <strong>Human Oversight:</strong> All AI-generated contributions are strictly reviewed, tested, and approved by <strong>Sakura Sedaia</strong> to ensure project integrity and security.
+          </p>
 	      </div>
       </section>
     </NoHydration>
