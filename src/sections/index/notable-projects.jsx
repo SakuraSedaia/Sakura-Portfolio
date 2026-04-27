@@ -30,7 +30,7 @@ export default function NotableProjects() {
 								Visit Website
 							</a>
 							<a
-        href={"https://codeberg.org/SakuraSedaia/frostlight-portfolio-and-blog"}
+								href={"https://github.com/SakuraSedaia/frostlight-portfolio-and-blog"}
 								class={"btn"}
 							>
 								Github Repo
@@ -58,7 +58,7 @@ export default function NotableProjects() {
 								Go to Page
 							</A>
 							<a
-        href={"https://codeberg.org/SakuraSedaia/Sakura-Rig-Interfaces"}
+								href={"https://github.com/SakuraSedaia/Sedaia-Rig-Interfaces"}
 								class={"btn"}
 							>
 								Github Repo

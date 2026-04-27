@@ -1,6 +1,6 @@
 Jonathan Burger
 [Email](jcburger2003@outlook.com)
-[Codeberg](https://codeberg.org/SakuraSedaia)
+[GitHub](https://github.com/SakuraSedaia)
 
 ## Professional Summary
 

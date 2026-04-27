@@ -16,7 +16,7 @@ export default function BlenderDevInstructions() {
           </div>
           <h2 class={"styled-heading"}>Configuration and Setup</h2>
           <ol class={"styled-list"}>
-            <li>Download the latest plugin ZIP file from the <a href="https://codeberg.org/SakuraSedaia/BlenderExtensions/releases" target="_blank" class={"link"}>Codeberg releases page</a>.</li>
+            <li>Download the latest plugin ZIP file from the <a href="https://github.com/Sakura-Sedaia/BlenderExtensions/releases" target="_blank" class={"link"}>GitHub releases page</a>.</li>
             <li>In PyCharm, install the plugin from disk via <strong>Settings</strong> &gt; <strong>Plugins</strong> &gt; Gear Icon &gt; <strong>Install Plugin from Disk...</strong>.</li>
             <li>Create a new <strong>Blender</strong> Run Configuration (Testing, Build, Validate, or Command).</li>
             <li>Select your <strong>Blender version</strong> and optionally enable <strong>Sandboxing</strong> for project isolation.</li>
