@@ -1,7 +1,7 @@
 import { A } from "@solidjs/router";
 import { NoHydration } from "solid-js/web";
 import OptimizedImage from "~/components/media/optimized-image.jsx";
-
+import SocialIcon from "~/components/media/social-icon.jsx";
 export default function NotableProjects() {
   return (
 		<NoHydration>
@@ -33,35 +33,35 @@ export default function NotableProjects() {
 								href={"https://github.com/SakuraSedaia/frostlight-portfolio-and-blog"}
 								class={"btn"}
 							>
-								Github Repo
+								<SocialIcon name={"github"}/> Source
 							</a>
 						</div>
 					</div>
 
 					<div class={"grid-item"}>
-						<h1>Rig Interface</h1>
+						<h1>Blender Development</h1>
 						<hr />
 						<OptimizedImage
-							src={"/images/card-headers/rig-interface-3"}
-							alt={"Rig Interface Logo V3"}
+							src={"/images/card-headers/blend-dev-prototype"}
+							alt={"Blender Development for PyCharm"}
 						/>
 						<p>
-							The Rig Interface is my first big Python Project, working
-							exclusively with the Blender Python API it contains several
-							utilities and UI's for many versions of my Character Rig.
+							Blender Development for PyCharm is a comprehensive plugin that streamlines the creation
+							and debugging of Blender extensions by enabling seamless launch and real-time reloading
+							directly from the IDE.
 						</p>
 						<div class={"projects-link"}>
 							<A
-								href={"/plugin/sakura-rig-interface"}
+								href={"/plugin/blender-development"}
 								class={"btn"}
 							>
 								Go to Page
 							</A>
 							<a
-								href={"https://github.com/SakuraSedaia/Sedaia-Rig-Interfaces"}
+								href={"https://codeberg.org/SakuraSedaia/blender_pycharm"}
 								class={"btn"}
 							>
-								Github Repo
+								<SocialIcon name={"codeberg"}/> Source
 							</a>
 						</div>
 					</div>

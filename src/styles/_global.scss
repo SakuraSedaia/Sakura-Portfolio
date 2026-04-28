@@ -23,6 +23,8 @@ img {
 svg.icon {
   width: 1.5rem;
   height: 1.5rem;
+  vertical-align: middle;
+  margin-top: -0.125rem; // Fine-tune alignment for baseline
 }
 
 a {
@@ -99,7 +101,10 @@ ol.styled-list {
   gap: 1rem;
 }
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   color: hsl(var(--tx-primary-val));
   box-shadow: 0 0 hsl(var(--tx-accent-val));
   width: fit-content;
