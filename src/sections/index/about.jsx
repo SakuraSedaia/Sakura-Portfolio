@@ -31,9 +31,9 @@ export default function About() {
           <div class={"header-content"}>
             <h1>Sedaia Designs</h1>
             <p style={"margin-left: 0.5rem;"}>
-              A U.S.-based UI Designer and Full-Stack Developer proficient in SolidJS, SCSS, and Python. Beyond
-              development, I utilize Blender to produce high-quality Minecraft based renders and create downloadable
-              Minecraft and Hytale 3D assets and rigs for the Blender community.
+              A U.S.-based Developer and Blender Artist with a passion for Open Source software. As a dedicated hobbyist,
+              I specialize in Blender-related development, ranging from creating a suite of development tools for Blender
+              within PyCharm to building custom Blender Plugins and high-quality 3D assets.
             </p>
             <div class={"socials"}>
               <a href={"https://youtube.com/c/SakuraSedaia"}><SocialIcon name={"youtube"} /></a>
