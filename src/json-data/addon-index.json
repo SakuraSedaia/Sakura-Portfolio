@@ -128,7 +128,7 @@
 	},
 	"SakuraRigInterface": {
 		"name": "Sakura Rig Interface",
-		"repo": "https://github.com/Sakura-Sedaia/Sakura-Rig-Interfaces",
+		"repo": "https://codeberg.org/SakuraSedaia/Sakura-Rig-Interfaces",
 		"software": "Blender",
 		"license": "GNU/GPL V3",
 		"description": "A Blender Addon for creating rigs and rigs controllers.",

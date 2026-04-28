@@ -1,11 +1,12 @@
 {
 	"SACR": {
 		"name": "Sakura Character Rig",
-		"repo": "https://github.com/SakuraSedaia/Sakura-Character-Rig/",
+		"repo": "https://codeberg.org/SakuraSedaia/Sakura-Character-Rig/",
 		"software": "Blender",
 		"branches": {
 			"stable": {
 				"description": "Stable Branch",
+				"branch": "main",
 				"path": "assets/blender/SACR/Stable",
 				"namePrefix": "SACR",
 				"license": "MIT",
@@ -39,6 +40,7 @@
 			},
 			"dev": {
 				"description": "Development Branch",
+				"branch": "D8.0.0",
 				"path": "assets/blender/SACR/Dev",
 				"namePrefix": "SACR",
 				"enabled": true,
