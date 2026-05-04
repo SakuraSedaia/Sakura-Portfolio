@@ -83,18 +83,18 @@
 }
 
 #preferred-tooling {
-	color: hsl(0, 0%, 100%);
+	color: var(--tx-primary);
 	
 	.grid-item {
 		h1, h2, p {
-			color: hsl(0, 0%, 100%);
+			color: var(--tx-primary);
 		}
 		
 		.link {
-			color: hsl(0, 0%, 100%);
+			color: var(--tx-primary);
 			
 			&:hover {
-				color: hsl(var(--tx-accent-val));
+				color: var(--tx-accent);
 			}
 		}
 	}
@@ -109,7 +109,7 @@
 			margin-bottom: 0.5rem;
 			
 			a {
-				color: hsl(0, 0%, 100%);
+				color: var(--tx-primary);
 				box-shadow: inset 0 0 0 0 hsl(var(--tx-accent-val));
 				transition: box-shadow 0.3s ease-in-out;
 				

@@ -95,7 +95,7 @@
 				cursor: pointer;
 				transition: all 200ms ease;
 				font-size: var(--font-size-body);
-				color: white;
+				color: var(--tx-primary);
 				
 				&:hover {
 					border-color: hsl(var(--tx-accent-val));
