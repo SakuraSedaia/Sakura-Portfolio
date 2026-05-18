@@ -1,96 +1,103 @@
 [
-  {
-    "page": "Home",
-    "path": "",
-    "show": true,
-    "hide_from_search": false,
-    "subnav": false,
-    "subpages": [
-      {
-        "page": "",
-        "path": "",
-        "show": false,
-        "hide_from_search": true
-      }
-    ]
-  },
-  {
-    "page": "Projects",
-    "path": "https://projects.sakura-sedaia.com",
-    "show": true,
-    "hide_from_search": false,
-    "subnav": true
-  },
-  {
-    "page": "Creations",
-    "path": "creations",
-    "show": true,
-    "hide_from_search": false,
-    "subnav": true,
-    "subpages": [
-      {
-        "page": "Renders",
-        "path": "creation/renders",
-        "show": true,
-        "hide_from_search": false
-      },
-      {
-        "page": "Animations",
-        "path": "creation/animations",
-        "show": true,
-        "hide_from_search": false
-      },
-      {
-        "page": "Websites",
-        "path": "creation/www",
-        "show": true,
-        "hide_from_search": false
-      }
-    ]
-  },
-  {
-    "page": "Commissions",
-    "path": "commissions",
-    "show": false,
-    "hide_from_search": true,
-    "subnav": false,
-    "subpages": [
-      {
-        "page": "",
-        "path": "",
-        "show": false,
-        "hide_from_search": true
-      }
-    ]
-  },
-  {
-    "page": "Resume",
-    "path": "resume",
-    "show": false,
-    "hide_from_search": true,
-    "subnav": false,
-    "subpages": [
-      {
-        "page": "",
-        "path": "",
-        "show": false,
-        "hide_from_search": true
-      }
-    ]
-  },
-  {
-    "page": "Contact",
-    "path": "contact",
-    "show": true,
-    "hide_from_search": false,
-    "subnav": false,
-    "subpages": [
-      {
-        "page": "",
-        "path": "",
-        "show": false,
-        "hide_from_search": false
-      }
-    ]
-  }
+	{
+		"page": "Home",
+		"path": "",
+		"show": true,
+		"hide_from_search": false,
+		"subnav": false,
+		"subpages": [
+			{
+				"page": "",
+				"path": "",
+				"show": false,
+				"hide_from_search": true
+			}
+		]
+	},
+	{
+		"page": "Projects",
+		"path": "https://projects.sakura-sedaia.com",
+		"show": true,
+		"hide_from_search": false,
+		"subnav": true
+	},
+	{
+		"page": "Store",
+		"path": "https://store.sakura-sedaia.com",
+		"show": true,
+		"hide_from_search": false,
+		"subnav": true
+	},
+	{
+		"page": "Creations",
+		"path": "creations",
+		"show": true,
+		"hide_from_search": false,
+		"subnav": true,
+		"subpages": [
+			{
+				"page": "Renders",
+				"path": "creation/renders",
+				"show": true,
+				"hide_from_search": false
+			},
+			{
+				"page": "Animations",
+				"path": "creation/animations",
+				"show": true,
+				"hide_from_search": false
+			},
+			{
+				"page": "Websites",
+				"path": "creation/www",
+				"show": true,
+				"hide_from_search": false
+			}
+		]
+	},
+	{
+		"page": "Commissions",
+		"path": "commissions",
+		"show": false,
+		"hide_from_search": true,
+		"subnav": false,
+		"subpages": [
+			{
+				"page": "",
+				"path": "",
+				"show": false,
+				"hide_from_search": true
+			}
+		]
+	},
+	{
+		"page": "Resume",
+		"path": "resume",
+		"show": false,
+		"hide_from_search": true,
+		"subnav": false,
+		"subpages": [
+			{
+				"page": "",
+				"path": "",
+				"show": false,
+				"hide_from_search": true
+			}
+		]
+	},
+	{
+		"page": "Contact",
+		"path": "contact",
+		"show": true,
+		"hide_from_search": false,
+		"subnav": false,
+		"subpages": [
+			{
+				"page": "",
+				"path": "",
+				"show": false,
+				"hide_from_search": false
+			}
+		]
+	}
 ]
