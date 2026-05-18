@@ -5,9 +5,6 @@
 // Pages
 @use "pages/index" as *;
 @use "pages/404" as *;
-@use "pages/asset/sacr" as *;
-@use "pages/plugin/sri" as *;
-@use "pages/plugin/blender-development" as *;
 @use "pages/assets" as *;
 @use "pages/changelog/index" as *;
 @use "pages/resume" as *;
@@ -17,13 +14,9 @@
 @use "components/breadcrumb" as *;
 @use "components/image-modal" as *;
 @use "components/render-card" as *;
-@use "components/download-assets" as *;
-@use "components/download-plugins" as *;
 @use "components/mobile-nav" as *;
 @use "components/tooltip" as *;
-@use "components/deprecation-notice" as *;
 
 // Sections
 @use "sections/header-footer" as *;
-@use "sections/shared-downloads" as *;
 @use "sections/known-issues" as *;

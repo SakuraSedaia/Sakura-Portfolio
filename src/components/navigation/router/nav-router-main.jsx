@@ -4,6 +4,10 @@ import Routes from "~/json-data/routes.json";
 // TODO: Add background moving animations to the nav elements when a new page is selected.
 
 export default function NavRouterMain() {
+	function checkHTTP(url) {
+		return !!(url.startsWith("http://") || url.startsWith("https://"));
+	}
+	
 	return (
 			<For
 				each={Routes}
@@ -16,7 +20,12 @@ export default function NavRouterMain() {
 				{(nav, n) => (
 					<Show when={nav.show === true}>
 						<div class={"nav-item"}>
-							<A href={"/" + nav.path} end>{nav.page}</A>
+							<Show
+								when={checkHTTP(nav.path)}
+								fallback={<A href={"/" + nav.path} end>{nav.page}</A>}
+							>
+								<a href={nav.path}>{nav.page}</a>
+							</Show>
 						</div>
 					</Show>
 				)}

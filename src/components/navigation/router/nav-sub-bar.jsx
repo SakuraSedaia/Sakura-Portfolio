@@ -7,6 +7,10 @@ import NavRouterSub from "./nav-router-sub.jsx";
 export default function NavSubBar() {
 	const location = useLocation();
 	
+	function checkHTTP(url) {
+		return !!(url.startsWith("http://") || url.startsWith("https://"));
+	}
+
 	return (
 		<For each={Routes} fallback={
 			<div class={"sub-navigation"}>
@@ -25,7 +29,12 @@ export default function NavSubBar() {
 							<NavRouterSub parent={nav} />
 							<div class={"nav-arrow"}> &lt; </div>
 							<div class={"sub-nav-item"}>
-								<A href={"/" + nav.path}>{nav.page}</A>
+								<Show
+									when={checkHTTP(nav.path)}
+									fallback={<A href={"/" + nav.path}>{nav.page}</A>}
+								>
+									<a href={nav.path}>{nav.page}</a>
+								</Show>
 							</div>
 						</div>
 					</Show>

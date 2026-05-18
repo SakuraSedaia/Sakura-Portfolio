@@ -1,4 +1,3 @@
-import { A } from "@solidjs/router";
 import { NoHydration } from "solid-js/web";
 import OptimizedImage from "~/components/media/optimized-image.jsx";
 import SocialIcon from "~/components/media/social-icon.jsx";
@@ -51,12 +50,12 @@ export default function NotableProjects() {
 							directly from the IDE.
 						</p>
 						<div class={"projects-link"}>
-							<A
-								href={"/plugin/blender-development"}
+							<a
+								href={"https://projects.sakura-sedaia.com/blender-development"}
 								class={"btn"}
 							>
 								Go to Page
-							</A>
+							</a>
 							<a
 								href={"https://codeberg.org/SakuraSedaia/blender_pycharm"}
 								class={"btn"}
