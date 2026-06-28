@@ -1,8 +1,6 @@
 import { NavItem, NavRouter } from "~/components/nav";
 
-interface NavBarProps {
-
-}
+interface NavBarProps {}
 
 export default function NavBar(props: NavBarProps) {
   return (

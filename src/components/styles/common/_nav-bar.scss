@@ -41,7 +41,7 @@
           border-radius: 1rem;
           line-height: var(--text-size-primary);
           border: var(--border-width) solid hsla(0, 0%, 100%, 0);
-          box-shadow: 0 0 0px var(--tx-1-contrast);
+          box-shadow: 0 0 0 var(--tx-1-contrast);
 
           &:hover {
             border: var(--border-width) solid var(--accent);
