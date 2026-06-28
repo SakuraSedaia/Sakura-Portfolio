@@ -1,0 +1,33 @@
+.index {
+  &__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    background-image: url("/images/minecraft-renders/farmer-sakura.png");
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem 4rem;
+      padding: 1rem;
+      background-color: hsla(0, 0%, 0%, 0.5); // TODO: Make this switch to a 50% opacity white when user is in lite mode.
+      border-radius: 1rem;
+      box-shadow: 0 0 10px var(--tx-1-contrast);
+      backdrop-filter: blur(10px) saturate(20%);
+      width: 50rem;
+
+      p {
+        padding-inline: 2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  &__projects {
+
+  }
+}
