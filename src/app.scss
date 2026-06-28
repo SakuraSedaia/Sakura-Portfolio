@@ -1,5 +1,6 @@
 @use "components/styles/common/nav-bar";
 @use "components/styles/common/footer";
+@use "components/styles/common/card-gallery";
 
 @use "components/styles/pages/index";
 
@@ -138,43 +139,3 @@ img {
   margin-block: 1rem;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  justify-content: flex-start;
-  align-items: stretch;
-  height: 28rem;
-  background-color: var(--bg-3);
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px var(--tx-1-contrast);
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  scrollbar-color: var(--accent) transparent;
-  box-sizing: border-box;
-
-  .card-item {
-    flex: 0 0 20rem;
-    height: 100%;
-    overflow: hidden;
-    background-color: var(--bg-2);
-    border-radius: .5rem;
-    padding: 1rem;
-    box-shadow: 0 0 10px var(--tx-1-contrast);
-    backdrop-filter: blur(10px) saturate(20%);
-    box-sizing: border-box;
-
-    h3 {
-      color: var(--accent);
-      text-align: center;
-      font-size: 1.5rem;
-    }
-
-    p {
-      margin-bottom: 1rem;
-    }
-  }
-}

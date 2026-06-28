@@ -1,16 +1,18 @@
-import { JSX, splitProps } from "solid-js";
+import { createSignal, JSX, splitProps } from "solid-js";
 import { Link } from "~/components/links";
 import { handleHorizontalWheel } from "~/utils/scroll-behavior";
+import ImageModal from "~/components/graphics/ImageModal";
 
-interface CardContainerProps {
+interface CardContainerProps extends JSX.HTMLAttributes<HTMLDivElement> {
   children: JSX.Element;
 }
 
-interface CardItemProps {
+interface CardItemProps extends JSX.HTMLAttributes<HTMLDivElement> {
   title: string;
   description?: string;
-  image?: string;
-  linkName?: string;
+  image: string;
+  imageDescription?: string;
+  imageAlt?: string;
   linkPath?: string;
 }
 
@@ -33,18 +35,40 @@ export function CardItem(props: CardItemProps) {
     "title",
     "description",
     "image",
-    "linkName",
+    "imageDescription",
+    "imageAlt",
     "linkPath",
   ]);
+
+  const [modalOpen, setModalOpen] = createSignal(false);
 
   return (
     <div class={"card-item"} {...(others as any)}>
       <h3>{local.title}</h3>
       {local.description && <p>{local.description}</p>}
-      {local.image && <img src={local.image} alt={""} />}
+      <div class={"card-item__image-container"}>
+        {local.image && (
+          <button
+            class={"card-item__image-button"}
+            type={"button"}
+            onClick={() => setModalOpen(true)}
+            aria-label={`Open ${local.imageAlt || local.title} image preview`}
+          >
+            <img src={local.image} alt={local.imageAlt || ""} />
+          </button>
+        )}
+      </div>
+      <ImageModal
+        show={modalOpen()}
+        onClose={() => setModalOpen(false)}
+        src={local.image}
+        alt={local.imageAlt}
+        title={local.title}
+        description={local.imageDescription}
+      />
       {local.linkPath && (
-        <Link path={local.linkPath} emboss={true}>
-          {local.linkName}
+        <Link path={local.linkPath} emboss={true} class={"card-item__link"}>
+          {local.title}
         </Link>
       )}
     </div>

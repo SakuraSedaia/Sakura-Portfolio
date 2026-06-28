@@ -1,5 +1,7 @@
 import { Link } from "~/components/links";
 import { CardGallery, CardItem } from "~/components/cards/CardGallery";
+import ProjectsList from "~/data/json/projects.json";
+import { For } from "solid-js";
 
 export default function Projects() {
   return (
@@ -7,15 +9,18 @@ export default function Projects() {
       <h2>Projects</h2>
 
       <CardGallery>
-        <CardItem
-          title={"Project 1"}
-          description={
-            "Brief summary of the project, describing what software was used"
-          }
-          image={"images/projects/project1.jpg"}
-          linkName={"Project 1"}
-          linkPath={"projects://project-1"}
-        />
+        <For each={ProjectsList}>
+          {(prop, i) => (
+            <CardItem
+              title={prop.title}
+              description={prop.description}
+              image={prop.imageSrc}
+              imageDescription={prop.imageDescription}
+              imageAlt={prop.imageAlt}
+              linkPath={prop.linkPath}
+            />
+          )}
+        </For>
       </CardGallery>
 
       <p>
