@@ -1,10 +1,14 @@
-import { Title } from "@solidjs/meta";
 import { HttpStatusCode } from "@solidjs/start";
+import Metadata from "~/components/page-metadata";
 
 export default function NotFound() {
   return (
     <main>
-      <Title>Not Found</Title>
+      <Metadata
+        title={"Not Found | Sedaia Designs"}
+        description={"The requested Sedaia Designs page could not be found."}
+        noIndex
+      />
       <HttpStatusCode code={404} />
       <h1>Page Not Found</h1>
       <p>
