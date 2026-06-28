@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+
+if command -v pnpm >/dev/null 2>&1; then
+  pnpm --silent update:sitemap
+else
+  node utils/update-sitemap-lastmod.mjs
+fi
+
+git add public/sitemap.xml

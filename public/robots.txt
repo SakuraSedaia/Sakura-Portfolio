@@ -1,0 +1,13 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sakura-sedaia.com/sitemap.xml

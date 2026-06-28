@@ -6,7 +6,9 @@
     "dev": "vite dev --port 3232 --host",
     "build": "vite build",
     "start": "vite start",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "update:sitemap": "node utils/update-sitemap-lastmod.mjs",
+    "setup:githooks": "git config core.hooksPath .githooks"
   },
   "dependencies": {
     "@solidjs/meta": "^0.29.4",
