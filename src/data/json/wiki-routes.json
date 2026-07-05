@@ -1,0 +1,23 @@
+{
+  "$schema": "wiki-routes.schema.json",
+  "basePath": "/wiki",
+  "routes": [
+    {
+      "name": "Home",
+      "path": "/",
+      "fileName": "index"
+    },
+    {
+      "name": "Blender Development for PyCharm",
+      "path": "/blender-pycharm",
+      "fileName": "blender-pycharm/index",
+      "children": [
+        {
+          "name": "Getting Started",
+          "path": "/blender-pycharm/getting-started",
+          "fileName": "blender-pycharm/getting-started/index"
+        }
+      ]
+    }
+  ]
+}

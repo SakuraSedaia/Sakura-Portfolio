@@ -38,13 +38,15 @@ export default function IconBundle(props: IconBundleProps) {
   if (!iconName) return null;
 
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      class={`icon ${local.class}`}
-      {...others}
-    >
-      <use href={`/images/vectors/${iconName}.svg#${iconName}`} />
-    </svg>
+    <div class={"icon"}>
+      <svg
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class={`${local.class}`}
+        {...others}
+      >
+        <use href={`/images/vectors/${iconName}.svg#${iconName}`} />
+      </svg>
+    </div>
   );
 }

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "basePath": "/projects",
+  "routes": [
+    {
+      "name": "Overview",
+      "path": "/"
+    },
+    {
+      "name": "Blender Development",
+      "path": "/blender-development"
+    },
+    {
+      "name": "Sakura Rig Utilities",
+      "path": "/sakura-rig-utilities"
+    },
+    {
+      "name": "Sakura Character Rig",
+      "path": "/sakura-character-rig"
+    }
+  ]
+}

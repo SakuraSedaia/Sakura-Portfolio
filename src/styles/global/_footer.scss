@@ -1,0 +1,17 @@
+.footer {
+  padding-block: 2rem;
+  padding-inline: 10rem;
+  text-align: center;
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  &__copyright {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,46 @@
+@use "global/base-styles";
+@use "global/navigation-bar";
+@use "global/header";
+@use "global/footer";
+
+@use "routes/index";
+
+@import "global/fonts";
+
+
+:root {
+  --bg-0: hsl(228deg 18% 8%);
+  --bg-1: hsl(300, 21%, 12%);
+  --bg-2: hsl(304, 17%, 16%);
+  --bg-3: hsl(304, 17%, 20%);
+  --tx-1: hsl(220deg 28% 92%);
+  --tx-2: hsl(219deg 14% 74%);
+  --tx-3: hsl(334, 50%, 15%);
+  --accent: hsl(328deg 62% 85%);
+  --border-1: hsl(300, 16%, 24%);
+
+  --font-heading: "Marhey";
+  --font-body: "Noto Sans";
+  --font-mono: "Source Code Pro";
+
+  --font-size-body: 1.125rem;
+  --font-size-heading: 1.75rem;
+  --font-size-subheading: 1.25rem;
+  --font-size-small: 0.8333rem;
+  --font-size-nav: 1rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --box-shadow-lg: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.46),
+  0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.47),
+  0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.21);
+
+  --nav-container-bg: hsl(304deg 17% 16% / 0.88);
+  --nav-container-border: hsl(328deg 62% 85% / 0.35);
+  --nav-container-shadow: hsl(328deg 62% 85% / 0.5);
+  --nav-title-bg: hsl(300deg 21% 12% / 0.8);
+  --nav-router-bg: hsl(300deg 21% 12% / 0.8);
+  --nav-link-hover-bg: hsl(328deg 62% 85% / 0.1);
+  --nav-link-active-bg: hsl(328deg 62% 85% / 0.14);
+  --nav-link-active-border: var(--accent);
+  --nav-link-active-hover-border: var(--tx-1);
+}

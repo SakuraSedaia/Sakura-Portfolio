@@ -1,0 +1,84 @@
+{
+  "$schema": "routes.schema.json",
+  "main": {
+    "routes": [
+      {
+        "name": "Home",
+        "path": "/",
+        "fileName": "index",
+        "meta": {
+          "title": "Sedaia Designs",
+          "description": "Sedaia Designs is Sakura's portfolio for Minecraft-style voxel 3D art, SolidJS websites, and Blender extension development.",
+          "url": "/"
+        }
+      },
+      {
+        "name": "About",
+        "path": "/about",
+        "meta": {
+          "title": "About Sakura | Sedaia Designs",
+          "description": "Learn about Sakura, a freelance software developer and voxel 3D artist specialising in Minecraft-style environments, SolidJS websites, and Blender extension development.",
+          "url": "/about"
+        }
+      },
+      {
+        "name": "Projects",
+        "path": "/projects",
+        "meta": {
+          "title": "Projects | Sedaia Designs",
+          "description": "Explore Sakura's projects, including Blender Development for PyCharm, Rig Interfaces, SACR, and more.",
+          "url": "/projects"
+        }
+      },
+      {
+        "name": "Wiki",
+        "path": "/wiki",
+        "meta": {
+          "title": "Wiki | Sedaia Designs",
+          "description": "A collection of guides, tutorials, and documentation for Sakura's projects, including Blender Development for PyCharm, Rig Interfaces, SACR, and more.",
+          "url": "/wiki"
+        }
+      },
+      {
+        "name": "Contact",
+        "path": "/contact",
+        "meta": {
+          "title": "Contact | Sedaia Designs",
+          "description": "Contact Sakura at Sedaia Designs for project inquiries, collaborations, commissions, and freelance development or voxel art work.",
+          "url": "/contact"
+        }
+      },
+      {
+        "name": "Not Found",
+        "path": "/*404",
+        "fileName": "[...404]",
+        "params": ["404"],
+        "meta": {
+          "title": "Not Found | Sedaia Designs",
+          "description": "The requested Sedaia Designs page could not be found.",
+          "noIndex": true
+        }
+      }
+    ]
+  },
+  "wiki": {
+    "basePath": "wiki",
+    "routes": [
+      {
+        "name": "Wiki",
+        "path": "/",
+        "fileName": "index"
+      }
+    ]
+  },
+  "projects": {
+    "basePath": "projects",
+    "routes": [
+      {
+        "name": "Projects",
+        "path": "/",
+        "fileName": "index"
+      }
+    ]
+  }
+}

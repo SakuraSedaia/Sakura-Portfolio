@@ -4,6 +4,7 @@
 import type { Defu } from "defu";
 
 
+
 type UserAppConfig = Defu<{}, []>
 
 declare module "nitropack/types" {

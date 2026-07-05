@@ -1,0 +1,16 @@
+section.header__container {
+  .header__children {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 1rem;
+    color: white;
+
+    a {
+      &:hover {
+        color: var(--tx-link-hover);
+      }
+    }
+  }
+}
