@@ -1,0 +1,565 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "images": [
+    {
+      "sakura-pride": {
+        "name": "Sakura Pride",
+        "filename": "images/renders/char/sakura-pride.avif",
+        "description": "Celebration of Sakura's Pride in June of 2022.",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2022-06-01"
+      }
+    },
+    {
+      "andreas-actavious": {
+        "name": "Andreas Actavious",
+        "filename": "images/renders/char/andreas-actavious.avif",
+        "description": "Character Model of Andreas Actavious.",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-01-01"
+      }
+    },
+    {
+      "gabriella": {
+        "name": "Gabriella",
+        "filename": "images/renders/char/gabriella.avif",
+        "description": "Fanart Character Render of Gabriella, a humanoid feline from the game \"Project Feline\" by Raymond Cripps",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2019-10-01"
+      }
+    },
+    {
+      "naia": {
+        "name": "Naia",
+        "filename": "images/renders/char/naia.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-06-01"
+      }
+    },
+    {
+      "mermaid-sakura": {
+        "name": "Mermaid Sakura",
+        "filename": "images/renders/char/mermaid-sakura.avif",
+        "description": "Character Model of a Mermaid Sakura in Land Form.",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-07-01"
+      }
+    },
+    {
+      "zophiekat": {
+        "name": "Zophiekat",
+        "filename": "images/renders/char/zophiekat.avif",
+        "description": "Fanart Character Model of Zophiekat, a prominant 3D Artist and creator of the Neokat Rig.",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-03-01"
+      }
+    },
+    {
+      "ainya": {
+        "name": "Ainya",
+        "filename": "images/renders/char/ainya.avif",
+        "description": "Fanart render of Ainya, a mermaid OC originally drawn by the twitter user BinOfTrash.",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-05-01"
+      }
+    },
+    {
+      "sakura": {
+        "name": "Sakura",
+        "filename": "images/renders/char/sakura.avif",
+        "description": "3D Avatar Render of Sakura wearing a HD Outfit by BinOfTrash and Silver Deer Entertainment (Formerly Alpha Studios)",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-03-01"
+      }
+    },
+    {
+      "flame-guardian-original": {
+        "name": "Flame Guardian Original",
+        "filename": "images/renders/char/flame-guardian-original.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-03-01"
+      }
+    },
+    {
+      "sakura-yuko": {
+        "name": "Sakura Yuko",
+        "filename": "images/renders/char/sakura-yuko.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-08-01"
+      }
+    },
+    {
+      "knight-jennifer": {
+        "name": "Knight Jennifer",
+        "filename": "images/renders/char/knight-jennifer.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2022-01-01"
+      }
+    },
+    {
+      "flame-guardian-updated": {
+        "name": "Flame Guardian Updated",
+        "filename": "images/renders/char/flame-guardian-updated.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-03-01"
+      }
+    },
+    {
+      "sakura-helsor_april2025": {
+        "name": "Sakura Helsor April2025",
+        "filename": "images/renders/char/sakura-helsor_april2025.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2000-01-01"
+      }
+    },
+    {
+      "sakura-voltaris": {
+        "name": "Sakura Voltaris",
+        "filename": "images/renders/char/sakura-voltaris.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-07-01"
+      }
+    },
+    {
+      "portal-unfinished": {
+        "name": "Portal Unfinished",
+        "filename": "images/renders/env/portal-unfinished.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2023-11-01"
+      }
+    },
+    {
+      "enchanting-room": {
+        "name": "Enchanting Room",
+        "filename": "images/renders/env/enchanting-room.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2023-10-01"
+      }
+    },
+    {
+      "tavern-set": {
+        "name": "Tavern Set",
+        "filename": "images/renders/env/tavern-set.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-04-01"
+      }
+    },
+    {
+      "ruined-shrine": {
+        "name": "Ruined Shrine",
+        "filename": "images/renders/env/ruined-shrine.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2022-03-01"
+      }
+    },
+    {
+      "nino-cyberheist": {
+        "name": "Nino Cyberheist",
+        "filename": "images/renders/char-env/nino-cyberheist.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2024-06-01"
+      }
+    },
+    {
+      "sakura-demon": {
+        "name": "Sakura Demon",
+        "filename": "images/renders/char-env/sakura-demon.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-12-01"
+      }
+    },
+    {
+      "tygren-vs-thalleous": {
+        "name": "Tygren Vs Thalleous",
+        "filename": "images/renders/char-env/tygren-vs-thalleous.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-01-01"
+      }
+    },
+    {
+      "niika-and-lucan-vs-zombies": {
+        "name": "Niika And Lucan Vs Zombies",
+        "filename": "images/renders/char-env/niika-and-lucan-vs-zombies.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-01-01"
+      }
+    },
+    {
+      "sakura-treehouse": {
+        "name": "Sakura Treehouse",
+        "filename": "images/renders/char-env/sakura-treehouse.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-01-01"
+      }
+    },
+    {
+      "sakura-horror-forest": {
+        "name": "Sakura Horror Forest",
+        "filename": "images/renders/char-env/sakura-horror-forest.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-08-01"
+      }
+    },
+    {
+      "sakura-forest-hike": {
+        "name": "Sakura Forest Hike",
+        "filename": "images/renders/char-env/sakura-forest-hike.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2022-05-01"
+      }
+    },
+    {
+      "jen-birthday": {
+        "name": "Jen Birthday",
+        "filename": "images/renders/char-env/jen-birthday.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2022-07-01"
+      }
+    },
+    {
+      "mermaid-sakura-solo": {
+        "name": "Mermaid Sakura Solo",
+        "filename": "images/renders/char-env/mermaid-sakura-solo.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-07-01"
+      }
+    },
+    {
+      "saki-and-azzy-christmas": {
+        "name": "Saki And Azzy Christmas",
+        "filename": "images/renders/char-env/saki-and-azzy-christmas.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-11-01"
+      }
+    },
+    {
+      "sakura-dragon-egg-discovery_dec2020": {
+        "name": "Sakura Dragon Egg Discovery Dec2020",
+        "filename": "images/renders/char-env/sakura-dragon-egg-discovery_dec2020.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-12-01"
+      }
+    },
+    {
+      "sakura-sword-school": {
+        "name": "Sakura Sword School",
+        "filename": "images/renders/char-env/sakura-sword-school.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-06-01"
+      }
+    },
+    {
+      "sakura-office": {
+        "name": "Sakura Office",
+        "filename": "images/renders/char-env/sakura-office.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2023-09-01"
+      }
+    },
+    {
+      "eve-and-gez": {
+        "name": "Eve And Gez",
+        "filename": "images/renders/char-env/eve-and-gez.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2023-07-01"
+      }
+    },
+    {
+      "jon-and-jen-running": {
+        "name": "Jon And Jen Running",
+        "filename": "images/renders/char-env/jon-and-jen-running.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2021-09-01"
+      }
+    },
+    {
+      "sakura-blacksmith": {
+        "name": "Sakura Blacksmith",
+        "filename": "images/renders/char-env/sakura-blacksmith.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2023-03-01"
+      }
+    },
+    {
+      "nether-honeymoon": {
+        "name": "Nether Honeymoon",
+        "filename": "images/renders/char-env/nether-honeymoon.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2025-10-01"
+      }
+    },
+    {
+      "naia-birthday": {
+        "name": "Naia Birthday",
+        "filename": "images/renders/char-env/naia-birthday.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-07-01"
+      }
+    },
+    {
+      "tanya-azura-family": {
+        "name": "Tanya Azura Family",
+        "filename": "images/renders/char-env/tanya-azura-family.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2021-05-01"
+      }
+    },
+    {
+      "sedaia-family": {
+        "name": "Sedaia Family",
+        "filename": "images/renders/char-env/sedaia-family.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-04-01"
+      }
+    },
+    {
+      "saki-and-asuka-etheria-meetup": {
+        "name": "Saki And Asuka Etheria Meetup",
+        "filename": "images/renders/char-env/saki-and-asuka-etheria-meetup.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2021-03-01"
+      }
+    },
+    {
+      "mermaid-sakura-with-child": {
+        "name": "Mermaid Sakura With Child",
+        "filename": "images/renders/char-env/mermaid-sakura-with-child.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-07-01"
+      }
+    },
+    {
+      "sakura-and-co": {
+        "name": "Sakura And Co",
+        "filename": "images/renders/char-env/sakura-and-co.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-04-01"
+      }
+    },
+    {
+      "amias-bridge": {
+        "name": "Amias Bridge",
+        "filename": "images/renders/char-env/amias-bridge.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-08-01"
+      }
+    },
+    {
+      "sakura-aid": {
+        "name": "Sakura Aid",
+        "filename": "images/renders/char-env/sakura-aid.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2021-09-01"
+      }
+    },
+    {
+      "birthday-overlook": {
+        "name": "Birthday Overlook",
+        "filename": "images/renders/char-env/birthday-overlook.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2025-07-01"
+      }
+    },
+    {
+      "sakura-frozen": {
+        "name": "Sakura Frozen",
+        "filename": "images/renders/char-env/sakura-frozen.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-06-01"
+      }
+    },
+    {
+      "sakura-grieving": {
+        "name": "Sakura Grieving",
+        "filename": "images/renders/char-env/sakura-grieving.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-04-01"
+      }
+    },
+    {
+      "old-sow-mod-team": {
+        "name": "Old Sow Mod Team",
+        "filename": "images/renders/char-env/old-sow-mod-team.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-10-01"
+      }
+    },
+    {
+      "sakura-atm9": {
+        "name": "Sakura Atm9",
+        "filename": "images/renders/char-env/sakura-atm9.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2024-07-01"
+      }
+    },
+    {
+      "sakura-frozen-v2": {
+        "name": "Sakura Frozen V2",
+        "filename": "images/renders/char-env/sakura-frozen-v2.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2022-04-01"
+      }
+    },
+    {
+      "sakura-couch": {
+        "name": "Sakura Couch",
+        "filename": "images/renders/char-env/sakura-couch.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2023-09-01"
+      }
+    },
+    {
+      "sakura-injured": {
+        "name": "Sakura Injured",
+        "filename": "images/renders/char-env/sakura-injured.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2021-06-01"
+      }
+    },
+    {
+      "kirito-and-asuna": {
+        "name": "Kirito And Asuna",
+        "filename": "images/renders/char-env/kirito-and-asuna.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-02-01"
+      }
+    },
+    {
+      "azura-birthday": {
+        "name": "Azura Birthday",
+        "filename": "images/renders/char-env/azura-birthday.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2021-07-01"
+      }
+    },
+    {
+      "sakura-sunset": {
+        "name": "Sakura Sunset",
+        "filename": "images/renders/char-env/sakura-sunset.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2024-10-01"
+      }
+    },
+    {
+      "frozen-phoenix_may2025": {
+        "name": "Frozen Phoenix",
+        "filename": "images/renders/char-env/frozen-phoenix_may2025.avif",
+        "description": "Depicts a scene where a humanoid, phoenix feline hybrid is encased in a magical, frozen prison where she's been kept for millenia where she was forgotten and abandoned, until a group of soldiers from the Frostborne army come to her rescue, finally freeing the poor woman.",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2025-05-01"
+      }
+    },
+    {
+      "saku-and-az-cave-tour": {
+        "name": "Saku And Az Cave Tour",
+        "filename": "images/renders/char-env/saku-and-az-cave-tour.avif",
+        "description": "",
+        "tags": ["minecraft", "render", "blender"],
+        "link": "",
+        "date": "2020-10-01"
+      }
+    }
+  ]
+}

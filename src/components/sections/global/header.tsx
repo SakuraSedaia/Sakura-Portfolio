@@ -1,7 +1,7 @@
 import { children as resolveChildren, JSX, Show } from "solid-js";
 
 const DEFAULT_NAME = "Sedaia Designs";
-const DEFAULT_IMAGE = "/images/minecraft-renders/hylian_sakura_in_rito.png";
+const DEFAULT_IMAGE = "/images/headers/about.avif";
 
 interface HeaderProps {
   children?: JSX.Element;

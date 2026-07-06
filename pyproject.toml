@@ -3,7 +3,4 @@ name = "portfolio-main"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.14"
-dependencies = [
-    "jxlpy>=0.9.5",
-    "opencv-python>=4.13.0.92",
-]
+dependencies = []
