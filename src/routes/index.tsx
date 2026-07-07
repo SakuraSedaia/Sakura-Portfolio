@@ -15,7 +15,7 @@ export default function Home() {
         description={
           "Sedaia Designs, more commonly known as Sakura is a freelance software developer and Voxel 3D Artist specialising in Minecraft style 3D art, SolidJS/React-like websites, and Blender extension development."
         }
-        image={"/images/minecraft-renders/char-env/farmer-sakura.png"}
+        image={"images/renders/char-env/hylian_sakura_in_rito.avif"}
       />
 
       <Header
@@ -29,6 +29,7 @@ export default function Home() {
           </p>
         }
         class={"index__header"}
+        image={"images/renders/char-env/hylian_sakura_in_rito.avif"}
       >
         <div class={"index__header-links"}>
           <Link path={"https://youtube.com/c/SakuraSedaia"}>

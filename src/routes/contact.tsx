@@ -22,6 +22,7 @@ export default function Contact() {
           </p>
         }
         class={"index__header"}
+        image={"images/renders/char-env/sakura-blacksmith.avif"}
       />
 
       <ContactMe />

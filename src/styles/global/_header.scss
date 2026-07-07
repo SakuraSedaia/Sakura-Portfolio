@@ -75,7 +75,9 @@ header.header__container {
 
 @media (max-width: 1080px) {
   header.header__container {
+    height: fit-content;
     div.header__content {
+      margin-block: 6rem 3rem;
       width: 100%;
 
       h1 {

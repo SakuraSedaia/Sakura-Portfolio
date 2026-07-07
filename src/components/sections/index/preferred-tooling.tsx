@@ -28,7 +28,8 @@ const toolingGroups: ToolGroup[] = [
       {
         name: "WebStorm",
         url: "https://www.jetbrains.com/webstorm/",
-        description: "Ecosystem for website, JavaScript and TypeScript development.",
+        description:
+          "Ecosystem for website, JavaScript and TypeScript development.",
       },
     ],
   },
