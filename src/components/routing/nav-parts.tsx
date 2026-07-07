@@ -1,7 +1,7 @@
 import { JSX, splitProps } from "solid-js";
 import { Link } from "./link";
 
-interface NavRouterProps extends JSX.HTMLAttributes<HTMLElement> {
+interface NavRouterProps extends JSX.HTMLAttributes<HTMLDivElement> {
   children: JSX.Element;
   class?: string;
   heading?: string;
@@ -18,9 +18,9 @@ interface NavItemProps extends JSX.HTMLAttributes<HTMLDivElement> {
 export function NavRouter(props: NavRouterProps) {
   const [local, others] = splitProps(props, ["children", "class", "heading"]);
   return (
-    <nav class={local.class} {...others}>
+    <div class={local.class} {...others}>
       {local.children}
-    </nav>
+    </div>
   );
 }
 

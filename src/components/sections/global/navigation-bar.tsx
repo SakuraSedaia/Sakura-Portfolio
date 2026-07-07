@@ -7,7 +7,7 @@ import { Link } from "~/components/routing/link";
 export default function NavigationBar() {
   const routerMain = Routes.main;
   return (
-    <section class={"navigation-bar"}>
+    <nav class={"navigation-bar"}>
       <div class={"navigation-bar__container"}>
         <div class={"navigation-bar__logo"}>
           <Link path={"/"}>Sakura Sedaia</Link>
@@ -30,6 +30,6 @@ export default function NavigationBar() {
           </For>
         </NavRouter>
       </div>
-    </section>
+    </nav>
   );
 }
