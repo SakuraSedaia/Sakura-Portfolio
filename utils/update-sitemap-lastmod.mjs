@@ -88,7 +88,8 @@ function resolveImport(fromFile, specifier) {
 
 function collectDependencies(entryFile, seen = new Set()) {
   const repoPath = toRepoPath(entryFile);
-  if (seen.has(repoPath) || !existsSync(entryFile) || !isSourceFile(entryFile)) return seen;
+  if (seen.has(repoPath) || !existsSync(entryFile) || !isSourceFile(entryFile))
+    return seen;
 
   seen.add(repoPath);
 
@@ -111,7 +112,11 @@ function routePathFromFile(filePath) {
   const withoutExtension = relativePath.slice(0, -extension.length);
   const segments = withoutExtension.split("/");
 
-  if (segments.some((segment) => segment.startsWith("[") || segment.startsWith("("))) {
+  if (
+    segments.some(
+      (segment) => segment.startsWith("[") || segment.startsWith("("),
+    )
+  ) {
     return null;
   }
 
@@ -167,7 +172,9 @@ const routes = collectFiles(routesDirectory)
     const hasStagedDependency = dependencies.some((dependency) =>
       stagedFiles.has(dependency),
     );
-    const lastmod = hasStagedDependency ? today : gitLastModified(dependencies) ?? today;
+    const lastmod = hasStagedDependency
+      ? today
+      : (gitLastModified(dependencies) ?? today);
 
     return {
       path: routePath,

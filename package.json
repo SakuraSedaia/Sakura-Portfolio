@@ -6,6 +6,10 @@
   "scripts": {
     "dev": "vite dev --configLoader runner --port 3232 --host",
     "build": "vite build --configLoader runner",
+    "format": "prettier --write . --ignore-unknown",
+    "format:check": "prettier --check . --ignore-unknown",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "pnpm lint --fix",
     "start": "vite start",
     "preview": "vite preview",
     "update:sitemap": "node utils/update-sitemap-lastmod.mjs",
@@ -26,6 +30,12 @@
     "node": ">=22"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@typescript-eslint/eslint-plugin": "^8.63.0",
+    "@typescript-eslint/parser": "^8.63.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-solid": "^0.14.5",
+    "globals": "^17.7.0",
     "sass": "^1.99.0"
   },
   "repository": {

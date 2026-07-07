@@ -6,6 +6,7 @@ Version: R7.4.1
 Blender 5.0
 
 ---
+
 R7.4.1 Summary
 
 R7.4.1 is a Corrective Release, as such this only contains bug fixes and fixes for problems found in the initial 7.4

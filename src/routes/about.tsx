@@ -1,7 +1,5 @@
 import Metadata from "~/components/meta/metadata";
 import Header from "~/components/sections/global/header";
-import Link from "~/components/routing/link";
-import IconBundle from "~/components/graphics/icon-bundle";
 import Description from "~/components/sections/about/description";
 import Mission from "~/components/sections/about/mission";
 

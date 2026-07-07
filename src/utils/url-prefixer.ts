@@ -30,7 +30,7 @@ export function resolvePrefix(path: string): string {
       if (hasDoubleSlash) {
         return replacement + rest.slice(1);
       }
-      
+
       return replacement + (needsSlash ? "/" : "") + rest;
     }
   }

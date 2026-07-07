@@ -38,11 +38,14 @@
   --font-size-xxs: 0.6667rem;
 
   /* Box Shadows */
-  --box-shadow-xsm: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2), 0 0.125rem 0.3125rem 0 hsla(0, 0%, 0%, 0.14),
+  --box-shadow-xsm: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2),
+  0 0.125rem 0.3125rem 0 hsla(0, 0%, 0%, 0.14),
   0 0.0625rem 0.625rem 0 hsla(0, 0%, 0%, 0.06);
-  --box-shadow-sm: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2), 0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.14),
+  --box-shadow-sm: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2),
+  0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.14),
   0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.12);
-  --box-shadow-lg: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.46), 0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.47),
+  --box-shadow-lg: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.46),
+  0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.47),
   0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.21);
 
   --drop-shadow: drop-shadow(0.25rem 0.5rem 0.25rem hsla(0, 0%, 10%, 0.25));

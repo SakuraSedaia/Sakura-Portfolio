@@ -50,9 +50,10 @@ header.header__container {
                     hsl(from var(--bg-0) h s l / 0.86) 22%,
                     hsl(from var(--bg-0) h s l / 0.72) 32%,
                     hsl(from var(--bg-0) h s l / 0.52) 46%,
-                    hsl(from var(--bg-0) h s l / 0.30) 64%,
+                    hsl(from var(--bg-0) h s l / 0.3) 64%,
                     hsl(from var(--bg-0) h s l / 0.14) 80%,
-                    transparent 100%);
+                    transparent 100%
+    );
     height: 4rem;
   }
 
@@ -71,7 +72,6 @@ header.header__container {
     }
   }
 }
-
 
 @media (max-width: 1080px) {
   header.header__container {
@@ -92,5 +92,4 @@ header.header__container {
 }
 
 @media (max-width: 720px) {
-
 }

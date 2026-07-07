@@ -2,8 +2,12 @@
 set -eu
 
 if command -v pnpm >/dev/null 2>&1; then
+  pnpm --silent format
+  pnpm --silent lint
   pnpm --silent update:sitemap
 else
+  npx prettier --write . --ignore-unknown
+  npx eslint src --ext .ts,.tsx
   node utils/update-sitemap-lastmod.mjs
 fi
 

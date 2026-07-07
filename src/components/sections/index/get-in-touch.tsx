@@ -13,7 +13,10 @@ export default function GetInTouch() {
         <Link path="mailto:sakusedaia@outlook.com" emboss={true}>
           <IconBundle name={"envelope"} /> Email
         </Link>
-        <Link path={"https://discord.com/users/705154478382252053"} emboss={true}>
+        <Link
+          path={"https://discord.com/users/705154478382252053"}
+          emboss={true}
+        >
           <IconBundle name={"discord"} /> Direct Message
         </Link>
         <Link path={"https://discord.com/invite/Qk4pfbG7Pf"} emboss={true}>

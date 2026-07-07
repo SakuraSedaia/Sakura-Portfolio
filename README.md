@@ -112,6 +112,10 @@ Dev server runs on `http://localhost:3232` (with `--host` enabled).
 |-----------------------|-------------------------------------------------------------------------------------|
 | `pnpm dev`            | Start local Vite dev server on port `3232`.                                         |
 | `pnpm build`          | Build production output via `vite build`.                                           |
+| `pnpm format`         | Format project files with Prettier.                                                 |
+| `pnpm format:check`   | Check Prettier formatting without writing changes.                                  |
+| `pnpm lint`           | Run ESLint for `src` TypeScript and TSX files.                                      |
+| `pnpm lint:fix`       | Run ESLint and apply safe autofixes.                                                |
 | `pnpm start`          | Run `vite start`.                                                                   |
 | `pnpm preview`        | Preview the production build via `vite preview`.                                    |
 | `pnpm update:sitemap` | Regenerate `public/sitemap.xml` with route-aware `lastmod` values from git history. |
@@ -142,4 +146,5 @@ Dev server runs on `http://localhost:3232` (with `--host` enabled).
 - `docs/` - architecture and migration planning notes
 
 ---
+
 Created and maintained by Sedaia Designs.

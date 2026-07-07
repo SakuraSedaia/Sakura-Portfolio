@@ -23,8 +23,8 @@ naming semantics.
 ### General
 
 - Replaced "module_info" with "bl_info" in all modules which still had it
-    - This change is because bl_info already handles all the info I wanted module_info to handle, and having bl_info and
-      module_info was just wasted space.
+  - This change is because bl_info already handles all the info I wanted module_info to handle, and having bl_info and
+    module_info was just wasted space.
 - Simplified the "Region" blocks, removing the Separator "Line."
 - Moved all SACR UI's to "sedaia_ui"
 

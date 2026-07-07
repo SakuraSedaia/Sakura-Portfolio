@@ -20,18 +20,18 @@ Create a data module such as `src/data/wiki.ts` with page records:
 
 ```ts
 interface WikiPageEntry {
-	title: string;
-	path: string;
-	description: string;
-	sections: WikiSectionEntry[];
-	keywords?: string[];
+  title: string;
+  path: string;
+  description: string;
+  sections: WikiSectionEntry[];
+  keywords?: string[];
 }
 
 interface WikiSectionEntry {
-	title: string;
-	id: string;
-	excerpt: string;
-	keywords?: string[];
+  title: string;
+  id: string;
+  excerpt: string;
+  keywords?: string[];
 }
 ```
 
@@ -71,4 +71,3 @@ If the wiki grows significantly, consider moving content to Markdown-backed
 pages and generating the registry/search index from content files with
 `import.meta.glob`. This would make search more complete, but it is not needed
 for the current small static wiki.
-
