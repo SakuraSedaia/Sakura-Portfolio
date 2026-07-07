@@ -3,7 +3,9 @@ import IconBundle from "~/components/graphics/icon-bundle";
 import { Link } from "~/components/routing/link";
 import Header from "~/components/sections/global/header";
 import Programming from "~/components/sections/index/programming";
+import PreferredTooling from "~/components/sections/index/preferred-tooling";
 import Renders from "~/components/sections/index/renders";
+import TechnicalExpertise from "~/components/sections/index/technical-expertise";
 
 export default function Home() {
   return (
@@ -46,6 +48,8 @@ export default function Home() {
 
       <Renders />
       <Programming />
+      <TechnicalExpertise />
+      <PreferredTooling />
     </main>
   );
 }
