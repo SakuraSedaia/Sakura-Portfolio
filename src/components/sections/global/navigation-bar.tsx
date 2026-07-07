@@ -17,7 +17,9 @@ export default function NavigationBar() {
             {(route) => (
               <Show
                 when={
-                  route.meta.noIndex == false || route.meta.noIndex == undefined
+                  (route.meta.show_route ?? true) !== false &&
+                  (route.meta.noIndex == false ||
+                    route.meta.noIndex == undefined)
                 }
               >
                 <NavItem path={route.path} class={"navigation-bar__link"}>
