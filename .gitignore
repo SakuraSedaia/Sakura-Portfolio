@@ -1,35 +1,36 @@
-dist
-.wrangler
-.output
-.vercel
-.netlify
-.vinxi
-app.config.timestamp_*.js
-.image-backup
-*.log
-.solid-start/
+# Build outputs
 .nitro/
+.output
+.solid-start/
+.vercel
+.vinxi
+dist
+.netlify
+.wrangler
 
+# Logs
+*.log
+
+# Lockfiles and package manager cache
+pnpm-lock.yaml
+uv.lock
+.pnpm-store
 
 # Environment
 .env
 .env*.local
-pnpm-lock.yaml
-.pnpm-store
+.venv/
 
-# dependencies
+# Dependencies
 /node_modules
 
 # IDEs and editors
 /.idea
-.project
 .classpath
 *.launch
+.project
 .settings/
 
-# Temp
-gitignore
-
-# System Files
+# OS files
 .DS_Store
 Thumbs.db
