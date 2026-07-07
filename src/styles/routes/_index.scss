@@ -1,16 +1,61 @@
-section.header__container {
-  .header__children {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+section.index__renders {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+  }
+
+  div.card-gallery {
     display: flex;
     gap: 1rem;
-    color: white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 
     a {
+      flex-basis: calc(100% / 4);
+      display: block;
+      background-color: var(--bg-2);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      border: 1px solid var(--border-1);
+      color: white;
+      cursor: pointer;
+
       &:hover {
-        color: var(--tx-link-hover);
+        box-shadow: 0 0 1rem var(--accent);
+        transform: translateY(-1rem);
       }
+
+      div.tooltip-container {
+        div.card {
+          pointer-events: none;
+
+          h3 {
+            margin: 0 0 0.2rem;
+            font-size: 1.2rem;
+            color: var(--tx-accent);
+          }
+
+          p {
+            font-weight: 500;
+          }
+
+          img {
+            width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 5px hsl(0deg 0% 0% / 0.2);
+          }
+        }
+
+        span.tooltip {
+          position: absolute;
+          transform: translateY(-100%);
+        }
+      }
+
+
     }
   }
 }

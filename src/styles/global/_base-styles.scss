@@ -59,3 +59,33 @@ section {
   margin-bottom: 2rem;
   margin-inline: 10rem;
 }
+
+.tooltip-container {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted black;
+
+  .tooltip {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    width: 12rem;
+    top: 0;
+    left: 50%;
+    margin-left: -6rem;
+    transition: opacity 0.3s;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 10%);
+    color: var(--bg-primary);
+    font-size: var(--font-size-small);
+    z-index: 1;
+
+  }
+
+  &:hover {
+    span.tooltip {
+      opacity: 100%;
+    }
+  }
+}
