@@ -65,3 +65,19 @@ header.header__container {
     }
   }
 }
+
+
+@media (max-width: 1080px) {
+  header.header__container {
+    div.header__content {
+      width: 100%;
+    }
+  }
+
+  .header__children {
+  }
+}
+
+@media (max-width: 720px) {
+
+}

@@ -96,3 +96,17 @@ section {
     }
   }
 }
+
+@media (max-width: 1080px) {
+  section {
+    margin-inline: 2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  section {
+    margin-inline: 0;
+    border-inline: 0;
+    border-radius: 0;
+  }
+}

@@ -28,15 +28,20 @@ export default function Home() {
         }
         class={"index__header"}
       >
-        <Link path={"https://youtube.com/c/SakuraSedaia"}>
-          <IconBundle name={"youtube"} /> Youtube
-        </Link>
-        <Link path={"https://codeberg.org/SakuraSedaia"}>
-          <IconBundle name={"codeberg"} /> Codeberg
-        </Link>
-        <Link path={"https://github.com/SakuraSedaia"}>
-          <IconBundle name={"github"} /> Github
-        </Link>
+        <div class={"index__header-links"}>
+          <Link path={"https://youtube.com/c/SakuraSedaia"}>
+            <IconBundle name={"youtube"} />{" "}
+            <span class={"index__header-link-text"}>Youtube</span>
+          </Link>
+          <Link path={"https://codeberg.org/SakuraSedaia"}>
+            <IconBundle name={"codeberg"} />{" "}
+            <span class={"index__header-link-text"}>Codeberg</span>
+          </Link>
+          <Link path={"https://github.com/SakuraSedaia"}>
+            <IconBundle name={"github"} />{" "}
+            <span class={"index__header-link-text"}>Github</span>
+          </Link>
+        </div>
       </Header>
 
       <Renders />

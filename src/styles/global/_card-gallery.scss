@@ -1,0 +1,46 @@
+div.card-gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  a {
+    flex-basis: calc(100% / 4);
+    display: block;
+    background-color: var(--bg-2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border-1);
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 1rem var(--accent);
+      transform: translateY(-1rem);
+    }
+
+    div.tooltip-container {
+      div.card {
+        pointer-events: none;
+        min-width: 20rem;
+
+        h3 {
+          margin: 0 0 0.2rem;
+          font-size: 1.2rem;
+          color: var(--tx-accent);
+        }
+
+        p {
+          font-weight: 500;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 0.5rem;
+          box-shadow: 0 0 5px hsl(0deg 0% 0% / 0.2);
+        }
+      }
+    }
+  }
+}
