@@ -1,34 +1,37 @@
-[
-  {
-    "title": "Sakura Character Rig",
-    "description": "Sakura's Character rig is a Blender character preset, focused on being lightweight and customizable.",
-    "imageSrc": "/images/projects/scr.jpg",
-    "imageDescription": "a preview screenshot of Sakura's Character Rig with it's associated Python UI",
-    "imageAlt": "Sakura's Character Rig preview screenshot",
-    "linkPath": "projects://sakura-character-rig"
-  },
-  {
-    "title": "Sakura Rig Utilities",
-    "description": "Sakura's Character rig is a Blender character preset, focused on being lightweight and customizable.",
-    "imageSrc": "/images/projects/srgui.jpg",
-    "imageDescription": "a preview screenshot of Sakura's Character Rig with it's associated Python UI",
-    "imageAlt": "Sakura's Rig Utilities preview screenshot",
-    "linkPath": "projects://sakura-rig-utilities"
-  },
-  {
-    "title": "Blend-Charm",
-    "description": "A plugin for Pycharm that allows for easy access to various utilities for Blender development.",
-    "imageSrc": "/images/projects/blend-dev-prototype-screenshot.jpg",
-    "imageDescription": "a preview screenshot of Blender Python for Pycharm",
-    "imageAlt": "Blender Python for Pycharm preview screenshot",
-    "linkPath": "projects://blender-development"
-  },
-  {
-    "title": "Frostlight Studios Page",
-    "description": "A website for Frostlight Studios, an indie studio based in the UK, with members from around the world.",
-    "imageSrc": "/images/projects/frostlight-studios-org-preview.jpg",
-    "imageDescription": "a preview screenshot of Frostlight Studios website",
-    "imageAlt": "Frostlight Studios website preview screenshot",
-    "linkPath": "https://frostlight-studios.org/"
-  }
-]
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "projects": [
+    {
+      "title": "Sakura Character Rig",
+      "description": "Sakura's Character rig is a Blender character preset, focused on being lightweight and customizable.",
+      "imageSrc": "/images/card-headers/character-rig-7.4.avif",
+      "imageDescription": "a preview screenshot of Sakura's Character Rig with it's associated Python UI",
+      "imageAlt": "Sakura's Character Rig preview screenshot",
+      "linkPath": "projects://sakura-character-rig"
+    },
+    {
+      "title": "Sakura Rig Utilities",
+      "description": "Sakura's Character rig is a Blender character preset, focused on being lightweight and customizable.",
+      "imageSrc": "/images/card-headers/rig-interface-3.avif",
+      "imageDescription": "a preview screenshot of Sakura's Character Rig with it's associated Python UI",
+      "imageAlt": "Sakura's Rig Utilities preview screenshot",
+      "linkPath": "projects://sakura-rig-utilities"
+    },
+    {
+      "title": "Blend-Charm",
+      "description": "A plugin for Pycharm that allows for easy access to various utilities for Blender development.",
+      "imageSrc": "/images/card-headers/blend-dev-prototype-screenshot.avif",
+      "imageDescription": "a preview screenshot of Blender Python for Pycharm",
+      "imageAlt": "Blender Python for Pycharm preview screenshot",
+      "linkPath": "projects://blender-development"
+    },
+    {
+      "title": "Frostlight Studios Page",
+      "description": "A website for Frostlight Studios, an indie studio based in the UK, with members from around the world.",
+      "imageSrc": "/images/projects/frostlight-studios-org-preview.avif",
+      "imageDescription": "a preview screenshot of Frostlight Studios website",
+      "imageAlt": "Frostlight Studios website preview screenshot",
+      "linkPath": "https://frostlight-studios.org/"
+    }
+  ]
+}

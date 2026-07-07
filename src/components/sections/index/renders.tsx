@@ -1,5 +1,4 @@
 import RenderCard from "~/components/sections/index/render/render-card";
-import RenderJson from "~/data/json/projects/renders.json";
 import { For } from "solid-js";
 import getRenderList from "~/utils/get-render-list";
 
