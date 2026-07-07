@@ -36,13 +36,13 @@ getting Minecraft Skins much easier.
 - Class standard renamed to be simply the category and function.
 - Replaced all "print" Calls with the proper Report calls
 - Made changes within def generate_player_data()
-    - Rewrote core router to be more readable and clear.
-    - Added Else case for if Online Access is disabled
-    - Users can now either Load data, add new entry, or purge and replace existing data when loading previously called
-      Username
-    - Restructured Player JSON
-        - Removed HTTP links
-        - "SKIN" dictionary changed to support multiple skin files saved from a single username.
+  - Rewrote core router to be more readable and clear.
+  - Added Else case for if Online Access is disabled
+  - Users can now either Load data, add new entry, or purge and replace existing data when loading previously called
+    Username
+  - Restructured Player JSON
+    - Removed HTTP links
+    - "SKIN" dictionary changed to support multiple skin files saved from a single username.
 
 ### All Modules:
 
@@ -53,7 +53,7 @@ getting Minecraft Skins much easier.
 ### General UI Changes
 
 - Applied new more reliable method for Material Object Detection
-    - New method iterates through an Enumerator and just checks for the presence of a matching Keyword
+  - New method iterates through an Enumerator and just checks for the presence of a matching Keyword
 
 ### SACR R7 UI Version 1 (Final Update):
 

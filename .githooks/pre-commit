@@ -1,12 +1,22 @@
 #!/bin/sh
 set -eu
 
+STAGED_FILES="$(mktemp)"
+trap 'rm -f "$STAGED_FILES"' EXIT
+git diff --cached --name-only --diff-filter=ACMR -z > "$STAGED_FILES"
+
 if command -v pnpm >/dev/null 2>&1; then
-  pnpm --silent format
+  if [ -s "$STAGED_FILES" ]; then
+    xargs -0 pnpm --silent prettier --write --ignore-unknown < "$STAGED_FILES"
+    xargs -0 git add -- < "$STAGED_FILES"
+  fi
   pnpm --silent lint
   pnpm --silent update:sitemap
 else
-  npx prettier --write . --ignore-unknown
+  if [ -s "$STAGED_FILES" ]; then
+    xargs -0 npx prettier --write --ignore-unknown < "$STAGED_FILES"
+    xargs -0 git add -- < "$STAGED_FILES"
+  fi
   npx eslint src --ext .ts,.tsx
   node utils/update-sitemap-lastmod.mjs
 fi
