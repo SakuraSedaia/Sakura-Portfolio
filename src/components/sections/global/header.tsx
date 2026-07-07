@@ -21,7 +21,7 @@ export default function Header({
   const resolvedChildren = resolveChildren(() => children);
 
   return (
-    <section
+    <header
       class={"header__container " + className}
       style={{ "background-image": `url(${image})` }}
     >
@@ -39,6 +39,6 @@ export default function Header({
         </Show>
       </div>
       <div class={"header__fade"} />
-    </section>
+    </header>
   );
 }
