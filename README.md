@@ -75,8 +75,24 @@ This project is being rebuilt in phases from a fresh SolidStart template to a co
 
 ## Getting Started
 
+macOS/Linux:
+
 ```bash
-pnpm install
+./scripts/setup-project.sh
+pnpm dev
+```
+
+Windows (PowerShell):
+
+```powershell
+.\scripts\setup-project.ps1
+pnpm dev
+```
+
+Windows (Command Prompt):
+
+```bat
+.\scripts\setup-project.cmd
 pnpm dev
 ```
 
@@ -92,6 +108,20 @@ Dev server runs on `http://localhost:3232` (with `--host` enabled).
 | `pnpm preview`        | Preview the production build via `vite preview`.                                    |
 | `pnpm update:sitemap` | Regenerate `public/sitemap.xml` with route-aware `lastmod` values from git history. |
 | `pnpm setup:githooks` | Configure local git hooks path to `.githooks`.                                      |
+
+## Setup Scripts
+
+| Script                        | Description                                                                                   |
+|-------------------------------|-----------------------------------------------------------------------------------------------|
+| `./scripts/setup-project.sh`  | Runs full environment setup (Node/PNPM + Python/uv fallback) on macOS/Linux.                  |
+| `./scripts/setup-node.sh`     | Installs Node dependencies and configures local git hooks on macOS/Linux.                     |
+| `./scripts/setup-python.sh`   | Creates/syncs Python environment using `uv` (or falls back to `.venv`) on macOS/Linux.        |
+| `.\scripts\setup-project.ps1` | Runs full environment setup (Node/PNPM + Python/uv fallback) on Windows PowerShell.           |
+| `.\scripts\setup-node.ps1`    | Installs Node dependencies and configures local git hooks on Windows PowerShell.              |
+| `.\scripts\setup-python.ps1`  | Creates/syncs Python environment using `uv` (or falls back to `.venv`) on Windows PowerShell. |
+| `.\scripts\setup-project.cmd` | Command Prompt launcher for `setup-project.ps1`.                                              |
+| `.\scripts\setup-node.cmd`    | Command Prompt launcher for `setup-node.ps1`.                                                 |
+| `.\scripts\setup-python.cmd`  | Command Prompt launcher for `setup-python.ps1`.                                               |
 
 ## Key Directories
 
