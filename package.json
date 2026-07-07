@@ -2,6 +2,7 @@
   "name": "sakura-portfolio-typescript",
   "type": "module",
   "license": "GPL-3.0-or-later",
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "dev": "vite dev --configLoader runner --port 3232 --host",
     "build": "vite build --configLoader runner",

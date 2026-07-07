@@ -16,10 +16,17 @@ function getPageType(pathname: string) {
 
 function getRequestPageType() {
   const requestUrl = getRequestEvent()?.request.url;
+  let pathname = "/";
 
-  return getPageType(
-    requestUrl !== undefined ? new URL(requestUrl).pathname : "/",
-  );
+  if (requestUrl !== undefined) {
+    try {
+      pathname = new URL(requestUrl, "http://localhost").pathname;
+    } catch {
+      pathname = "/";
+    }
+  }
+
+  return getPageType(pathname);
 }
 
 export default createHandler(() => (

@@ -6,18 +6,18 @@ interface Render {
   name: string;
   filename: string;
   description: string;
-  tags: string[];
-  link: string;
-  date: string;
+  // tags: string[];
+  // link: string;
+  // date: string;
 }
 
 export default function RenderCard({
   name,
   filename,
   description,
-  tags,
-  link,
-  date,
+  // tags,
+  // link,
+  // date,
 }: Render) {
   const [modalOpen, setModalOpen] = createSignal(false);
 
