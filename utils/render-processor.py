@@ -3,12 +3,13 @@
 from pathlib import Path
 import os
 from PIL import Image, ImageOps
+import pillow_jxl
 from datetime import datetime
 import logging
 import json
 
 logger = logging.getLogger(__name__)
-
+jxl_reader = pillow_jxl  # Only to get the Linter to shut up about unused imports)
 
 def initializeLogger():
     logging.basicConfig(
@@ -27,20 +28,13 @@ JSON_DATA = {
 }
 PUBLIC_PATH = Path(os.path.abspath("../public"))
 SOURCE_PATH = Path(os.path.abspath("../src"))
+REPO_PATH = Path(os.path.abspath("../"))
 IMAGE_PATH = Path(os.path.abspath("./images/renders"))
 IMAGE_DESTINATION = Path(os.path.abspath(f"{PUBLIC_PATH}/images/renders"))
 JSON_PATH = Path(os.path.abspath(f"{SOURCE_PATH}/data/json/projects/renders.json"))
 IGNORED_FORMATS = (  # Ignores files with the following formats, typically project files
     ".afphoto",
     ".bbmodel",
-    "-sm.png",
-    "-sm.jpg",
-    "-sm.jxl",
-    "-md.png",
-    "-md.jpg",
-    "-md.jxl",
-    "-lg.png",
-    "-lg.jpg"
 )
 OVERWRITE = False
 
@@ -49,7 +43,7 @@ class RenderProcessor:
     def __init__(self):
         pass
 
-    def process(self, dry: bool = True):
+    def process(self, dry: bool = False, json_only: bool = False):
         """
         Processes the renders in the IMAGE_PATH directory and saves the JSON data to JSON_PATH.
         :return: None
@@ -65,9 +59,8 @@ class RenderProcessor:
                 input_filepath = Path(f"{filepath}/{file}")
                 relpath = Path(input_filepath).relative_to(path)
                 output_filepath = Path(f"{IMAGE_DESTINATION}/{relpath}".replace("-lg", "")).with_suffix(".avif")
-                final_path = output_filepath.parent.parent / output_filepath.name
 
-                file_exists = final_path.exists()
+                file_exists = output_filepath.exists()
 
                 if file.endswith(IGNORED_FORMATS):
                     logger.info("Skipping %s", input_filepath.relative_to(IMAGE_PATH))
@@ -76,26 +69,20 @@ class RenderProcessor:
                 if not output_filepath.parent.exists():
                     output_filepath.parent.mkdir(parents=True)
 
-                if not final_path.exists() and dry == False:
+                if not output_filepath.exists() and not dry:
                     # IMAGE PROCESSING
                     self.save_web_avif(input_filepath, output_filepath)
-                    logger.info(f"Processing {input_filepath} -> {output_filepath}")
-
-                # Flatten Directory Structure
-                if Path(output_filepath.parent).is_dir():
-                    logger.info("Flattening %s -> %s", output_filepath.relative_to(PUBLIC_PATH),
-                                final_path.relative_to(PUBLIC_PATH))
-                    try:
-                        Path(output_filepath).move(final_path)
-                    except FileNotFoundError:
-                        pass  # Silently fail, since the file isn't supposed to exist anyway
-                    Path(output_filepath.parent).rmdir()
+                    logger.info(
+                        f"Processing {input_filepath.relative_to(REPO_PATH)} -> {output_filepath.relative_to(REPO_PATH)}")
+                elif dry:
+                    logger.info(
+                        f"Processing {input_filepath.relative_to(REPO_PATH)} -> {output_filepath.relative_to(REPO_PATH)}")
 
                 self.append_render_entry(
                     json_data=JSON_DATA,
-                    file_name=_file_name,
+                    file_name=output_filepath.name.removesuffix(".avif"),
                     input_filepath=input_filepath,
-                    final_path=final_path,
+                    final_path=output_filepath,
                     public_path=PUBLIC_PATH,
                     item_json_path=JSON_PATH
                 )
@@ -175,6 +162,7 @@ class RenderProcessor:
         input_filepath = Path(input_filepath)
         output_filepath = Path(output_filepath)
         if output_filepath.exists() and not OVERWRITE:
+            logger.info(f"File Exists: {output_filepath}")
             return
 
         with Image.open(input_filepath) as img:
