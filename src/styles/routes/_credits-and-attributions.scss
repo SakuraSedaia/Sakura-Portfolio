@@ -1,0 +1,38 @@
+.route__credits-and-attributions {
+  section {
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+  }
+
+  .credits-and-attributions__section {
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .credits-and-attributions__list {
+    margin: 0;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.85rem;
+      line-height: 1.6;
+    }
+  }
+
+  .credits-and-attributions__nested-list {
+    margin-top: 0.75rem;
+    padding-left: 1.25rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .credits-and-attributions__logo-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 700;
+  }
+}

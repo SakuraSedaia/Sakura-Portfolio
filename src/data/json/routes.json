@@ -49,9 +49,18 @@
         "meta": {
           "title": "Contact | Sedaia Designs",
           "description": "Contact Sakura at Sedaia Designs for project inquiries, collaborations, commissions, and freelance development or voxel art work.",
-          "url": "/contact"
           "url": "/contact",
           "show_route": true
+        }
+      },
+      {
+        "name": "Credits",
+        "path": "/credits-and-attributions",
+        "meta": {
+          "title": "Credits and Attributions | Sedaia Designs",
+          "description": "Credits and attributions for the core technologies, icon sets, fonts, and external assets used by Sedaia Designs.",
+          "url": "/credits-and-attributions",
+          "show_route": false
         }
       },
       {
