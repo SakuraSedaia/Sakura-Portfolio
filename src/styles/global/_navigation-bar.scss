@@ -108,7 +108,6 @@
 
 @media screen and (max-width: 720px) {
   .navigation-bar {
-    padding-inline: 0.75rem;
 
     &__container {
       grid-template-columns: 1fr;
@@ -119,20 +118,28 @@
       margin-inline: auto;
     }
 
+    &__container > .navigation-bar__logo {
+      margin-inline: auto;
+      background-color: transparent;
+    }
+
     &__router {
       justify-self: stretch;
       width: 100%;
       overflow-x: auto;
-      justify-content: flex-start;
       scrollbar-width: thin;
+      text-align: center;
+      justify-content: center;
+      flex-direction: row;
     }
 
     &__router .navigation-bar__link {
-      flex: 0 0 auto;
+      flex-basis: 20%;
     }
 
     &__router .navigation-bar__link a {
       white-space: nowrap;
+      padding-inline: 0.5rem;
     }
   }
 }
