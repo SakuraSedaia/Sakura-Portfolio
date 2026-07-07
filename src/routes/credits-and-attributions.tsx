@@ -1,6 +1,6 @@
 import Metadata from "~/components/meta/metadata";
 import Header from "~/components/sections/global/header";
-import { Link } from "~/components/routing/link";
+import Link from "~/components/routing/link";
 import IconBundle from "~/components/graphics/icon-bundle";
 
 const CODEBERG_REPO_BASE_URL =

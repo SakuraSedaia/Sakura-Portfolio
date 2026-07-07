@@ -2,7 +2,7 @@ import { NavItem, NavRouter } from "~/components/routing/nav-parts";
 
 import Routes from "~/data/json/routes.json";
 import { For, Show } from "solid-js";
-import { Link } from "~/components/routing/link";
+import Link from "~/components/routing/link";
 
 export default function NavigationBar() {
   const routerMain = Routes.main;

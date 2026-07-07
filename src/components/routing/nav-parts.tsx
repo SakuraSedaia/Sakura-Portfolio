@@ -1,5 +1,5 @@
 import { JSX, splitProps } from "solid-js";
-import { Link } from "./link";
+import Link from "./link";
 
 interface NavRouterProps extends JSX.HTMLAttributes<HTMLDivElement> {
   children: JSX.Element;

@@ -41,11 +41,6 @@ const expertiseGroups: ExpertiseGroup[] = [
     title: "Other",
     items: [
       {
-        name: "Java",
-        url: "https://www.java.com/",
-        summary: "IntelliJ platform development.",
-      },
-      {
         name: "Kotlin",
         url: "https://kotlinlang.org/",
         summary: "Modern IntelliJ platform development.",

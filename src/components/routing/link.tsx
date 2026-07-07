@@ -11,7 +11,7 @@ interface LinkProps extends JSX.HTMLAttributes<HTMLLIElement> {
   emboss?: boolean;
 }
 
-export function Link(props: LinkProps) {
+export default function Link(props: LinkProps) {
   const [local, others] = splitProps(props, [
     "children",
     "class",

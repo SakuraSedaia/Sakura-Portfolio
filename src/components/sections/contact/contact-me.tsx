@@ -1,5 +1,5 @@
 import IconBundle from "~/components/graphics/icon-bundle";
-import { Link } from "~/components/routing/link";
+import Link from "~/components/routing/link";
 
 export default function ContactMe() {
   return (

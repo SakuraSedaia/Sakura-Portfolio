@@ -1,6 +1,6 @@
 import Metadata from "~/components/meta/metadata";
 import Header from "~/components/sections/global/header";
-import { Link } from "~/components/routing/link";
+import Link from "~/components/routing/link";
 import IconBundle from "~/components/graphics/icon-bundle";
 import Description from "~/components/sections/about/description";
 import Mission from "~/components/sections/about/mission";
@@ -16,17 +16,7 @@ export default function About() {
         image={"/images/minecraft-renders/char-env/farmer-sakura.png"}
       />
 
-      <Header title={"About Sakura Sedaia"} class={"index__header"}>
-        <Link path={"https://youtube.com/c/SakuraSedaia"}>
-          <IconBundle name={"youtube"} /> Youtube
-        </Link>
-        <Link path={"https://codeberg.org/SakuraSedaia"}>
-          <IconBundle name={"codeberg"} /> Codeberg
-        </Link>
-        <Link path={"https://github.com/SakuraSedaia"}>
-          <IconBundle name={"github"} /> Github
-        </Link>
-      </Header>
+      <Header title={"About Sakura Sedaia"} class={"index__header"} />
 
       <Description />
 

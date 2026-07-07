@@ -1,4 +1,4 @@
-import { Link } from "~/components/routing/link";
+import Link from "~/components/routing/link";
 
 export default function Description() {
   return (

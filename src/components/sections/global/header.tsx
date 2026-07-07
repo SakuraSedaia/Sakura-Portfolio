@@ -1,4 +1,6 @@
 import { children as resolveChildren, JSX, Show } from "solid-js";
+import Link from "~/components/routing/link";
+import IconBundle from "~/components/graphics/icon-bundle";
 
 const DEFAULT_NAME = "Sedaia Designs";
 const DEFAULT_IMAGE = "/images/headers/about.avif";
@@ -34,9 +36,23 @@ export default function Header({
           {title}
         </h1>
         <Show when={description != undefined}>{description}</Show>
-        <Show when={resolvedChildren.toArray().length > 0}>
-          <div class={"header__children"}>{resolvedChildren()}</div>
-        </Show>
+        <div class={"header__children"}>
+          <div class={"index__header-links"}>
+            <Link path={"https://youtube.com/c/SakuraSedaia"}>
+              <IconBundle name={"youtube"} />{" "}
+              <span class={"index__header-link-text"}>Youtube</span>
+            </Link>
+            <Link path={"https://codeberg.org/SakuraSedaia"}>
+              <IconBundle name={"codeberg"} />{" "}
+              <span class={"index__header-link-text"}>Codeberg</span>
+            </Link>
+            <Link path={"https://github.com/SakuraSedaia"}>
+              <IconBundle name={"github"} />{" "}
+              <span class={"index__header-link-text"}>Github</span>
+            </Link>
+          </div>
+          {resolvedChildren()}
+        </div>
       </div>
       <div class={"header__fade"} />
     </header>
