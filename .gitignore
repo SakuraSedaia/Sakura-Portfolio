@@ -6,6 +6,7 @@ dist
 .vinxi
 app.config.timestamp_*.js
 .image-backup
+*.log
 
 # Environment
 .env
