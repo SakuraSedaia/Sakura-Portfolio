@@ -1,16 +1,27 @@
 @use "global/base-styles";
 @use "global/navigation-bar";
+@use "global/nav-sidebar";
 @use "global/header";
 @use "global/footer";
 @use "global/buttons";
 @use "global/image-modal";
 @use "global/card-gallery";
 @use "global/tooltip";
+@use "global/download-assets";
+@use "global/download-plugins";
+@use "global/known-issues";
+@use "global/notice";
+@use "global/projects-tooltip";
+@use "global/supported-platforms-hero";
 
 @use "routes/index";
 @use "routes/about";
 @use "routes/contact";
 @use "routes/credits-and-attributions";
+@use "routes/projects-blender-development";
+@use "routes/projects-sakura-rig-utilities";
+@use "routes/projects-sakura-character-rig";
+@use "routes/projects-changelog";
 
 @use "global/fonts";
 
@@ -37,9 +48,10 @@
   --font-size-nav: 1rem;
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
-  --box-shadow-lg: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.46),
-  0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.47),
-  0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.21);
+  --box-shadow-lg:
+    0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.46),
+    0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.47),
+    0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.21);
 
   --nav-container-bg: hsl(304deg 17% 16% / 0.88);
   --nav-container-border: hsl(328deg 62% 85% / 0.35);
@@ -58,4 +70,17 @@
   --button-text: var(--tx-1);
   --button-text-hover: var(--accent);
   --button-focus-ring: hsl(328deg 62% 85% / 0.65);
+
+  --bg-primary: var(--bg-0);
+  --bg-secondary: var(--bg-2);
+  --tx-primary: var(--tx-1);
+  --tx-secondary: var(--tx-2);
+  --border-color: var(--border-1);
+  --blender-orange: hsl(31deg 100% 46%);
+  --pycharm-green: hsl(157deg 100% 42%);
+  --color-zinc-950-val: 240 10% 4%;
+  --color-pink-300-val: 324 100% 85%;
+  --color-pink-400-val: 326 91% 74%;
+  --color-pycharm-green-val: 157 100% 42%;
+  --color-blender-orange-val: 31 100% 46%;
 }

@@ -18,9 +18,9 @@
   --tx-contrast-accent-val: hsl(328, 62%, 85%);
 
   --tx-gradient: linear-gradient(
-                  90deg,
-                  hsl(297, 96%, 57%) 0%,
-                  hsl(328, 87%, 51%) 100%
+    90deg,
+    hsl(297, 96%, 57%) 0%,
+    hsl(328, 87%, 51%) 100%
   );
 
   /* Fonts */
@@ -38,15 +38,18 @@
   --font-size-xxs: 0.6667rem;
 
   /* Box Shadows */
-  --box-shadow-xsm: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2),
-  0 0.125rem 0.3125rem 0 hsla(0, 0%, 0%, 0.14),
-  0 0.0625rem 0.625rem 0 hsla(0, 0%, 0%, 0.06);
-  --box-shadow-sm: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2),
-  0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.14),
-  0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.12);
-  --box-shadow-lg: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.46),
-  0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.47),
-  0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.21);
+  --box-shadow-xsm:
+    0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2),
+    0 0.125rem 0.3125rem 0 hsla(0, 0%, 0%, 0.14),
+    0 0.0625rem 0.625rem 0 hsla(0, 0%, 0%, 0.06);
+  --box-shadow-sm:
+    0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2),
+    0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.14),
+    0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.12);
+  --box-shadow-lg:
+    0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.46),
+    0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.47),
+    0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.21);
 
   --drop-shadow: drop-shadow(0.25rem 0.5rem 0.25rem hsla(0, 0%, 10%, 0.25));
 
@@ -77,15 +80,15 @@
     --bg-contrast-dark-val: 0, 0%, 70%;
     --bg-contrast-accent-val: 320, 80%, 80%;
     --bg-gradient: linear-gradient(
-                    45deg,
-                    hsl(240, 5%, 5%) 0%,
-                    hsl(168, 5%, 6%) 100%
+      45deg,
+      hsl(240, 5%, 5%) 0%,
+      hsl(168, 5%, 6%) 100%
     );
 
     --bg-gradient-dark: linear-gradient(
-                    45deg,
-                    hsla(330, 23%, 10%, 0),
-                    hsla(310, 100%, 10%, 0.5)
+      45deg,
+      hsla(330, 23%, 10%, 0),
+      hsla(310, 100%, 10%, 0.5)
     );
 
     --tx-primary-val: 190, 8%, 85%;
@@ -96,9 +99,9 @@
     --tx-contrast-dark-val: 0, 0%, 30%;
     --tx-contrast-accent-val: 320, 82%, 20%;
     --tx-gradient: linear-gradient(
-                    90deg,
-                    hsl(299, 83%, 84%) 0%,
-                    hsl(328, 53%, 61%) 100%
+      90deg,
+      hsl(299, 83%, 84%) 0%,
+      hsl(328, 53%, 61%) 100%
     );
   }
 }

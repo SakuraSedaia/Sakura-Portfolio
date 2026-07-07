@@ -36,22 +36,23 @@ export default function Header({
           {title}
         </h1>
         <Show when={description != undefined}>{description}</Show>
-        <div class={"header__children"}>
-          <div class={"index__header-links"}>
-            <Link path={"https://youtube.com/c/SakuraSedaia"}>
-              <IconBundle name={"youtube"} />{" "}
-              <span class={"index__header-link-text"}>Youtube</span>
-            </Link>
-            <Link path={"https://codeberg.org/SakuraSedaia"}>
-              <IconBundle name={"codeberg"} />{" "}
-              <span class={"index__header-link-text"}>Codeberg</span>
-            </Link>
-            <Link path={"https://github.com/SakuraSedaia"}>
-              <IconBundle name={"github"} />{" "}
-              <span class={"index__header-link-text"}>Github</span>
-            </Link>
-          </div>
-          {resolvedChildren()}
+        <Show when={resolvedChildren.toArray().length > 0}>
+          <div class={"header__children"}>{resolvedChildren()}</div>
+        </Show>
+
+        <div class={"header__social-links"}>
+          <Link path={"https://youtube.com/c/SakuraSedaia"}>
+            <IconBundle name={"youtube"} />{" "}
+            <span class={"index__header-link-text"}>Youtube</span>
+          </Link>
+          <Link path={"https://codeberg.org/SakuraSedaia"}>
+            <IconBundle name={"codeberg"} />{" "}
+            <span class={"index__header-link-text"}>Codeberg</span>
+          </Link>
+          <Link path={"https://github.com/SakuraSedaia"}>
+            <IconBundle name={"github"} />{" "}
+            <span class={"index__header-link-text"}>Github</span>
+          </Link>
         </div>
       </div>
       <div class={"header__fade"} />

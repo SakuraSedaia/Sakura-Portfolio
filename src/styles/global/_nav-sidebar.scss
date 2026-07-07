@@ -1,0 +1,129 @@
+.side-nav-wrapper {
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+  margin-inline: 2rem;
+  margin-block: 1.25rem;
+  padding: 1rem;
+}
+
+.side-nav-wrapper__pane {
+  position: sticky;
+  top: 4.5rem;
+  border: 0.0625rem solid var(--border-1);
+  border-radius: var(--radius-lg);
+  background: hsl(304deg 17% 16% / 0.88);
+}
+
+.side-nav-wrapper__pane--left {
+  width: 15rem;
+}
+
+.side-nav-wrapper__pane--right {
+  width: 3.5rem;
+  overflow: hidden;
+}
+
+.side-nav-wrapper__pane--right.is-open {
+  width: 14rem;
+}
+
+.side-nav-wrapper__content {
+  min-width: 0;
+}
+
+.side-nav-wrapper__router {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.side-nav-wrapper__link {
+  border-bottom: 0.0625rem solid var(--border-1);
+
+  .link {
+    display: block;
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    color: var(--tx-1);
+    border-left: 0.1875rem solid transparent;
+  }
+
+  .link:hover {
+    color: var(--accent);
+    border-left-color: var(--accent);
+    background: hsl(328deg 62% 85% / 0.08);
+  }
+
+  .link.active {
+    color: var(--accent);
+    border-left-color: var(--accent);
+    background: hsl(328deg 62% 85% / 0.14);
+  }
+}
+
+.side-nav-wrapper__wiki-toggle {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-bottom: 0.0625rem solid var(--border-1);
+  background: transparent;
+  color: var(--tx-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  font-family: var(--font-body), sans-serif;
+}
+
+.side-nav-wrapper__wiki-toggle:hover,
+.side-nav-wrapper__wiki-toggle:focus-visible {
+  color: var(--accent);
+  background: hsl(328deg 62% 85% / 0.08);
+}
+
+.side-nav-wrapper__wiki-toggle .icon {
+  width: 1rem;
+  height: 1rem;
+  transform: none;
+  margin-inline: 0;
+}
+
+.side-nav-wrapper__wiki-toggle .icon svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.side-nav-wrapper__wiki-toggle .icon svg.open {
+  transform: rotate(0deg);
+}
+
+.side-nav-wrapper__wiki-stub {
+  padding: 0.75rem;
+  color: var(--tx-2);
+  font-size: 0.9375rem;
+}
+
+.side-nav-wrapper__wiki-stub p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1080px) {
+  .side-nav-wrapper {
+    grid-template-columns: 1fr;
+    margin-inline: 1rem;
+  }
+
+  .side-nav-wrapper__pane {
+    position: static;
+    width: 100%;
+  }
+
+  .side-nav-wrapper__pane--right {
+    width: 100%;
+  }
+}

@@ -1,5 +1,6 @@
-import { JSX, splitProps } from "solid-js";
+import { createSignal, JSX, splitProps, createMemo, children } from "solid-js";
 import Link from "./link";
+import IconBundle from "~/components/graphics/icon-bundle";
 
 interface NavRouterProps extends JSX.HTMLAttributes<HTMLDivElement> {
   children: JSX.Element;
@@ -38,5 +39,40 @@ export function NavItem(props: NavItemProps) {
         {local.children}
       </Link>
     </div>
+  );
+}
+
+interface NavSubRouterProps {
+  children: JSX.Element;
+  class?: string;
+  title?: string;
+}
+
+export function NavSubRouter(props: NavSubRouterProps) {
+  const [subNavOpen, setSubNavOpen] = createSignal(false);
+  const itemHeight = 2.5; // Matches $nav-item-height in SCSS
+
+  const subNavHeight = createMemo(() => {
+    if (!subNavOpen()) return 0;
+    return children(() => props.children).toArray().length * itemHeight;
+  });
+
+  function toggleSubNav() {
+    setSubNavOpen(!subNavOpen());
+  }
+
+  return (
+    <li class={props.class}>
+      <span onClick={toggleSubNav}>
+        {props.title}{" "}
+        <IconBundle name={"arrow-down"} class={subNavOpen() ? "open" : ""} />
+      </span>
+      <div
+        class={`sub-nav-container`}
+        style={{ height: `${subNavHeight()}rem` }}
+      >
+        <ul>{props.children}</ul>
+      </div>
+    </li>
   );
 }

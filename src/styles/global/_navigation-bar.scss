@@ -78,9 +78,10 @@
       padding-block: 0.1875rem;
       display: inline-block;
       border: 0.125rem solid transparent;
-      transition: color 150ms ease-in-out,
-      background-color 150ms ease-in-out,
-      border-color 150ms ease-in-out;
+      transition:
+        color 150ms ease-in-out,
+        background-color 150ms ease-in-out,
+        border-color 150ms ease-in-out;
 
       &:hover {
         color: var(--accent);
