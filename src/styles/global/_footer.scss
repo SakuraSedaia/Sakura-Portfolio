@@ -15,3 +15,16 @@
     text-align: center;
   }
 }
+
+@media (max-width: 720px) {
+  .footer {
+    padding-inline: 1rem;
+
+    &__links {
+      flex-direction: column;
+      margin-block: 0;
+      padding-block: 0;
+      gap: 0.5rem;
+    }
+  }
+}
