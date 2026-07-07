@@ -17,6 +17,7 @@ export default function Link(props: LinkProps) {
     "class",
     "external",
     "path",
+    "emboss",
   ]);
 
   const resolvedPath = resolvePrefix(local.path);
@@ -24,6 +25,9 @@ export default function Link(props: LinkProps) {
     local.external === true ||
     resolvedPath.startsWith("http") ||
     resolvedPath.startsWith("//");
+  const baseClass = local.class?.trim();
+  const linkClass = baseClass ? `${baseClass} link` : "link";
+  const buttonClass = baseClass ? `${baseClass} button` : "button";
 
   return (
     <Switch
@@ -31,34 +35,44 @@ export default function Link(props: LinkProps) {
         <A
           href={resolvedPath}
           end={true}
-          class={local.class + "link"}
+          class={linkClass}
           {...(others as any)}
         >
           {local.children}
         </A>
       }
     >
-      <Match when={isExternal}>
+      <Match when={local.emboss && isExternal}>
         <a
           href={resolvedPath}
           target={"_blank"}
-          class={local.class + "link"}
+          class={buttonClass}
           rel={"noopener noreferrer"}
           {...(others as any)}
         >
           {local.children}
         </a>
       </Match>
-      <Match when={props.emboss}>
-        <button
+      <Match when={local.emboss}>
+        <A
+          href={resolvedPath}
+          end={true}
+          class={buttonClass}
+          {...(others as any)}
+        >
+          {local.children}
+        </A>
+      </Match>
+      <Match when={isExternal}>
+        <a
           href={resolvedPath}
           target={"_blank"}
-          class={local.class + "button"}
+          class={linkClass}
           rel={"noopener noreferrer"}
           {...(others as any)}
         >
           {local.children}
-        </button>
+        </a>
       </Match>
     </Switch>
   );

@@ -2,6 +2,7 @@
 @use "global/navigation-bar";
 @use "global/header";
 @use "global/footer";
+@use "global/buttons";
 @use "global/image-modal";
 @use "global/card-gallery";
 @use "global/tooltip";
@@ -50,4 +51,12 @@
   --nav-link-active-bg: hsl(328deg 62% 85% / 0.14);
   --nav-link-active-border: var(--accent);
   --nav-link-active-hover-border: var(--tx-1);
+
+  --button-bg: hsl(304deg 17% 20% / 0.9);
+  --button-bg-hover: hsl(328deg 62% 85% / 0.16);
+  --button-border: hsl(328deg 62% 85% / 0.4);
+  --button-border-hover: var(--accent);
+  --button-text: var(--tx-1);
+  --button-text-hover: var(--accent);
+  --button-focus-ring: hsl(328deg 62% 85% / 0.65);
 }

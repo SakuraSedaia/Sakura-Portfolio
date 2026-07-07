@@ -1,7 +1,8 @@
 section.index__renders,
 section.index__programming,
 section.index__technical-expertise,
-section.index__preferred-tooling {
+section.index__preferred-tooling,
+section.index__get-in-touch {
   h2 {
     font-size: 1.5rem;
   }
@@ -43,6 +44,17 @@ section.index__preferred-tooling {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+}
+
+section.index__get-in-touch {
+  .index__get-in-touch__actions {
+    margin-top: 0.75rem;
+  }
+
+  .index__get-in-touch__actions button,
+  .index__get-in-touch__actions a {
+    margin-inline: 1rem;
+  }
 }
 
 .index__technical-expertise-group,

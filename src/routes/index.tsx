@@ -4,6 +4,7 @@ import Programming from "~/components/sections/index/programming";
 import PreferredTooling from "~/components/sections/index/preferred-tooling";
 import Renders from "~/components/sections/index/renders";
 import TechnicalExpertise from "~/components/sections/index/technical-expertise";
+import GetInTouch from "~/components/sections/index/get-in-touch";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <Programming />
       <TechnicalExpertise />
       <PreferredTooling />
+      <GetInTouch />
     </main>
   );
 }
