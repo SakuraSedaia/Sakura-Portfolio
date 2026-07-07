@@ -5,8 +5,8 @@ export default function Footer() {
     <footer class={"footer"}>
       <p class={"footer__links"}>
         <Link path={"/"}>Home</Link>
-        <Link path={"/wiki"}>Wiki</Link>
-        <Link path={"/projects"}>Projects</Link>
+        <Link path={"store://"}>Store</Link>
+        <Link path={"projects://"}>Projects</Link>
         <Link path={"/credits-and-attributions"}>Credits</Link>
         <Link path={"/contact"}>Contact</Link>
       </p>

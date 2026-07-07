@@ -10,9 +10,7 @@ export default function Programming() {
 
       <div class={"card-gallery"}>
         {/* <For> is SolidJS's idiomatic and optimized way to render arrays */}
-        <For each={previewCode}>
-          {(code) => <ProgrammingCard {...code} />}
-        </For>
+        <For each={previewCode}>{(code) => <ProgrammingCard {...code} />}</For>
       </div>
     </section>
   );
