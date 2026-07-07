@@ -1,45 +1,30 @@
 /* Heading */
 @font-face {
-  font-family: "Marhey";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("/fonts/google/marhey-300-normal.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Marhey";
+  font-family: "Audiowide";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/google/marhey-400-normal.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Marhey";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/fonts/google/marhey-500-normal.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Marhey";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("/fonts/google/marhey-600-normal.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Marhey";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/fonts/google/marhey-700-normal.ttf") format("truetype");
+  src: url("/fonts/google/audiowide-400-normal.ttf") format("truetype");
 }
 
 /* Body */
+@font-face {
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/google/play-400-normal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/google/play-700-normal.ttf") format("truetype");
+}
+
+/* Serif fallback token font */
 @font-face {
   font-family: "Noto Sans";
   font-style: normal;
