@@ -1,0 +1,43 @@
+.route__about {
+
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+
+  }
+
+  .about__description {
+    // Clearfix ensures the container fully encapsulates the floated image
+    // if the image is taller than the text paragraphs.
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    p {
+      // Optional: Add spacing between paragraphs if your global styles don't already
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      text-indent: 3rem;
+    }
+
+    .about__description__image {
+      float: right;
+
+      // Size the image to your preference
+      width: 300px;
+      max-width: 100%; // Responsive fallback
+      height: auto;
+
+      // Push the text away from the image
+      margin-left: 24px;
+      margin-bottom: 16px;
+
+      // Optional styling
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

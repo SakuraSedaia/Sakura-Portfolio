@@ -2,8 +2,10 @@
 @use "global/navigation-bar";
 @use "global/header";
 @use "global/footer";
+@use "global/image-modal";
 
 @use "routes/index";
+@use "routes/about";
 
 @use "global/fonts";
 
