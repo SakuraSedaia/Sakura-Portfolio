@@ -12,7 +12,6 @@ dist
 *.log
 
 # Lockfiles and package manager cache
-pnpm-lock.yaml
 uv.lock
 .pnpm-store
 
