@@ -8,6 +8,14 @@ TypeScript, and SCSS.
 - **Homepage:** [sakura-sedaia.com](https://sakura-sedaia.com)
 - **License:** GPL-3.0-or-later
 
+## Branches
+
+- `main`: default branch and active primary line for current development and deployment.
+- `portfolio-v3-dev`: active v3 development/staging branch (currently aligned with `main`).
+- `portfolio-v2`: Archived V2 portfolio SolidStart V1 Javascript branch, retained for historical reference.
+- `portfolio-v1`: Archived V1 portfolio SolidStart V1 Javascript branch, retained for historical reference.
+- `portfolio-classic`: imported classic HTML/CSS portfolio branch retained as a legacy archive.
+
 ## Roadmap
 
 This project is being rebuilt in phases from a fresh SolidStart template to a consolidated production platform.
