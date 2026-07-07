@@ -1,51 +1,107 @@
-# Sakura Portfolio Website (TypeScript Rebuild)
+# Sakura Portfolio Website
 
-> **⚠️ Notice:** This branch (`portfolio-v3-ts`) is a **fresh, ground-up rebuild**. It currently contains only a **basic SolidJS / SolidStart starter template** and is intended to become the **new development center** for [https://sakura-sedaia.com](https://sakura-sedaia.com). All packages expected to be needed for the rebuild are already installed — actual application code, components, routes, styling, and content from the previous build have **not** been ported over yet.
-
-This branch starts a clean slate using TypeScript, with the goal of progressively re-implementing the portfolio on a more modern and type-safe foundation while keeping the same overall stack (SolidJS + SolidStart + SCSS).
+This repository powers the main [sakura-sedaia.com](https://sakura-sedaia.com) portfolio app using SolidStart,
+TypeScript, and SCSS.
 
 - **Repository:** [codeberg.org/SakuraSedaia/Sakura-Portfolio](https://codeberg.org/SakuraSedaia/Sakura-Portfolio)
 - **Issues:** [codeberg.org/SakuraSedaia/Sakura-Portfolio/issues](https://codeberg.org/SakuraSedaia/Sakura-Portfolio/issues)
 - **Homepage:** [sakura-sedaia.com](https://sakura-sedaia.com)
 - **License:** GPL-3.0-or-later
 
-## 🌱 Status
+## Roadmap
 
-- ✅ Project scaffolding (SolidStart + Vite + TypeScript) is in place.
-- ✅ Dependencies needed for the rebuild are installed (see `package.json`).
-- 🚧 No production components, sections, routes, styles, assets, or content have been migrated yet.
-- 🎯 Goal: become the new main development branch / center for `sakura-sedaia.com`.
+This project is being rebuilt in phases from a fresh SolidStart template to a consolidated production platform.
 
-## 🛠️ Tech Stack
+1. Foundation (Completed)
+
+- Initialize SolidStart + TypeScript + SCSS baseline.
+- Configure Vite + Nitro (`vercel` preset) and metadata infrastructure.
+- Establish shared layout shell (`app.tsx`) with global navigation/footer.
+
+2. Core Portfolio Shell (Completed)
+
+- Implement primary portfolio routes: `/`, `/about`, `/debug`, and catch-all `404`.
+- Add shared components for header, navigation, footer, icons, and routing links.
+- Introduce route manifest JSON (`src/data/json/routes.json`) for navigation and metadata coordination.
+
+3. Content Migration (In Progress)
+
+- Populate home page sections with production-ready content.
+- Expand programming/projects presentation beyond placeholder sections.
+- Continue migrating and organizing static media and project data JSON under `src/data/json/` and `public/images/`.
+
+4. Metadata, SEO, and Indexing (Completed)
+
+- Maintain per-route metadata and canonical URL handling.
+- Keep sitemap generation automated via `pnpm update:sitemap`.
+- Align no-index behavior and route metadata coverage as pages are added.
+
+5. Cross-Site Consolidation Planning (In Progress)
+
+- Preserve `wiki://` and `projects://`-aware URL prefix resolution for cross-site linking.
+- Keep wiki/projects route-group manifests and planning docs in `docs/`.
+- Define migration path for consolidating standalone wiki/projects deployments into this codebase.
+
+6. Production Hardening (Planned)
+
+- Expand route coverage and ship missing production pages (for example contact/projects/wiki endpoints where needed).
+- Validate responsive behavior, accessibility, and error/loading states across routes.
+- Add broader regression checks for route data, metadata integrity, and critical rendering paths.
+
+7. Full Production Deployment (Target State)
+
+- Deploy this app as the canonical production source for `sakura-sedaia.com`.
+- Optionally unify subdomain experiences (`wiki.sakura-sedaia.com`, `projects.sakura-sedaia.com`) through one routed
+  platform when migration is complete.
+- Operate with repeatable release workflow, updated sitemap metadata, and stable routing/SEO behavior across all public
+  pages.
+
+## Tech Stack
 
 - **Framework:** [SolidJS](https://www.solidjs.com/) (`solid-js` ^1.9.5)
-    - **Meta-framework:** [SolidStart](https://start.solidjs.com/) (`@solidjs/start` 2.0.0-alpha.2)
-    - **Routing:** [`@solidjs/router`](https://github.com/solidjs/solid-router) ^0.15.0
-    - **Metadata:** [`@solidjs/meta`](https://github.com/solidjs/solid-meta) ^0.29.4
-- **Bundler / Dev Server:** [Vite](https://vitejs.dev/) ^7.0.0
-- **SSR Adapter:** [`@solidjs/vite-plugin-nitro-2`](https://www.npmjs.com/package/@solidjs/vite-plugin-nitro-2) ^0.1.0
-- **Analytics:** [`@vercel/analytics`](https://vercel.com/docs/analytics)
+- **Meta-framework:** [SolidStart](https://start.solidjs.com/) (`@solidjs/start` 2.0.0-alpha.3)
+- **Routing:** [`@solidjs/router`](https://github.com/solidjs/solid-router) ^0.15.0
+- **Metadata:** [`@solidjs/meta`](https://github.com/solidjs/solid-meta) ^0.29.4
+- **Bundler / Dev Server:** [Vite](https://vitejs.dev/) 8.0.5
+- **SSR Adapter:** [`@solidjs/vite-plugin-nitro-2`](https://www.npmjs.com/package/@solidjs/vite-plugin-nitro-2) ^0.3.0
 - **Styling:** [SCSS](https://sass-lang.com/) via `sass` ^1.99.0
 - **Language:** TypeScript (ESM)
+- **Deployment Target:** Vercel (Nitro preset)
 
-## 📜 Available Scripts
+## Requirements
 
-The following scripts are defined in `package.json`:
+- Node.js `>=22`
+- PNPM
 
-| Command         | Description                                                |
-|-----------------|------------------------------------------------------------|
-| `pnpm dev`      | Starts the Vite dev server on port `3232` with `--host`.   |
-| `pnpm build`    | Produces a production build via `vite build`.              |
-| `pnpm start`    | Runs `vite start`.                                         |
-| `pnpm preview`  | Previews the production build with `vite preview`.         |
+## Getting Started
 
-## 🗺️ Roadmap (high level)
+```bash
+pnpm install
+pnpm dev
+```
 
-- Rewrite a large portion of the application in TypeScript.
-- Migrate all components, sections, routes, and JSON-driven data — typed in TypeScript.
-- Re-write the asset optimization pipeline (`utils/`).
-- Replace the old build as the production deployment target for `sakura-sedaia.com`
-    - The old build will continue to be maintained in the `main` branch with project updates.
+Dev server runs on `http://localhost:3232` (with `--host` enabled).
+
+## Scripts
+
+| Command               | Description                                                                         |
+|-----------------------|-------------------------------------------------------------------------------------|
+| `pnpm dev`            | Start local Vite dev server on port `3232`.                                         |
+| `pnpm build`          | Build production output via `vite build`.                                           |
+| `pnpm start`          | Run `vite start`.                                                                   |
+| `pnpm preview`        | Preview the production build via `vite preview`.                                    |
+| `pnpm update:sitemap` | Regenerate `public/sitemap.xml` with route-aware `lastmod` values from git history. |
+| `pnpm setup:githooks` | Configure local git hooks path to `.githooks`.                                      |
+
+## Key Directories
+
+- `src/routes/` - SolidStart route files
+- `src/components/` - shared UI and section components
+- `src/data/json/` - route and project metadata sources
+- `src/styles/` - global and route-level SCSS
+- `src/markdown/` - project changelog markdown content
+- `public/` - static assets and generated `sitemap.xml`
+- `docs/` - architecture and migration planning notes
 
 ---
-*Created and maintained by Sedaia Designs.*
+Created and maintained by Sedaia Designs.
