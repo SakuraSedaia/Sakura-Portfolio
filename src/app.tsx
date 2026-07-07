@@ -35,7 +35,14 @@ function AppRoot(props: AppRootProps) {
 
   return (
     <MetaProvider>
-      <ErrorBoundary fallback={<div>Something went wrong</div>}>
+      <ErrorBoundary
+        fallback={(error, reset) => (
+          <div>
+            <p>Something went wrong: {error.message}</p>
+            <button onClick={reset}>Try again</button>
+          </div>
+        )}
+      >
         <NavigationBar />
         <Suspense>{props.children}</Suspense>
 
