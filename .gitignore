@@ -7,6 +7,9 @@ dist
 app.config.timestamp_*.js
 .image-backup
 *.log
+.solid-start/
+.nitro/
+
 
 # Environment
 .env
