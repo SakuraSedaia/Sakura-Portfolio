@@ -1,0 +1,40 @@
+.route__contact {
+  section {
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+  }
+
+  .contact__me__intro {
+    margin-top: 0;
+  }
+
+  .contact__me__methods {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .contact__me__method {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    .icon {
+      margin-inline: 0;
+      transform: none;
+    }
+  }
+
+  .contact__me__label {
+    color: var(--tx-2);
+    font-weight: 700;
+    min-width: 5.25rem;
+  }
+
+  .contact__me__method a {
+    word-break: break-word;
+  }
+}

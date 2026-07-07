@@ -25,7 +25,7 @@
       },
       {
         "name": "Projects",
-        "path": "/projects",
+        "path": "projects://",
         "meta": {
           "title": "Projects | Sedaia Designs",
           "description": "Explore Sakura's projects, including Blender Development for PyCharm, Rig Interfaces, SACR, and more.",
@@ -34,12 +34,12 @@
         }
       },
       {
-        "name": "Wiki",
-        "path": "/wiki",
+        "name": "Store",
+        "path": "store://",
         "meta": {
-          "title": "Wiki | Sedaia Designs",
-          "description": "A collection of guides, tutorials, and documentation for Sakura's projects, including Blender Development for PyCharm, Rig Interfaces, SACR, and more.",
-          "url": "/wiki",
+          "title": "Store | Sedaia Designs",
+          "description": "Browse Sakura's store for downloadable tools, project assets, and digital products from Sedaia Designs.",
+          "url": "store://",
           "show_route": true
         }
       },
