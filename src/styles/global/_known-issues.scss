@@ -1,0 +1,30 @@
+#known-issues {
+  .known-issues-list {
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      .known-issue-item {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border-color);
+
+        h3 {
+          margin: 0 0 0.25rem 0;
+          font-size: 1.25rem;
+          color: var(--primary-color);
+        }
+
+        h4 {
+          margin: 0 0 0.5rem 0;
+          font-size: 0.9rem;
+          color: var(--tx-secondary);
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

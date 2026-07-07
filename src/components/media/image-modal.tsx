@@ -14,7 +14,7 @@ export default function ImageModal(props: ImageModalProps) {
   return (
     <Show when={props.show}>
       <Portal>
-        <div class={"image-modal-overlay"} onClick={props.onClose}>
+        <div class={"image-modal-overlay"} onClick={() => props.onClose()}>
           <div
             class={"image-modal-content"}
             role={"dialog"}
@@ -24,7 +24,7 @@ export default function ImageModal(props: ImageModalProps) {
             <button
               class={"image-modal-content__close-button"}
               type={"button"}
-              onClick={props.onClose}
+              onClick={() => props.onClose()}
               aria-label={"Close image preview"}
             >
               &times;

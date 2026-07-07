@@ -1,0 +1,26 @@
+.notice {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--bg-secondary);
+  border-left: 4px solid var(--primary-color);
+  margin-top: 2rem;
+  max-width: 56.25rem;
+  margin-inline: auto;
+
+  h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &.ai-notice {
+    border-color: var(--primary-color);
+
+    h3 {
+      color: var(--primary-color);
+    }
+  }
+}

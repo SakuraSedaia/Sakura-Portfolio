@@ -37,13 +37,8 @@ export default function SupportedPlatformsHero(props: PluginHeroProps) {
 
   return (
     <Show when={platformList().length > 0}>
-      <p
-        class={"supported-platforms"}
-        style={
-          "display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;"
-        }
-      >
-        <span>Supported in:</span>
+      <p class={"supported-platforms"}>
+        <span class={"supported-platforms__label"}>Supported in:</span>
         <For each={platformList()}>
           {(platform) => {
             const meta = platforms[platform];
@@ -54,15 +49,13 @@ export default function SupportedPlatformsHero(props: PluginHeroProps) {
                 target={"_blank"}
                 rel={"noopener noreferrer"}
                 aria-label={`${meta.label} website`}
-                style={"display: inline-flex; align-items: center;"}
+                class={"supported-platforms__link"}
               >
                 <img
                   class={`platform-icon platform-${platform}`}
                   src={meta.src}
                   alt={`${meta.label} logo`}
                   title={`Supported on ${meta.label}`}
-                  height={"50px"}
-                  style={"vertical-align: middle;"}
                 />
               </a>
             );

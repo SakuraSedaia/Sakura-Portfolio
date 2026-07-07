@@ -1,0 +1,23 @@
+.supported-platforms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.supported-platforms__label {
+  color: var(--tx-1);
+}
+
+.supported-platforms__link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.platform-icon {
+  display: block;
+  height: 3.125rem;
+  width: auto;
+  vertical-align: middle;
+}
