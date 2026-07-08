@@ -11,7 +11,7 @@
     },
     {
       "title": "Sakura Rig Utilities",
-      "description": "Sakura's Character rig is a Blender character preset, focused on being lightweight and customizable.",
+      "description": "Sakura's Rig Utilities is a collection of Blender scripts and utilities for Sakura's Character Rig, including the main UI interface, Skin tools, and a built in rig manager.",
       "imageSrc": "/images/card-headers/rig-interface-3.avif",
       "imageDescription": "a preview screenshot of Sakura's Character Rig with it's associated Python UI",
       "imageAlt": "Sakura's Rig Utilities preview screenshot",

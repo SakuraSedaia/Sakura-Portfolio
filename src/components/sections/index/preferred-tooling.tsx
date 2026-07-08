@@ -88,8 +88,12 @@ const toolingGroups: ToolGroup[] = [
 export default function PreferredTooling() {
   return (
     <section id={"preferred-tooling"} class={"index__preferred-tooling"}>
-      <h2>Preferred Tooling</h2>
-
+      <h2>Tools I Use</h2>
+      <p>
+        This is a collection of tools I use for my work and personal projects,
+        though I am not limited by just these tools, these are simply what I
+        found to be the most effective and efficient for my needs.
+      </p>
       <div class={"index__preferred-tooling-grid"}>
         <For each={toolingGroups}>
           {(group) => (

@@ -57,26 +57,6 @@ const expertiseGroups: ExpertiseGroup[] = [
       },
     ],
   },
-  {
-    title: "AI Tools",
-    items: [
-      {
-        name: "OpenAI Codex CLI",
-        url: "https://openai.com/codex/",
-        summary: "Autonomous AI agent for development.",
-      },
-      {
-        name: "OpenAI GPT-5.3-Codex",
-        url: "https://openai.com/index/introducing-gpt-5-3-codex/",
-        summary: "Primary Development Model",
-      },
-      {
-        name: "Google Gemini 3",
-        url: "https://aistudio.google.com/models/gemini-3",
-        summary: "Secondary Reasoning and research model.",
-      },
-    ],
-  },
 ];
 
 export default function TechnicalExpertise() {

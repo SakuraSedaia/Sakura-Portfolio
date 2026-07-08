@@ -12,7 +12,7 @@ export default function Home() {
       <Metadata
         title={"Sedaia Designs"}
         description={
-          "Sedaia Designs, more commonly known as Sakura is a freelance software developer and Voxel 3D Artist specialising in Minecraft style 3D art, SolidJS/React-like websites, and Blender extension development."
+          "Sedaia Designs, more commonly known as Sakura is a freelance software developer and Voxel 3D Artist specialising in Minecraft style 3D art, SolidJS websites, and Blender extension development."
         }
         image={"images/renders/char-env/hylian_sakura_in_rito.avif"}
       />
@@ -23,8 +23,7 @@ export default function Home() {
           <p>
             Sedaia Designs, more commonly known as Sakura is a freelance
             software developer and Voxel 3D Artist specialising in Minecraft
-            style 3D art, SolidJS/React-like websites, and Blender extension
-            development.
+            style 3D art, SolidJS websites, and Blender extension development.
           </p>
         }
         class={"index__header"}
