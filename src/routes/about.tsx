@@ -9,7 +9,7 @@ export default function About() {
       <Metadata
         title={"Sedaia Designs"}
         description={
-          "Sedaia Designs, more commonly known as Sakura is a freelance software developer and Voxel 3D Artist specialising in Minecraft style 3D art, SolidJS/React-like websites, and Blender extension development."
+          "Sedaia Designs, more commonly known as Sakura is a freelance software developer and Voxel 3D Artist specialising in Minecraft style 3D art, SolidJS websites, and Blender extension development."
         }
         image={"/images/minecraft-renders/char-env/farmer-sakura.png"}
       />

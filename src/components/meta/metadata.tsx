@@ -4,7 +4,7 @@ import { useLocation } from "@solidjs/router";
 const SITE_NAME = "Sedaia Designs";
 const SITE_URL = "https://sakura-sedaia.com";
 const DEFAULT_DESCRIPTION =
-  "Sedaia Designs, more commonly known as Sakura is a freelance software developer and Voxel 3D Artist specialising in Minecraft style 3D art, SolidJS/React-like websites, and Blender extension development.";
+  "Sedaia Designs, more commonly known as Sakura is a freelance software developer and Voxel 3D Artist specialising in Minecraft style 3D art, SolidJS websites, and Blender extension development.";
 const DEFAULT_IMAGE = "/images/minecraft-renders/farmer-sakura.png";
 
 interface MetadataProps {
