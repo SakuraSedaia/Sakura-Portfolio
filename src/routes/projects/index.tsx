@@ -80,11 +80,14 @@ export default function Projects() {
         description={
           "Sedaia Designs, more commonly known as Sakura is a freelance software developer and Voxel 3D Artist specialising in Minecraft style 3D art, SolidJS/React-like websites, and Blender extension development."
         }
-        image={"/images/minecraft-renders/char-env/farmer-sakura.png"}
+        image={"/images/headers/sacr.avif"}
       />
 
-      <Header title={"Projects"} class={"index__header"} />
-
+      <Header
+        title={"Tools for Blender artists & developers"}
+        class={"index__header"}
+        image={"/images/headers/sacr.avif"}
+      />
       <SideNavWrapper projectRoutes={Routes.projects}>
         <ErrorBoundary
           fallback={(err) => (
@@ -99,26 +102,6 @@ export default function Projects() {
             }
           >
             <article class={"projects-home"}>
-              <section
-                class={"projects-home__hero"}
-                style={"background-image: url('/images/headers/sacr.jxl');"}
-              >
-                <div class={"projects-home__hero-content"}>
-                  <h2>Tools for Blender artists & developers</h2>
-                  <p>
-                    Sakura&apos;s Project Hub is the central home for my
-                    open-source Blender add-ons and JetBrains plugins.
-                  </p>
-                  <p>
-                    Built to make rigging, animating, and developing for Blender
-                    faster and friendlier.
-                  </p>
-                  <Link path={"/projects/sakura-rig-utilities"} emboss={true}>
-                    Explore Sakura Rig Utilities
-                  </Link>
-                </div>
-              </section>
-
               <section
                 class={"projects-home__featured"}
                 aria-label={"Featured projects"}
@@ -136,24 +119,6 @@ export default function Projects() {
                       </article>
                     )}
                   </For>
-                </div>
-              </section>
-
-              <section
-                class={"projects-home__spotlight"}
-                aria-label={"Blender Development spotlight"}
-              >
-                <div class={"projects-home__spotlight-content"}>
-                  <h2>Blender Development for PyCharm</h2>
-                  <p>
-                    Develop and debug Blender extensions like any other Python
-                    project - with hot-reloading, integrated linting via
-                    fake-bpy-module, sandboxed runs, and full cross-platform
-                    support.
-                  </p>
-                  <Link path={"/projects/blender-development"} emboss={true}>
-                    Open the plugin page
-                  </Link>
                 </div>
               </section>
 
