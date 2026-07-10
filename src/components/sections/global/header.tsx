@@ -35,12 +35,17 @@ export default function Header({
         >
           {title}
         </h1>
-        <Show when={description != undefined}>{description}</Show>
-        <Show when={resolvedChildren.toArray().length > 0}>
-          <div class={"header__children"}>{resolvedChildren()}</div>
-        </Show>
+        <div class={"header__children"}>
+          <Show when={description !== undefined}>{description}</Show>
+          <Show when={resolvedChildren.toArray().length > 0}>
+            {resolvedChildren()}
+          </Show>
+        </div>
 
-        <div class={"header__social-links"}>
+        <div
+          class={"header__social-links"}
+          style={{ "margin-top": description !== undefined ? "1rem" : "0" }}
+        >
           <Link path={"https://youtube.com/c/SakuraSedaia"}>
             <IconBundle name={"youtube"} />{" "}
             <span class={"index__header-link-text"}>Youtube</span>
