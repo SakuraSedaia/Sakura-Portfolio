@@ -30,11 +30,6 @@ header.header__container {
       margin-top: 0;
       padding-bottom: 2rem;
     }
-
-    p {
-      padding-top: 0;
-      margin-top: 0;
-    }
   }
 
   .header__fade {
@@ -57,11 +52,18 @@ header.header__container {
     height: 4rem;
   }
 
+  .header__children {
+    p {
+      padding-top: 0;
+      margin-top: 0;
+      padding-block: 1rem;
+    }
+  }
+
   .header__social-links {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     gap: 1rem;
     color: white;
 
@@ -76,6 +78,7 @@ header.header__container {
 @media (max-width: 1080px) {
   header.header__container {
     height: fit-content;
+
     div.header__content {
       margin-block: 6rem 3rem;
       width: 100%;
