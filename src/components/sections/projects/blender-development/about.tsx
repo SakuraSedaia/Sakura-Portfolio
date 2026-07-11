@@ -69,28 +69,9 @@ export default function BlenderDevAbout() {
         <div class={"notice ai-notice"}>
           <h3>AI Usage Declaration</h3>
           <p>
-            This project is developed in collaboration with{" "}
-            <strong>Junie</strong>, an AI agent by JetBrains integrated into
-            IntelliJ IDEA. AI assistance is utilized for:
+            Use of LLM's were used to generate and assist with the development
+            of the project
           </p>
-          <ul class={"styled-list"}>
-            <li>
-              <strong>Code Generation & Architecture:</strong> Implementing core
-              logic, refactoring, and documentation.
-            </li>
-            <li>
-              <strong>Quality Assurance:</strong> Assisting with code reviews,
-              optimization, and bug fixing.
-            </li>
-            <li>
-              <strong>Internationalization:</strong> Localizing the plugin into
-              11+ languages.
-            </li>
-            <li>
-              <strong>Workflow Automation:</strong> Managing repetitive tasks,
-              git commits, and documentation updates.
-            </li>
-          </ul>
           <p>
             <strong>Human Oversight:</strong> All AI-generated contributions are
             strictly reviewed, tested, and approved by{" "}
