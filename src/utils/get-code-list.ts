@@ -4,9 +4,12 @@ interface CodeProject {
   title: string;
   description: string;
   imageSrc: string;
+  width: number;
+  height: number;
   imageDescription: string;
   imageAlt: string;
   linkPath: string;
+  imageFit: "cover" | "contain";
 }
 
 export default function getCodeList() {
