@@ -84,8 +84,8 @@
         border-color 150ms ease-in-out;
 
       &:hover {
-        color: var(--accent);
-        border-bottom-color: var(--accent);
+        color: var(--accent-secondary);
+        border-bottom-color: var(--accent-secondary);
         background-color: var(--nav-link-hover-bg);
         cursor: pointer;
       }
@@ -93,14 +93,14 @@
       &.active {
         color: var(--accent);
         font-weight: 600;
-        border-bottom-color: var(--nav-link-active-border) !important;
+        border-bottom-color: var(--accent-strong) !important;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
         background-color: var(--nav-link-active-bg);
 
         &:hover {
-          color: var(--tx-1) !important;
-          border-bottom-color: var(--nav-link-active-hover-border) !important;
+          color: var(--accent-secondary) !important;
+          border-bottom-color: var(--accent-secondary) !important;
           background-color: var(--nav-link-hover-bg);
         }
       }

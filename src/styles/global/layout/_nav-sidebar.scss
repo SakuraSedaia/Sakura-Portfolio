@@ -13,7 +13,7 @@
   top: 4.5rem;
   border: 0.0625rem solid var(--border-1);
   border-radius: var(--radius-lg);
-  background: hsl(304deg 17% 16% / 0.88);
+  background: var(--surface-glass);
 }
 
 .side-nav-wrapper__pane--left {
@@ -51,15 +51,15 @@
   }
 
   .link:hover {
-    color: var(--accent);
-    border-left-color: var(--accent);
-    background: hsl(328deg 62% 85% / 0.08);
+    color: var(--accent-secondary);
+    border-left-color: var(--accent-secondary);
+    background: hsl(from var(--accent-secondary) h s l / 0.12);
   }
 
   .link.active {
     color: var(--accent);
     border-left-color: var(--accent);
-    background: hsl(328deg 62% 85% / 0.14);
+    background: hsl(from var(--accent) h s l / 0.2);
   }
 }
 
@@ -81,8 +81,8 @@
 
 .side-nav-wrapper__wiki-toggle:hover,
 .side-nav-wrapper__wiki-toggle:focus-visible {
-  color: var(--accent);
-  background: hsl(328deg 62% 85% / 0.08);
+  color: var(--accent-secondary);
+  background: hsl(from var(--accent-secondary) h s l / 0.12);
 }
 
 .side-nav-wrapper__wiki-toggle .icon {

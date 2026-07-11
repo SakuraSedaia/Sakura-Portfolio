@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background-color: hsla(270, 5%, 5%, 0.84);
+  background-color: var(--color-overlay-900);
   backdrop-filter: blur(8px);
   box-sizing: border-box;
 }
@@ -21,9 +21,9 @@
   padding: 1rem;
   overflow: auto;
   background-color: var(--bg-2);
-  border: 0.15rem solid hsla(313, 100%, 87%, 0.4);
+  border: 0.15rem solid var(--border-accent);
   border-radius: 0.5rem;
-  box-shadow: 0 0 24px var(--tx-1-contrast);
+  box-shadow: 0 0 1.5rem var(--accent-glow);
   box-sizing: border-box;
 
   img {
@@ -50,7 +50,7 @@
   &__info {
     h3 {
       margin-block: 0 0.5rem;
-      color: var(--accent);
+      color: var(--accent-secondary);
     }
 
     p {

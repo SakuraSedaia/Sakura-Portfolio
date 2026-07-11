@@ -13,14 +13,14 @@
 
   .changelog-section {
     .heading {
-      border-bottom: 0.125rem solid var(--border-color);
+      border-bottom: 0.125rem solid var(--border-1);
       margin-bottom: 1.5rem;
       padding-bottom: 0.5rem;
 
       h2 {
         font-size: 2rem;
         margin: 0;
-        color: var(--tx-primary);
+        color: var(--tx-1);
       }
     }
 
@@ -40,12 +40,12 @@
     }
 
     .link {
-      color: var(--primary-color, var(--accent));
+      color: var(--accent);
       text-decoration: none;
       transition: box-shadow 0.1s ease;
 
       &:hover {
-        box-shadow: 0 0.125rem 0 0 var(--primary-color, var(--accent));
+        box-shadow: 0 0.125rem 0 0 var(--accent);
       }
     }
   }
@@ -53,12 +53,12 @@
   .changelog-subsection {
     margin-top: 2rem;
     padding-left: 1rem;
-    border-left: 0.25rem solid hsl(0deg 0% 100% / 0.2);
+    border-left: 0.25rem solid hsl(from var(--accent-secondary) h s l / 0.3);
 
     h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: var(--tx-secondary);
+      color: var(--tx-2);
     }
   }
 }

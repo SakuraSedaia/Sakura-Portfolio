@@ -1,7 +1,6 @@
 .blenddev-container {
   padding: 1rem;
-  --primary-color: var(--accent);
-  --primary-color-val: var(--color-pink-400-val);
+  padding-top: 0;
 
   .styled-list {
     padding-left: 1.5rem;
@@ -21,7 +20,7 @@
   }
 
   .link {
-    color: var(--brand-primary, var(--primary-color));
+    color: var(--brand-primary, var(--accent));
     font-weight: 500;
     box-shadow: inset 0 -0.0625rem 0 transparent;
     transition:
@@ -30,19 +29,21 @@
 
     &:hover,
     &:focus-visible {
-      color: var(--brand-hover, var(--primary-color));
-      box-shadow: inset 0 -0.0625rem 0 var(--brand-hover, var(--primary-color));
+      color: var(--brand-hover, var(--accent));
+      box-shadow: inset 0 -0.0625rem 0 var(--brand-hover, var(--accent));
       transition-duration: 0.1s;
     }
   }
 
   section {
     margin-bottom: 4rem;
+    margin-top: 0;
+    margin-inline: auto;
     max-width: 100%;
 
     .heading {
       margin-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-1);
       padding-bottom: 0.5rem;
 
       h1 {
@@ -60,10 +61,10 @@
       margin: 3rem 0;
 
       .feature-card {
-        background: var(--bg-secondary);
+        background: var(--bg-2);
         padding: 1rem;
         border-radius: 1rem;
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--border-1);
         transition:
           transform 0.2s ease,
           box-shadow 0.2s ease,
@@ -76,7 +77,7 @@
         .feature-icon {
           width: 2.5rem;
           height: 2.5rem;
-          color: var(--primary-color);
+          color: var(--accent);
           margin-bottom: 1rem;
           display: flex;
           align-items: center;
@@ -92,12 +93,12 @@
           font-size: 1.5rem;
           margin-bottom: 1rem;
           margin-top: 0;
-          color: var(--tx-primary);
+          color: var(--tx-1);
         }
 
         p {
           font-size: 1rem;
-          color: var(--tx-secondary);
+          color: var(--tx-2);
           line-height: 1.5;
           margin: 0;
         }
@@ -118,11 +119,11 @@
         h3 {
           font-size: 1.5rem;
           margin-bottom: 0.5rem;
-          color: var(--primary-color);
+          color: var(--accent);
         }
 
         p {
-          color: var(--tx-secondary);
+          color: var(--tx-2);
           margin-bottom: 1.5rem;
         }
       }
@@ -130,10 +131,10 @@
 
     .issues-box {
       text-align: center;
-      background: var(--bg-secondary);
+      background: var(--bg-2);
       padding: 4rem 2rem;
       border-radius: 2rem;
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--border-1);
       margin-top: 2rem;
 
       h1 {
@@ -141,12 +142,12 @@
         margin-bottom: 1rem;
         border-bottom: none;
         padding-bottom: 0;
-        color: var(--primary-color);
+        color: var(--accent);
       }
 
       p {
         font-size: 1.1rem;
-        color: var(--tx-secondary);
+        color: var(--tx-2);
         max-width: 35rem;
         margin: 0 auto 2rem;
       }
@@ -156,15 +157,15 @@
   .notice {
     padding: 1.5rem;
     border-radius: 1rem;
-    background-color: var(--bg-secondary);
-    border-left: 4px solid var(--primary-color);
+    background-color: var(--bg-2);
+    border-left: 4px solid var(--accent);
     margin-top: 2rem;
     max-width: 56.25rem;
     margin-inline: auto;
 
     h3 {
       margin-top: 0;
-      color: var(--primary-color);
+      color: var(--accent);
     }
 
     p:last-child {
