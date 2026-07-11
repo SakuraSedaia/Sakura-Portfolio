@@ -2,9 +2,14 @@ import ImageModal from "~/components/media/image-modal";
 import { createSignal } from "solid-js";
 import Tooltip from "~/components/text/tooltip";
 
+type ImageFit = "cover" | "contain";
+
 interface Render {
   name: string;
   filename: string;
+  width: number;
+  height: number;
+  imageFit: ImageFit;
   description: string;
   // tags: string[];
   // link: string;
@@ -14,6 +19,9 @@ interface Render {
 export default function RenderCard({
   name,
   filename,
+  width,
+  height,
+  imageFit,
   description,
   // tags,
   // link,
@@ -22,29 +30,38 @@ export default function RenderCard({
   const [modalOpen, setModalOpen] = createSignal(false);
 
   return (
-    <a onClick={() => setModalOpen(true)}>
-      <Tooltip text={"Click to preview"}>
-        <div class={"card"}>
-          <ImageModal
-            show={modalOpen()}
-            onClose={() => setModalOpen(false)}
-            title={name}
-            description={description}
-            src={`/${filename}`}
-            alt={name}
-          />
-          <img
-            src={`/${filename}`}
-            alt={name}
+    <article class={"card-gallery__item"}>
+      <div class={"card"}>
+        <ImageModal
+          show={modalOpen()}
+          onClose={() => setModalOpen(false)}
+          title={name}
+          description={description}
+          src={`/${filename}`}
+          alt={name}
+        />
+        <Tooltip text={"Click to preview"}>
+          <button
+            type={"button"}
+            class={"card__image-button"}
+            onClick={() => setModalOpen(true)}
             aria-label={`Open ${name} image preview`}
-          />
-
-          <div class={"index__renders__card__description"}>
-            <h3>{name}</h3>
-            <p>{description}</p>
-          </div>
+          >
+            <span class={`card__image card__image--${imageFit}`}>
+              <img
+                src={`/${filename}`}
+                alt={name}
+                width={width}
+                height={height}
+              />
+            </span>
+          </button>
+        </Tooltip>
+        <div>
+          <h3>{name}</h3>
+          <p>{description}</p>
         </div>
-      </Tooltip>
-    </a>
+      </div>
+    </article>
   );
 }

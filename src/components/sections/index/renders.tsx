@@ -9,8 +9,7 @@ export default function Renders() {
     <section class={"index__renders"}>
       <h2 id={"renders"}>Latest Renders</h2>
 
-      <div class={"card-gallery"}>
-        {/* <For> is SolidJS's idiomatic and optimized way to render arrays */}
+      <div class={"card-gallery card-gallery--renders"}>
         <For each={previewRenders}>
           {(render) => <RenderCard {...render} />}
         </For>
