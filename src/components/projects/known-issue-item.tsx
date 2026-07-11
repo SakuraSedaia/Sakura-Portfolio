@@ -1,4 +1,4 @@
-import Tooltip from "./tooltip";
+import Tooltip from "~/components/text/tooltip";
 import { createMemo, JSX, Show } from "solid-js";
 
 interface KnownIssueItemProps {
