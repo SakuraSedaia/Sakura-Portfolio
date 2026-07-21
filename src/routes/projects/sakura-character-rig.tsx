@@ -8,6 +8,7 @@ import DeprecationNotice from "~/components/projects/deprecation-notice";
 import About from "~/components/sections/projects/sakura-character-rig/about";
 import Downloads from "~/components/sections/projects/sakura-character-rig/downloads";
 import Addon from "~/components/sections/projects/sakura-character-rig/addon";
+import Link from "~/components/routing/link";
 
 export default function SakuraCharacterRig() {
   return (
@@ -52,6 +53,13 @@ export default function SakuraCharacterRig() {
             fallback={<div class={"standard-container"}>Loading...</div>}
           >
             <article class={"plugin-page sakura-character-rig-container"}>
+              <Link
+                path={"https://docs.sakura-sedaia.com/sakura-character-rig/"}
+                external={true}
+                emboss={true}
+              >
+                Read documentation
+              </Link>
               <DeprecationNotice
                 message={
                   "Following R7.4.1, SACR will no longer be released as an individual asset. From here on out, SACR will be bundled exclusively with Sakura Rig Utilities starting with V4."

@@ -132,7 +132,7 @@ The Junie source documents contained conflicting commit rules. For Codex, use th
 
 - Do not automatically commit completed tasks.
 - Only commit when the user explicitly requests it.
-- If committing, use author `SakuraSedaia <sakusedaia@outlook.com>` unless the user specifies a different author.
+- If committing, use author `SakuraSedaia <email@sakura-sedaia.com>` unless the user specifies a different author.
 - Do not add Junie as a co-author unless the user explicitly requests it.
 - Use concise commit messages with a typed prefix.
 - Preferred format: `[Type -> module]: Description`
