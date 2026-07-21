@@ -17,7 +17,7 @@ export default function NavigationBar() {
             {(route) => (
               <Show
                 when={
-                  (route.meta.show_route ?? true) !== false &&
+                  (route.meta.show_route ?? true) &&
                   (route.meta.noIndex == false ||
                     route.meta.noIndex == undefined)
                 }

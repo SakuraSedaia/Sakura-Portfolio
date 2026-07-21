@@ -23,10 +23,12 @@ export default function Header({
   const resolvedChildren = resolveChildren(() => children);
 
   return (
-    <header
-      class={"header__container " + className}
-      style={{ "background-image": `url(${image})` }}
-    >
+    <header class={`header__container ${className || ""}`}>
+      <div
+        class="header__background"
+        style={{ "background-image": `url(${image})` }}
+      />
+
       <div class={"header__content"}>
         <h1
           style={{
@@ -35,26 +37,31 @@ export default function Header({
         >
           {title}
         </h1>
-        <Show when={description != undefined}>{description}</Show>
         <div class={"header__children"}>
-          <div class={"index__header-links"}>
-            <Link path={"https://youtube.com/c/SakuraSedaia"}>
-              <IconBundle name={"youtube"} />{" "}
-              <span class={"index__header-link-text"}>Youtube</span>
-            </Link>
-            <Link path={"https://codeberg.org/SakuraSedaia"}>
-              <IconBundle name={"codeberg"} />{" "}
-              <span class={"index__header-link-text"}>Codeberg</span>
-            </Link>
-            <Link path={"https://github.com/SakuraSedaia"}>
-              <IconBundle name={"github"} />{" "}
-              <span class={"index__header-link-text"}>Github</span>
-            </Link>
-          </div>
-          {resolvedChildren()}
+          <Show when={description !== undefined}>{description}</Show>
+          <Show when={resolvedChildren.toArray().length > 0}>
+            {resolvedChildren()}
+          </Show>
+        </div>
+
+        <div
+          class={"header__social-links"}
+          style={{ "margin-top": description !== undefined ? "1rem" : "0" }}
+        >
+          <Link path={"https://youtube.com/c/SakuraSedaia"}>
+            <IconBundle name={"youtube"} />{" "}
+            <span class={"index__header-link-text"}>Youtube</span>
+          </Link>
+          <Link path={"https://codeberg.org/SakuraSedaia"}>
+            <IconBundle name={"codeberg"} />{" "}
+            <span class={"index__header-link-text"}>Codeberg</span>
+          </Link>
+          <Link path={"https://github.com/SakuraSedaia"}>
+            <IconBundle name={"github"} />{" "}
+            <span class={"index__header-link-text"}>Github</span>
+          </Link>
         </div>
       </div>
-      <div class={"header__fade"} />
     </header>
   );
 }

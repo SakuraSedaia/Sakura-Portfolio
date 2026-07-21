@@ -25,7 +25,7 @@
       },
       {
         "name": "Projects",
-        "path": "projects://",
+        "path": "/projects",
         "meta": {
           "title": "Projects | Sedaia Designs",
           "description": "Explore Sakura's projects, including Blender Development for PyCharm, Rig Interfaces, SACR, and more.",
@@ -81,7 +81,7 @@
     "basePath": "wiki",
     "routes": [
       {
-        "name": "Wiki",
+        "name": "Home",
         "path": "/",
         "fileName": "index"
       }
@@ -91,9 +91,72 @@
     "basePath": "projects",
     "routes": [
       {
-        "name": "Projects",
+        "name": "Projects Home",
         "path": "/",
-        "fileName": "index"
+        "fileName": "index",
+        "meta": {
+          "title": "Projects | Sedaia Designs",
+          "description": "Explore Sakura's projects, including Blender Development for PyCharm, Rig Interfaces, SACR, and more.",
+          "url": "/projects",
+          "show_route": true
+        }
+      },
+      {
+        "name": "Blender Development",
+        "path": "/blender-development",
+        "fileName": "blender-development",
+        "meta": {
+          "title": "Blender Development | Sedaia Designs",
+          "description": "A comprehensive PyCharm plugin for developing and debugging Blender extensions.",
+          "url": "/projects/blender-development",
+          "show_route": true
+        }
+      },
+      {
+        "name": "Sakura Rig Utilities",
+        "path": "/sakura-rig-utilities",
+        "fileName": "sakura-rig-utilities",
+        "meta": {
+          "title": "Sakura Rig Utilities | Sedaia Designs",
+          "description": "A custom Blender interface designed to streamline and enhance workflow for Sakura Minecraft Character Rig users.",
+          "url": "/projects/sakura-rig-utilities",
+          "show_route": true
+        }
+      },
+      {
+        "name": "Sakura Character Rig",
+        "path": "/sakura-character-rig",
+        "fileName": "sakura-character-rig",
+        "meta": {
+          "title": "Sakura Character Rig | Sedaia Designs",
+          "description": "Download and documentation for Sakura Character Rig, a flexible rig for Minecraft-style Blender animation.",
+          "url": "/projects/sakura-character-rig",
+          "show_route": true
+        }
+      },
+      {
+        "name": "Changelog",
+        "path": "/changelog/:changelog",
+        "fileName": "changelog/[changelog]",
+        "params": ["changelog"],
+        "meta": {
+          "title": "Project Changelog | Sedaia Designs",
+          "description": "Detailed changelog and update history across Sakura project releases.",
+          "url": "/projects/changelog",
+          "show_route": false
+        }
+      },
+      {
+        "name": "Component Map",
+        "path": "/component-map",
+        "fileName": "component-map",
+        "meta": {
+          "title": "Component Map | Sedaia Designs",
+          "description": "Development route for visualizing component hierarchy and states.",
+          "url": "/projects/component-map",
+          "noIndex": true,
+          "show_route": false
+        }
       }
     ]
   }

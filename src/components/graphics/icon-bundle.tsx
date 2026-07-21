@@ -1,4 +1,4 @@
-import { JSX, splitProps } from "solid-js";
+import { JSX, Show, splitProps } from "solid-js";
 
 interface IconBundleProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
   name: string;
@@ -31,22 +31,27 @@ export default function IconBundle(props: IconBundleProps) {
     "quick-access": "quick-access",
     "blender-bw": "logo-blender-bw",
     "python-bw": "logo-python-bw",
+    "bi-external-link": "external-link",
   };
 
-  const iconName = icons[local.name];
-
-  if (!iconName) return null;
+  const iconName = () => icons[local.name];
 
   return (
-    <div class={"icon"}>
-      <svg
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class={`${local.class}`}
-        {...others}
-      >
-        <use href={`/images/vectors/${iconName}.svg#${iconName}`} />
-      </svg>
-    </div>
+    <Show when={iconName()}>
+      {(resolvedIconName) => (
+        <div class={"icon"}>
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class={`${local.class}`}
+            {...others}
+          >
+            <use
+              href={`/images/vectors/${resolvedIconName()}.svg#${resolvedIconName()}`}
+            />
+          </svg>
+        </div>
+      )}
+    </Show>
   );
 }

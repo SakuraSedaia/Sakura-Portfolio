@@ -8,8 +8,7 @@ export default function Programming() {
     <section class={"index__programming"}>
       <h2 id={"programming"}>Code Projects</h2>
 
-      <div class={"card-gallery"}>
-        {/* <For> is SolidJS's idiomatic and optimized way to render arrays */}
+      <div class={"card-gallery card-gallery--programming"}>
         <For each={previewCode}>{(code) => <ProgrammingCard {...code} />}</For>
       </div>
     </section>

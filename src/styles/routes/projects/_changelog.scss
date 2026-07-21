@@ -1,0 +1,64 @@
+.changelog-page {
+  .content-container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .changelog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .changelog-section {
+    .heading {
+      border-bottom: 0.125rem solid var(--border-1);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+
+      h2 {
+        font-size: 2rem;
+        margin: 0;
+        color: var(--tx-1);
+      }
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+      list-style-type: disc;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .link {
+      color: var(--accent);
+      text-decoration: none;
+      transition: box-shadow 0.1s ease;
+
+      &:hover {
+        box-shadow: 0 0.125rem 0 0 var(--accent);
+      }
+    }
+  }
+
+  .changelog-subsection {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    border-left: 0.25rem solid hsl(from var(--accent-secondary) h s l / 0.3);
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--tx-2);
+    }
+  }
+}

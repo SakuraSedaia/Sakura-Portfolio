@@ -1,0 +1,65 @@
+@mixin cyber-corner($border-color: transparent, $distance: 1rem) {
+  mask-image:
+    linear-gradient(135deg, transparent $distance, gold 0),
+    linear-gradient(
+      -45deg,
+      transparent 0.5rem,
+      gold 0,
+      gold 0.75rem,
+      transparent 0,
+      transparent 1rem,
+      gold 0,
+      gold 1.25rem,
+      transparent 0,
+      transparent 1.5rem,
+      gold 0
+    ),
+    linear-gradient(#000 0 0);
+  mask-position:
+    0 0,
+    100% 0,
+    0 100%;
+  mask-repeat: no-repeat;
+  mask-size:
+    51% 51%,
+    51%;
+  background-image:
+    linear-gradient(135deg, $border-color calc(#{$distance}), transparent 0),
+    linear-gradient(
+      -45deg,
+      $border-color 0.5rem,
+      transparent 0,
+      transparent 0.75rem,
+      $border-color 0,
+      $border-color 1rem,
+      transparent 0,
+      transparent 1.25rem,
+      $border-color 0,
+      $border-color 1.5rem,
+      transparent 0
+    );
+}
+
+@mixin chamfer($angle: -45deg, $border-color: transparent, $distance: 1rem) {
+  border-image: linear-gradient(
+      $angle,
+      $border-color calc(#{$distance}),
+      transparent 0
+    )
+    1;
+}
+
+@mixin corner-frame(
+  $angle: -45deg,
+  $border-color: transparent,
+  $distance: 1rem
+) {
+  border-image:
+    linear-gradient($angle, $border-color calc(#{$distance}), transparent 0) 0,
+    linear-gradient(
+        calc(#{$angle} * 180deg),
+        $border-color calc(#{$distance}),
+        transparent 0
+      )
+      1;
+}

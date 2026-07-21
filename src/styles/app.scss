@@ -1,61 +1,116 @@
-@use "global/base-styles";
-@use "global/navigation-bar";
-@use "global/header";
-@use "global/footer";
-@use "global/buttons";
-@use "global/image-modal";
-@use "global/card-gallery";
-@use "global/tooltip";
+@use "global/foundation/base-styles";
+@use "global/layout/navigation-bar";
+@use "global/layout/nav-sidebar";
+@use "global/layout/header";
+@use "global/layout/footer";
+@use "global/components/buttons";
+@use "global/components/image-modal";
+@use "global/components/card-gallery";
+@use "global/components/tooltip";
+@use "global/sections/download-shared";
+@use "global/sections/download-assets";
+@use "global/sections/download-plugins";
+@use "global/sections/known-issues";
+@use "global/sections/notice";
+@use "global/sections/supported-platforms-hero";
 
 @use "routes/index";
 @use "routes/about";
 @use "routes/contact";
 @use "routes/credits-and-attributions";
+@use "routes/projects/projects";
+@use "routes/projects/blender-development";
+@use "routes/projects/changelog";
+@use "routes/projects/sakura-character-rig";
+@use "routes/projects/sakura-rig-utilities";
 
-@use "global/fonts";
+@use "global/foundation/fonts";
 
 :root {
-  --bg-0: hsl(228deg 18% 8%);
-  --bg-1: hsl(300, 21%, 12%);
-  --bg-2: hsl(304, 17%, 16%);
-  --bg-3: hsl(304, 17%, 20%);
-  --tx-1: hsl(220deg 28% 92%);
-  --tx-2: hsl(219deg 14% 74%);
-  --tx-3: hsl(334, 50%, 15%);
-  --accent: hsl(328deg 62% 85%);
-  --border-1: hsl(300, 16%, 24%);
+  --color-black: hsl(0deg 0% 0%);
+  --color-white: hsl(0deg 0% 100%);
+
+  --color-bg-950: hsl(326deg 24% 6%);
+  --color-bg-900: hsl(323deg 22% 13%);
+  --color-bg-800: hsl(320deg 20% 18%);
+  --color-bg-700: hsl(318deg 18% 24%);
+  --color-bg-600: hsl(316deg 15% 30%);
+  --color-bg-500: hsl(314deg 13% 38%);
+
+  --color-text-100: hsl(332deg 40% 93%);
+  --color-text-300: hsl(223deg 20% 78%);
+  --color-text-500: hsl(220deg 11% 58%);
+  --color-text-700: hsl(220deg 10% 42%);
+
+  --color-accent-300: hsl(336, 67%, 87%);
+  --color-accent-400: hsl(333, 74%, 84%);
+  --color-accent-500: hsl(333, 100%, 84%);
+  --color-accent-600: hsl(335, 90%, 73%);
+
+  --color-purple-300: hsl(276deg 28% 72%);
+  --color-purple-500: hsl(276deg 26% 54%);
+  --color-blue-300: hsl(215deg 28% 66%);
+  --color-blue-500: hsl(216deg 26% 46%);
+  --color-cyan-300: hsl(208deg 30% 72%);
+  --color-cyan-500: hsl(209deg 24% 55%);
+  --color-green-300: hsl(157deg 70% 72%);
+  --color-green-500: hsl(157deg 100% 42%);
+  --color-yellow-300: hsl(42deg 100% 74%);
+  --color-yellow-500: hsl(42deg 100% 54%);
+  --color-orange-300: hsl(31deg 100% 68%);
+  --color-orange-500: hsl(31deg 100% 46%);
+  --color-red-300: hsl(0deg 84% 74%);
+  --color-red-500: hsl(0deg 74% 58%);
+
+  --color-border-700: hsl(220deg 16% 28%);
+  --color-border-500: hsl(218deg 18% 42%);
+  --color-overlay-900: hsl(226deg 24% 9% / 0.8);
+
+  --color-success: var(--color-green-500);
+  --color-warning: var(--color-yellow-500);
+  --color-danger: var(--color-red-500);
+  --color-info: var(--color-blue-500);
+
+  --bg-0: var(--color-bg-950);
+  --bg-1: var(--color-bg-900);
+  --bg-2: var(--color-bg-800);
+  --tx-1: var(--color-text-100);
+  --tx-2: var(--color-text-300);
+  --tx-1-contrast: var(--color-accent-300);
+  --accent: var(--color-accent-400);
+  --accent-secondary: var(--color-blue-300);
+  --accent-tertiary: var(--color-purple-300);
+  --accent-strong: var(--color-accent-500);
+  --accent-glow: hsl(from var(--accent) h s l / 0.5);
+  --surface-0: var(--color-bg-950);
+  --surface-1: var(--color-bg-900);
+  --surface-2: var(--color-bg-800);
+  --surface-glass: hsl(from var(--color-bg-800) h s l / 0.86);
+  --border-1: var(--color-border-700);
+  --border-accent: hsl(from var(--accent) h s l / 0.44);
+  --border-secondary: hsl(from var(--accent-secondary) h s l / 0.4);
 
   --font-heading: "Audiowide";
   --font-body: "Play";
-  --font-serif: "Noto Sans";
   --font-mono: "Source Code Pro";
 
   --font-size-body: 1.125rem;
   --font-size-heading: 1.75rem;
-  --font-size-subheading: 1.25rem;
-  --font-size-small: 0.8333rem;
   --font-size-nav: 1rem;
+  --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
-  --box-shadow-lg: 0 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.46),
-  0 0.3125rem 0.5rem 0 hsla(0, 0%, 0%, 0.47),
-  0 0.0625rem 0.875rem 0 hsla(0, 0%, 0%, 0.21);
 
-  --nav-container-bg: hsl(304deg 17% 16% / 0.88);
-  --nav-container-border: hsl(328deg 62% 85% / 0.35);
-  --nav-container-shadow: hsl(328deg 62% 85% / 0.5);
-  --nav-title-bg: hsl(300deg 21% 12% / 0.8);
-  --nav-router-bg: hsl(300deg 21% 12% / 0.8);
-  --nav-link-hover-bg: hsl(328deg 62% 85% / 0.1);
-  --nav-link-active-bg: hsl(328deg 62% 85% / 0.14);
-  --nav-link-active-border: var(--accent);
-  --nav-link-active-hover-border: var(--tx-1);
+  --nav-container-bg: hsl(from var(--surface-2) h s l / 0.88);
+  --nav-container-border: var(--border-accent);
+  --nav-container-shadow: hsl(from var(--accent-secondary) h s l / 0.4);
+  --nav-title-bg: hsl(from var(--bg-1) h s l / 0.8);
+  --nav-router-bg: hsl(from var(--bg-1) h s l / 0.8);
+  --nav-link-hover-bg: hsl(from var(--accent-secondary) h s l / 0.14);
+  --nav-link-active-bg: hsl(from var(--accent) h s l / 0.2);
 
-  --button-bg: hsl(304deg 17% 20% / 0.9);
-  --button-bg-hover: hsl(328deg 62% 85% / 0.16);
-  --button-border: hsl(328deg 62% 85% / 0.4);
-  --button-border-hover: var(--accent);
-  --button-text: var(--tx-1);
-  --button-text-hover: var(--accent);
-  --button-focus-ring: hsl(328deg 62% 85% / 0.65);
+  --button-bg: hsl(from var(--color-bg-700) h s l / 0.9);
+  --button-bg-hover: hsl(from var(--accent-secondary) h s l / 0.16);
+  --button-border: var(--border-accent);
+  --button-focus-ring: hsl(from var(--accent) h s l / 0.65);
 }

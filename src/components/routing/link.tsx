@@ -1,4 +1,4 @@
-import { JSX, Match, splitProps, Switch } from "solid-js";
+import { createMemo, JSX, Match, splitProps, Switch } from "solid-js";
 import { A } from "@solidjs/router";
 import { resolvePrefix } from "~/utils/url-prefixer";
 
@@ -20,33 +20,39 @@ export default function Link(props: LinkProps) {
     "emboss",
   ]);
 
-  const resolvedPath = resolvePrefix(local.path);
-  const isExternal =
-    local.external === true ||
-    resolvedPath.startsWith("http") ||
-    resolvedPath.startsWith("//");
-  const baseClass = local.class?.trim();
-  const linkClass = baseClass ? `${baseClass} link` : "link";
-  const buttonClass = baseClass ? `${baseClass} button` : "button";
+  const resolvedPath = createMemo(() => resolvePrefix(local.path));
+  const isExternal = createMemo(
+    () =>
+      local.external === true ||
+      resolvedPath().startsWith("http") ||
+      resolvedPath().startsWith("//"),
+  );
+  const baseClass = createMemo(() => local.class?.trim());
+  const linkClass = createMemo(() =>
+    baseClass() ? `${baseClass()} link` : "link",
+  );
+  const buttonClass = createMemo(() =>
+    baseClass() ? `${baseClass()} button` : "button",
+  );
 
   return (
     <Switch
       fallback={
         <A
-          href={resolvedPath}
+          href={resolvedPath()}
           end={true}
-          class={linkClass}
+          class={linkClass()}
           {...(others as any)}
         >
           {local.children}
         </A>
       }
     >
-      <Match when={local.emboss && isExternal}>
+      <Match when={local.emboss && isExternal()}>
         <a
-          href={resolvedPath}
+          href={resolvedPath()}
           target={"_blank"}
-          class={buttonClass}
+          class={buttonClass()}
           rel={"noopener noreferrer"}
           {...(others as any)}
         >
@@ -55,19 +61,19 @@ export default function Link(props: LinkProps) {
       </Match>
       <Match when={local.emboss}>
         <A
-          href={resolvedPath}
+          href={resolvedPath()}
           end={true}
-          class={buttonClass}
+          class={buttonClass()}
           {...(others as any)}
         >
           {local.children}
         </A>
       </Match>
-      <Match when={isExternal}>
+      <Match when={isExternal()}>
         <a
-          href={resolvedPath}
+          href={resolvedPath()}
           target={"_blank"}
-          class={linkClass}
+          class={linkClass()}
           rel={"noopener noreferrer"}
           {...(others as any)}
         >

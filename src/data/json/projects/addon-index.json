@@ -41,8 +41,40 @@
         "enabled": true,
         "versions": [
           {
-            "version": "0.6.0 Alpha",
-            "label": "0.6.0 Alpha",
+            "version": "0.8.0 Snapshot",
+            "label": "0.8.0 Snapshot",
+            "fileName": "BlenderPythonDevelopment-0.8.0-SNAPSHOT.zip",
+            "sourceCode": "",
+            "changelog": "BlenderDevelopment-0.8.0-SNAPSHOT",
+            "builds": [
+              {
+                "date": "07/20/2026",
+                "size": "3.07 MB",
+                "license": "GNU/GPL V3",
+                "notes": "This pre-release builds on 0.7.0 with structured Blender extension metadata handling, expanded runtime diagnostics, a simplified runtime source layout, and a repeatable Codeberg release workflow.",
+                "disabled": false
+              }
+            ]
+          },
+          {
+            "version": "0.7.0 Snapshot",
+            "label": "0.7.0 Snapshot",
+            "fileName": "BlenderPythonDevelopment-0.7.0-SNAPSHOT.zip",
+            "sourceCode": "",
+            "changelog": "BlenderDevelopment-0.7.0-SNAPSHOT",
+            "builds": [
+              {
+                "date": "07/19/2026",
+                "size": "4.71 MB",
+                "license": "GNU/GPL V3",
+                "notes": "This pre-release is a substantial PyCharm-focused rewrite with a native project wizard, installation discovery, Blender Run and Debug configurations, runtime tooling, version-matched API stubs, and expanded project settings.",
+                "disabled": false
+              }
+            ]
+          },
+          {
+            "version": "0.6.0 Snapshot",
+            "label": "0.6.0 Snapshot",
             "fileName": "BlenderPythonDevelopment-0.6.0-SNAPSHOT.zip",
             "sourceCode": "",
             "changelog": "BlenderDevelopment-0.6.0-SNAPSHOT",
@@ -57,8 +89,8 @@
             ]
           },
           {
-            "version": "0.5.0 Alpha",
-            "label": "0.5.0 Alpha",
+            "version": "0.5.0 Snapshot",
+            "label": "0.5.0 Snapshot",
             "fileName": "BlenderPythonDevelopment-0.5.0-SNAPSHOT.zip",
             "sourceCode": "",
             "changelog": "BlenderDevelopment-0.5.0-SNAPSHOT",
@@ -67,14 +99,14 @@
                 "date": "03/15/2026",
                 "size": "3.54 MB",
                 "license": "GNU/GPL V3",
-                "notes": "V0.5.0 Alpha refines the Linter Setup, removes the automated Interpreter Configuration, Reorganizes the UI, and adds support for Blender 5.1.",
+                "notes": "V0.5.0 Snapshot refines the Linter Setup, removes the automated Interpreter Configuration, Reorganizes the UI, and adds support for Blender 5.1.",
                 "disabled": false
               }
             ]
           },
           {
-            "version": "0.4.0 Alpha",
-            "label": "0.4.0 Alpha",
+            "version": "0.4.0 Snapshot",
+            "label": "0.4.0 Snapshot",
             "fileName": "BlenderPythonDevelopment-0.4.0-SNAPSHOT.zip",
             "sourceCode": "",
             "changelog": "BlenderDevelopment-0.4.0-SNAPSHOT",
@@ -83,14 +115,14 @@
                 "date": "03/15/2026",
                 "size": "3.54 MB",
                 "license": "GNU/GPL V3",
-                "notes": "V0.4.0 Alpha introduces integrated linter setup with fake-bpy-module, automated Python interpreter configuration, and significant improvements to the Blender downloader and UI management.",
+                "notes": "V0.4.0 Snapshot introduces integrated linter setup with fake-bpy-module, automated Python interpreter configuration, and significant improvements to the Blender downloader and UI management.",
                 "disabled": false
               }
             ]
           },
           {
-            "version": "0.3.0 Alpha",
-            "label": "0.3.0 Alpha",
+            "version": "0.3.0 Snapshot",
+            "label": "0.3.0 Snapshot",
             "fileName": "BlenderPythonDevelopment-0.3.0-SNAPSHOT.zip",
             "sourceCode": "",
             "changelog": "BlenderDevelopment-0.3.0-SNAPSHOT",
@@ -105,8 +137,8 @@
             ]
           },
           {
-            "version": "0.2.0 Alpha",
-            "label": "0.2.0 Beta",
+            "version": "0.2.0 Snapshot",
+            "label": "0.2.0 Snapshot",
             "fileName": "BlenderDevelopment-0.2.0-SNAPSHOT.zip",
             "sourceCode": "",
             "changelog": "BlenderDevelopment-0.2.0-SNAPSHOT",
@@ -121,8 +153,8 @@
             ]
           },
           {
-            "version": "0.1.0 Alpha",
-            "label": "0.1.0 Alpha",
+            "version": "0.1.0 Snapshot",
+            "label": "0.1.0 Snapshot",
             "fileName": "BlenderDevelopment-0.1.0-SNAPSHOT.zip",
             "sourceCode": "",
             "changelog": "BlenderDevelopment-0.1.0-SNAPSHOT",

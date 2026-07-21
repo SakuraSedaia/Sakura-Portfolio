@@ -1,0 +1,102 @@
+@use "../foundation/mixins" as *;
+
+div.card-gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  .card-gallery__item {
+    display: flex;
+    background-color: var(--bg-2);
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 0 0 hsl(from var(--accent) h s l / 0);
+    @include cyber-corner;
+
+    div.card {
+      width: 16rem;
+      height: 100%;
+      // border-radius: var(--radius-md);
+      padding: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      h3 {
+        margin: 0 0 0.2rem;
+        font-size: 1.2rem;
+        color: var(--accent);
+      }
+
+      p {
+        font-weight: 500;
+      }
+
+      .card__image-button {
+        display: block;
+        width: 100%;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 0.5rem;
+      }
+
+      .card__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.3125rem hsl(from var(--color-black) h s l / 0.2);
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        background-color: var(--bg-1);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card__image--cover {
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .card__image--contain {
+        img {
+          object-fit: contain;
+        }
+      }
+
+      .tooltip-container {
+        margin-top: auto;
+        width: fit-content;
+      }
+
+      .button {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+div.card-gallery.card-gallery--renders {
+  .card-gallery__item {
+    .card__image-button:focus-visible {
+      outline: 0.125rem solid var(--button-focus-ring);
+      outline-offset: 0.125rem;
+    }
+
+    .card__image {
+      &:hover {
+        box-shadow: 0 0 0.5rem var(--accent-glow);
+        transform: translateY(-0.2rem) scale(1.025);
+      }
+    }
+  }
+}

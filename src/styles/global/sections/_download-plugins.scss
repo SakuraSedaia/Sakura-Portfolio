@@ -1,0 +1,31 @@
+.download-plugins {
+  .download-info {
+    .download-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .link-secondary {
+        border: 0.0625rem solid var(--border-1);
+        background-color: transparent;
+        color: var(--tx-2);
+
+        &:hover {
+          border-color: var(--accent);
+          background-color: var(--accent);
+          color: var(--bg-0);
+        }
+      }
+    }
+  }
+}
+
+#downloads {
+  .column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 56.25rem;
+    margin: 0 auto;
+  }
+}

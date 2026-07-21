@@ -1,0 +1,29 @@
+.tooltip-container {
+  display: inline-block;
+  position: relative;
+
+  .tooltip {
+    position: absolute;
+    opacity: 0;
+    width: 12rem;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--accent-strong);
+    color: var(--color-white);
+    font-size: 0.875rem;
+    z-index: 10;
+    pointer-events: none;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.75rem hsl(from var(--accent-strong) h s l / 0.35);
+  }
+
+  &:hover {
+    .tooltip {
+      opacity: 1;
+    }
+  }
+}
