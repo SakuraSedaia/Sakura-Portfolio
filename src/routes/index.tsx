@@ -5,6 +5,7 @@ import PreferredTooling from "~/components/sections/index/preferred-tooling";
 import Renders from "~/components/sections/index/renders";
 import TechnicalExpertise from "~/components/sections/index/technical-expertise";
 import GetInTouch from "~/components/sections/index/get-in-touch";
+import AboutMe from "~/components/sections/index/about-me";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         image={"images/renders/char-env/hylian_sakura_in_rito.avif"}
       />
 
+      <AboutMe />
       <Renders />
       <Programming />
       <TechnicalExpertise />
