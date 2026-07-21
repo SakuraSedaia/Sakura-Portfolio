@@ -1,3 +1,5 @@
+@use "~/styles/global/foundation/_mixins.scss" as *;
+
 .projects-landing {
 }
 
@@ -69,13 +71,14 @@
   }
 
   &__card {
-    border-radius: var(--radius-md);
     background: hsl(from var(--surface-1) h s l / 0.9);
     border: 0.0625rem solid var(--border-secondary);
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+
+    @include cyber-corner(var(--border-1), 1rem);
 
     h3,
     p {

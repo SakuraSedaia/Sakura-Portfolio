@@ -1,3 +1,4 @@
+@use "../global/foundation/mixins" as *;
 section.index__renders,
 section.index__programming,
 section.index__technical-expertise,
@@ -59,8 +60,8 @@ section.index__get-in-touch {
 
 .index__technical-expertise-group,
 .index__preferred-tooling-group {
-  border: 0.0625rem solid var(--border-1);
-  border-radius: 0.75rem;
+  border: 0.125rem solid var(--border-1);
+  @include cyber-corner(var(--border-1), 1rem);
   padding: 1rem;
   background-color: hsl(from var(--surface-1) h s l / 0.5);
 }
