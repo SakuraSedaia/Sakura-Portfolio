@@ -31,10 +31,10 @@ const projectCards = [
 
 const updateCards = [
   {
-    title: "Blender Development 0.6.0 Alpha",
+    title: "Blender Development 0.8.0 Snapshot",
     description:
       "A major foundational update - moves to uv for environments, improves project setup, and adds extensive threading and process fixes across Windows, macOS, and Linux.",
-    cta: "Read the changelog",
+    cta: "View project",
     path: "/projects/blender-development",
   },
   {
@@ -48,7 +48,7 @@ const updateCards = [
     title: "Sakura Rig Utilities V3.1.0",
     description:
       "Stable release that streamlines UI navigation, adds missing eye material options, and optimizes the backend for better maintainability.",
-    cta: "Read the changelog",
+    cta: "View project",
     path: "/projects/sakura-rig-utilities",
   },
 ];
