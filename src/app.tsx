@@ -13,10 +13,6 @@ interface AppRootProps {
 }
 
 function getPageType(pathname: string) {
-  if (pathname === "/wiki" || pathname.startsWith("/wiki/")) {
-    return "wiki";
-  }
-
   if (pathname === "/projects" || pathname.startsWith("/projects/")) {
     return "projects";
   }
