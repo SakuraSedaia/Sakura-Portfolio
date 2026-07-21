@@ -8,6 +8,7 @@ import About from "~/components/sections/projects/sakura-rig-utilities/about";
 import Downloads from "~/components/sections/projects/sakura-rig-utilities/downloads";
 import Instructions from "~/components/sections/projects/sakura-rig-utilities/instructions";
 import Issues from "~/components/sections/projects/sakura-rig-utilities/issues";
+import Link from "~/components/routing/link";
 
 export default function SakuraRigUtilities() {
   return (
@@ -48,6 +49,13 @@ export default function SakuraRigUtilities() {
         >
           <Suspense fallback={<p>Loading...</p>}>
             <article class={"plugin-page sru-container"}>
+              <Link
+                path={"https://docs.sakura-sedaia.com/sedaia-rig-interfaces/"}
+                external={true}
+                emboss={true}
+              >
+                Read documentation
+              </Link>
               <About />
               <Downloads />
               <Instructions />

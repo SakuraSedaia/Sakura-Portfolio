@@ -9,6 +9,7 @@ import Downloads from "~/components/sections/projects/blender-development/downlo
 import Instructions from "~/components/sections/projects/blender-development/instructions";
 import Issues from "~/components/sections/projects/blender-development/issues";
 import KnownIssues from "~/components/sections/projects/blender-development/known-issues";
+import Link from "~/components/routing/link";
 
 export default function BlenderDevelopment() {
   return (
@@ -49,6 +50,13 @@ export default function BlenderDevelopment() {
         >
           <Suspense fallback={<p>Loading...</p>}>
             <article class={"plugin-page blenddev-container"}>
+              <Link
+                path={"https://docs.sakura-sedaia.com/blender-development/"}
+                external={true}
+                emboss={true}
+              >
+                Read documentation
+              </Link>
               <About />
               <Downloads />
               <Instructions />

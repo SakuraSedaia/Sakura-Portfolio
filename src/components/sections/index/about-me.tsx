@@ -34,8 +34,8 @@ export default function AboutMe() {
         </ul>
 
         <p class="landing-about__links">
-          Check out my work on the <Link path="projects://">Projects Page</Link>
-          , watch my demos on{" "}
+          Check out my work on the <Link path="/projects">Projects Page</Link>,
+          watch my demos on{" "}
           <Link path="https://youtube.com/c/SakuraSedaia" external={true}>
             YouTube
           </Link>

@@ -1,6 +1,5 @@
 export const URL_PREFIXES: Record<string, string> = {
   "/": "/", // Local Link, used for internal Domain Routing
-  "projects://": "https://projects.sakura-sedaia.com",
   "wiki://": "https://wiki.sakura-sedaia.com",
   "store://": "https://store.sakura-sedaia.com",
 };

@@ -34,12 +34,12 @@
         }
       },
       {
-        "name": "Store",
-        "path": "store://",
+        "name": "Docs",
+        "path": "https://docs.sakura-sedaia.com",
         "meta": {
-          "title": "Store | Sedaia Designs",
-          "description": "Browse Sakura's store for downloadable tools, project assets, and digital products from Sedaia Designs.",
-          "url": "store://",
+          "title": "Documentation | Sedaia Designs",
+          "description": "Documentation, tutorials, and resources for Sakura Sedaia's projects.",
+          "url": "https://docs.sakura-sedaia.com",
           "show_route": true
         }
       },
@@ -74,16 +74,6 @@
           "noIndex": true,
           "show_route": false
         }
-      }
-    ]
-  },
-  "wiki": {
-    "basePath": "wiki",
-    "routes": [
-      {
-        "name": "Home",
-        "path": "/",
-        "fileName": "index"
       }
     ]
   },
