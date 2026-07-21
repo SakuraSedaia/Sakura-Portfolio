@@ -1,9 +1,4 @@
 .route__about {
-  section {
-    max-width: 1000px;
-    margin-inline: auto;
-  }
-
   .about__description {
     // Clearfix ensures the container fully encapsulates the floated image
     // if the image is taller than the text paragraphs.
