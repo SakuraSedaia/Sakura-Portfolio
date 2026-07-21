@@ -13,15 +13,25 @@ repositories and codebases.
 - `projects.sakura-sedaia.com` is currently deployed from a separate projects
   codebase.
 - This repository already has partial support for subdomain-aware routing:
-    - `src/utils/url-prefixer.ts` maps `wiki://` and `projects://` links to their
-      public subdomains.
-    - `src/utils/route-parser.ts` can detect route-group subdomains under
-      `sakura-sedaia.com`.
-    - `src/routes/wiki/` exists as an in-repo route group, but it should not be
-      treated as the canonical wiki deployment while the separate wiki repository
-      remains active.
+  - `src/utils/url-prefixer.ts` maps `wiki://` and `projects://` links to their
+    public subdomains.
+  - `src/utils/route-parser.ts` can detect route-group subdomains under
+    `sakura-sedaia.com`.
+  - `src/routes/wiki/` exists as an in-repo route group, but it should not be
+    treated as the canonical wiki deployment while the separate wiki repository
+    remains active.
 
 ## Future Goal
+
+The Projects route group entered its pre-cutover stage on July 21, 2026:
+
+- Its canonical routes are present under `src/routes/projects/`.
+- `projects.sakura-sedaia.com` rewrites to the internal `/projects/` route group.
+- Projects metadata and sitemap URLs use the public Projects subdomain without
+  exposing the internal `/projects` prefix.
+- Root-domain redirects remain disabled pending production parity checks.
+
+The Wiki route group remains deferred and is not included in `vercel.json`.
 
 If the wiki and projects codebases are merged into this SolidStart app, route
 groups can become canonical subdomain sections:
@@ -138,8 +148,8 @@ Wait until each domain reports `Valid Configuration` before moving forward.
 - Add the `rewrites` block below in `vercel.json`.
 - Deploy to preview, then production.
 - Verify:
-    - `https://wiki.sakura-sedaia.com/<path>` serves `/wiki/<path>` content.
-    - `https://projects.sakura-sedaia.com/<path>` serves `/projects/<path>` content.
+  - `https://wiki.sakura-sedaia.com/<path>` serves `/wiki/<path>` content.
+  - `https://projects.sakura-sedaia.com/<path>` serves `/projects/<path>` content.
 
 ### 5) Redirect Cutover (After Parity Only)
 
@@ -148,15 +158,15 @@ canonical metadata/sitemap logic has been updated.
 
 - Before this point, keep path groups on root domain functional for migration.
 - After this point, canonicalize:
-    - `https://sakura-sedaia.com/wiki/<path>` -> `https://wiki.sakura-sedaia.com/<path>`
-    - `https://sakura-sedaia.com/projects/<path>` -> `https://projects.sakura-sedaia.com/<path>`
+  - `https://sakura-sedaia.com/wiki/<path>` -> `https://wiki.sakura-sedaia.com/<path>`
+  - `https://sakura-sedaia.com/projects/<path>` -> `https://projects.sakura-sedaia.com/<path>`
 
 ### 6) Preview and Production Validation
 
 - Validate all four hosts on preview deployments for each release.
 - Validate final behavior in production:
-    - host rewrites return expected content and status codes.
-    - redirects return permanent 301 responses only after cutover.
+  - host rewrites return expected content and status codes.
+  - redirects return permanent 301 responses only after cutover.
 - Re-run sitemap submission after canonical domain changes.
 
 ### 7) Rollback Strategy

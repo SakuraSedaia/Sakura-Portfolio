@@ -1,5 +1,5 @@
 import { NoHydration } from "solid-js/web";
-import { A } from "@solidjs/router";
+import Link from "~/components/routing/link";
 
 export default function Instructions() {
   return (
@@ -31,9 +31,9 @@ export default function Instructions() {
                 <li>Ensure the addon is enabled in your preferences.</li>
                 <li>
                   Download a compatible rig from the{" "}
-                  <A href={"/projects/sakura-character-rig"} class={"link"}>
+                  <Link path={"projects://sakura-character-rig"}>
                     SACR page
-                  </A>
+                  </Link>
                   .
                 </li>
               </ol>
@@ -58,9 +58,9 @@ export default function Instructions() {
                 <li>Choose the downloaded file and ensure it's enabled.</li>
                 <li>
                   Download a compatible rig from the{" "}
-                  <A href={"/projects/sakura-character-rig"} class={"link"}>
+                  <Link path={"projects://sakura-character-rig"}>
                     SACR page
-                  </A>
+                  </Link>
                   .
                 </li>
               </ol>

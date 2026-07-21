@@ -3,6 +3,7 @@ import { useLocation } from "@solidjs/router";
 
 const SITE_NAME = "Sedaia Designs";
 const SITE_URL = "https://sakura-sedaia.com";
+const PROJECTS_URL = "https://projects.sakura-sedaia.com";
 const DEFAULT_DESCRIPTION =
   "Sedaia Designs, more commonly known as Sakura is a freelance software developer and Voxel 3D Artist specialising in Minecraft style 3D art, SolidJS websites, and Blender extension development.";
 const DEFAULT_IMAGE = "/images/minecraft-renders/farmer-sakura.png";
@@ -15,7 +16,16 @@ interface MetadataProps {
   noIndex?: boolean;
 }
 
-function toAbsoluteUrl(value: string) {
+function toCanonicalUrl(value: string) {
+  if (value === "/projects" || value.startsWith("/projects/")) {
+    const projectPath = value.slice("/projects".length) || "/";
+    return new URL(projectPath, PROJECTS_URL).toString();
+  }
+
+  return new URL(value, SITE_URL).toString();
+}
+
+function toAssetUrl(value: string) {
   return new URL(value, SITE_URL).toString();
 }
 
@@ -27,8 +37,8 @@ export default function Metadata({
   noIndex = false,
 }: MetadataProps) {
   const location = useLocation();
-  const canonicalUrl = () => toAbsoluteUrl(url ?? location.pathname);
-  const imageUrl = () => toAbsoluteUrl(image);
+  const canonicalUrl = () => toCanonicalUrl(url ?? location.pathname);
+  const imageUrl = () => toAssetUrl(image);
 
   return (
     <>

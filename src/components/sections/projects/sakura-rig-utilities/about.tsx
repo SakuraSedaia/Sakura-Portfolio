@@ -1,6 +1,6 @@
 import { NoHydration } from "solid-js/web";
-import { A } from "@solidjs/router";
 import IconBundle from "~/components/graphics/icon-bundle";
+import Link from "~/components/routing/link";
 
 export default function About() {
   return (
@@ -15,9 +15,9 @@ export default function About() {
             designed to streamline the management of Python-based rig
             interfaces. It provides essential tools and utilities for managing
             the{" "}
-            <A href={"/projects/sakura-character-rig"} class={"link"}>
+            <Link path={"projects://sakura-character-rig"}>
               Sakura Character Rig (SACR)
-            </A>{" "}
+            </Link>{" "}
             Built using Blender&apos;s Python API, the addon includes several
             key features:
           </p>
@@ -69,9 +69,9 @@ export default function About() {
             Sakura Rig Utilities is an evolving project that receives regular
             updates alongside new rig releases. It currently comes pre-packaged
             with the user interface for the{" "}
-            <A href={"/projects/sakura-character-rig"} class={"link"}>
+            <Link path={"projects://sakura-character-rig"}>
               Sakura Character Rig
-            </A>
+            </Link>
             .
           </p>
 
