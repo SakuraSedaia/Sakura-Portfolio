@@ -2,7 +2,7 @@
   "name": "sakura-portfolio-typescript",
   "type": "module",
   "license": "GPL-3.0-or-later",
-  "packageManager": "pnpm@10.32.1",
+  "packageManager": "pnpm@11.15.1",
   "scripts": {
     "dev": "vite dev --configLoader runner --port 3232 --host",
     "build": "vite build --configLoader runner",
@@ -21,6 +21,8 @@
     "@solidjs/start": "2.0.0-alpha.3",
     "@solidjs/vite-plugin-nitro-2": "^0.3.0",
     "@vercel/analytics": "^1.6.1",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.21",
     "prettier": "^3.8.3",
     "solid-js": "^1.9.5",
     "solid-markdown": "^2.1.1",
@@ -53,5 +55,11 @@
     "codeberg"
   ],
   "author": "Sakura Sedaia",
-  "description": "A portfolio website built with SolidJS and TypeScript"
+  "description": "A portfolio website built with SolidJS and TypeScript",
+  "browserslist": [
+    "defaults",
+    "> 0.2%",
+    "last 2 versions",
+    "not dead"
+  ]
 }

@@ -23,10 +23,12 @@ export default function Header({
   const resolvedChildren = resolveChildren(() => children);
 
   return (
-    <header
-      class={"header__container " + className}
-      style={{ "background-image": `url(${image})` }}
-    >
+    <header class={`header__container ${className || ""}`}>
+      <div
+        class="header__background"
+        style={{ "background-image": `url(${image})` }}
+      />
+
       <div class={"header__content"}>
         <h1
           style={{
@@ -60,7 +62,6 @@ export default function Header({
           </Link>
         </div>
       </div>
-      <div class={"header__fade"} />
     </header>
   );
 }
