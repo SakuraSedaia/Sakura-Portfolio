@@ -18,6 +18,11 @@ interface ChangelogSection {
   content: string;
 }
 
+interface ChangelogResult {
+  content: string | null;
+  requestedName: string;
+}
+
 const MarkdownLink = (props: any) => (
   <Show
     when={props.href?.startsWith("/") && !props.href?.startsWith("//")}
@@ -32,36 +37,46 @@ const changelogs = import.meta.glob("../../../markdown/changelogs/**/*.md", {
   import: "default",
 });
 
-const getChangelog = cache(async (item: string | undefined) => {
-  if (!item) return null;
+const getChangelog = cache(
+  async (item: string | undefined): Promise<ChangelogResult> => {
+    if (!item) return { content: null, requestedName: "Changelog" };
 
-  try {
-    const decodedItem = decodeURIComponent(item);
-    const filename = `${decodedItem}.md`.toLowerCase();
-    const keys = Object.keys(changelogs);
+    try {
+      const decodedItem = decodeURIComponent(item);
+      const filename = `${decodedItem}.md`.toLowerCase();
+      const keys = Object.keys(changelogs);
 
-    const match = keys.find((key) => {
-      const normalizedKey = key.toLowerCase().replace(/\\/g, "/");
-      return normalizedKey.endsWith(filename);
-    });
+      const match = keys.find((key) => {
+        const normalizedKey = key.toLowerCase().replace(/\\/g, "/");
+        return normalizedKey.endsWith(`/${filename}`);
+      });
 
-    if (match) {
-      const content = await changelogs[match]();
-      if (typeof content === "string") return content;
-      if (content && typeof content === "object" && "default" in content) {
-        return typeof (content as any).default === "string"
-          ? (content as any).default
-          : JSON.stringify((content as any).default);
+      if (match) {
+        const content = await changelogs[match]();
+        if (typeof content === "string") {
+          return { content, requestedName: decodedItem };
+        }
+        if (content && typeof content === "object" && "default" in content) {
+          const defaultContent = (content as { default?: unknown }).default;
+          return {
+            content:
+              typeof defaultContent === "string"
+                ? defaultContent
+                : (JSON.stringify(defaultContent) ?? ""),
+            requestedName: decodedItem,
+          };
+        }
+        return { content: String(content), requestedName: decodedItem };
       }
-      return String(content);
-    }
 
-    return `# Changelog not found\nThe requested changelog "${decodedItem}" could not be found.`;
-  } catch (e: any) {
-    console.error("Failed to load changelog:", e);
-    return `# Error loading changelog\nThere was a problem loading the changelog content: ${e.message}`;
-  }
-}, "changelogs");
+      return { content: null, requestedName: decodedItem };
+    } catch (error: unknown) {
+      console.error("Failed to load changelog:", error);
+      throw error;
+    }
+  },
+  "changelogs",
+);
 
 export default function Changelog() {
   const params = useParams();
@@ -117,12 +132,14 @@ export default function Changelog() {
   };
 
   const title = createMemo(() => {
-    const data = content();
-    return data ? getTitle(data) : "";
+    const result = content();
+    return result?.content
+      ? getTitle(result.content)
+      : result?.requestedName || params.changelog || "Changelog";
   });
 
   const sections = createMemo(() => {
-    const data = content();
+    const data = content()?.content;
     return data ? parseChangelog(data) : [];
   });
 
@@ -147,10 +164,21 @@ export default function Changelog() {
           fallback={(err) => <p>Failed to load changelog: {err.message}</p>}
         >
           <Suspense fallback={<p>Loading...</p>}>
-            <Show when={content()}>
+            <Show
+              when={content()?.content}
+              fallback={
+                <section class={"changelog-content"}>
+                  <h2>Changelog not found</h2>
+                  <p>
+                    The requested changelog “{content()?.requestedName}” could
+                    not be found.
+                  </p>
+                </section>
+              }
+            >
               {() => (
                 <article class={"changelog-page"}>
-                  <main class={"content-container"}>
+                  <div class={"content-container"}>
                     <section class={"changelog-content"}>
                       <For each={sections()}>
                         {(section) => (
@@ -201,7 +229,7 @@ export default function Changelog() {
                         )}
                       </For>
                     </section>
-                  </main>
+                  </div>
                 </article>
               )}
             </Show>
