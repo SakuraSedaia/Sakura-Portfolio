@@ -14,7 +14,9 @@ export default function ContactMe() {
           <li class={"contact__me__method"}>
             <IconBundle name={"envelope"} />
             <span class={"contact__me__label"}>Email:</span>
-            <a href={"mailto:sakusedaia@outlook.com"}>sakusedaia@outlook.com</a>
+            <a href={"mailto:email@sakura-sedaia.com"}>
+              email@sakura-sedaia.com
+            </a>
           </li>
           <li class={"contact__me__method"}>
             <IconBundle name={"discord"} />

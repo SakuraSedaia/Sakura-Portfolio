@@ -12,7 +12,7 @@ export default function GetInTouch() {
           email or message me on Discord!
         </p>
         <div class={"index__get-in-touch__actions"}>
-          <Link path="mailto:sakusedaia@outlook.com" emboss={true}>
+          <Link path="mailto:email@sakura-sedaia.com" emboss={true}>
             <IconBundle name={"envelope"} /> Email
           </Link>
           <Link
