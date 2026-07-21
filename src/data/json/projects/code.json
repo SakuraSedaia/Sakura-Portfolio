@@ -10,7 +10,7 @@
       "imageDescription": "a preview screenshot of Sakura's Character Rig with it's associated Python UI",
       "imageAlt": "Sakura's Character Rig preview screenshot",
       "imageFit": "contain",
-      "linkPath": "projects://sakura-character-rig"
+      "linkPath": "/projects/sakura-character-rig"
     },
     {
       "title": "Sakura Rig Utilities",
@@ -21,7 +21,7 @@
       "imageDescription": "a preview screenshot of Sakura's Character Rig with it's associated Python UI",
       "imageAlt": "Sakura's Rig Utilities preview screenshot",
       "imageFit": "contain",
-      "linkPath": "projects://sakura-rig-utilities"
+      "linkPath": "/projects/sakura-rig-utilities"
     },
     {
       "title": "Blend-Charm",
@@ -32,7 +32,7 @@
       "imageDescription": "a preview screenshot of Blender Python for Pycharm",
       "imageAlt": "Blender Python for Pycharm preview screenshot",
       "imageFit": "cover",
-      "linkPath": "projects://blender-development"
+      "linkPath": "/projects/blender-development"
     },
     {
       "title": "Frostlight Studios Page",

@@ -22,7 +22,7 @@ export default function Description() {
           starting with Blender to create Minecraft-style renders. While early
           work from 2016 to 2019 has been lost, most renders created since 2019
           are available to view on the{" "}
-          <Link path={"projects://"}>Projects Page</Link>. I also share
+          <Link path={"/projects"}>Projects Page</Link>. I also share
           demonstrations of my ongoing work, including 3D rendering reels, rig
           downloader interfaces, and script development tests, directly on my{" "}
           <Link path="https://youtube.com/c/SakuraSedaia" external={true}>

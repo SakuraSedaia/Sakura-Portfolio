@@ -15,7 +15,7 @@ export default function About() {
             designed to streamline the management of Python-based rig
             interfaces. It provides essential tools and utilities for managing
             the{" "}
-            <Link path={"projects://sakura-character-rig"}>
+            <Link path={"/projects/sakura-character-rig"}>
               Sakura Character Rig (SACR)
             </Link>{" "}
             Built using Blender&apos;s Python API, the addon includes several
@@ -69,7 +69,7 @@ export default function About() {
             Sakura Rig Utilities is an evolving project that receives regular
             updates alongside new rig releases. It currently comes pre-packaged
             with the user interface for the{" "}
-            <Link path={"projects://sakura-character-rig"}>
+            <Link path={"/projects/sakura-character-rig"}>
               Sakura Character Rig
             </Link>
             .

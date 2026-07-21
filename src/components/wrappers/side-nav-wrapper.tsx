@@ -43,12 +43,6 @@ export default function SideNavWrapper({
       return normalPath;
     }
 
-    if (normalBasePath === "projects") {
-      return normalPath === "/"
-        ? "projects://"
-        : `projects://${normalPath.slice(1)}`;
-    }
-
     if (normalPath === "/") {
       return `/${normalBasePath}`;
     }

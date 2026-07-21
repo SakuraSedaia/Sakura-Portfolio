@@ -21,9 +21,6 @@ export default function Link(props: LinkProps) {
   ]);
 
   const resolvedPath = createMemo(() => resolvePrefix(local.path));
-  const isSectionLink = createMemo(() =>
-    /^(?:projects|wiki|store):\/\//.test(local.path),
-  );
   const isExternal = createMemo(
     () =>
       local.external === true ||
@@ -54,9 +51,9 @@ export default function Link(props: LinkProps) {
       <Match when={local.emboss && isExternal()}>
         <a
           href={resolvedPath()}
-          target={isSectionLink() ? undefined : "_blank"}
+          target={"_blank"}
           class={buttonClass()}
-          rel={isSectionLink() ? undefined : "noopener noreferrer"}
+          rel={"noopener noreferrer"}
           {...(others as any)}
         >
           {local.children}
@@ -75,9 +72,9 @@ export default function Link(props: LinkProps) {
       <Match when={isExternal()}>
         <a
           href={resolvedPath()}
-          target={isSectionLink() ? undefined : "_blank"}
+          target={"_blank"}
           class={linkClass()}
-          rel={isSectionLink() ? undefined : "noopener noreferrer"}
+          rel={"noopener noreferrer"}
           {...(others as any)}
         >
           {local.children}

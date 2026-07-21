@@ -12,10 +12,7 @@ export default function Addon() {
               To get the most out of the Sakura Character Rig, we recommend
               using the Sakura Rig Utilities extension for Blender.
             </p>
-            <Link
-              path={"projects://sakura-rig-utilities"}
-              class={"btn-primary"}
-            >
+            <Link path={"/projects/sakura-rig-utilities"} class={"btn-primary"}>
               View Sakura Rig Utilities
             </Link>
           </div>

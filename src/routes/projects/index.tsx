@@ -11,21 +11,21 @@ const projectCards = [
     description:
       "A Blender add-on providing a streamlined GUI for importing, configuring, and managing the Sakura Minecraft Character Rig.",
     cta: "View project",
-    path: "projects://sakura-rig-utilities",
+    path: "/projects/sakura-rig-utilities",
   },
   {
     title: "Blender Development",
     description:
       "A PyCharm plugin that makes developing and debugging Blender extensions easier with hot-reloading, sandboxing, and integrated linting.",
     cta: "View project",
-    path: "projects://blender-development",
+    path: "/projects/blender-development",
   },
   {
     title: "Sakura Character Rig",
     description:
       "The flagship rig Sakura Rig Utilities is built around - a fully featured Minecraft character rig for animators and artists.",
     cta: "Learn more",
-    path: "projects://sakura-character-rig",
+    path: "/projects/sakura-character-rig",
   },
 ];
 
@@ -35,21 +35,21 @@ const updateCards = [
     description:
       "A major foundational update - moves to uv for environments, improves project setup, and adds extensive threading and process fixes across Windows, macOS, and Linux.",
     cta: "View project",
-    path: "projects://blender-development",
+    path: "/projects/blender-development",
   },
   {
     title: "Sakura Rig Utilities V4.0.0 Alpha",
     description:
       "The next major version of the rig interface, targeting Blender 5.0 with a refreshed UI, new features, and bug fixes.",
     cta: "View development branch",
-    path: "projects://sakura-rig-utilities",
+    path: "/projects/sakura-rig-utilities",
   },
   {
     title: "Sakura Rig Utilities V3.1.0",
     description:
       "Stable release that streamlines UI navigation, adds missing eye material options, and optimizes the backend for better maintainability.",
     cta: "View project",
-    path: "projects://sakura-rig-utilities",
+    path: "/projects/sakura-rig-utilities",
   },
 ];
 

@@ -155,7 +155,6 @@ const routesDirectory = path.join(srcDirectory, "routes");
 const sitemapPath = path.join(repoRoot, "public", "sitemap.xml");
 const packageJson = readJson(path.join(repoRoot, "package.json"));
 const siteUrl = packageJson.homepage.replace(/\/$/, "");
-const projectsUrl = "https://projects.sakura-sedaia.com";
 const today = new Date().toISOString().slice(0, 10);
 const stagedFiles = new Set(
   runGit(["diff", "--cached", "--name-only", "--diff-filter=ACMRT"])
@@ -177,15 +176,9 @@ const routes = collectFiles(routesDirectory)
       ? today
       : (gitLastModified(dependencies) ?? today);
 
-    const isProjectRoute =
-      routePath === "/projects" || routePath.startsWith("/projects/");
-    const publicPath = isProjectRoute
-      ? routePath.slice("/projects".length) || "/"
-      : routePath;
-
     return {
       path: routePath,
-      url: `${isProjectRoute ? projectsUrl : siteUrl}${publicPath}`,
+      url: `${siteUrl}${routePath === "/" ? "/" : routePath}`,
       lastmod,
     };
   })

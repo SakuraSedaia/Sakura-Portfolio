@@ -31,9 +31,7 @@ export default function Instructions() {
                 <li>Ensure the addon is enabled in your preferences.</li>
                 <li>
                   Download a compatible rig from the{" "}
-                  <Link path={"projects://sakura-character-rig"}>
-                    SACR page
-                  </Link>
+                  <Link path={"/projects/sakura-character-rig"}>SACR page</Link>
                   .
                 </li>
               </ol>
@@ -58,9 +56,7 @@ export default function Instructions() {
                 <li>Choose the downloaded file and ensure it's enabled.</li>
                 <li>
                   Download a compatible rig from the{" "}
-                  <Link path={"projects://sakura-character-rig"}>
-                    SACR page
-                  </Link>
+                  <Link path={"/projects/sakura-character-rig"}>SACR page</Link>
                   .
                 </li>
               </ol>
