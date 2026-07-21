@@ -31,6 +31,7 @@ export default function IconBundle(props: IconBundleProps) {
     "quick-access": "quick-access",
     "blender-bw": "logo-blender-bw",
     "python-bw": "logo-python-bw",
+    "bi-external-link": "external-link",
   };
 
   const iconName = () => icons[local.name];
