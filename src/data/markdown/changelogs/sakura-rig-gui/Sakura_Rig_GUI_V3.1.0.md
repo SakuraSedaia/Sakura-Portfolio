@@ -1,9 +1,8 @@
-# Sakura's Rig Interfaces
+# Changelog
 
-Version: 3.1.0
-Blender 5.0
+## [3.1.0]
 
----
+Compatible with Blender 5.0.
 
 V3.1.0 is a small corrective release fixing some minor navigation issues I experienced with the UI in practical use as
 well as fixing some minor issues I personally noticed.
@@ -16,11 +15,18 @@ Material options for the Irises and Sclera.
 On the backend, a lot of dirty laundry was cleaned up, mainly regarding unused variables, useless characters, and bad
 naming semantics.
 
----
+### Added
 
-## Main Changelog
+- Added `bl_options = {"REGISTER", "INTERNAL"}` to all Skin Operators
+- Added new Backup function for the Skin downloader.
+- Added "SEDAIA_SKIN_PT" to configure all current and future panels
+- Added a new "SACR7_UI2_panel" class to store the Category and Space Information in a single location, making further
+  development and maintenance easier.
+- Added "Opacity" to Iris and Sclera Emissive properties.
 
-### General
+### Changed
+
+#### General
 
 - Replaced "module_info" with "bl_info" in all modules which still had it
   - This change is because bl_info already handles all the info I wanted module_info to handle, and having bl_info and
@@ -28,7 +34,7 @@ naming semantics.
 - Simplified the "Region" blocks, removing the Separator "Line."
 - Moved all SACR UI's to "sedaia_ui"
 
-### Sedaia Utils
+#### Sedaia Utils
 
 - Removed "rig_download" entry from Ops ID list, as it is unused.
 - Removed redundant Region calls and blocks.
@@ -36,33 +42,25 @@ naming semantics.
 - Removed a lot of redundant parenthasis
 - Renamed multiple functions to use pascal_case instead of snakeCase
 - Removed unused "FILE_delete" class
-- Added `bl_options = {"REGISTER", "INTERNAL"}` to all Skin Operators
-- Added new Backup function for the Skin downloader.
 
-### Global UI -> Skin Utility UI
+#### Global UI to Skin Utility UI
 
 - Renamed module from "global_ui" to "SKIN_utility_ui"
 - Moved module into "sedaia_ui" from Root
 - Removed Panel Template
 - Removed redundant Region Calls
 - Removed region block separators
-- Added "SEDAIA_SKIN_PT" to configure all current and future panels
 - Made all Variables in the "Configs" array local class variables for "ui_skinUtility"
 - Renamed Class from SEDAIA_MAIN_PT to SEDAIA_SKIN_PT
 - Renamed the Tab from "Sedaia Skin Utility" to "Download Skins"
 
-## Rig UI Changelogs
-
-### SACR R7 UI Version 1.3.2
+#### SACR R7 UI Version 1.3.2
 
 - Fixed a couple lingering semantic issues.
 
-### SACR R7 UI Version 2.0.1:
+#### SACR R7 UI Version 2.0.1
 
-- Added a new "SACR7_UI2_panel" class to store the Category and Space Information in a single location, making further
-  development and maintenance easier.
 - Removed the Configuration Atlas due to the new SACR7_UI2_panel class, where
-- Added "Opacity" to Iris and Sclera Emissive properties.
 - Moved Iris and Sclera panels under the new Eyes Panel.
 - Moved Eyebrow Controller visibility options to the Eyebrow Panel.
 - Moved Eye Controller visibility options to the Eye Panel.

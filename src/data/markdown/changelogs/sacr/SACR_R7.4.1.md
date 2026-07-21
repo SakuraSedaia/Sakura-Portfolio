@@ -1,28 +1,21 @@
-# Sakura's Advanced Character Rig
+# Changelog
 
-## File Info
+## [R7.4.1]
 
-Version: R7.4.1
-Blender 5.0
-
----
-
-R7.4.1 Summary
+Compatible with Blender 5.0.
 
 R7.4.1 is a Corrective Release, as such this only contains bug fixes and fixes for problems found in the initial 7.4
 Release.
 
----
-
-## Changelog
-
-### Changes and Adjustments
+### Fixed
 
 - Fixed Pupil Opacity being inverted, meaning that 0 was On and 1 was Blackout.
 - Fixed Iris and Sclera Color reverting to white when turning on Emission Mask
-- The "Hidden Stuff" Bone Collection now hidden by default.
+- The "Hidden Stuff" Bone Collection is now hidden by default.
 
-## Lite Rig Changes (From Standard)
+### Removed
+
+#### Lite Rig Changes (From Standard)
 
 - Removal of all objects in the "Accessories" collection
 - Simplified Mesh Geometry

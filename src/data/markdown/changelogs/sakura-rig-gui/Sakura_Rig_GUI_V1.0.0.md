@@ -1,14 +1,11 @@
-# Sakura's Rig Interfaces
+# Changelog
 
-Version: 1.0.0
-Blender 4.2
+## [1.0.0]
 
----
+Compatible with Blender 4.2.
 
 Initial release of the addon, currently only supported with SACR R7.2.1
 
----
-
-## Main Changelog
+### Added
 
 Initial release of the addon, currently only supported with SACR R7.2.1

@@ -32,10 +32,13 @@ const MarkdownLink = (props: any) => (
   </Show>
 );
 
-const changelogs = import.meta.glob("../../../markdown/changelogs/**/*.md", {
-  query: "?raw",
-  import: "default",
-});
+const changelogs = import.meta.glob(
+  "../../../data/markdown/changelogs/**/*.md",
+  {
+    query: "?raw",
+    import: "default",
+  },
+);
 
 const getChangelog = cache(
   async (item: string | undefined): Promise<ChangelogResult> => {
@@ -176,62 +179,60 @@ export default function Changelog() {
                 </section>
               }
             >
-              {() => (
-                <article class={"changelog-page"}>
-                  <div class={"content-container"}>
-                    <section class={"changelog-content"}>
-                      <For each={sections()}>
-                        {(section) => (
-                          <div id={section.id} class={"changelog-section"}>
-                            <div class={"heading"}>
-                              <h2>{section.title}</h2>
-                            </div>
-
-                            <Show when={section.content.trim()}>
-                              <SolidMarkdown
-                                children={section.content}
-                                components={{
-                                  p: (props) => (
-                                    <p
-                                      style={{ "white-space": "pre-line" }}
-                                      {...props}
-                                    />
-                                  ),
-                                  ul: (props) => <ul {...props} />,
-                                  li: (props) => <li {...props} />,
-                                  a: MarkdownLink,
-                                }}
-                              />
-                            </Show>
-
-                            <For each={section.subSections}>
-                              {(sub) => (
-                                <div class={"changelog-subsection"}>
-                                  <h3>{sub.title}</h3>
-                                  <SolidMarkdown
-                                    children={sub.content}
-                                    components={{
-                                      p: (props) => (
-                                        <p
-                                          style={{ "white-space": "pre-line" }}
-                                          {...props}
-                                        />
-                                      ),
-                                      ul: (props) => <ul {...props} />,
-                                      li: (props) => <li {...props} />,
-                                      a: MarkdownLink,
-                                    }}
-                                  />
-                                </div>
-                              )}
-                            </For>
+              <article class={"changelog-page"}>
+                <div class={"content-container"}>
+                  <section class={"changelog-content"}>
+                    <For each={sections()}>
+                      {(section) => (
+                        <div id={section.id} class={"changelog-section"}>
+                          <div class={"heading"}>
+                            <h2>{section.title}</h2>
                           </div>
-                        )}
-                      </For>
-                    </section>
-                  </div>
-                </article>
-              )}
+
+                          <Show when={section.content.trim()}>
+                            <SolidMarkdown
+                              children={section.content}
+                              components={{
+                                p: (props) => (
+                                  <p
+                                    style={{ "white-space": "pre-line" }}
+                                    {...props}
+                                  />
+                                ),
+                                ul: (props) => <ul {...props} />,
+                                li: (props) => <li {...props} />,
+                                a: MarkdownLink,
+                              }}
+                            />
+                          </Show>
+
+                          <For each={section.subSections}>
+                            {(sub) => (
+                              <div class={"changelog-subsection"}>
+                                <h3>{sub.title}</h3>
+                                <SolidMarkdown
+                                  children={sub.content}
+                                  components={{
+                                    p: (props) => (
+                                      <p
+                                        style={{ "white-space": "pre-line" }}
+                                        {...props}
+                                      />
+                                    ),
+                                    ul: (props) => <ul {...props} />,
+                                    li: (props) => <li {...props} />,
+                                    a: MarkdownLink,
+                                  }}
+                                />
+                              </div>
+                            )}
+                          </For>
+                        </div>
+                      )}
+                    </For>
+                  </section>
+                </div>
+              </article>
             </Show>
           </Suspense>
         </ErrorBoundary>

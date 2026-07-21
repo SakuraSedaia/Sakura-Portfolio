@@ -1,22 +1,13 @@
-# Sakura's Advanced Character Rig
+# Changelog
 
-## File Info
+## [E7.5.0-RC1]
 
-Latest Stable: R7.4.1
-Blender 5.1
-
----
-
-R7.5 Summary
+Compatible with Blender 5.1. Latest stable release: R7.4.1.
 
 R7.5 is a Corrective Release, featuring primarily bug fixes and general improvements, as well as some extra backend
 integration for use with the Rig UI.
 
----
-
-## Changelog
-
-### Additions
+### Added
 
 - Custom properties to all materials denoting the purpose of that material.
 - Rebuilt Rig UI from scratch, and packaged with rig separately.
@@ -26,7 +17,7 @@ integration for use with the Rig UI.
     - Credit to Moon Studio's "Complete Turtle Armor" mod for the full-body turtle armor
     - https://modrinth.com/mod/complete-turtle-armor?version=1.21.10&loader=fabric
 
-### Changes and Adjustments
+### Changed
 
 - The "Hidden Stuff" Bone Collection now hidden by default.
 - Updated ArmType Property
@@ -52,7 +43,7 @@ integration for use with the Rig UI.
   - Adjusted associated custom property
   - Adjusted Mesh State to be pixel aligned.
 
-### Fixes
+### Fixed
 
 - Fixed Pupil Opacity being inverted, meaning that 0 was On and 1 was Blackout.
 - Fixed Iris and Sclera Color reverting to white when turning on Emission Mask
@@ -62,7 +53,7 @@ integration for use with the Rig UI.
 
 - Cleaned up redundant custom properties from addons on all objects.
 
-## Lite Rig Changes (From Standard)
+#### Lite Rig Changes (From Standard)
 
 - Removal of all objects in the "Accessories" collection
 - Simplified Mesh Geometry
