@@ -41,6 +41,22 @@
         "enabled": true,
         "versions": [
           {
+            "version": "0.8.1 Snapshot",
+            "label": "0.8.1 Snapshot",
+            "fileName": "BlenderPythonDevelopment-0.8.1-SNAPSHOT.zip",
+            "sourceCode": "",
+            "changelog": "BlenderDevelopment-0.8.1-SNAPSHOT",
+            "builds": [
+              {
+                "date": "07/22/2026",
+                "size": "3.07 MB",
+                "license": "GNU/GPL V3",
+                "notes": "This patch release makes repository-synced Blender extension launches reliably switch from stale source or symlink module names to the extension ID declared in blender_manifest.toml.",
+                "disabled": false
+              }
+            ]
+          },
+          {
             "version": "0.8.0 Snapshot",
             "label": "0.8.0 Snapshot",
             "fileName": "BlenderPythonDevelopment-0.8.0-SNAPSHOT.zip",
