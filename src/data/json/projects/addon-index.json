@@ -41,6 +41,22 @@
         "enabled": true,
         "versions": [
           {
+            "version": "0.9.0 Snapshot",
+            "label": "0.9.0 Snapshot",
+            "fileName": "BlenderPythonDevelopment-0.9.0-SNAPSHOT.zip",
+            "sourceCode": "",
+            "changelog": "BlenderDevelopment-0.9.0-SNAPSHOT",
+            "builds": [
+              {
+                "date": "07/22/2026",
+                "size": "3.17 MB",
+                "license": "GNU/GPL V3",
+                "notes": "This pre-release adds online Blender release discovery and managed Blender installations, allowing compatible versions to be refreshed, installed, and removed directly from the plugin settings.",
+                "disabled": false
+              }
+            ]
+          },
+          {
             "version": "0.8.1 Snapshot",
             "label": "0.8.1 Snapshot",
             "fileName": "BlenderPythonDevelopment-0.8.1-SNAPSHOT.zip",
