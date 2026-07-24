@@ -44,6 +44,16 @@
         }
       },
       {
+        "name": "Blog",
+        "path": "https://blog.sakura-sedaia.com",
+        "meta": {
+          "title": "Blog | Sedaia Designs",
+          "description": "Development stories, technical explorations, practical notes, and ramblings from the projects behind Sakura Sedaia.",
+          "url": "https://blog.sakura-sedaia.com",
+          "show_route": true
+        }
+      },
+      {
         "name": "Contact",
         "path": "/contact",
         "meta": {
