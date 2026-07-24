@@ -41,6 +41,22 @@
         "enabled": true,
         "versions": [
           {
+            "version": "0.10.0 Snapshot",
+            "label": "0.10.0 Snapshot",
+            "fileName": "BlenderPythonDevelopment-0.10.0-SNAPSHOT.zip",
+            "sourceCode": "",
+            "changelog": "BlenderDevelopment-0.10.0-SNAPSHOT",
+            "builds": [
+              {
+                "date": "07/23/2026",
+                "size": "3.18 MB",
+                "license": "GNU/GPL V3",
+                "notes": "This pre-release refines configuration state synchronization and the Project Blender Manager experience, restores cached installations at startup, and fixes recursive editor updates and stale managed-installation paths.",
+                "disabled": false
+              }
+            ]
+          },
+          {
             "version": "0.9.0 Snapshot",
             "label": "0.9.0 Snapshot",
             "fileName": "BlenderPythonDevelopment-0.9.0-SNAPSHOT.zip",
