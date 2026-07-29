@@ -24,5 +24,12 @@ fi
 
 mkdir -p "$REPO_ROOT/public/json"
 cp "$REPO_ROOT/src/data/json/projects/sacr-index.json" "$REPO_ROOT/public/json/sacr-index.json"
+(
+  cd "$REPO_ROOT/public/json"
+  shasum -a 256 "sacr-index.json" > "sacr-index.json.sha256"
+)
 
-git add "$REPO_ROOT/public/sitemap.xml" "$REPO_ROOT/public/json/sacr-index.json"
+git add \
+  "$REPO_ROOT/public/sitemap.xml" \
+  "$REPO_ROOT/public/json/sacr-index.json" \
+  "$REPO_ROOT/public/json/sacr-index.json.sha256"
